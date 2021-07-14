@@ -1,0 +1,1 @@
+In contrast to black-box testing, _white-box testing_ derives tests from the _implementation_, notably the internal structure.

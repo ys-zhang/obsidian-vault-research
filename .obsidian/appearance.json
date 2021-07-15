@@ -1,7 +1,7 @@
 {
-  "baseFontSize": 16,
+  "baseFontSize": 14,
   "obsidianCss": false,
-  "translucency": false,
+  "translucency": true,
   "cssTheme": "Obuntu",
   "theme": "obsidian"
 }

@@ -23,12 +23,23 @@
     "coverability",
     "reachability",
     "unobservable",
-    "multiset"
+    "multiset",
+    "excalidraw",
+    "fuzzer",
+    "Mutator",
+    "blackbox",
+    "whitebox",
+    "Greybox",
+    "Graybox",
+    "fuzzers",
+    "greybox",
+    "intr",
+    "intr"
   ],
   "foldIndent": true,
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "fileSortOrder": "byModifiedTimeReverse",
   "foldHeading": true,
-  "vimMode": false
+  "vimMode": true
 }

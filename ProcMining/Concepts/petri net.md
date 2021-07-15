@@ -95,4 +95,3 @@ Similarly, the output of a transition is not just a token but a specifically col
 - **Transitions** have no capacity, and cannot store tokens at all
 
 ![[vector-id-petri-net.png]]
-

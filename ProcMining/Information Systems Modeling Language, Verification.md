@@ -1,3 +1,5 @@
+#academic-paper  #process-mining 
+
 # Information Systems Modeling: Language, Verification, and Tool Support
 
 # Problem And Idea
@@ -89,13 +91,13 @@ represent CRUD actions on $\pi$.
 
 Many analysis techniques for processes ignore data, i.e., tokens in places resembling the state of the process are considered to be indistinguishable.
 
-### Definition 3.4 ([[Petri Net]] with identifiers)
+### Definition 3.4 ([[petri net]] with identifiers)
 ![[vector-id-petri-net.png]]
 Let $\Sigma$ denote a **universe of variables.**
 
-A **[[Petri Net]] with identifiers (PNID)** is a 5-tuple $(P, T, F, \alpha, \beta)$, where:
+A **[[petri net]] with identifiers (PNID)** is a 5-tuple $(P, T, F, \alpha, \beta)$, where:
 
-- $(P, T, F)$ is a **[[Petri Net]]**, with a set of **places** $P$, a set of **transitions** $T$, such that $P \cap T = \emptyset$,  and **a flow function** $F: ((P \times T) \cup (T \times P)) \to \mathbb{N}$; if for $n, m \in P \cup T, F(n, m) > 0$, an **arc** is drawn from $n$  to $m$;
+- $(P, T, F)$ is a **[[petri net]]**, with a set of **places** $P$, a set of **transitions** $T$, such that $P \cap T = \emptyset$,  and **a flow function** $F: ((P \times T) \cup (T \times P)) \to \mathbb{N}$; if for $n, m \in P \cup T, F(n, m) > 0$, an **arc** is drawn from $n$  to $m$;
 - $\alpha: P \to \mathbb{N}$ defines the **cardinality** of a place, i.e., *the length of the vector* carried on the tokens residing at that place; its **color** is defined by $C(p) = \mathcal{I}^{\alpha(p)}$;
 - $\beta$ defines the **variable vector** for each **arc**, i.e., 
 	$$\beta \in \prod_{f\in F} V_f$$

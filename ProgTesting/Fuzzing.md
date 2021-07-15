@@ -1,5 +1,4 @@
-#program-test
-
+#program-test  #fuzzing
 # Fuzzing Architecture
 
 ## Basic Fuzzing
@@ -32,8 +31,8 @@ const (
 
 
 Give a *specification* and a *program* implements the specification, we can try two kinds of testing approaches:
-- [[Black-box testing]]: test based on *specification/document*
-- [[White-box testing]]: test based on *implementation*
+- [[blackbox testing]]: test based on *specification/document*
+- [[whitebox testing]]: test based on *implementation*
 
 >How do we measure the effectiveness of these tests? One way would be to check the number (and seriousness) of bugs found; but if bugs are scarce, we need a _**proxy for the likelihood of a test to uncover a bug**_
 
@@ -43,11 +42,38 @@ Two types of coverage criteria:
  -  _**Statement coverage**_ – each statement in the code must be executed by at least one test input.
  -  _**Branch coverage**_ – each branch in the code must be taken by at least one test input
 
+The function call graph can be retrieved by `tracing` libraries.
+Compilers are also generally implemented coverage utilities `cc --coverage`
 
 
 # Lexical Fuzzing
 
+## Mutation-Based Fuzzing
 
+[[American Fuzzy Lop (AFL)]] is a fuzzing tool.
+
+IDEA: start with a given _valid_ input, and then to subsequently _mutate_ it.
+
+The problem here is how to design mutate operators:
+- inserting a (random) character
+- deleting a character
+- flipping a bit
+- ... 
+
+
+### How can we leverage coverage to guide test generation?
+-   For AFL, "success" means _finding a new path through the program execution_.
+-   Randomly generated inputs are frequently invalid – and thus exercise mostly input processing functionality.
+-   Mutations from existing valid inputs have much higher chances to be valid, and thus to exercise functionality beyond input processing.
+
+## Graybox Fuzzing
+
+[[graybox fuzzing]] uses lightweight instrumentation to glean some information about the (branch) coverage of a generated input. If a generated input increases coverage, it is added to the seed corpus for further fuzzing. 
+
+The instrumentation is usually done at compile-time, i.e., when the program source code is compiled to an executable binary. However, it is possible to run AFL on uninstrumented binaries using tools such as a virtual machine (e.g., [QEMU](https://github.com/mirrorer/afl/blob/master/qemu_mode)) or a dynamic instrumentation tool (e.g., [Intel PinTool](https://github.com/vanhauser-thc/afl-pin)).
+
+## Directed Greybox Fuzzing
+[[@Directed greybox fuzzing]]
 
 # Some other Issues
 ## Memory Access Checking

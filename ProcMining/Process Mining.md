@@ -1,3 +1,5 @@
+#process-mining
+
 # Process Mining
 
 content from the book *Process Mining in Action.*
@@ -60,12 +62,12 @@ type EventLog struct {
 - ***branching bisimilarity*** also take the *moment of choice* into account
 
 
-## [[Transition Model]]
-## [[Petri Net]]
+## [[transition model]]
+## [[petri net]]
 
 ## Workflow net
 
-**Workflow net** is a labeled [[Petri Net]], with an *input and an output place and a short-circuit transition.*
+**Workflow net** is a labeled [[petri net]], with an *input and an output place and a short-circuit transition.*
 
 After the short-circuit transition is included, the net become strongly connected, i.e. there exist a directed path between every pair of nodes.
 

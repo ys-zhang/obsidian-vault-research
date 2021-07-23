@@ -56,7 +56,7 @@ $$
 ###### Code
 
 [2.2. Manifold learning — scikit-learn 0.24.2 documentation](https://scikit-learn.org/stable/modules/manifold.html#multidimensional-scaling)
-![[Pasted image 20210723003648.png]]
+![[Classical-MDS-Algo.png]]
 
 ### Theory
 
@@ -99,4 +99,34 @@ $$
 
    $$C \textrm{ is a squared distance matrix } \iff Φ \textrm{ is a Schoenberg Transform }$$%%
    
-   ![[Pasted image 20210723152728.png]]
+   ![[schoenberg-transform.png]]
+
+![[Pasted image 20210724003423.png]]
+
+###    Hilbert Space Embedding and Reproducing Kernels
+
+######  Theorem 3.1
+
+Q: 何时赋范空间可以定义内积？
+
+A [[Separable Space]] $M$ with a metric function $d(x, y)$  can be isometrically embedded in a [[Hilbert space]] $H$, if and only if the family of  functions $e^{-\lambda d^2}$ are positive definite for all $\lambda > 0$ (in fact we just need it for a sequence of $λ_i$ whose accumulate point is 0).
+
+where is symmetric function $K(x,y)=K(y,x)$ is semi-definite iff. $\forall \{x_i\}_1^n, \{c_i\}_1^n$, we have $\sum_{ij}c_ic_jK(x_i,x_j)\ge0$
+
+###### $X$ 上的正定对称函数引导$X$ 上泛函的内积
+
+Symmetric positive definite functions $k(x, y$) are often called ***reproducing kernel***s. 
+The **basis of the dual functional space** $X^*=\{f|f: X\to\mathbb{R}, \|f\|_*<\infty\}$ are
+$$
+	k_x=k(x, \cdot) \quad \forall x\in X
+$$
+the isomorphism is $x$'s [[Riesz representation]] with the inner product defined by $\langle \cdot,\cdot \rangle=k(\cdot, \cdot)$:
+$$
+	x \to k_x
+$$
+ 
+	N. Aronszajn, Theory of reproducing kernels, Transactions of the American Mathematical Society 68 (1950), no. 3, 337-404
+	
+>The radial basis function $e^{-λd^2} = e^{-λ\|x\|^2}$ is often called ***Gaussian kernel*** or ***heat kernel*** in literature and has been widely used in machine learning.
+
+![[Pasted image 20210724003830.png]]

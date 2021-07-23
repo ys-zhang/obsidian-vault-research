@@ -31,8 +31,9 @@ since (1) is not feasible in all cases, we can introduce **slack variables**.
 $$
 \begin{align}
 	\min \;\; &\|w\| + C \sum(\xi_i^+ + \xi_i^- ) \\
-	\mathrm{s.t.}\;\; & \langle w, x_i \rangle + b - y_i < \varepsilon + \xi_i^- \\ 
-	& y_i - \langle w, x_i \rangle - b < \varepsilon + \xi_i^+ \\ 
+	\mathrm{s.t.}\;\; 
+	& y_i - \langle w, x_i \rangle - b < \varepsilon + \xi_i^+ \\
+	& \langle w, x_i \rangle + b - y_i < \varepsilon + \xi_i^- \\ 
 	& \xi_i^+, \xi_i^- \ge 0
 \end{align}
 $$
@@ -44,3 +45,70 @@ Suppose $\mathcal{X} \subset \mathbb{R}^d$, and sample size is $n$. The original
 ## The dual Problem
 
 The basic idea is to use [[Lagrange Multiplyer]] to reform the original problem into this dual space. 
+
+$$
+\begin{align}
+L(w,  ) =& \|w\| + C \sum(\xi_i^+ + \xi_i^- ) \\
+	&-\sum_{i=1}^\ell(\eta^+_i\xi_i^+ + \eta^-_i\xi_i^-) \\
+	&-\sum _{i=1}^\ell \alpha_i^+(\varepsilon + \xi_i^+ - y_i+ \langle w,x_i \rangle + b) \\
+	&-\sum _{i=1}^\ell \alpha_i^-(\varepsilon + \xi_i^- + y_i- \langle w,x_i \rangle - b) \\
+\end{align}
+$$
+
+Dual problem:
+
+$$
+\begin{align}
+	\max &\quad -\frac{1}{2} \sum_{i,j}^\ell (\alpha^+_i - \alpha_i^-) (\alpha^+_j - \alpha_j^-) \langle x_i x_j \rangle
+	-\varepsilon \sum_i^\ell (\alpha^+_i + \alpha_i^-) + \sum_i^\ell y_i (\alpha^+_i - \alpha_i^-)\\
+   s.t. &\quad \sum (\alpha^+_i - \alpha_i^-) =0 \\
+   &\quad \alpha_i^+, \alpha_j^- \in [0, C]
+\end{align}
+$$
+
+Furthermore, we have:
+
+$$
+\begin{align}
+   w &= \sum_i^\ell(\alpha_i^+ - \alpha_i^-)x_i \\
+   f(x) &= \sum_i^\ell (\alpha^+_i - \alpha_i^-) \langle x_i,x\rangle + b
+\end{align}
+$$
+
+# Kernel and nonlinear feature
+
+consider Feature parameterize, map from parameter space to feature space
+$$
+\Phi : \chi \to \mathcal{F}
+$$
+
+> The **primary problem** has $dim(\mathcal{F})$ constrains, which is a problem when the feature space is high dimensional.
+> While the **dual problem** has $O(\ell)$, i.e. , *number of sample* constrains.
+
+
+# Risk/Loss
+
+General form with weight penalty
+$$
+\begin{align}
+	R[f] &= \int c(x, y, f(x)) dP_{x,y}  \\
+	R_{emp}[f] &= \frac{1}{\ell} \sum_{i=1}^\ell c(x_i, y_i, f(x_i))   \\
+	R_{reg}[f] &= R_{emp}[f] + \frac{\lambda}{2} \| w \|
+\end{align}
+$$
+
+![[Common-loss-func-and-density-model.png]]
+
+## $\varepsilon$-Risk
+
+$$
+	c(x, y, f(x)) = |y-f(x)|_\varepsilon = \max \{|y-f(x)|-\varepsilon, 0\}
+$$
+
+> The **primary problem** is equivalent to the $\varepsilon$-risk with $L_2$ penalty.
+
+## Maximum Likelihood-Risk
+$$
+	c(x, y, f (x)) = - \log p(y - f (x))
+$$
+

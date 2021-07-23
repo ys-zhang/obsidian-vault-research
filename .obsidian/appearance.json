@@ -1,7 +1,6 @@
 {
-  "baseFontSize": 14,
-  "obsidianCss": false,
-  "translucency": true,
-  "cssTheme": "Obuntu",
-  "theme": "obsidian"
+  "baseFontSize": 16,
+  "cssTheme": "ITS Theme",
+  "theme": "moonstone",
+  "translucency": false
 }

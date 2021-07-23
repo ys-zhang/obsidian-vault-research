@@ -4,9 +4,11 @@
   "obsidian-dictionary-plugin",
   "cm-editor-syntax-highlight-obsidian",
   "obsidian-excalidraw-plugin",
-  "obsidian-git",
-  "oz-image-plugin",
   "cm-typewriter-scroll-obsidian",
   "obsidian-citation-plugin",
-  "sliding-panes-obsidian"
+  "sliding-panes-obsidian",
+  "calendar",
+  "oz-image-plugin",
+  "obsidian-git",
+  "markdown-prettifier"
 ]

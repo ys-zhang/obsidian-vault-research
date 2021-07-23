@@ -4,7 +4,7 @@ A **double connected edge list** keeps a record for each, **face**, **edge** and
 -   edge points to its neighbors.
 -   edge points to the two faces which are bounded by the edge.
 
-![[Pasted image 20210714140653.png]]
+![[Double-Edge-linked-list.png]]
 >A **graph** is **planar** if it can be drawn in a plane without graph edges crossing (i.e., it has graph crossing number 0). 
 >A **planar embedding** is an embedding of a graph drawn in the plane such that *edges intersect only at their endpoints*.
 

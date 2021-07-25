@@ -9,11 +9,20 @@
     "Irreducibility",
     "eigen",
     "scikit",
-    "iff"
+    "iff",
+    "Isometry",
+    "dimensionality",
+    "Lindenstrauss",
+    "OpenCL",
+    "readonly"
   ],
   "vimMode": false,
   "alwaysUpdateLinks": true,
   "communityPluginSortOrder": "download",
   "attachmentFolderPath": "attachments",
-  "foldIndent": true
+  "foldIndent": true,
+  "newFileLocation": "current",
+  "showUnsupportedFiles": true,
+  "fileSortOrder": "alphabetical",
+  "promptDelete": false
 }

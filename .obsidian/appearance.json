@@ -1,6 +1,7 @@
 {
   "baseFontSize": 16,
   "cssTheme": "ITS Theme",
-  "theme": "obsidian",
-  "translucency": false
+  "theme": "moonstone",
+  "translucency": false,
+  "baseFontSizeAction": false
 }

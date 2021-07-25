@@ -103,7 +103,7 @@ $$
 
 ![[Pasted image 20210724003423.png]]
 
-###    Hilbert Space Embedding and Reproducing Kernels
+##    Hilbert Space Embedding and Reproducing Kernels
 
 ######  Theorem 3.1
 
@@ -130,3 +130,31 @@ $$
 >The radial basis function $e^{-λd^2} = e^{-λ\|x\|^2}$ is often called ***Gaussian kernel*** or ***heat kernel*** in literature and has been widely used in machine learning.
 
 ![[Pasted image 20210724003830.png]]
+
+
+
+# Random Projections and Almost Isometry
+
+>Random Projection method which may reduce the dimensionality of $n$ points in $\mathbb{R}^p$ to $k = O(c(\epsilon) \log n)$ at the cost of *** a uniform metric distortion*** of at most $\epsilon > 0$, with high probability.
+
+#### Problem
+MDS minimized *total/global* distance distortion, while there is no limit of *single/local* distortion, we want a uniform control of distance distortion
+$$
+   (1 - \epsilon)d_{ij} ≤ \|Y_i - Y_j\| ≤ (1 + \epsilon)d_{ij}
+$$
+#### Johnson-Lindenstrauss Lemma
+![[Johnson-Lindenstrauss-Lemma.png]]
+
+##### construct the 'isomap'
+
+construct $f: \mathbb{R}^{n\times d} \to  \mathbb{R}^{n\times k}$,
+
+$$
+Y^{n\times k} = f(X^{n\times d})= X^{n\times d}R^{d\times k}
+$$
+
+Sample $a^i_{j} \sim N(0,1), \;1\le i\le k, 1\le j\le d$
+let $r_i=\frac{[a^i_1,\cdots,a^i_d]}{\|a^i\|},\; 1\le i\le k$
+and $R^{d\times k}=[r_1,\cdots,r_k]$
+
+## Compressive Sensing

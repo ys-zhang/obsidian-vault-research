@@ -4,5 +4,5 @@ $$
 $$
 the norm is defined by
 $$
-	\|X\|_F = \sqrt{\langle X,X \rangle} = \sqrt{\sum_{ij}X_{ij}^2}
+	\|X\|_F = \sqrt{\langle X,X \rangle} = \sqrt{\sum_{ij}X_{ij}^2} = \sqrt{tr(X^TX)} = \| X(:) \|_2
 $$

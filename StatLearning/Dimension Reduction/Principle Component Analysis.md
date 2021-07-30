@@ -33,4 +33,4 @@ $$
 **minimize projection loss.**
 
 
-![[Pasted image 20210724211736.png]]
+![[big-number-law-of-cov.png]]

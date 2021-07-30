@@ -10,5 +10,7 @@
   "calendar",
   "oz-image-plugin",
   "obsidian-git",
-  "markdown-prettifier"
+  "markdown-prettifier",
+  "oz-clear-unused-images",
+  "open-vscode"
 ]

@@ -68,12 +68,12 @@ The problem here is how to design mutate operators:
 
 ## Graybox Fuzzing
 
-[[graybox fuzzing]] uses lightweight instrumentation to glean some information about the (branch) coverage of a generated input. If a generated input increases coverage, it is added to the seed corpus for further fuzzing. 
+[[greybox fuzzing]] uses lightweight instrumentation to glean some information about the (branch) coverage of a generated input. If a generated input increases coverage, it is added to the seed corpus for further fuzzing. 
 
 The instrumentation is usually done at compile-time, i.e., when the program source code is compiled to an executable binary. However, it is possible to run AFL on uninstrumented binaries using tools such as a virtual machine (e.g., [QEMU](https://github.com/mirrorer/afl/blob/master/qemu_mode)) or a dynamic instrumentation tool (e.g., [Intel PinTool](https://github.com/vanhauser-thc/afl-pin)).
 
 ## Directed Greybox Fuzzing
-[[@Directed greybox fuzzing]]
+[[Directed greybox fuzzing]]
 
 # Some other Issues
 ## Memory Access Checking

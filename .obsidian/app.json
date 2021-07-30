@@ -14,15 +14,30 @@
     "dimensionality",
     "Lindenstrauss",
     "OpenCL",
-    "readonly"
+    "readonly",
+    "Subsequence",
+    "stdlib",
+    "Graybox",
+    "Greybox",
+    "lvalue",
+    "rvalue",
+    "designator",
+    "undirected",
+    "pseudocode",
+    "unnormalized",
+    "FuzzGuard",
+    "modelling",
+    "Mutator"
   ],
   "vimMode": false,
   "alwaysUpdateLinks": true,
-  "communityPluginSortOrder": "download",
+  "communityPluginSortOrder": "release",
   "attachmentFolderPath": "attachments",
   "foldIndent": true,
   "newFileLocation": "current",
   "showUnsupportedFiles": true,
   "fileSortOrder": "alphabetical",
-  "promptDelete": false
+  "promptDelete": false,
+  "strictLineBreaks": true,
+  "defaultViewMode": "preview"
 }

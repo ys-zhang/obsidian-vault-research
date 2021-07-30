@@ -1,0 +1,1 @@
+Code that gets executed on a GPU device is called a **kernel** in OpenCL/CUDA. The kernels are written in a C dialect, which is mostly straightforward C with a lot of built-in functions and additional data types. The body of a kernel function implements the computation to be completed by all work-items.

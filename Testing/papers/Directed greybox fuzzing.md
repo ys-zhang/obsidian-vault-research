@@ -10,7 +10,7 @@ date updated: '2021-07-15T16:59:02+10:00'
 
 # Problem
 
-Existing [[graybox fuzzing]] fuzzers cannot be effectively directed.
+Existing [[greybox fuzzing]] fuzzers cannot be effectively directed.
 
 > In this paper, we introduce** Directed Greybox Fuzzing (DGF)** which generates inputs with the objective of reaching a given set of target program locations efficiently. We develop and evaluate a [[Simulated annealing]]-based power schedule that gradually assigns more energy to seeds that are closer to the target locations while reducing energy for seeds that are further away.
 

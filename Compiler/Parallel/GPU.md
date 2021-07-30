@@ -1,4 +1,3 @@
-
 # Terms
 
 | NVIDEA                     | AMD         |      Concept                |
@@ -83,5 +82,13 @@ If two work-items of the same warp access two data that fall into the same 128-b
 
 #####    constant memory
 
-The constant memory (readonly) space resides in device memory (global memory) and is cached. This is where constants and program arguments are stored.
--    it is cached
+The **constant memory** (**readonly**) space resides in device memory (global memory) and is cached. This is where constants and program arguments are stored.
+-    it is **cached**
+-    supports **broadcasting** a single value to all work-items in a warp
+
+##### Texture memory
+
+**Texture memory** is cached so an image read costs one memory read from device memory only on a cache miss, otherwise, it just costs one read from the texture cache.
+
+
+

@@ -1,0 +1,1 @@
+variance of [[latency]].

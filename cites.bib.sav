@@ -164,6 +164,7 @@ balancing.},
   comment   = {Angora [15] and NEUZZ [31] adapt the gradient descent algorithm to solve path constraint
 and learn a model to improve code coverage respectively.},
   doi       = {10.1109/sp.2018.00046},
+  file      = {:C\:/Users/ys-zh/iCloudDrive/Papers/IS/fuzz/1803.01307.pdf:PDF},
   groups    = {Fuzzing},
   isbn      = {9781538643532},
   publisher = {IEEE},
@@ -207,8 +208,23 @@ and learn a model to improve code coverage respectively.},
   abstract  = {See, stats, and : https : / / www . researchgate . net / publication / 311886374 VUzzer : Application - aware Conference DOI : 10 . 14722 / ndss . 2017 . 23404 CITATIONS 0 READS 17 6 , including : Some : Systems Sanjay Vrije , Amsterdam , Netherlands 38 SEE Ashish International 1 SEE Cristiano VU 51 SEE Herbert VU 163 , 836 SEE All . The . All - text and , letting . Abstract—Fuzzing is an effective software testing technique to find bugs . Given the size and complexity of real - world applications , modern fuzzers tend to be either scalable , but not effective in exploring bugs that lie deeper in the execution , or capable of penetrating deeper in the application , but not scalable . In this paper , we present an application - aware evolutionary fuzzing strategy that does not require any prior knowledge of the application or input format . In order to maximize coverage and explore deeper paths , we leverage control - and data - flow features based on static and dynamic analysis to infer fundamental prop - erties of the application . This enables much faster generation of interesting inputs compared to an application - agnostic approach . We implement our fuzzing strategy in VUzzer and evaluate it on three different datasets : DARPA Grand Challenge binaries (CGC) , a set of real - world applications (binary input parsers) , and the recently released LAVA dataset . On all of these datasets , VUzzer yields significantly better results than state - of - the - art fuzzers , by quickly finding several existing and new bugs .},
   booktitle = {NDSS'17},
   doi       = {10.14722/ndss.2017.23404},
+  file      = {paper:C\:/Users/ys-zh/iCloudDrive/Papers/IS/fuzz/vuzzer-ndss-2017.pdf:PDF},
   groups    = {Fuzzing},
   language  = {English},
+}
+
+@Article{She_2019,
+  author    = {She, Dongdong and Pei, Kexin and Epstein, Dave and Yang, Junfeng and Ray, Baishakhi and Jana, Suman},
+  journal   = {2019 IEEE Symposium on Security and Privacy (SP)},
+  title     = {NEUZZ: Efficient Fuzzing with Neural Program Smoothing},
+  year      = {2019},
+  month     = {May},
+  doi       = {10.1109/sp.2019.00052},
+  file      = {paper:C\:/Users/ys-zh/iCloudDrive/Papers/IS/fuzz/1807.05620v1.pdf:PDF},
+  groups    = {Fuzzing},
+  isbn      = {9781538666609},
+  publisher = {IEEE},
+  url       = {http://dx.doi.org/10.1109/SP.2019.00052},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

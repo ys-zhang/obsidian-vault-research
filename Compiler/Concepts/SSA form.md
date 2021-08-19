@@ -1,0 +1,3 @@
+In [compiler](https://en.wikipedia.org/wiki/Compiler "Compiler") design, **static single assignment form** (often abbreviated as **SSA form** or simply **SSA**) is a property of an [intermediate representation](https://en.wikipedia.org/wiki/Intermediate_representation "Intermediate representation") (IR), which requires that **each variable be assigned exactly once, and every variable be defined before it is used.**
+
+The primary usefulness of SSA comes from how it simultaneously simplifies and improves the results of a variety of [compiler optimizations](https://en.wikipedia.org/wiki/Compiler_optimization "Compiler optimization"), by simplifying the properties of variables.

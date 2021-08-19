@@ -1,0 +1,3 @@
+Stack smashing is a form of vulnerability where the stack of a computer application or OS is forced to overflow. This may lead to subverting the program/system and crashing it.
+
+A stack, a first-in last-out circuit, is a form of buffer holding intermediate results of operations within it. To simplify, **stack smashing putting more data into a stack than its holding capacity. Skilled hackers can deliberately introduce excessive data into the stack. The excessive data might be stored in other stack variables, including the function return address. When the function returns, it jumps to the malicious code on the stack**, which might corrupt the entire system.

@@ -1,0 +1,1 @@
+The process of converting between **bits and signals** that represent them is called **digital modulation**.

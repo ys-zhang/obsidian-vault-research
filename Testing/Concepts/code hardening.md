@@ -1,0 +1,3 @@
+In computing, **hardening** is usually the process of securing a system by **reducing its surface of vulnerability**, which is larger when a system performs more functions; in principle a single-function system is more secure than a multipurpose one.
+
+**Hardening** is the process of *stripping unnecessary software from a system* to limit potential vulnerabilities that can be exploited by attackers.

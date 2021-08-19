@@ -1,1 +1,1 @@
-straight-line code **without jumps or labels**
+a straight-line piece of code **without** any **jumps** or **jump targets**.

@@ -12,7 +12,7 @@ is the left eigen vector of $1$.
 $$
 	P = D^{-1}A= D^{-\frac{1}{2}}(I-\mathcal L)D^{-\frac{1}{2}}
 $$
-$P$ 相似于 $I - \mathcal L$ where $\mathcal L$ is the normalized [[Laplacian Matrix]]. 
+$P$ is *similar* to $I - \mathcal L$ where $\mathcal L$ is the normalized [[Laplacian Matrix]]. 
 
 ##### $P$ 与 $\mathcal L$ 的特征值有如下关系
 

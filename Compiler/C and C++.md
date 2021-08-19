@@ -22,6 +22,10 @@
 > Objects declared with `const`-qualified types may be placed in **read-only memory** by the compiler, and if the address of a `const object` is never taken in a program, it may not be stored at all.
 
 
+# string
+
+> It's defined by the ISO C standard, adjacent string literals are combined into a single one.
+
 # C++
 ## Type
 
@@ -91,3 +95,15 @@ cin >> dragons >> trolls;
 [MicrosoftDocs/cpp-docs: C++ Documentation (github.com)](https://github.com/MicrosoftDocs/cpp-docs)
 [Microsoft C/C++ 文档 | Microsoft Docs](https://docs.microsoft.com/zh-cn/cpp/?view=msvc-160)
 [C++ 文档 - 入门、教程、参考 | Microsoft Docs](https://docs.microsoft.com/zh-cn/cpp/cpp/?view=msvc-160)
+
+
+
+# snippets
+
+```c
+#define FLIP_BIT(_ar, _b) do { \
+    u8* _arf = (u8*)(_ar); \
+    u32 _bf = (_b); \
+    _arf[(_bf) >> 3] ^= (128 >> ((_bf) & 7)); \
+   } while (0)
+```

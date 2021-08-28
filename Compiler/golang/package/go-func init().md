@@ -1,0 +1,1 @@
+ If a **package** has one or more `init()` _functions_ they are automatically executed before the main package's `main()` _function_ is called

@@ -1,0 +1,3 @@
+[Tuning TCP/IP buffer sizes - IBM Documentation](https://www.ibm.com/docs/en/was/9.0.5?topic=environment-tuning-tcpip-buffer-sizes)
+
+For a TCP/IP socket connection, the **send and receive buffer size**s define the **receive window**. The receive window specifies the amount of data that can be sent and not received before the send is interrupted. If too much data is sent, it overruns the buffer and interrupts the transfer. The mechanism that controls data transfer interruptions is referred to as [[Flow control]].

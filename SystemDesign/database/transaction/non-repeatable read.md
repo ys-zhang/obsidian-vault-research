@@ -1,0 +1,1 @@
+A transaction re-reads data it has previously read and finds that data has been modified by another transaction (that committed since the initial read).

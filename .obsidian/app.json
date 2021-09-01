@@ -89,7 +89,9 @@
     "namespace",
     "namespaces",
     "virtualize",
-    "multicore"
+    "multicore",
+    "Keras",
+    "crossentropy"
   ],
   "vimMode": false,
   "alwaysUpdateLinks": true,

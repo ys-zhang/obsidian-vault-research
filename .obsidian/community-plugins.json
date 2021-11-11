@@ -1,15 +1,20 @@
 [
-  "obsidian-latex-environments",
   "table-editor-obsidian",
   "obsidian-dictionary-plugin",
-  "cm-editor-syntax-highlight-obsidian",
   "obsidian-excalidraw-plugin",
-  "cm-typewriter-scroll-obsidian",
-  "sliding-panes-obsidian",
-  "calendar",
   "oz-image-plugin",
   "obsidian-git",
   "markdown-prettifier",
   "oz-clear-unused-images",
-  "open-vscode"
+  "open-vscode",
+  "obsidian-comments",
+  "obsidian-annotator",
+  "obsidian-pluck",
+  "cm-editor-syntax-highlight-obsidian",
+  "cm-typewriter-scroll-obsidian",
+  "obsidian-plantuml",
+  "obsidian-admonition",
+  "obsidian-codemirror-options",
+  "obsidian-style-settings",
+  "obsidian-code-block-enhancer"
 ]

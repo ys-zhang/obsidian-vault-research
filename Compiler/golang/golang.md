@@ -9,7 +9,12 @@
 
 ## Advanced go programming
 
-- repo: [chai2010/advanced-go-programming-book: 《Go语言高级编程》开源图书，涵盖CGO、Go汇编语言、RPC实现、Protobuf插件实现、Web框架实现、分布式系统等高阶主题(完稿) (github.com)](https://github.com/chai2010/advanced-go-programming-book)
+- repo: [repo 《Go语言高级编程》开源图书，涵盖CGO、Go汇编语言、RPC实现、Protobuf插件实现、Web框架实现、分布式系统等高阶主题(完稿)](https://github.com/chai2010/advanced-go-programming-book)
+- [online](https://chai2010.cn/advanced-go-programming-book/)
+
+## Go语言设计与实现
+[Go 语言设计与实现](https://draveness.me/golang/)
+
 
 ## Go 极客兔兔
 - [Go 语言高性能编程 | 极客兔兔 (geektutu.com)](https://geektutu.com/post/high-performance-go.html)
@@ -19,6 +24,7 @@
 # Sections
 
 - database: [[golang database programming.excalidraw]]
+- compiler: [[go-compiler]]
 
 
 # Packages

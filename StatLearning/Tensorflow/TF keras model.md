@@ -61,7 +61,7 @@ inputs.shape    # gives TensorShape([None, 3, 2, 4])
 
 ```python
 
-# 定义损失函数
+# DEFINE LOSS FUNCTION
 loss_fn = keras.losses.SparseCategoricalCrossentropy(from_logits=True)
 
 epochs = 2
@@ -304,8 +304,6 @@ how user defined loss functions acts?
 
 ### Losses in functional API
 [使用内置方法进行训练和评估  |  TensorFlow Core](https://www.tensorflow.org/guide/keras/train_and_evaluate#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8D%9F%E5%A4%B1)
-
-
 
 
 

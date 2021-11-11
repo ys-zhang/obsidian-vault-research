@@ -1,0 +1,1 @@
+**Concolic testing** (a portmanteau of _concrete_ and _symbolic_) is a hybrid software that performs symbolic calculation

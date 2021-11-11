@@ -1,0 +1,20 @@
+{
+  "dynamicCursor": false,
+  "markSelection": false,
+  "activeLineOnSelect": false,
+  "enableCMinPreview": false,
+  "enablePrismJSStyling": false,
+  "editModeHideTokens": false,
+  "editModeClickHandler": false,
+  "showLineNums": false,
+  "copyButton": true,
+  "copyButtonOnPRE": false,
+  "enableOpenMD": false,
+  "cursorBlinkRate": 530,
+  "foldLinks": false,
+  "foldImages": false,
+  "containerAttributes": false,
+  "syntaxHighlighting": false,
+  "autoAlignTables": false,
+  "tokenList": "em|strong|strikethrough|code|linkText|task|internalLink|highlight"
+}

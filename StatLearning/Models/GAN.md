@@ -34,7 +34,7 @@ $D$ models the probability of assigning the correct label to both training examp
 In other words, $D$ and $G$ play the following two-player minimax game with value function $V(G, D)$:
 
 $$
-	\min_G\max_D V(D, G) = \min_G\max_D E_{x\sim data}[\log D(x)] + E_{z\sim p_z}[D(G(z))]
+	\min_G\max_D V(D, G) = \min_G\max_D E_{x\sim data}[\log D(x)] + E_{z\sim p_z}[\log(1 - D(G(z)))]
 $$
 
 > In practice, we must implement the game using an iterative, numerical approach. Optimizing D to completion in the inner loop of training is computationally prohibitive, and on finite datasets would result in overfitting. **Instead, we alternate between $k$ steps of optimizing $D$ and one step of optimizing $G$.**

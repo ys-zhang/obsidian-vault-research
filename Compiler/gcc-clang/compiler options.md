@@ -1,3 +1,4 @@
+![[Pasted image 20210911123430.png]]
 # Preprocessor
 [GCC Preprocessor Options](https://gcc.gnu.org/onlinedocs/gcc-11.2.0/gcc/Preprocessor-Options.html#Preprocessor-Options)
 

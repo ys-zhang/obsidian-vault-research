@@ -1,0 +1,1 @@
+- (of an illness) （疾病）慢性的 ，persisting for a long time or constantly recurring. #disease 

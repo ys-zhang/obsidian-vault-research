@@ -37,9 +37,14 @@ opt -S -mem2reg -instnamer code.ll -o code_before_opt.ll   \ # slite clean up; -
 
 # Info
 
-[LLVM’s Analysis and Transform Passes — LLVM 13 documentation](https://llvm.org/docs/Passes.html)
+[LLVM’s Analysis and Transform Passes](https://llvm.org/docs/Passes.html)
 
-[Getting Started with the LLVM System — LLVM 13 documentation](https://llvm.org/docs/GettingStarted.html)
+[Getting Started with the LLVM System](https://llvm.org/docs/GettingStarted.html)
+
+[LLVM Reference](https://llvm.org/docs/Reference.html)
+
+[LLVM Programmer’s Manual — C++ API](https://llvm.org/docs/ProgrammersManual.html)
+[LLVM Coding Standards](https://llvm.org/docs/CodingStandards.html)
 
 file extension name:
 - `ll`: human readable LLVM IR
@@ -50,5 +55,11 @@ file extension name:
 
 	Each sub folder of the git repository of a separate sub-project. 
 	
+  
+  ## Pass
+  
+  [Writing an LLVM Pass](https://llvm.org/docs/WritingAnLLVMPass.html)
+  
+  
 ## Command line tools
-[LLVM Command Guide — LLVM 13 documentation](https://llvm.org/docs/CommandGuide/index.html)
+[LLVM Command Guide](https://llvm.org/docs/CommandGuide/index.html)

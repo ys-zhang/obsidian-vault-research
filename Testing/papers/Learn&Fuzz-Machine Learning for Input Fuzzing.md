@@ -113,7 +113,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"y": -247.8333282470703,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 899,
+			"width": 898,
 			"height": 35,
 			"seed": 1313708329,
 			"groupIds": [],
@@ -143,7 +143,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"y": -177.5,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 343,
+			"width": 344,
 			"height": 35,
 			"seed": 1900274375,
 			"groupIds": [],
@@ -185,7 +185,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"fontFamily": 3,
 			"text": "obj_id obj_ver START_FLAG f3728hq89f2@j89fw END_FLAG ",
 			"rawText": "obj_id obj_ver START_FLAG f3728hq89f2@j89fw END_FLAG ",
-			"baseline": 16,
+			"baseline": 15,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -309,7 +309,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"y": -68.47528977674963,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 73,
+			"width": 74,
 			"height": 20,
 			"seed": 1565395081,
 			"groupIds": [
@@ -342,7 +342,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"y": -40.941393718608275,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 45,
+			"width": 44,
 			"height": 15,
 			"seed": 490865479,
 			"groupIds": [
@@ -375,7 +375,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"y": -18.93975061648942,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 127,
+			"width": 126,
 			"height": 15,
 			"seed": 1534164967,
 			"groupIds": [
@@ -467,7 +467,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"y": 25.902821333253044,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 73,
+			"width": 74,
 			"height": 20,
 			"seed": 1012451303,
 			"groupIds": [
@@ -500,7 +500,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"y": 53.436717391394325,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 45,
+			"width": 44,
 			"height": 15,
 			"seed": 1751469577,
 			"groupIds": [
@@ -533,7 +533,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"y": 75.43836049351327,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 127,
+			"width": 126,
 			"height": 15,
 			"seed": 904213255,
 			"groupIds": [
@@ -638,7 +638,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"fontFamily": 1,
 			"text": "PDF File",
 			"rawText": "PDF File",
-			"baseline": 20,
+			"baseline": 19,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -705,7 +705,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
 			"width": 475,
-			"height": 71,
+			"height": 70,
 			"seed": 17839465,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
@@ -737,7 +737,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 541,
-			"height": 56,
+			"height": 54,
 			"seed": 1949801639,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
@@ -746,7 +746,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"fontFamily": 2,
 			"text": "In this paper, we investigate how to leverage and adapt\nneural-network-based learning techniques to learn a grammar for non-binary\nPDF data objects.",
 			"rawText": "In this paper, we investigate how to leverage and adapt\nneural-network-based learning techniques to learn a grammar for non-binary\nPDF data objects.",
-			"baseline": 52,
+			"baseline": 50,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -767,7 +767,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 569,
-			"height": 75,
+			"height": 72,
 			"seed": 610431047,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
@@ -778,7 +778,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"fontFamily": 2,
 			"text": "Rules for defining and composing such data objects makes\nthe bulk of the 1,300-pages PDF-format specification. These rules are numerous\nand tedious, but repetitive and structured, and therefore well-suited for learning\nwith neural networks (as we will show later).",
 			"rawText": "Rules for defining and composing such data objects makes\nthe bulk of the 1,300-pages PDF-format specification. These rules are numerous\nand tedious, but repetitive and structured, and therefore well-suited for learning\nwith neural networks (as we will show later).",
-			"baseline": 71,
+			"baseline": 68,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -936,7 +936,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"y": 629.9074639214406,
 			"strokeColor": "#087f5b",
 			"backgroundColor": "transparent",
-			"width": 223,
+			"width": 224,
 			"height": 23,
 			"seed": 1174456745,
 			"groupIds": [],
@@ -996,7 +996,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"y": -390.8332655164933,
 			"strokeColor": "#5f3dc4",
 			"backgroundColor": "transparent",
-			"width": 849,
+			"width": 850,
 			"height": 45,
 			"seed": 1212182503,
 			"groupIds": [],
@@ -1026,7 +1026,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"y": 731.0556572808159,
 			"strokeColor": "#087f5b",
 			"backgroundColor": "transparent",
-			"width": 163,
+			"width": 162,
 			"height": 23,
 			"seed": 443494983,
 			"groupIds": [],
@@ -1057,7 +1057,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"strokeColor": "#087f5b",
 			"backgroundColor": "transparent",
 			"width": 595,
-			"height": 45,
+			"height": 46,
 			"seed": 1679302695,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
@@ -1147,7 +1147,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"strokeColor": "#087f5b",
 			"backgroundColor": "transparent",
 			"width": 834,
-			"height": 91,
+			"height": 92,
 			"seed": 1967833865,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
@@ -1156,7 +1156,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"fontFamily": 2,
 			"text": "A perfect learning technique would always generate well-formed\nobjects that would not exercise any error-handling code, \nwhereas a bad learning technique would result in ill-formed objects that will be quickly rejected\nby the parser upfront",
 			"rawText": "A perfect learning technique would always generate well-formed\nobjects that would not exercise any error-handling code, \nwhereas a bad learning technique would result in ill-formed objects that will be quickly rejected\nby the parser upfront",
-			"baseline": 86,
+			"baseline": 87,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1177,7 +1177,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
 			"width": 469,
-			"height": 51,
+			"height": 50,
 			"seed": 509856361,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
@@ -1186,7 +1186,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"fontFamily": 1,
 			"text": "too good  -> no-error (exercise the same path)\ntoo bad   -> can't go deeper",
 			"rawText": "too good  -> no-error (exercise the same path)\ntoo bad   -> can't go deeper",
-			"baseline": 44,
+			"baseline": 43,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1298,7 +1298,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"fontFamily": 3,
 			"text": "c, Pr(c)",
 			"rawText": "c, Pr(c)",
-			"baseline": 20,
+			"baseline": 19,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1421,7 +1421,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"y": 1369.0001695421006,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 159,
+			"width": 160,
 			"height": 23,
 			"seed": 205613449,
 			"groupIds": [],
@@ -1497,7 +1497,7 @@ the sample result may be a travail one ^HfCDNx3p
 			"y": 1313.9815945095484,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 105,
+			"width": 106,
 			"height": 23,
 			"seed": 292116711,
 			"groupIds": [],
@@ -1646,7 +1646,7 @@ the sample result may be a travail one ^HfCDNx3p
 # SVG snapshot
 ==⚠ Remove all linebreaks from SVG string before use. Linebreaks were added to improve markdown view speed. ⚠==
 ```html
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1021.6295640733507 2015.2223578559028" width="1021.6295640733507" height="2015.2223578559028">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1021.6295640733507 2015.2223578559028" width="2043.2591281467014" height="4030.4447157118057">
 	<!-- svg-source:excalidraw -->
 
 	<defs>
@@ -1662,9 +1662,9 @@ the sample result may be a travail one ^HfCDNx3p
 			}
 		</style>
 	</defs>
-	<g transform="translate(10 152.99993726942301) rotate(0 449.5 17.5)"><text x="0" y="25" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#a61e4d" text-anchor="start" style="white-space: pre;" direction="ltr">AIM: Generate good input that can go deeper (pass the parser)</text></g>
-	<g transform="translate(11.66668701171875 223.33326551649333) rotate(0 171.5 17.5)"><text x="0" y="25" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#a61e4d" text-anchor="start" style="white-space: pre;" direction="ltr">Case Study: PDF format</text></g>
-	<g transform="translate(514.6295640733507 337.88886176215294) rotate(0 248.5 9.5)"><text x="0" y="16" font-family="Cascadia, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">obj_id obj_ver START_FLAG f3728hq89f2@j89fw END_FLAG </text></g>
+	<g transform="translate(10 152.99993726942301) rotate(0 449 17.5)"><text x="0" y="25" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#a61e4d" text-anchor="start" style="white-space: pre;" direction="ltr">AIM: Generate good input that can go deeper (pass the parser)</text></g>
+	<g transform="translate(11.66668701171875 223.33326551649333) rotate(0 172 17.5)"><text x="0" y="25" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#a61e4d" text-anchor="start" style="white-space: pre;" direction="ltr">Case Study: PDF format</text></g>
+	<g transform="translate(514.6295640733507 337.88886176215294) rotate(0 248.5 9.5)"><text x="0" y="15" font-family="Cascadia, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">obj_id obj_ver START_FLAG f3728hq89f2@j89fw END_FLAG </text></g>
 	<g stroke-linecap="round">
 		<g transform="translate(566.377134295228 444.0133617691142) rotate(0 103.99078587811711 -42.27415860297045)">
 			<path d="M0.2 0.86 C34.56 -13.37, 172.66 -70.23, 207.22 -84.53 M-1.15 0.27 C33.5 -13.83, 174.91 -68.96, 209.54 -82.99" stroke="#000000" stroke-width="1" fill="none"></path>
@@ -1680,21 +1680,21 @@ the sample result may be a travail one ^HfCDNx3p
 	<g stroke-linecap="round" transform="translate(87.81824951403416 320.6672236693677) rotate(0 113.2394786783348 42.80861757077875)">
 		<path d="M0.89 1.23 C64.65 0.29, 126.38 1.89, 225.19 0.5 M0.53 -0.56 C50.14 -0.39, 99.26 -1.5, 226.79 -0.34 M225.61 -1.25 C226.6 32.92, 227.4 61.39, 228.07 86.12 M225.62 0.43 C226.75 20.56, 227.18 42.92, 226.54 86.55 M226.13 85.03 C174.97 84.19, 121.6 84.31, 1.49 85.4 M226.04 85.95 C178.43 86.81, 130.2 86.84, 0.6 86.17 M1.09 85.89 C-1.75 61.04, 0.31 38.05, -0.58 0.93 M-0.97 85.89 C-0.07 65.8, 0.63 45.03, -0.98 -0.48" stroke="#000000" stroke-width="1" fill="none"></path>
 	</g>
-	<g transform="translate(106.94862415762253 332.35797573974367) rotate(0 36.5 10)"><text x="0" y="14" font-family="Virgil, Segoe UI Emoji" font-size="15.941978869656875px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">PDF body</text></g>
-	<g transform="translate(135.20639827888766 359.8918717978851) rotate(0 22.5 7.5)"><text x="0" y="11" font-family="Virgil, Segoe UI Emoji" font-size="11.946595189300496px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">Objects</text></g>
-	<g transform="translate(137.3425781548433 381.8935149000039) rotate(0 63.5 7.5)"><text x="63.5" y="11" font-family="Virgil, Segoe UI Emoji" font-size="11.946595189300487px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr">Cross-reference-table</text></g>
+	<g transform="translate(106.94862415762253 332.35797573974367) rotate(0 37 10)"><text x="0" y="14" font-family="Virgil, Segoe UI Emoji" font-size="15.941978869656875px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">PDF body</text></g>
+	<g transform="translate(135.20639827888766 359.8918717978851) rotate(0 22 7.5)"><text x="0" y="11" font-family="Virgil, Segoe UI Emoji" font-size="11.946595189300496px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">Objects</text></g>
+	<g transform="translate(137.3425781548433 381.8935149000039) rotate(0 63 7.5)"><text x="63" y="11" font-family="Virgil, Segoe UI Emoji" font-size="11.946595189300487px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr">Cross-reference-table</text></g>
 	<g transform="translate(200.95816107975307 359.59319780362375) rotate(0 20 7.5)"><text x="20" y="11" font-family="Virgil, Segoe UI Emoji" font-size="11.94659518930048px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr">Trailer</text></g>
 	<g stroke-linecap="round" transform="translate(87.67319314170607 415.04533477937053) rotate(0 113.2394786783348 42.80861757077875)">
 		<path d="M1.19 -1.15 C66.78 0.69, 134.57 -1.25, 225.49 -0.03 M-0.6 -0.58 C52.99 -1.92, 104.84 -1.43, 227.16 -0.52 M227.63 -1.74 C226.23 23.39, 225.79 49.26, 227.33 87.28 M226.13 -0.92 C226.42 21.92, 226.08 42.14, 225.54 84.73 M227.97 84.55 C164.65 86.71, 103.93 85.5, 0.41 85.85 M225.97 86.23 C180.41 85.69, 132.16 85.43, 0.15 85.26 M-0.02 85.56 C-1.72 62.13, -0.64 39.78, -0.82 -0.79 M-0.63 85.77 C1.71 56.79, 0.66 29.05, 0.47 -0.13" stroke="#000000" stroke-width="1" fill="none"></path>
 	</g>
-	<g transform="translate(106.80356778529375 426.73608684974636) rotate(0 36.5 10)"><text x="0" y="14" font-family="Virgil, Segoe UI Emoji" font-size="15.941978869656875px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">PDF body</text></g>
-	<g transform="translate(135.06134190655922 454.26998290788765) rotate(0 22.5 7.5)"><text x="0" y="11" font-family="Virgil, Segoe UI Emoji" font-size="11.946595189300496px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">Objects</text></g>
-	<g transform="translate(137.19752178251446 476.27162601000657) rotate(0 63.5 7.5)"><text x="63.5" y="11" font-family="Virgil, Segoe UI Emoji" font-size="11.946595189300487px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr">Cross-reference-table</text></g>
+	<g transform="translate(106.80356778529375 426.73608684974636) rotate(0 37 10)"><text x="0" y="14" font-family="Virgil, Segoe UI Emoji" font-size="15.941978869656875px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">PDF body</text></g>
+	<g transform="translate(135.06134190655922 454.26998290788765) rotate(0 22 7.5)"><text x="0" y="11" font-family="Virgil, Segoe UI Emoji" font-size="11.946595189300496px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">Objects</text></g>
+	<g transform="translate(137.19752178251446 476.27162601000657) rotate(0 63 7.5)"><text x="63" y="11" font-family="Virgil, Segoe UI Emoji" font-size="11.946595189300487px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr">Cross-reference-table</text></g>
 	<g transform="translate(200.81310470742446 453.9713089136263) rotate(0 20 7.5)"><text x="20" y="11" font-family="Virgil, Segoe UI Emoji" font-size="11.94659518930048px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr">Trailer</text></g>
 	<g stroke-linecap="round" transform="translate(68.7036607530381 306.33130032767815) rotate(0 205.48145548502606 108.31580701660809)">
 		<path d="M0.11 -0.32 C161.71 -2.06, 323.75 -1.66, 409.93 -0.52 M0.03 0.5 C154.47 1.63, 309.7 1.68, 410.9 -0.44 M409.91 -1.66 C410.19 81.47, 409.84 165.27, 410.74 215.67 M410.53 -0.23 C411.87 75.98, 410.4 152.53, 411.42 216.44 M410.48 216.37 C291.99 215.62, 170.01 215.71, 0.02 215.98 M411.29 216.19 C247.81 215.61, 85.4 215.9, -0.2 216.8 M0.24 217.63 C-0.66 140.62, 0.05 66.09, 0.05 0.46 M0.17 216.4 C-1.53 159.88, -1.57 102.11, -0.15 -0.82" stroke="#087f5b" stroke-width="1" fill="none"></path>
 	</g>
-	<g transform="translate(351.638868972343 457.8539705792067) rotate(0 44.5 13.5)"><text x="0" y="20" font-family="Virgil, Segoe UI Emoji" font-size="21.503871340740883px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">PDF File</text></g>
+	<g transform="translate(351.638868972343 457.8539705792067) rotate(0 44.5 13.5)"><text x="0" y="19" font-family="Virgil, Segoe UI Emoji" font-size="21.503871340740883px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">PDF File</text></g>
 	<g stroke-linecap="round">
 		<g transform="translate(295.3347000467088 553.4438378539612) rotate(0 51.12864816333879 -32.86168053622279)">
 			<path d="M0.35 -1.14 C17.46 -11.99, 84.58 -55.04, 101.66 -65.89 M-0.92 0.88 C16.67 -9.72, 86.85 -53.43, 104.06 -64.43" stroke="#a61e4d" stroke-width="1" fill="none"></path>
@@ -1706,9 +1706,9 @@ the sample result may be a travail one ^HfCDNx3p
 			<path d="M72.84 -59.09 C80.87 -58.62, 86.73 -62.55, 102.17 -65.04 M74.44 -58.33 C83.49 -60.07, 90.28 -62.64, 103.55 -64.43" stroke="#a61e4d" stroke-width="1" fill="none"></path>
 		</g>
 	</g>
-	<g transform="translate(21.148098415798472 556.6295844184028) rotate(0 237.5 35.5)"><text x="0" y="24.5" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#a61e4d" text-anchor="start" style="white-space: pre;" direction="ltr">IDEA: Use a RNN model to </text><text x="0" y="60" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#a61e4d" text-anchor="start" style="white-space: pre;" direction="ltr">Learn the PDF gramma of objects</text></g>
-	<g transform="translate(46.03705512152732 692.0554199218755) rotate(0 270.5 28)"><text x="0" y="14.666666666666668" font-family="Helvetica, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">In this paper, we investigate how to leverage and adapt</text><text x="0" y="33.333333333333336" font-family="Helvetica, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">neural-network-based learning techniques to learn a grammar for non-binary</text><text x="0" y="52" font-family="Helvetica, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">PDF data objects.</text></g>
-	<g transform="translate(47.518446180555316 781.2221544053822) rotate(0 284.5 37.5)"><text x="0" y="14.75" font-family="Helvetica, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">Rules for defining and composing such data objects makes</text><text x="0" y="33.5" font-family="Helvetica, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">the bulk of the 1,300-pages PDF-format specification. These rules are numerous</text><text x="0" y="52.25" font-family="Helvetica, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">and tedious, but repetitive and structured, and therefore well-suited for learning</text><text x="0" y="71" font-family="Helvetica, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">with neural networks (as we will show later).</text></g>
+	<g transform="translate(21.148098415798472 556.6295844184028) rotate(0 237.5 35)"><text x="0" y="25" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#a61e4d" text-anchor="start" style="white-space: pre;" direction="ltr">IDEA: Use a RNN model to </text><text x="0" y="60" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#a61e4d" text-anchor="start" style="white-space: pre;" direction="ltr">Learn the PDF gramma of objects</text></g>
+	<g transform="translate(46.03705512152732 692.0554199218755) rotate(0 270.5 27)"><text x="0" y="14" font-family="Helvetica, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">In this paper, we investigate how to leverage and adapt</text><text x="0" y="32" font-family="Helvetica, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">neural-network-based learning techniques to learn a grammar for non-binary</text><text x="0" y="50" font-family="Helvetica, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">PDF data objects.</text></g>
+	<g transform="translate(47.518446180555316 781.2221544053822) rotate(0 284.5 36)"><text x="0" y="14" font-family="Helvetica, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">Rules for defining and composing such data objects makes</text><text x="0" y="32" font-family="Helvetica, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">the bulk of the 1,300-pages PDF-format specification. These rules are numerous</text><text x="0" y="50" font-family="Helvetica, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">and tedious, but repetitive and structured, and therefore well-suited for learning</text><text x="0" y="68" font-family="Helvetica, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">with neural networks (as we will show later).</text></g>
 	<g stroke-linecap="round">
 		<g transform="translate(726.1381239131172 754.2776421440974) rotate(0 -51.53206108850304 19.271583623784494)">
 			<path d="M0.39 -0.17 C-16.7 6.44, -84.89 33.07, -102.26 39.45 M-0.86 -1.3 C-18.07 5, -86.04 31.06, -102.78 37.8" stroke="#000000" stroke-width="1" fill="none"></path>
@@ -1723,15 +1723,15 @@ the sample result may be a travail one ^HfCDNx3p
 	<g transform="translate(724.5553927951385 726.3147243923613) rotate(0 65 12.5)"><text x="0" y="18" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#a61e4d" text-anchor="start" style="white-space: pre;" direction="ltr">why NN works</text></g>
 	<g transform="translate(28.259209526909558 913.3333333333335) rotate(0 122 17.5)"><text x="0" y="25" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#a61e4d" text-anchor="start" style="white-space: pre;" direction="ltr">Sampling Strategy</text></g>
 	<g transform="translate(88.99997287326346 978.1481255425347) rotate(0 91 12.5)"><text x="0" y="18" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#364fc7" text-anchor="start" style="white-space: pre;" direction="ltr">1. no-sampling: MAP</text></g>
-	<g transform="translate(155.66670735677047 1030.7407294379339) rotate(0 111.5 11.5)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">argmax Pr(x[k+1] | x[1:k])</text></g>
+	<g transform="translate(155.66670735677047 1030.7407294379339) rotate(0 112 11.5)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">argmax Pr(x[k+1] | x[1:k])</text></g>
 	<g transform="translate(86.40733506944406 1075.6666666666667) rotate(0 52.5 12.5)"><text x="0" y="18" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#364fc7" text-anchor="start" style="white-space: pre;" direction="ltr">2. sampling</text></g>
-	<g transform="translate(38.9999728732634 10) rotate(0 424.5 22.5)"><text x="0" y="32" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#5f3dc4" text-anchor="start" style="white-space: pre;" direction="ltr">Learn&amp;Fuzz: Machine Learning for Input Fuzzing</text></g>
-	<g transform="translate(170.481499565972 1131.8889227973093) rotate(0 81.5 11.5)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">x[k] ~ Pr( · | x[1:k])</text></g>
-	<g transform="translate(170.8518473307288 1219.6297200520835) rotate(0 297.5 22.5)"><text x="0" y="18.5" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">It samples the distribution to generate the next character only when</text><text x="0" y="41" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">the current prefix sequence ends with a whitespace</text></g>
+	<g transform="translate(38.9999728732634 10) rotate(0 425 22.5)"><text x="0" y="32" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#5f3dc4" text-anchor="start" style="white-space: pre;" direction="ltr">Learn&amp;Fuzz: Machine Learning for Input Fuzzing</text></g>
+	<g transform="translate(170.481499565972 1131.8889227973093) rotate(0 81 11.5)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">x[k] ~ Pr( · | x[1:k])</text></g>
+	<g transform="translate(170.8518473307288 1219.6297200520835) rotate(0 297.5 23)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">It samples the distribution to generate the next character only when</text><text x="0" y="41" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">the current prefix sequence ends with a whitespace</text></g>
 	<g transform="translate(87.98149956597189 1172.4259711371528) rotate(0 77.5 12.5)"><text x="0" y="18" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#364fc7" text-anchor="start" style="white-space: pre;" direction="ltr">3. sample-space</text></g>
 	<g transform="translate(21.814765082464987 1318.5370144314238) rotate(0 88 17.5)"><text x="0" y="25" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#a61e4d" text-anchor="start" style="white-space: pre;" direction="ltr">Observations</text></g>
-	<g transform="translate(104.92587619357596 1377.7777777777778) rotate(0 417 45.50000000000006)"><text x="0" y="17.75" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">A perfect learning technique would always generate well-formed</text><text x="0" y="40.5" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">objects that would not exercise any error-handling code, </text><text x="0" y="63.25" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">whereas a bad learning technique would result in ill-formed objects that will be quickly rejected</text><text x="0" y="86" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">by the parser upfront</text></g>
-	<g transform="translate(102.33330620659689 1498.1481933593752) rotate(0 234.5 25.5)"><text x="0" y="18.5" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#a61e4d" text-anchor="start" style="white-space: pre;" direction="ltr">too good -&gt; no-error (exercise the same path)</text><text x="0" y="44" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#a61e4d" text-anchor="start" style="white-space: pre;" direction="ltr">too bad -&gt; can't go deeper</text></g>
+	<g transform="translate(104.92587619357596 1377.7777777777778) rotate(0 417 46.00000000000006)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">A perfect learning technique would always generate well-formed</text><text x="0" y="41" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">objects that would not exercise any error-handling code, </text><text x="0" y="64" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">whereas a bad learning technique would result in ill-formed objects that will be quickly rejected</text><text x="0" y="87" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">by the parser upfront</text></g>
+	<g transform="translate(102.33330620659689 1498.1481933593752) rotate(0 234.5 25)"><text x="0" y="18" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#a61e4d" text-anchor="start" style="white-space: pre;" direction="ltr">too good -&gt; no-error (exercise the same path)</text><text x="0" y="43" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#a61e4d" text-anchor="start" style="white-space: pre;" direction="ltr">too bad -&gt; can't go deeper</text></g>
 	<g transform="translate(173.96289062499955 1636.0186089409724) rotate(0 54.5 11.5)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">Pr( · | x[1:k])</text></g>
 	<g stroke-linecap="round">
 		<g transform="translate(290.7101443887443 1649.399405072321) rotate(0 149.86314860634047 1.1517014651856243)">
@@ -1744,7 +1744,7 @@ the sample result may be a travail one ^HfCDNx3p
 			<path d="M274.33 -9.54 C279.67 -3.8, 290.67 -1.89, 301.99 1.45 M272.06 -8.19 C281.06 -3.97, 291.38 -2.26, 300.43 3.02" stroke="#000000" stroke-width="1" fill="none"></path>
 		</g>
 	</g>
-	<g transform="translate(600.851847330729 1636.6666666666667) rotate(0 47 12)"><text x="0" y="20" font-family="Cascadia, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">c, Pr(c)</text></g>
+	<g transform="translate(600.851847330729 1636.6666666666667) rotate(0 47 12)"><text x="0" y="19" font-family="Cascadia, Segoe UI Emoji" font-size="20px" fill="#087f5b" text-anchor="start" style="white-space: pre;" direction="ltr">c, Pr(c)</text></g>
 	<g transform="translate(388.5218270229308 1656.6296522352434) rotate(0 31.5 12.5)"><text x="31.5" y="18" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr">sample</text></g>
 	<g stroke-linecap="round">
 		<g transform="translate(629.3236874673362 1674.8730762262815) rotate(0 -45.29930396547394 36.96227493507854)">
@@ -1760,7 +1760,7 @@ the sample result may be a travail one ^HfCDNx3p
 	<g stroke-linecap="round" transform="translate(331.22226291232613 1731.59270562066) rotate(0 129.25923665364584 51.48149278428809)">
 		<path d="M130.71 -1.39 C168.38 13.45, 204.72 28.34, 259.27 51.31 M130.37 0.48 C169.83 16.64, 210.06 32.59, 258.1 52.19 M258.64 53.05 C214.87 70.89, 174.85 85.91, 131.64 101.23 M258.97 51.09 C217.48 68.22, 176.3 84.65, 129.32 103.34 M129.65 101.44 C98.9 87.28, 63.58 75.24, -0.3 52.47 M130.17 102.6 C80.8 84.18, 31.97 66, -0.81 52.83 M-1.83 51.91 C41.89 35.66, 88.43 15.17, 128.26 -0.22 M-0.38 51.9 C49.53 32.58, 97.43 11.71, 130.37 0.36" stroke="#000000" stroke-width="1" fill="none"></path>
 	</g>
-	<g transform="translate(389.8889295789928 1769.833435058594) rotate(0 79.5 11.5)"><text x="79.5" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr">Pr(c) &gt; threshold?</text></g>
+	<g transform="translate(389.8889295789928 1769.833435058594) rotate(0 80 11.5)"><text x="80" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr">Pr(c) &gt; threshold?</text></g>
 	<g stroke-linecap="round">
 		<g transform="translate(363.3679492506411 1757.821799190351) rotate(0 -60.959148940395764 -45.33680291548785)">
 			<path d="M-0.6 1 C-20.58 -14.1, -100.73 -75.26, -120.98 -90.4 M1.29 0.47 C-18.68 -15.01, -100.73 -77.01, -121.44 -92.37" stroke="#000000" stroke-width="1" fill="none"></path>
@@ -1772,7 +1772,7 @@ the sample result may be a travail one ^HfCDNx3p
 			<path d="M-103.38 -65.69 C-108.06 -72.94, -110.54 -76.27, -122.11 -90.7 M-104.28 -66.54 C-109.65 -72.16, -112.12 -77.81, -122.18 -91.74" stroke="#000000" stroke-width="1" fill="none"></path>
 		</g>
 	</g>
-	<g transform="translate(222.3333062065969 1714.8148600260417) rotate(0 52.5 11.5)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">Y: resample</text></g>
+	<g transform="translate(222.3333062065969 1714.8148600260417) rotate(0 53 11.5)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">Y: resample</text></g>
 	<g stroke-linecap="round">
 		<g transform="translate(460.3102501681277 1841.5722071896998) rotate(0 0.48241857561200874 69.08431198674725)">
 			<path d="M-0.05 0.5 C0.21 23.34, 1.42 115.07, 1.6 138.16 M-1.54 -0.28 C-1.39 23.27, 0.68 116.79, 0.99 139.69" stroke="#000000" stroke-width="1" fill="none"></path>

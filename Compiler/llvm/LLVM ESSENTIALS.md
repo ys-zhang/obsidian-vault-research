@@ -215,7 +215,19 @@ GlobalVariable *createGlob(IRBuilder<> &Builder, std::string Name)
 
 > LLVM provides the `GlobalVariable` class to _create global variables_ and set its properties such as _linkage type, alignment_, and so on. The `Module` class has the method `getOrInsertGlobal()` to create a global variable. It takes two arguments—the first is the name of the variable and the second is the data type of the variable.
 
-###### Linkage
+```c
+// constructor
+GlobalVariable( Module &M, Type *Ty,
+                bool isConstant,           
+                LinkageTypes Linkage,
+                Constant *Initializer,
+                const Twine &Name="", 
+                GlobalVariable *InsertBefore=nullptr,
+                ThreadLocalMode=NotThreadLocal,
+                Optional<unsigned> AddressSpace=None, 
+                bool isExternallyInitialized=false )
+```
+###### Linkage type
 
 The LLVM reference manual cites the following types of Linkages:
 
@@ -232,6 +244,19 @@ The LLVM reference manual cites the following types of Linkages:
 | `PrivateLinkage`             | Like internal, but omit from symbol table.          |
 | `ExternalWeakLinkage`        | `ExternalWeak` linkage description.                 |
 | `CommonLinkage`              | Tentative definitions                               |
+
+
+###### Thread local mode
+
+see [[thread local storage]]
+
+| Type                     | Description                                                    |
+| ------------------------ | -------------------------------------------------------------- |
+| `GeneralDynamicTLSModel` | default,                                                       |
+| `LocalDynamicTLSModel`   | variables that are only used within the current shared library |
+| `InitialExecTLSModel`    | variables in modules that will not be loaded dynamically       |
+| `LocalExecTLSModel`      | variables defined in the executable and only used within it    |
+
 
 ###### Alignment
 

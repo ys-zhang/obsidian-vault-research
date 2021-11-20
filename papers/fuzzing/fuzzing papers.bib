@@ -71,23 +71,68 @@ A probability density matrix seems reasonable to describe the status of the imag
   year      = {2019},
   pages     = {1--15},
   volume    = {19},
-  comment   = {[conference ]https://youtu.be/9JpanJ29r_U},
+  abstract  = {Automated software testing based on fuzzing has experienced a revival in recent years. Especially feedback-driven fuzzing has become well-known for its ability to efficiently perform randomized testing with limited input corpora. 
+
+Despite a lot of progress, two common problems are magic numbers and (nested) checksums. 
+
+Computationally expensive methods such as taint tracking and symbolic execution are typically used to overcome such roadblocks. Unfortunately, such methods often require access to source code, a rather precise description of the environment (e.g., behavior of library calls or the underlying OS), or the exact semantics of the platform’s instruction set.
+
+In this paper, we introduce a lightweight, yet very effective alternative to taint tracking and symbolic execution to facilitate and optimize state-of-the-art feedback fuzzing that easily scales to large binary applications and unknown environments. 
+
+We observe that during the execution of a given program, parts of the input often end up directly (i.e., nearly unmodified) in the program state. 
+
+This input-to-state correspondence can be exploited to create a robust method to overcome common fuzzing roadblocks in a highly effective and efficient manner. Our prototype implementation, called REDQUEEN, is able to solve magic bytes and (nested) checksum tests automatically for a given binary executable. Additionally, we show that our techniques outperform various state-of-the-art tools on a wide variety of targets across different privilege levels (kernel-space and userland) with no platform-specific code.
+
+REDQUEEN is the first method to find more than 100% of the bugs planted in LAVA-M across all targets. Furthermore, we were able to discover 65 new bugs and obtained 16 CVEs in multiple programs and OS kernel drivers. Finally, our evaluation demonstrates that REDQUEEN is fast, widely applicable and outperforms concurrent approaches by up to three orders of magnitude.},
+  comment   = {[talk video](https://youtu.be/9JpanJ29r_U)
+
+}{ Problem
+
+1. magic numbers;
+2. (nested) checksums.
+
+
+}{ Observation
+
+_Input-to-state-correspondence_: During the execution of a given program, parts of the input often end up directly (i.e., nearly unmodified) in the program state.},
+  doi       = {10.14722/ndss.2019.23371},
   file      = {:NDSS19-Redqueen.pdf:PDF},
   url       = {https://www.ndss-symposium.org/ndss-paper/redqueen-fuzzing-with-input-to-state-correspondence/},
 }
 
 @InProceedings{274634,
-  author    = {Andrea Fioraldi and Daniele Cono D{\textquoteright}Elia and Davide Balzarotti},
-  booktitle = {30th {USENIX} Security Symposium ({USENIX} Security 21)},
-  title     = {The Use of Likely Invariants as Feedback for Fuzzers},
-  year      = {2021},
-  month     = aug,
-  pages     = {2829--2846},
-  publisher = {{USENIX} Association},
-  file      = {:usenixsec21_fioraldi.pdf:PDF},
-  groups    = {program analysis},
-  isbn      = {978-1-939133-24-3},
-  url       = {https://www.usenix.org/conference/usenixsecurity21/presentation/fioraldi},
+  author     = {Andrea Fioraldi and Daniele Cono D{\textquoteright}Elia and Davide Balzarotti},
+  booktitle  = {30th {USENIX} Security Symposium ({USENIX} Security 21)},
+  title      = {The Use of Likely Invariants as Feedback for Fuzzers},
+  year       = {2021},
+  month      = aug,
+  pages      = {2829--2846},
+  publisher  = {{USENIX} Association},
+  comment    = {Idea
+The key idea is to __augment edge coverage__ —the most widely-adopted and successful code coverage metric used by fuzzers—with information about **local divergences** from ‘usual’ variable values. 
+
+ Steps
+1. Run CGF for 24h to _collect samples_ from saved seeds.
+2. Use samples to _learn local likely invariants_. 
+3. Prune invariants.
+   1. Plain fact with _no information_;
+   2. Invariants combine _unrelated variables_;
+   3. Whenever different invariants have _overlapping condition_.
+4. Divide state space using these invariants. 
+5. For each edge, generate a different value for the novelty search for each unique combination of violated invariants. 
+
+
+ Properties
+
+1. Resulting invariants often capture local properties of the test suite more than static properties of the program.
+2. State space partition avoids state explosion. 
+3. Each basic block has only a few invariants. Since only a few variables are involved.
+4. Not all invariants are equally useful.},
+  file       = {:usenixsec21_fioraldi.pdf:PDF},
+  groups     = {program analysis, feedback},
+  isbn       = {978-1-939133-24-3},
+  readstatus = {skimmed},
+  url        = {https://www.usenix.org/conference/usenixsecurity21/presentation/fioraldi},
 }
 
 @Article{ERNST200735,
@@ -107,6 +152,22 @@ A probability density matrix seems reasonable to describe the status of the imag
   url      = {https://www.sciencedirect.com/science/article/pii/S016764230700161X},
 }
 
+@InProceedings{raid2019-wang-jinghan,
+  author    = {Wang, Jinghan and Duan, Yue and Song, Wei and Yin, Heng and Song, Chengyu},
+  booktitle = {22nd International Symposium on Research in Attacks, Intrusions and Defenses ($\{$RAID$\}$ 2019)},
+  title     = {Be sensitive and collaborative: Analyzing impact of coverage metrics in greybox fuzzing},
+  year      = {2019},
+  pages     = {1--15},
+  comment   = {Proposes __N-Gram Branch Coverage__
+
+
+}{ Implement
+
+[afl++ ngram instrument](https://github.com/AFLplusplus/AFLplusplus/blob/stable/instrumentation/README.ngram.md)},
+  file      = {:raid2019-wang-jinghan.pdf:PDF},
+  groups    = {feedback},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -114,4 +175,5 @@ A probability density matrix seems reasonable to describe the status of the imag
 1 StaticGroup:protocol state fuzzing\;0\;1\;0x008080ff\;\;\;;
 1 StaticGroup:machine learning\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:program analysis\;0\;1\;0xffff66ff\;\;\;;
+1 StaticGroup:feedback\;0\;0\;0x8a8a8aff\;\;papers proposes new feed back\;;
 }

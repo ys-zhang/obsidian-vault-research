@@ -1,10 +1,14 @@
 #Rust
+
 [Introduction - The Rust Programming Language (rust-lang.org)](https://doc.rust-lang.org/book/ch00-00-introduction.html)
 
 [A Rust game development talk](https://kyren.github.io/2018/09/14/rustconf-talk.html)  
 
 
 [AFLplusplus/LibAFL: Advanced Fuzzing Library](https://github.com/AFLplusplus/LibAFL)
+
+[Rust Magazine 中文月刊](https://rustmagazine.github.io/rust_magazine_2021/index.html)
+
 # Components & Concepts
 
 - [[Cargo]]: dependency manager and build tool;

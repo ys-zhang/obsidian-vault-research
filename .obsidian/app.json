@@ -237,7 +237,14 @@
     "Optimizers",
     "atomicity",
     "oedema",
-    "deserialize"
+    "deserialize",
+    "expr",
+    "arith",
+    "str",
+    "syscall",
+    "async",
+    "proc",
+    "tracee"
   ],
   "vimMode": false,
   "alwaysUpdateLinks": true,

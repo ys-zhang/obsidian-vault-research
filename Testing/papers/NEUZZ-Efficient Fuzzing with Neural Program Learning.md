@@ -49,7 +49,7 @@ try to approximate ^KqrXNlOp
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 448,
-			"height": 45,
+			"height": 47,
 			"seed": 714858409,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
@@ -57,7 +57,7 @@ try to approximate ^KqrXNlOp
 			"fontSize": 20,
 			"fontFamily": 2,
 			"text": " we model the output of the neural program to\ndirectly predict the edge coverage for a given input",
-			"baseline": 41,
+			"baseline": 42,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"rawText": " we model the output of the neural program to\ndirectly predict the edge coverage for a given input"
@@ -87,7 +87,7 @@ try to approximate ^KqrXNlOp
 			"fontSize": 20,
 			"fontFamily": 2,
 			"text": "Each input neuron in the input layer denotes one byte.",
-			"baseline": 18,
+			"baseline": 19,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"rawText": "Each input neuron in the input layer denotes one byte."
@@ -109,7 +109,7 @@ try to approximate ^KqrXNlOp
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 573,
-			"height": 68,
+			"height": 70,
 			"seed": 1888621095,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
@@ -117,7 +117,7 @@ try to approximate ^KqrXNlOp
 			"fontSize": 20,
 			"fontFamily": 2,
 			"text": "The output\nencodes all edges as a bit vector (i.e., edge bitmap), where each\nbinary bit denotes whether one edge is covered or not.",
-			"baseline": 64,
+			"baseline": 65,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"rawText": "The output\nencodes all edges as a bit vector (i.e., edge bitmap), where each\nbinary bit denotes whether one edge is covered or not."
@@ -168,7 +168,7 @@ try to approximate ^KqrXNlOp
 			"y": -156.66668701171875,
 			"strokeColor": "#862e9c",
 			"backgroundColor": "transparent",
-			"width": 75,
+			"width": 74,
 			"height": 35,
 			"seed": 506836809,
 			"groupIds": [],
@@ -198,7 +198,7 @@ try to approximate ^KqrXNlOp
 			"y": 268.83331298828125,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 209,
+			"width": 208,
 			"height": 23,
 			"seed": 271215431,
 			"groupIds": [],
@@ -209,7 +209,7 @@ try to approximate ^KqrXNlOp
 			"fontSize": 20,
 			"fontFamily": 2,
 			"text": "f(bytes) = { Pr(edge(i) } ",
-			"baseline": 18,
+			"baseline": 19,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"rawText": "f(bytes) = { Pr(edge(i) } "
@@ -308,45 +308,5 @@ try to approximate ^KqrXNlOp
 	},
 	"files": {}
 }
-```
-
-# SVG snapshot
-==⚠ Remove all linebreaks from SVG string before use. Linebreaks were added to improve markdown view speed. ⚠==
-```html
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700.3333740234375 468.5" width="700.3333740234375" height="468.5">
-	<!-- svg-source:excalidraw -->
-
-	<defs>
-		<style>
-			@font-face {
-				font-family: "Virgil";
-				src: url("https://excalidraw.com/Virgil.woff2");
-			}
-
-			@font-face {
-				font-family: "Cascadia";
-				src: url("https://excalidraw.com/Cascadia.woff2");
-			}
-		</style>
-	</defs>
-	<g transform="translate(40.3333740234375 71.5) rotate(0 224 22.5)"><text x="0" y="18.5" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr"> we model the output of the neural program to</text><text x="0" y="41" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">directly predict the edge coverage for a given input</text></g>
-	<g transform="translate(52.3333740234375 181.5) rotate(0 239.5 11.5)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">Each input neuron in the input layer denotes one byte.</text></g>
-	<g transform="translate(52.00006103515625 239.5) rotate(0 286.5 34)"><text x="0" y="18.666666666666668" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">The output</text><text x="0" y="41.333333333333336" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">encodes all edges as a bit vector (i.e., edge bitmap), where each</text><text x="0" y="64" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">binary bit denotes whether one edge is covered or not.</text></g>
-	<g transform="translate(10 373.5) rotate(0 184 17.5)"><text x="0" y="25" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#862e9c" text-anchor="start" style="white-space: pre;" direction="ltr">Gradient-guided mutation. </text></g>
-	<g transform="translate(18.3333740234375 10) rotate(0 37.5 17.5)"><text x="0" y="25" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#862e9c" text-anchor="start" style="white-space: pre;" direction="ltr">IDEA</text></g>
-	<g transform="translate(115.666748046875 435.5) rotate(0 104.5 11.5)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">f(bytes) = { Pr(edge(i) } </text></g>
-	<g stroke-linecap="round">
-		<g transform="translate(479.666748046875 434.5) rotate(0 -74 6.333343505859375)">
-			<path d="M-0.65 -0.96 C-25.13 1.12, -122.45 11, -147.05 13.14 M1.21 1.14 C-23.34 2.81, -122.44 9.33, -147.49 11.27" stroke="#000000" stroke-width="1" fill="none"></path>
-		</g>
-		<g transform="translate(479.666748046875 434.5) rotate(0 -74 6.333343505859375)">
-			<path d="M-121.7 0.63 C-127.13 2.06, -137.1 6.78, -146.23 11.55 M-119.36 -0.69 C-127.44 3.01, -136.31 6.8, -146.86 11.14" stroke="#000000" stroke-width="1" fill="none"></path>
-		</g>
-		<g transform="translate(479.666748046875 434.5) rotate(0 -74 6.333343505859375)">
-			<path d="M-120.25 21.1 C-126.2 16.63, -136.59 15.46, -146.23 11.55 M-117.91 19.78 C-126.6 17.55, -135.89 15.4, -146.86 11.14" stroke="#000000" stroke-width="1" fill="none"></path>
-		</g>
-	</g>
-	<g transform="translate(502.3333740234375 423.5) rotate(0 94 12.5)"><text x="0" y="18" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#862e9c" text-anchor="start" style="white-space: pre;" direction="ltr">try to approximate</text></g>
-</svg>
 ```
 %%

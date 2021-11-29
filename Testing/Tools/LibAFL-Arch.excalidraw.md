@@ -204,7 +204,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#000000",
 			"backgroundColor": "#82c91e",
 			"width": 261,
-			"height": 41,
+			"height": 40,
 			"seed": 190537205,
 			"groupIds": [
 				"sOuitCcKjOP0b2HEuns_H"
@@ -310,7 +310,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": 240,
 			"strokeColor": "#000000",
 			"backgroundColor": "#82c91e",
-			"width": 67,
+			"width": 66,
 			"height": 25,
 			"seed": 937314133,
 			"groupIds": [
@@ -406,7 +406,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#862e9c",
 			"backgroundColor": "#82c91e",
 			"width": 164,
-			"height": 24,
+			"height": 23,
 			"seed": 832816149,
 			"groupIds": [
 				"Po5Ald_LGN0elOJ_LO10F"
@@ -417,7 +417,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "libafl::inputs",
 			"rawText": "libafl::inputs",
-			"baseline": 20,
+			"baseline": 19,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -633,7 +633,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 129,
-			"height": 96,
+			"height": 93,
 			"seed": 527865557,
 			"groupIds": [
 				"XJ0H355cwYzEcSaR-9kb8"
@@ -644,7 +644,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "- filename\n- metadata\n- exec_time\n- cache_len",
 			"rawText": "- filename\n- metadata\n- exec_time\n- cache_len",
-			"baseline": 92,
+			"baseline": 89,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -789,7 +789,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 70,
-			"height": 24,
+			"height": 23,
 			"seed": 506097877,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
@@ -798,7 +798,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "next()",
 			"rawText": "next()",
-			"baseline": 20,
+			"baseline": 19,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -870,7 +870,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#5c940d",
 			"backgroundColor": "transparent",
 			"width": 117,
-			"height": 24,
+			"height": 23,
 			"seed": 1658246459,
 			"groupIds": [
 				"dzze0mCOYHUZk9Sh5euz5"
@@ -881,7 +881,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "fuzz_one()",
 			"rawText": "fuzz_one()",
-			"baseline": 20,
+			"baseline": 19,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -902,7 +902,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#1864ab",
 			"backgroundColor": "transparent",
 			"width": 99,
-			"height": 38,
+			"height": 39,
 			"seed": 339882875,
 			"groupIds": [
 				"nSMsBtqVSddq9KucsRtbQ",
@@ -969,7 +969,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#862e9c",
 			"backgroundColor": "#82c91e",
 			"width": 139,
-			"height": 21,
+			"height": 20,
 			"seed": 239340571,
 			"groupIds": [
 				"kLpafB8bwCoc60sA3URgz",
@@ -981,7 +981,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "libafl::corpus",
 			"rawText": "libafl::corpus",
-			"baseline": 17,
+			"baseline": 16,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1091,7 +1091,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 109,
-			"height": 83,
+			"height": 79,
 			"seed": 576586075,
 			"groupIds": [
 				"k09R2yi6EIZmR1uoMbZ23",
@@ -1103,7 +1103,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "- filename\n- metadata\n- exec_time\n- cache_len",
 			"rawText": "- filename\n- metadata\n- exec_time\n- cache_len",
-			"baseline": 79,
+			"baseline": 75,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1124,7 +1124,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 115,
-			"height": 29,
+			"height": 30,
 			"seed": 998348245,
 			"groupIds": [
 				"k09R2yi6EIZmR1uoMbZ23",
@@ -1156,7 +1156,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": 460,
 			"strokeColor": "#364fc7",
 			"backgroundColor": "#82c91e",
-			"width": 127,
+			"width": 128,
 			"height": 45,
 			"seed": 92022005,
 			"groupIds": [
@@ -1231,7 +1231,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "HasCorpus<Corpus<Input>>",
 			"rawText": "HasCorpus<Corpus<Input>>",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1281,7 +1281,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": 660,
 			"strokeColor": "#364fc7",
 			"backgroundColor": "transparent",
-			"width": 427,
+			"width": 426,
 			"height": 34,
 			"seed": 382750267,
 			"groupIds": [
@@ -1294,7 +1294,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "HasSolution<Corpus<Input>>",
 			"rawText": "HasSolution<Corpus<Input>>",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1359,7 +1359,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "HasRand<R>",
 			"rawText": "HasRand<R>",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1379,8 +1379,8 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": 820,
 			"strokeColor": "#0b7285",
 			"backgroundColor": "transparent",
-			"width": 235,
-			"height": 48,
+			"width": 234,
+			"height": 47,
 			"seed": 1229823029,
 			"groupIds": [
 				"yCyWGpRf43KmXnknx2pyu",
@@ -1392,7 +1392,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "fn rand(&self) -> &R\nrand_mut",
 			"rawText": "fn rand(&self) -> &R\nrand_mut",
-			"baseline": 44,
+			"baseline": 43,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1441,7 +1441,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": 940,
 			"strokeColor": "#364fc7",
 			"backgroundColor": "transparent",
-			"width": 181,
+			"width": 180,
 			"height": 34,
 			"seed": 1317370203,
 			"groupIds": [
@@ -1455,7 +1455,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "HasMetadata",
 			"rawText": "HasMetadata",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1475,8 +1475,8 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": 980,
 			"strokeColor": "#0b7285",
 			"backgroundColor": "transparent",
-			"width": 399,
-			"height": 96,
+			"width": 398,
+			"height": 93,
 			"seed": 1638768085,
 			"groupIds": [
 				"aYfXXVoW1SaYUjkDiTYi2",
@@ -1488,7 +1488,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "fn metadata(&self) -> &SerdeAnyMap\n\nmetadata_mut, add_metadata, \nhas_metadata",
 			"rawText": "fn metadata(&self) -> &SerdeAnyMap\n\nmetadata_mut, add_metadata, \nhas_metadata",
-			"baseline": 92,
+			"baseline": 89,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1551,7 +1551,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "HasFeedbackState<FT: FeedbackTuple>",
 			"rawText": "HasFeedbackState<FT: FeedbackTuple>",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1572,7 +1572,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#0b7285",
 			"backgroundColor": "transparent",
 			"width": 375,
-			"height": 72,
+			"height": 70,
 			"seed": 1512915445,
 			"groupIds": [
 				"d13IQLBjRjpgNh9lV-NyP",
@@ -1584,7 +1584,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "fn feedback_states(&self) -> &FT\n\nfeedback_states_mut",
 			"rawText": "fn feedback_states(&self) -> &FT\n\nfeedback_states_mut",
-			"baseline": 68,
+			"baseline": 66,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1645,7 +1645,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "HasExections",
 			"rawText": "HasExections",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1706,7 +1706,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "HasStartTime",
 			"rawText": "HasStartTime",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1777,7 +1777,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#1864ab",
 			"backgroundColor": "#fab005",
 			"width": 132,
-			"height": 29,
+			"height": 30,
 			"seed": 1438115643,
 			"groupIds": [
 				"tb1Vstpz3mz_MxIpyaEys"
@@ -1808,8 +1808,8 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": -558.4615384615381,
 			"strokeColor": "#862e9c",
 			"backgroundColor": "#82c91e",
-			"width": 179,
-			"height": 21,
+			"width": 178,
+			"height": 20,
 			"seed": 1249233147,
 			"groupIds": [
 				"5RAJJUmspxNIPPN8EiSK4",
@@ -1821,7 +1821,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "libafl::generators",
 			"rawText": "libafl::generators",
-			"baseline": 17,
+			"baseline": 16,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1880,7 +1880,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 1,
 			"text": "STATE",
 			"rawText": "STATE",
-			"baseline": 42,
+			"baseline": 43,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -1988,7 +1988,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#1864ab",
 			"backgroundColor": "transparent",
 			"width": 99,
-			"height": 38,
+			"height": 39,
 			"seed": 119654267,
 			"groupIds": [
 				"oN8LOisXZCghUmKwM0IJT"
@@ -2047,7 +2047,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#862e9c",
 			"backgroundColor": "#82c91e",
 			"width": 139,
-			"height": 21,
+			"height": 20,
 			"seed": 535857275,
 			"groupIds": [
 				"yZ1gXkXp7fm6tbfV8ABxj",
@@ -2059,7 +2059,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "libafl::corpus",
 			"rawText": "libafl::corpus",
-			"baseline": 17,
+			"baseline": 16,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -2166,7 +2166,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 109,
-			"height": 83,
+			"height": 79,
 			"seed": 744223189,
 			"groupIds": [
 				"oN8LOisXZCghUmKwM0IJT"
@@ -2177,7 +2177,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "- filename\n- metadata\n- exec_time\n- cache_len",
 			"rawText": "- filename\n- metadata\n- exec_time\n- cache_len",
-			"baseline": 79,
+			"baseline": 75,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -2198,7 +2198,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 115,
-			"height": 29,
+			"height": 30,
 			"seed": 1291092475,
 			"groupIds": [
 				"oN8LOisXZCghUmKwM0IJT"
@@ -2316,7 +2316,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 109,
-			"height": 83,
+			"height": 79,
 			"seed": 1994502971,
 			"groupIds": [
 				"oN8LOisXZCghUmKwM0IJT"
@@ -2327,7 +2327,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "- filename\n- metadata\n- exec_time\n- cache_len",
 			"rawText": "- filename\n- metadata\n- exec_time\n- cache_len",
-			"baseline": 79,
+			"baseline": 75,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -2348,7 +2348,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 115,
-			"height": 29,
+			"height": 30,
 			"seed": 666006005,
 			"groupIds": [
 				"oN8LOisXZCghUmKwM0IJT"
@@ -2408,7 +2408,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#1864ab",
 			"backgroundColor": "#fab005",
 			"width": 132,
-			"height": 29,
+			"height": 30,
 			"seed": 1944344507,
 			"groupIds": [
 				"w0fH3BLcb6G_DcTEaXgAb"
@@ -2439,8 +2439,8 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": 881.5384615384619,
 			"strokeColor": "#862e9c",
 			"backgroundColor": "#82c91e",
-			"width": 179,
-			"height": 21,
+			"width": 178,
+			"height": 20,
 			"seed": 1828345205,
 			"groupIds": [
 				"4NMG58GdAzCBw-lrFYbAe",
@@ -2452,7 +2452,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "libafl::generators",
 			"rawText": "libafl::generators",
-			"baseline": 17,
+			"baseline": 16,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -2610,7 +2610,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": 1540,
 			"strokeColor": "#5f3dc4",
 			"backgroundColor": "#82c91e",
-			"width": 117,
+			"width": 118,
 			"height": 45,
 			"seed": 2027003707,
 			"groupIds": [],
@@ -2689,7 +2689,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#5c940d",
 			"backgroundColor": "transparent",
 			"width": 609,
-			"height": 48,
+			"height": 47,
 			"seed": 2121196379,
 			"groupIds": [
 				"SoaJG3Q3Z9SvqrrPWiK17"
@@ -2700,7 +2700,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "fn fuzz_one(&mut self, stages, executor,\n            state, manager) -> Result<usize, Error> ",
 			"rawText": "fn fuzz_one(&mut self, stages, executor,\n            state, manager) -> Result<usize, Error> ",
-			"baseline": 44,
+			"baseline": 43,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -2720,8 +2720,8 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": 1700,
 			"strokeColor": "#5c940d",
 			"backgroundColor": "transparent",
-			"width": 515,
-			"height": 24,
+			"width": 516,
+			"height": 23,
 			"seed": 1847481845,
 			"groupIds": [
 				"SoaJG3Q3Z9SvqrrPWiK17"
@@ -2732,7 +2732,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "fuzz_loop, fuzz_loop_for, maybe_report_stats",
 			"rawText": "fuzz_loop, fuzz_loop_for, maybe_report_stats",
-			"baseline": 20,
+			"baseline": 19,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -2795,7 +2795,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "HasCorpusScheduler",
 			"rawText": "HasCorpusScheduler",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -2963,7 +2963,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#1864ab",
 			"backgroundColor": "transparent",
 			"width": 229,
-			"height": 38,
+			"height": 39,
 			"seed": 128481717,
 			"groupIds": [
 				"WyhEt7x_IqTKjg5c7BCnX"
@@ -3023,7 +3023,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": 1920,
 			"strokeColor": "#087f5b",
 			"backgroundColor": "transparent",
-			"width": 181,
+			"width": 180,
 			"height": 34,
 			"seed": 1049399131,
 			"groupIds": [
@@ -3037,7 +3037,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "HasFeedback",
 			"rawText": "HasFeedback",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -3100,7 +3100,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "HasObjective",
 			"rawText": "HasObjective",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -3163,7 +3163,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "ExecutionProcesser",
 			"rawText": "ExecutionProcesser",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -3184,7 +3184,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#5c940d",
 			"backgroundColor": "transparent",
 			"width": 413,
-			"height": 39,
+			"height": 38,
 			"seed": 1821811515,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
@@ -3240,7 +3240,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": -20,
 			"strokeColor": "#5c940d",
 			"backgroundColor": "transparent",
-			"width": 263,
+			"width": 264,
 			"height": 35,
 			"seed": 1169975771,
 			"groupIds": [
@@ -3365,7 +3365,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "EvaluateObservers",
 			"rawText": "EvaluateObservers",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -3468,7 +3468,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "fuzzer.fuzz_loop()",
 			"rawText": "fuzzer.fuzz_loop()",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -3502,7 +3502,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "fuzzer.fuzz_one()",
 			"rawText": "fuzzer.fuzz_one()",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -3534,7 +3534,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "manager.fire_update_state()",
 			"rawText": "manager.fire_update_state()",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -3554,7 +3554,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": -180,
 			"strokeColor": "#364fc7",
 			"backgroundColor": "transparent",
-			"width": 427,
+			"width": 426,
 			"height": 34,
 			"seed": 1775096880,
 			"groupIds": [
@@ -3566,7 +3566,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "manager.fire_update_perf()",
 			"rawText": "manager.fire_update_perf()",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -3625,7 +3625,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "fuzzer.fuzz_one()",
 			"rawText": "fuzzer.fuzz_one()",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -3645,7 +3645,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": -340,
 			"strokeColor": "#862e9c",
 			"backgroundColor": "transparent",
-			"width": 656,
+			"width": 657,
 			"height": 34,
 			"seed": 847488208,
 			"groupIds": [
@@ -3659,7 +3659,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "input_idx = fuzzer.scheduler.next(state)",
 			"rawText": "input_idx = fuzzer.scheduler.next(state)",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -3679,8 +3679,8 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": -280,
 			"strokeColor": "#5c940d",
 			"backgroundColor": "transparent",
-			"width": 623,
-			"height": 68,
+			"width": 624,
+			"height": 67,
 			"seed": 1580757200,
 			"groupIds": [
 				"1tOyyz1g4M1k9l1yvF_BF"
@@ -3693,7 +3693,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "stages.perform_all(executer, state,\n                   manager, input_idx)",
 			"rawText": "stages.perform_all(executer, state,\n                   manager, input_idx)",
-			"baseline": 62,
+			"baseline": 61,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -3725,7 +3725,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "manager.process(state, executor)",
 			"rawText": "manager.process(state, executor)",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -3819,7 +3819,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#5c940d",
 			"backgroundColor": "transparent",
 			"width": 640,
-			"height": 68,
+			"height": 67,
 			"seed": 1321974992,
 			"groupIds": [
 				"RPKCROfwtGeOHo-was2un"
@@ -3830,7 +3830,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "stage.perform()\nStdMutationalStage.perform_mutational()",
 			"rawText": "stage.perform()\nStdMutationalStage.perform_mutational()",
-			"baseline": 62,
+			"baseline": 61,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -3851,7 +3851,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#e67700",
 			"backgroundColor": "transparent",
 			"width": 635,
-			"height": 33,
+			"height": 34,
 			"seed": 1819097808,
 			"groupIds": [
 				"RPKCROfwtGeOHo-was2un"
@@ -3896,7 +3896,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "fuzzer.evaluate_input(state, executor, manager, input)",
 			"rawText": "fuzzer.evaluate_input(state, executor, manager, input)",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -3916,8 +3916,8 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"y": -200,
 			"strokeColor": "#e67700",
 			"backgroundColor": "transparent",
-			"width": 683,
-			"height": 33,
+			"width": 684,
+			"height": 34,
 			"seed": 184825904,
 			"groupIds": [
 				"RPKCROfwtGeOHo-was2un"
@@ -3995,7 +3995,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"strokeColor": "#5c940d",
 			"backgroundColor": "transparent",
 			"width": 1345,
-			"height": 102,
+			"height": 101,
 			"seed": 798181584,
 			"groupIds": [
 				"jYcRkpnsGqfqOzP8-Yfyn"
@@ -4006,7 +4006,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "fuzzer.evaluate_input()\nfuzzer.evaluate_input_events(state, executor, manager, input)\nfuzzer.evaluate_input_with_observers(state, executor, manager, input, send_events)",
 			"rawText": "fuzzer.evaluate_input()\nfuzzer.evaluate_input_events(state, executor, manager, input)\nfuzzer.evaluate_input_with_observers(state, executor, manager, input, send_events)",
-			"baseline": 96,
+			"baseline": 94,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -4040,7 +4040,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "fuzzer.exec_input() ",
 			"rawText": "fuzzer.exec_input() ",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -4074,7 +4074,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "fuzzer.process_execution(state, manager, input, executor.observer)",
 			"rawText": "fuzzer.process_execution(state, manager, input, executor.observer)",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -4211,7 +4211,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "executor.observers.pre_exec_all()",
 			"rawText": "executor.observers.pre_exec_all()",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -4243,7 +4243,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "executor.run_target()",
 			"rawText": "executor.run_target()",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -4275,7 +4275,7 @@ executor.observers.post_exec_all() ^fYAJbrxG
 			"fontFamily": 3,
 			"text": "executor.observers.post_exec_all()",
 			"rawText": "executor.observers.post_exec_all()",
-			"baseline": 28,
+			"baseline": 27,
 			"textAlign": "left",
 			"verticalAlign": "top"
 		},
@@ -4367,7 +4367,8 @@ executor.observers.post_exec_all() ^fYAJbrxG
 		"currentItemEndArrowhead": "arrow",
 		"currentItemLinearStrokeSharpness": "sharp",
 		"gridSize": 20
-	}
+	},
+	"files": {}
 }
 ```
 %%

@@ -22,10 +22,11 @@ AFL’s instrumentation captures [[basic block]] transitions, along with coarse 
 12.  Download and compile LibPNG
 13.  git clone https://github.com/glennrp/libpng.git libpng-afl 
 14.  cd libpng-afl
-15. c
-16.  CC=afl-clang-fast ./configure --disable-shared
-17.  make clean all
-18.  export LIBPNG=$(pwd)
+15.  sed -i 's/return ((int)(crc != png_ptr->crc));/return (0);/g' pngrutil.c
+16.  autoreconf -f -i
+17.  CC=afl-clang-fast ./configure --disable-shared
+18.  make clean all
+19.  export LIBPNG=$(pwd)
 
 3.  Run fuzzing
 4.  cd $LIBPNG

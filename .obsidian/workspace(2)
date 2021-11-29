@@ -7,98 +7,99 @@
         "id": "ba68ded5ea25e996",
         "type": "leaf",
         "state": {
-          "type": "excalidraw",
-          "state": {
-            "file": "Testing/papers/Learn&Fuzz-Machine Learning for Input Fuzzing.md"
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "30abf149e27f0990",
-    "type": "split",
+    "id": "3d653f0b699c9d1c",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "4e01a40603b30727",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a16ded1584b1417b",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "7eaac2d2b2c3255d",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "3b98cb82280f4284",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "22c207ace16db542",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300
+    "currentTab": 0
   },
   "right": {
-    "id": "93f82fdab8c457b3",
-    "type": "split",
+    "id": "6f939c8f661dd72a",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "8236acb3f3f19ddf",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "fb787c8167cf83e9",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Testing/papers/Learn&Fuzz-Machine Learning for Input Fuzzing.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "ed3f718c0380b5a9",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Testing/papers/Learn&Fuzz-Machine Learning for Input Fuzzing.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
+        "id": "ece8f1775b1e4c0e",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ]
+        }
+      },
+      {
+        "id": "11ef851405caa722",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "c8fc6fcd445ae268",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {}
+        }
+      },
+      {
+        "id": "adf4f9c7c682eaf6",
+        "type": "leaf",
+        "state": {
+          "type": "advanced-tables-toolbar",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "currentTab": 3,
+    "pinned": true
   },
   "active": "ba68ded5ea25e996",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2021-11-25 15.24.59.excalidraw.md",
+    "Compiler/Rust/unsafe rust.md",
+    "Excalidraw/Drawing 2021-11-25 15.21.41.excalidraw.md",
     "Testing/papers/Learn&Fuzz-Machine Learning for Input Fuzzing.md",
     "papers/algorithm/graph/dominance-tree/A fast algorithm for finding dominators in a flowgraph.pdf"
   ]

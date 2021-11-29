@@ -1,6 +1,6 @@
 [fork(2) - Linux manual page (man7.org)](https://www.man7.org/linux/man-pages/man2/fork.2.html)
 
-**fork**() creates a new process by duplicating the calling process.
+**fork**() creates a new process by duplicating the calling process. **Always works with [[exec]]**.
 
 ```c
 #include <unistd.h>
@@ -16,6 +16,11 @@ The child process and the parent process **run in separate memory spaces**.
 - returns 0  in the child process
 - returns negative if fails
 
+# Warnings
+```ad-warning 
+title: Not thread safe
+(In child process) only the caller thread survive after fork, all other threads disappear and may never have a chance to clearup (thinking about some other thread calling `malloc`, which is not thread safe, at the same time of forking, heap of child process get corrupted).
+```
 
 # Example
 ```c

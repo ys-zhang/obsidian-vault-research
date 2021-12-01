@@ -68,6 +68,12 @@ An ___async-signal-safe___ function is one that can be safely called from within
 
 All functions rely on global data is not _async-signal-safe_, as when signal is delivered, the original call may not finished, then the handler jumps in using an undefined/uncleared state of global vars.
 
+> 当捕捉到信号时，不论进程的主控制流程当前执行到哪儿，都会先跳到信号处理函数中执行, 从信号处理函数返回后再继续执行主控制流程。信号处理函数是一个单独的控制流程，因为 _它和主控制流程是异步的，二者不存在调用和被调用的关系，并且使用不同的堆栈空间_。引入了信号处理函数使得一个进程具有多个控制流程，如果这些控制流程访问相同的全局资源（全局变量、硬件资源等），就有可能出现冲突.
+
+如果一个函数符合以下条件之一则是 __不可重入__ 的：
+1. 调用了`malloc`或`free`，因为`malloc`也是用全局链表来管理堆的。
+2. 调用了标准I/O库函数。标准I/O库的很多实现都以不可重入的方式使用全局数据结构。
+
 # Abstractions in other language
 
 - [[Rust]]: The `Command` struct;

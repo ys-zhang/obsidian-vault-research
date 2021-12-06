@@ -11,7 +11,7 @@
 
 # Components & Concepts
 
-- [[Cargo]]: dependency manager and build tool;
+- [[Rust Cmd Tools]]: dependency manager and build tool;
 - `Rustfmt` ensures a consistent coding style across developers.
 - _The Rust Language Server_ powers IDE integration for code completion and inline error messages.
 - `rustc` the compiler
@@ -899,7 +899,7 @@ enum List<T> {
 ```
 
 
-###  immutable reference counter `Rc<T>`
+### `Rc<T>` immutable reference counter 
 
 The `Rc<T>` type keeps track of the number of references to a value to determine whether or not the value is still in use.
 
@@ -946,7 +946,7 @@ fn main() {
 - `Rc::clone`  reference count + 1; do not copy the data hold by the pointer
 
 
-### Mutable reference count `RefCell<T>`
+### `RefCell<T>` Mutable reference count 
 
 > With references and `Box<T>`, the [[#Borrowing rules]]’ invariants are enforced at compile time. With `RefCell<T>`, these invariants are enforced _at runtime_.
 

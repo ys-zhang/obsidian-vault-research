@@ -94,7 +94,7 @@ REDQUEEN is the first method to find more than 100% of the bugs planted in LAVA-
 
 }{ Observation
 
-During the execution of a given program, parts of the input often end up directly (i.e., nearly unmodified) in the program state.},
+_Input-to-state-correspondence_: During the execution of a given program, parts of the input often end up directly (i.e., nearly unmodified) in the program state.},
   doi       = {10.14722/ndss.2019.23371},
   file      = {:NDSS19-Redqueen.pdf:PDF},
   url       = {https://www.ndss-symposium.org/ndss-paper/redqueen-fuzzing-with-input-to-state-correspondence/},

@@ -1,0 +1,1 @@
+- _elide_: Users should be aware the above example _elides a lot of the complexity_ of setting up a VM with x86_64 specific defaults and assumes the first non switch argument is a PC compatible disk image with a boot sector.

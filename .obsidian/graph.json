@@ -1,44 +1,22 @@
 {
   "collapse-filter": false,
-  "search": "",
-  "showTags": false,
+  "search": "path:English",
+  "showTags": true,
   "showAttachments": false,
   "hideUnresolved": true,
-  "showOrphans": false,
+  "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [
-    {
-      "query": "path:ProgTesting",
-      "color": {
-        "a": 1,
-        "rgb": 6084235
-      }
-    },
-    {
-      "query": "path:ProcMining",
-      "color": {
-        "a": 1,
-        "rgb": 14069084
-      }
-    },
-    {
-      "query": "path:CompGeo",
-      "color": {
-        "a": 1,
-        "rgb": 6059734
-      }
-    }
-  ],
-  "collapse-display": true,
-  "showArrow": false,
+  "colorGroups": [],
+  "collapse-display": false,
+  "showArrow": true,
   "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "nodeSizeMultiplier": 1.77974098057354,
+  "lineSizeMultiplier": 1.23204047217538,
   "collapse-forces": true,
   "centerStrength": 0.361969223649196,
   "repelStrength": 8.86844845539743,
   "linkStrength": 0.787747309961819,
   "linkDistance": 84,
-  "scale": 3.0232284459278027,
+  "scale": 0.8232116523430595,
   "close": true
 }

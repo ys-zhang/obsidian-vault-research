@@ -8,6 +8,6 @@ to do or begin to do something, especially something that will take a long time 
 
 - The bill requires owners to undertake remedial work on dilapidated buildings.
 - This is one of the largest aid projects ever undertaken.
-- Successful candidates will be required to undertake an induction programme.
+- Successful candidates will be required to undertake an induction program.
 - I'm just beginning to realize the enormity of what I have undertaken.
 - The agency undertook the survey in January 2004.

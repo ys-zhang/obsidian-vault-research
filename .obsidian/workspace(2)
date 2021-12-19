@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Compiler/Rust/Rust.md",
+            "file": "Tools/Makefile.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "makefile",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -48,11 +48,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 381.20653533935547
+    "width": 381.20653533935547,
+    "collapsed": true
   },
   "right": {
     "id": "25d4510527335548",
@@ -68,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Compiler/Rust/Rust.md",
+                "file": "Tools/Makefile.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +87,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Compiler/Rust/Rust.md",
+                "file": "Tools/Makefile.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -97,7 +99,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Compiler/Rust/Rust.md"
+                "file": "Tools/Makefile.md"
               }
             }
           }
@@ -110,15 +112,15 @@
   },
   "active": "354a02d66f05dcdc",
   "lastOpenFiles": [
+    "Tools/Makefile.md",
+    "SystemDesign/OS/concept/Library OS.md",
+    "SystemDesign/OS/cmd/strace.md",
+    "Compiler/Rust/rust notes.md",
+    "Compiler/Rust/Rust Memory Management.md",
     "Compiler/Rust/Rust.md",
     "SystemDesign/design-pattern/concurrency.md",
     "Compiler/Rust/Rust Cmd Tools.md",
     "English/words.md",
-    "Tools/vm/qemu.md",
-    "English/predominant.md",
-    "English/undertake.md",
-    "English/uncharted.md",
-    "English/feelings/physical/sticky.md",
-    "English/the height of.md"
+    "Tools/vm/qemu.md"
   ]
 }

@@ -11,3 +11,4 @@
 .trash/
 .DS_Store
 ./Private
+.vscode

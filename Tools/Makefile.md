@@ -97,3 +97,20 @@ rule name convention:
 ###### patterns
 
 - `%.c`
+
+
+# Function
+
+syntax use function: 
+
+    $(<func> <arg-list>)
+    
+ #### Common functions
+ 
+ - if function
+    - `$(if <condition>,<then-part> )`
+    - `$(if <condition>,<then-part>,<else-part> )`
+ - shell function execute a command
+    -  `contents := $(shell cat foo)`
+ - error function throw an error and cause `make` to stop
+    - `$(error <text ...> )`

@@ -4671,7 +4671,6 @@ var Processors = class {
         img2.src = "data:image/png;base64," + local;
         img2.useMap = "#" + encodedDiagram;
         const map = yield this.plugin.app.plugins.plugins["local-plantuml"].generateMap(source, this.plugin.settings.localJar);
-        console.log(map);
         if (map.contains("map")) {
           console.log("map");
           el.innerHTML = map;
@@ -4733,7 +4732,13 @@ var Processors = class {
   localProcessor(source, type) {
     return __async(this, null, function* () {
       if (this.plugin.app.plugins.plugins["local-plantuml"]) {
-        return yield this.plugin.app.plugins.plugins["local-plantuml"].generateImage(source, this.plugin.settings.localJar, type);
+        try {
+          return yield this.plugin.app.plugins.plugins["local-plantuml"].generateImage(source, this.plugin.settings.localJar, type);
+        } catch (e) {
+          new import_obsidian2.Notice("An error orrcurred while rendering your PlantUML Diagram, please check the console for more information");
+          console.error(e);
+          return "error";
+        }
       }
       return "";
     });

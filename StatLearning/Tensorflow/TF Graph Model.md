@@ -1,4 +1,52 @@
-# Intro
+# Concepts
+
+### Function
+
+![[tf function.excalidraw]]
+
+### Graph
+
+_Graphs_([`tf.Graph`](https://www.tensorflow.org/api_docs/python/tf/Graph)) are used by `tf.function`s to represent the function's computations. 
+1. Each _graph_ contains a set of `tf.Operation` objects, which represent _units of computation_; 
+2. and `tf.Tensor` objects, which represent the _units of data_ that flow between operations.
+
+A default graph can be registered with the `tf.Graph.as_default`context manager. Then, operations will be added to the graph instead of being executed eagerly.
+
+
+### Collection
+
+A _Graph_ instance supports an arbitrary number of "_collections_" that are identified by name. 
+
+For convenience when building a large graph, _collections_ can store groups of related objects: for example, the `tf.Variable`uses a collection (named `tf.GraphKeys.GLOBAL_VARIABLES`) for all variables that are created during the construction of a graph.
+
+
+### Variable
+
+A [`tf.Variable`](https://www.tensorflow.org/api_docs/python/tf/Variable) maintains shared and persistent state manipulated by a program.  
+
+1. Its value can be changed using one of the assign methods.
+2. Often used to hold _trainable model parameters_.
+
+
+### Gradient tape
+
+
+## Saved Model
+
+A _Saved Model_ is a directory containing serialized _signatures_ and the state needed to run them, including _variable values_ and _vocabularies_.
+
+_Saved Models_ may contain multiple variants of the model (multiple `v1.MetaGraphDefs`, identified with the `--tag_set` flag to `saved_model_cli`), but this is rare.
+
+## References
+
+1. [Introduction to graphs and `tf.function`](https://www.tensorflow.org/guide/intro_to_graphs)
+2. [A tour of saved model signatures](https://blog.tensorflow.org/2021/03/a-tour-of-savedmodel-signatures.html)
+3. [Using the saved model format](https://www.tensorflow.org/guide/saved_model)
+4. [Better performance with `tf.function`](https://www.tensorflow.org/guide/function)
+
+
+
+# API
 
 There are three ways of creating a model in `tf.keras`: 
 - **Sequential API** 

@@ -1,14 +1,15 @@
 {
   "folder": "Excalidraw",
   "templateFilePath": "Excalidraw/Template.excalidraw",
+  "scriptFolderPath": "Excalidraw/Scripts",
   "drawingFilenamePrefix": "Drawing ",
   "drawingFilenameDateTime": "YYYY-MM-DD HH.mm.ss",
   "displaySVGInPreview": true,
-  "previewMatchObsidianTheme": false,
+  "previewMatchObsidianTheme": true,
   "width": "400",
-  "matchTheme": false,
-  "matchThemeAlways": false,
-  "matchThemeTrigger": false,
+  "matchTheme": true,
+  "matchThemeAlways": true,
+  "matchThemeTrigger": true,
   "defaultMode": "normal",
   "zoomToFitOnResize": true,
   "zoomToFitMaxLevel": 2,
@@ -44,5 +45,10 @@
   "patchCommentBlock": false,
   "imageElementNotice": false,
   "runWYSIWYGpatch": false,
-  "fixInfinitePreviewLoop": false
+  "fixInfinitePreviewLoop": false,
+  "mdSVGwidth": 500,
+  "mdSVGmaxHeight": 800,
+  "mdFont": "Virgil",
+  "mdFontColor": "Black",
+  "mdCSS": ""
 }

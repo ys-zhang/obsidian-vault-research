@@ -262,5 +262,7 @@
   "lineWrap": true,
   "showFrontmatter": true,
   "autoPairMarkdown": true,
-  "tabSize": 2
+  "tabSize": 2,
+  "legacyEditor": false,
+  "livePreview": true
 }

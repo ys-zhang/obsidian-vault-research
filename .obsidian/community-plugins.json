@@ -1,21 +1,14 @@
 [
-  "table-editor-obsidian",
-  "obsidian-dictionary-plugin",
   "obsidian-excalidraw-plugin",
-  "oz-image-plugin",
   "obsidian-git",
-  "markdown-prettifier",
-  "oz-clear-unused-images",
   "open-vscode",
-  "obsidian-comments",
-  "obsidian-annotator",
-  "obsidian-pluck",
-  "cm-editor-syntax-highlight-obsidian",
-  "cm-typewriter-scroll-obsidian",
+  "oz-image-plugin",
   "obsidian-plantuml",
+  "oz-clear-unused-images",
   "obsidian-admonition",
+  "table-editor-obsidian",
+  "obsidian-annotator",
   "obsidian-codemirror-options",
-  "obsidian-style-settings",
-  "obsidian-code-block-enhancer",
-  "sliding-panes-obsidian"
+  "obsidian-dictionary-plugin",
+  "cm-editor-syntax-highlight-obsidian"
 ]

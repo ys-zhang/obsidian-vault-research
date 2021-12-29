@@ -1,5 +1,6 @@
 {
   "graph:open": [],
   "editor:delete-paragraph": [],
-  "obsidian-citation-plugin:insert-citation": []
+  "obsidian-citation-plugin:insert-citation": [],
+  "app:toggle-left-sidebar": []
 }

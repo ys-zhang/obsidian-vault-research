@@ -1,8 +1,16 @@
 {
   "renderAll": true,
+  "renderImages": true,
   "renderPDF": false,
   "renderIframe": false,
   "renderExcalidraw": true,
+  "renderRichLink": false,
+  "renderTransclusion": false,
+  "renderAdmonition": false,
+  "renderMermaid": false,
+  "renderMathJax": false,
+  "previewOnHoverInternalLink": false,
   "refreshImagesAfterChange": false,
-  "WYSIWYG": false
+  "WYSIWYG": false,
+  "cm6RenderAll": true
 }

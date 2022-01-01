@@ -54,10 +54,10 @@ $p' = p \circ m$ and $q' = q \circ m$.
 
 ![[product (category).excalidraw]]
 
+
 ```ad-note
 It's like the _product_ $C$ is the _closest_ object to $P$ and $Q$ that can maps to both $P$, and $Q$. In other words, it neither too big nor too small.
 ```
-
 
 ## Coproduct (categorical sum)
 
@@ -67,6 +67,11 @@ It's like the _product_ $C$ is the _closest_ object to $P$ and $Q$ that can maps
 - Coproduct is product in the opposite category.
 - Coproduct is $Set$ is disjoint union (taged union) of two sets.
 ```
+
+## Product of category
+
+let $\mathscr C$ and $\mathscr D$  be two small category. the product category, with the object set be cartesian product of  the 2 object sets, and morphism set be the cartesian product of the 2 morphism sets.
+
 ## ADT (algebraic data type)
 
 1. **Product** and **Coproduct** is _commutative_ and _associative_ (up to isomorphism).
@@ -78,9 +83,110 @@ It's like the _product_ $C$ is the _closest_ object to $P$ and $Q$ that can maps
 - `Maybe a = Unit + a`
 - parameterised types are solution of equation, `l(a) = 1 + a * l(a)` result in `List a`. 
 
+# Functor
+
+![[functor.excalidraw]]
+
+**Functor** keeps internal structure (_morphism_) of _category_.
+1. (id): $F(id_X) = id_{F(X)}$;
+2. (_covariant_): $F: Hom(X, Y) \to Hom(F(X), F(Y))$;
+3. (commute): $F(g \circ f) = F(g) \circ F(f)$;
+
+An **endofunctor** is a functor that the image category lies in the source category.
+
+A **Monoidal Category** is a category in which there exists a **endo-bifunctor**.
+
+```ad-note
+A functor “_embeds_” one category in another. It may collapse multiple things into one, but it never breaks connections. 
+One way of thinking about it is that with a functor we are _modelling one category inside another_. The source category serves as a model, a blueprint, for some structure that’s part of the target category.
+```
+
+```ad-note
+1. each pair of related object in source category is maped to a related object in image category.
+2. it may squash objects or arrows, i.e., it may not be injective or surjective.
+3. A **faithfull functor** is _injective_ on _hom-sets_.
+4. A **full functor** is _surjective_ on _hom-sets_.
+5. `Functor`s in [[Haskell]] are parameterised types.
+```
+
+see [Haskell package `Data.Functor`](https://hackage.haskell.org/package/base-4.16.0.0/docs/Data-Functor.html)
+
+## Contravariant functor
+$$
+ F^{op}: \mathscr C \to \mathscr D
+$$
+is a **Contravariant functor** if it is a functor from $\mathscr C^{op}$  to $\mathscr D$. i.e. _contravariant_:
+$$
+\begin{align}
+F^{op}: Hom^{op}(X, Y) = Hom(Y, X) &\to Hom(FX, FY) \\
+F(g \circ f) &= F(f) \circ F(g)
+\end{align}
+$$
+or a functor from $\mathscr C$ to $\mathscr D$ naturally introduce a cofunctor from $\mathscr C^{op}$ to $\mathscr D$.
+
+```ad-note
+**functors** are sead to be _covariant_, while **Contravariant functor** are _contravariant_.
+```
+
+```haskell
+class Contravariant f where
+  contramap :: (b -> a) -> f a -> f b
+```
+
+
+
+## Bifunctor
+
+A **bifunctor** is a functor maps a category product to a category, in [[Haskell]] it is a type constructor with 2 type parameters. Both product and coproduct can be seen as bifunctor. The codomain of the bifunctor is more "coarse" than product of categories.
+
+$$
+f: \mathscr{ C \times D \to E} 
+$$
+
+## Profunctor
+
+A **Profunctor** is like a bifunctor; however, it is _contravariant_ in the first category while _covariant_ in the second category:
+
+$$
+f: \mathscr{C^{op} \times C \to C}
+$$
+
+
+## Examples
+
+_Constant Functor_: a functor maps all objects to a constant object, i.e., the category with `Unit` as the only object.
+
+_Identity Functor_ maps a category to itself.
+
+$Cat$ is the category of categories, where objects are categories and morphisms are functors.
+
+$Hom: \mathscr C^{op} \times \mathscr C \to Set$, is a profunctor.
+ 
+```haskell
+class Functor f where
+  -- this `f a` hints the compiler that 
+  --   f is a type constructor
+  fmap :: (a -> b) -> f a -> f b   
+
+class Bifunctor b where
+  bimap :: (a -> a') -> (b -> b') -> (f a b -> f a' b')
+```
+
+
+# Natural Transformation
+
+
+
+
+# Function type (exponential object)
+
+![[function (category).excalidraw]]
+
+
 # Kleisli Category
 
 ![[Kleisli category]]
+
 The _Kleisli Category_ have same objects as the original category, with arrows defined as "embellished" arrows in the original category and a new composition definition, which usually denoted by the _fish operator_ `>=>`.
 
 ## Example

@@ -289,7 +289,7 @@ m is unique ^5yjAtUt1
 			"y": -229.59765625,
 			"strokeColor": "#087f5b",
 			"backgroundColor": "transparent",
-			"width": 5,
+			"width": 4,
 			"height": 25,
 			"seed": 1527547154,
 			"groupIds": [
@@ -324,7 +324,7 @@ m is unique ^5yjAtUt1
 			"y": -231,
 			"strokeColor": "#087f5b",
 			"backgroundColor": "transparent",
-			"width": 8,
+			"width": 7,
 			"height": 25,
 			"seed": 230133006,
 			"groupIds": [
@@ -460,7 +460,7 @@ m is unique ^5yjAtUt1
 			"y": -314.013671875,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 14,
+			"width": 13,
 			"height": 25,
 			"seed": 2033707154,
 			"groupIds": [
@@ -593,7 +593,7 @@ m is unique ^5yjAtUt1
 			"y": -318.154296875,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 11,
+			"width": 10,
 			"height": 25,
 			"seed": 1797701582,
 			"groupIds": [
@@ -628,7 +628,7 @@ m is unique ^5yjAtUt1
 			"y": -319.880859375,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 13,
+			"width": 12,
 			"height": 25,
 			"seed": 1333816338,
 			"groupIds": [
@@ -663,7 +663,7 @@ m is unique ^5yjAtUt1
 			"y": -171.431640625,
 			"strokeColor": "#e67700",
 			"backgroundColor": "transparent",
-			"width": 205,
+			"width": 204,
 			"height": 10,
 			"seed": 941200910,
 			"groupIds": [
@@ -698,7 +698,7 @@ m is unique ^5yjAtUt1
 			"y": -156.26158357880652,
 			"strokeColor": "#e67700",
 			"backgroundColor": "transparent",
-			"width": 152,
+			"width": 151,
 			"height": 10,
 			"seed": 545069522,
 			"groupIds": [

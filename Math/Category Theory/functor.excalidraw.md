@@ -2588,7 +2588,7 @@ contravariant functor F ^ffnwAV3I
 			"y": 590.2963479662699,
 			"strokeColor": "#862e9c",
 			"backgroundColor": "transparent",
-			"width": 428,
+			"width": 427,
 			"height": 45,
 			"seed": 1649420878,
 			"groupIds": [],
@@ -2607,7 +2607,7 @@ contravariant functor F ^ffnwAV3I
 		}
 	],
 	"appState": {
-		"theme": "dark",
+		"theme": "light",
 		"viewBackgroundColor": "#ffffff",
 		"currentItemStrokeColor": "#000000",
 		"currentItemBackgroundColor": "transparent",

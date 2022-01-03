@@ -1,0 +1,1 @@
+Parametric polymorphism, _usually implemented through generics_, which is used to define natural transformations in Haskell, imposes very strong limitations on the implementation — _one formula for all types_. These limitations translate into equational theorems about such functions.

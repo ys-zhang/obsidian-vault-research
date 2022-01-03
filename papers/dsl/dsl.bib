@@ -1,12 +1,58 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for ys zhang at 2021-12-29 13:46:48 +1100 
+%% Created for ys zhang at 2022-01-01 22:12:24 +1100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{10.1145/358438.349331,
+	abstract = {Functional Reactive Programming, or FRP, is a general framework for programming hybrid systems in a high-level, declarative manner. The key ideas in FRP are its notions of behaviors and events. Behaviors are time-varying, reactive values, while events are time-ordered sequences of discrete-time event occurrences. FRP is the essence of Fran, a domain-specific language embedded in Haskell for programming reactive animations, but FRP is now also being used in vision, robotics and other control systems applications. In this paper we explore the formal semantics of FRP and how it relates to an implementation based on streams that represent (and therefore only approximate) continuous behaviors. We show that, in the limit as the sampling interval goes to zero, the implementation is faithful to the formal, continuous semantics, but only when certain constraints on behaviors are observed. We explore the nature of these constraints, which vary amongst the FRP primitives. Our results show both the power and limitations of this approach to language design and implementation. As an example of a limitation, we show that streams are incapable of representing instantaneous predicate events over behaviors.},
+	address = {New York, NY, USA},
+	author = {Wan, Zhanyong and Hudak, Paul},
+	date-added = {2022-01-01 22:11:04 +1100},
+	date-modified = {2022-01-01 22:12:23 +1100},
+	doi = {10.1145/358438.349331},
+	issn = {0362-1340},
+	issue_date = {May 2000},
+	journal = {SIGPLAN Not.},
+	keywords = {Functional Reactive Programming},
+	month = {may},
+	number = {5},
+	numpages = {11},
+	pages = {242--252},
+	publisher = {Association for Computing Machinery},
+	title = {Functional Reactive Programming from First Principles},
+	url = {https://doi.org/10.1145/358438.349331},
+	volume = {35},
+	year = {2000},
+	bdsk-url-1 = {https://doi.org/10.1145/358438.349331},
+	bdsk-file-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxA5RnVuY3Rpb25hbCBSZWFjdGl2ZSBQcm9ncmFtbWluZyBmcm9tIEZpcnN0IFByaW5jaXBsZXMucGRmTxECAgAAAAACAgACAAAERGF0YQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H0Z1bmN0aW9uYWwgUmVhY3RpdiNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAQACAAAKIGN1AAAAAAAAAAAAAAAAAANkc2wAAAIAZC86VXNlcnM6eXN6aGFuZzpEb2N1bWVudHM6bm90ZXM6cGFwZXJzOmRzbDpGdW5jdGlvbmFsIFJlYWN0aXZlIFByb2dyYW1taW5nIGZyb20gRmlyc3QgUHJpbmNpcGxlcy5wZGYADgB0ADkARgB1AG4AYwB0AGkAbwBuAGEAbAAgAFIAZQBhAGMAdABpAHYAZQAgAFAAcgBvAGcAcgBhAG0AbQBpAG4AZwAgAGYAcgBvAG0AIABGAGkAcgBzAHQAIABQAHIAaQBuAGMAaQBwAGwAZQBzAC4AcABkAGYADwAKAAQARABhAHQAYQASAGJVc2Vycy95c3poYW5nL0RvY3VtZW50cy9ub3Rlcy9wYXBlcnMvZHNsL0Z1bmN0aW9uYWwgUmVhY3RpdmUgUHJvZ3JhbW1pbmcgZnJvbSBGaXJzdCBQcmluY2lwbGVzLnBkZgATAAEvAAAVAAIADv//AAAACAANABoAJABgAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAmY=}}
+
+@article{10.1145/2858949.2784752,
+	abstract = { We present a new interface for practical Functional Reactive Programming (FRP) that (1) is close in spirit to the original FRP ideas, (2) does not have the original space-leak problems, without using arrows or advanced types, and (3) provides a simple and expressive way for performing IO actions from FRP code. We also provide a denotational semantics for this new interface, and a technique (using Kripke logical relations) for reasoning about which FRP functions may "forget their past", i.e. which functions do not have an inherent space-leak. Finally, we show how we have implemented this interface as a Haskell library called FRPNow. },
+	address = {New York, NY, USA},
+	author = {Ploeg, Atze van der and Claessen, Koen},
+	date-added = {2022-01-01 21:52:45 +1100},
+	date-modified = {2022-01-01 21:52:45 +1100},
+	doi = {10.1145/2858949.2784752},
+	issn = {0362-1340},
+	issue_date = {September 2015},
+	journal = {SIGPLAN Not.},
+	keywords = {Kripke Logical Relations, Purely Functional IO, Space-leak, Functional Reactive Programming},
+	month = {aug},
+	number = {9},
+	numpages = {13},
+	pages = {302--314},
+	publisher = {Association for Computing Machinery},
+	title = {Practical Principled FRP: Forget the Past, Change the Future, FRPNow!},
+	url = {https://doi.org/10.1145/2858949.2784752},
+	volume = {50},
+	year = {2015},
+	bdsk-file-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAcUHJhY3RpY2FsIFByaW5jaXBsZWQgRlJQLnBkZk8RAZAAAAAAAZAAAgAABERhdGEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////xxQcmFjdGljYWwgUHJpbmNpcGxlZCBGUlAucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAEAAgAACiBjdQAAAAAAAAAAAAAAAAADZHNsAAACAEcvOlVzZXJzOnlzemhhbmc6RG9jdW1lbnRzOm5vdGVzOnBhcGVyczpkc2w6UHJhY3RpY2FsIFByaW5jaXBsZWQgRlJQLnBkZgAADgA6ABwAUAByAGEAYwB0AGkAYwBhAGwAIABQAHIAaQBuAGMAaQBwAGwAZQBkACAARgBSAFAALgBwAGQAZgAPAAoABABEAGEAdABhABIARVVzZXJzL3lzemhhbmcvRG9jdW1lbnRzL25vdGVzL3BhcGVycy9kc2wvUHJhY3RpY2FsIFByaW5jaXBsZWQgRlJQLnBkZgAAEwABLwAAFQACAA7//wAAAAgADQAaACQAQwAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAHX},
+	bdsk-url-1 = {https://doi.org/10.1145/2858949.2784752}}
 
 @article{wang2005knowledge,
 	author = {Wang, Jiachuan and Fan, Zhun and Terpenny, Janis P and Goodman, Erik D},

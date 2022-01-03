@@ -154,13 +154,14 @@ $$
 
 ## Examples
 
-_Constant Functor_: a functor maps all objects to a constant object, i.e., the category with `Unit` as the only object.
+_Constant Functor_: a functor maps all objects to a constant object $c$, denoted by $\Delta_c$
 
 _Identity Functor_ maps a category to itself.
 
 $Cat$ is the category of categories, where objects are categories and morphisms are functors.
 
-$Hom: \mathscr C^{op} \times \mathscr C \to Set$, is a profunctor.
+$Hom: \mathscr C^{op} \times \mathscr C \to Set$, is a _profunctor_. 
+$\forall C \in \mathscr C$, $Hom(C, \cdot)$ is a functor which is referred as _hom-functor_.
  
 ```haskell
 class Functor f where
@@ -175,8 +176,75 @@ class Bifunctor b where
 
 # Natural Transformation
 
+![[natural transformation.excalidraw]]
+
+[Natural transformation is free](https://bartoszmilewski.com/2014/09/22/parametricity-money-for-nothing-and-theorems-for-free/) in [[Haskell]] due to [[parametric polymorphism]], which is different from [[ad-hoc polymorphism]].
+
+## Cone
+
+![[cone (category).excalidraw]]
 
 
+ 
+```ad-note
+In general, to build a **cone**:
+1. we start with a category $\mathscr I$ that defines the pattern. It’s a small, often finite category.
+2. We pick a _functor_ $$D: \mathscr I \to \mathscr C$$ and call it (or its image) a _diagram_. 
+3. We pick some $c \in \mathscr C$ as the _apex_ of our _cone_. We use it to define the _constant functor_ $$\Delta_c: \mathscr I \to \mathscr C$$
+4. A _natural transformation_ from $\Delta_c$ to $D$ is then our _cone_. 
+```
+
+![[Pasted image 20220101233831.png]]
+
+For a finite $\mathscr I$ it’s just a bunch of morphisms connecting $c$ to the _diagram_: the image of $\mathscr I$ under $D$.
+
+
+## Limit & Colimit
+
+### Define through Universal construction
+
+Follow the construction of cones, with the source category $\mathscr C$ and the destination category $\mathscr D$ fixed, we can define the _category of cones_.
+
+- we have the diagram or base of the cone which is a functor $D$.
+- objects are cones i.e. a functor $\alpha_c: \Delta_c \to D$ where $c \in \mathscr D$ is the apex of the cone, and $\Delta_c$ is a constant function.
+- morphisms are arrows in $\mathscr D$ that connect cone apexes and commute with code edges.
+
+The _terminal object_ of this cone category is the limit of the diagram, i.e., functor $D$. 
+
+```ad-note
+The intuition is that the **limit** _embodies the properties of the whole diagram in a single object_. 
+Given any cone, there is a _unique_ morphism that is "compatible" with the diagram. We have a mapping of cones to special morphisms, and it’s a one-to-one mapping.
+```
+
+### Define by natural formalisation
+
+TLDR: The limit exists iff exists a natural isomorphism
+$$
+Hom_{\mathscr D}(c, \lim D) \simeq Nat(\Delta_c, D) 
+$$
+where 
+1. $Hom_{\mathscr D}(c, \lim D)$ is the arrow from cones with $c$ as its apex to the limit
+2. $Nat(\Delta_c, D)$ is the collection of cones with c as its apex.
+i.e. _cones with the same apex is isomorphic to arrow from the apex to the limit_.
+
+![[limit (category)]]
+
+To construct the $limit$, for each $c\in \mathcal D$ we have a set of cones with apex $c$, we need to find the _unique_ morphism from $c$ to the $limit$.
+
+In other words, finding a morphism from $Hom_{\mathscr D}(c, \lim D)$, which can be formalised as a natural transformation:
+$$
+\alpha_c \in Hom_{\mathscr D}(c, \lim D) : c \to \lim D
+$$
+$$
+\begin{align}
+  \alpha &: F \to G \\
+  F, G &: C \to Set \\
+  F(c) &= Nat(\Delta_c, D) \\
+  G(c) &= Hom_{\mathscr D}(c, \lim D) \\
+\end{align}
+$$
+
+$F, G$ are [[presheaf]] which are contravariant functors maps to $Set$ , $F$ maps $c$ to all cones with $c$ as apex, while $G$ maps $c$ to the hom-set.
 
 # Function type (exponential object)
 

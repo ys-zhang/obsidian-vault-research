@@ -50,6 +50,7 @@ A **metamodel** is merely a model whose instances are types in another model.
 
 ![[Pasted image 20220109170501.png]]
 
+> mapping rules in MPS is the generator, specified by the generator language (as meta-model)
 
 ## Other Concepts
 

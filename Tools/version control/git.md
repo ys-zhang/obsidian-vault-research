@@ -84,6 +84,12 @@ function load_reference(name_or_id){
 ```
 
 
+# Commands
+
+## Rebase
+
+
+
 # Reference
 
 - [[Git-Cheatsheet.pdf]]

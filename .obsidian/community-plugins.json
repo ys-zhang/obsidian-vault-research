@@ -10,5 +10,6 @@
   "obsidian-annotator",
   "obsidian-codemirror-options",
   "obsidian-dictionary-plugin",
-  "cm-editor-syntax-highlight-obsidian"
+  "cm-editor-syntax-highlight-obsidian",
+  "highlightr-plugin"
 ]

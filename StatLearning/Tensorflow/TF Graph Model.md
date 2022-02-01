@@ -161,9 +161,18 @@ where $a>0$.
 
 see [3.3. Metrics and scoring: quantifying the quality of predictions — scikit-learn 0.24.2 documentation](https://scikit-learn.org/stable/modules/model_evaluation.html) or [[model evaluation]]
 
-- MSE
-- binary cross-entropy
-- categorical cross-entropy
+### MSE
+### binary cross-entropy
+
+$$
+\mathscr l(x,y) =L=\{l_1,\dots,l_N\}^⊤ 
+$$
+$$
+l_n =−w_n [y_n\cdot \log x_n +(1−y_n)\cdot \log(1−x_n)]
+$$
+
+
+### categorical cross-entropy
 
 ## Metrics
 

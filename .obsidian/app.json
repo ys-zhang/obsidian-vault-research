@@ -254,7 +254,7 @@
   "newFileLocation": "current",
   "showUnsupportedFiles": true,
   "fileSortOrder": "alphabetical",
-  "promptDelete": false,
+  "promptDelete": true,
   "strictLineBreaks": true,
   "defaultViewMode": "source",
   "readableLineLength": true,

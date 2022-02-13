@@ -10877,6 +10877,19 @@ var ObsidianGitSettingsTab = class extends import_obsidian.PluginSettingTab {
         new import_obsidian.Notice("Please specify a valid number.");
       }
     }));
+    new import_obsidian.Setting(containerEl).setName("Sync Method").setDesc("Selects the method used for handling new changes found in your remote git repository.").addDropdown((dropdown) => {
+      const options = {
+        "merge": "Merge",
+        "rebase": "Rebase",
+        "reset": "Other sync service (Only updates the HEAD without touching the working directory)"
+      };
+      dropdown.addOptions(options);
+      dropdown.setValue(plugin.settings.syncMethod);
+      dropdown.onChange((option) => __async(this, null, function* () {
+        plugin.settings.syncMethod = option;
+        plugin.saveSettings();
+      }));
+    });
     new import_obsidian.Setting(containerEl).setName("Commit message").setDesc("Specify custom commit message. Available placeholders: {{date}} (see below), {{hostname}} (see below) and {{numFiles}} (number of changed files in the commit)").addText((text2) => text2.setPlaceholder("vault backup").setValue(plugin.settings.commitMessage ? plugin.settings.commitMessage : "").onChange((value) => {
       plugin.settings.commitMessage = value;
       plugin.saveSettings();
@@ -10913,10 +10926,6 @@ var ObsidianGitSettingsTab = class extends import_obsidian.PluginSettingTab {
     }));
     new import_obsidian.Setting(containerEl).setName("Pull updates on startup").setDesc("Automatically pull updates when Obsidian starts").addToggle((toggle) => toggle.setValue(plugin.settings.autoPullOnBoot).onChange((value) => {
       plugin.settings.autoPullOnBoot = value;
-      plugin.saveSettings();
-    }));
-    new import_obsidian.Setting(containerEl).setName("Merge on pull").setDesc("If turned on, merge on pull. If turned off, rebase on pull.").addToggle((toggle) => toggle.setValue(plugin.settings.mergeOnPull).onChange((value) => {
-      plugin.settings.mergeOnPull = value;
       plugin.saveSettings();
     }));
     new import_obsidian.Setting(containerEl).setName("Disable push").setDesc("Do not push changes to the remote repository").addToggle((toggle) => toggle.setValue(plugin.settings.disablePush).onChange((value) => {
@@ -11149,10 +11158,10 @@ var DEFAULT_SETTINGS = {
   listChangedFilesInMessageBody: false,
   showStatusBar: true,
   updateSubmodules: false,
+  syncMethod: "merge",
   gitPath: "",
   customMessageOnAutoBackup: false,
   autoBackupAfterFileChange: false,
-  mergeOnPull: true,
   treeStructure: false
 };
 var GIT_VIEW_CONFIG = {
@@ -11293,15 +11302,18 @@ var SimpleGit = class extends GitManager {
     this.setGitInstance();
   }
   setGitInstance() {
-    if (this.isGitInstalled()) {
-      const adapter = this.app.vault.adapter;
-      const path3 = adapter.getBasePath();
-      this.git = (0, simple.default)({
-        baseDir: path3,
-        binary: this.plugin.settings.gitPath || void 0,
-        config: ["core.quotepath=off"]
-      });
-    }
+    return __async(this, null, function* () {
+      if (this.isGitInstalled()) {
+        const adapter = this.app.vault.adapter;
+        const path3 = adapter.getBasePath();
+        this.git = (0, simple.default)({
+          baseDir: path3,
+          binary: this.plugin.settings.gitPath || void 0,
+          config: ["core.quotepath=off"]
+        });
+        this.git.cwd(yield this.git.revparse("--show-toplevel"));
+      }
+    });
   }
   status() {
     return __async(this, null, function* () {
@@ -11406,36 +11418,41 @@ var SimpleGit = class extends GitManager {
       this.plugin.setState(PluginState.pull);
       if (this.plugin.settings.updateSubmodules)
         yield this.git.subModule(["update", "--remote", "--merge", "--recursive"], (err) => this.onError(err));
-      let lastRemoteCommitBefore;
-      if (!this.plugin.settings.mergeOnPull) {
-        lastRemoteCommitBefore = yield this.getNewestRemoteCommit();
-      }
-      const pullResult = yield this.git.pull([this.plugin.settings.mergeOnPull ? "--no-rebase" : "--rebase"], (err) => __async(this, null, function* () {
-        if (err) {
-          this.plugin.displayError(`Pull failed ${err.message}`);
-          const status = yield this.git.status();
-          if (status.conflicted.length > 0) {
-            this.plugin.handleConflict(status.conflicted);
+      const branchInfo = yield this.branchInfo();
+      const localCommit = yield this.git.revparse([branchInfo.current]);
+      yield this.git.fetch((err) => this.onError(err));
+      const upstreamCommit = yield this.git.revparse([branchInfo.tracking]);
+      if (localCommit !== upstreamCommit) {
+        if (this.plugin.settings.syncMethod === "merge" || this.plugin.settings.syncMethod === "rebase") {
+          try {
+            switch (this.plugin.settings.syncMethod) {
+              case "merge":
+                yield this.git.merge([branchInfo.tracking]);
+                break;
+              case "rebase":
+                yield this.git.rebase([branchInfo.tracking]);
+            }
+          } catch (err) {
+            this.plugin.displayError(`Sync failed (${this.plugin.settings.syncMethod}): ${err.message}`);
+            const status = yield this.git.status();
+            if (status.conflicted.length > 0) {
+              this.plugin.handleConflict(status.conflicted);
+            }
+            return;
+          }
+        } else if (this.plugin.settings.syncMethod === "reset") {
+          try {
+            yield this.git.raw(["update-ref", `refs/heads/${branchInfo.current}`, upstreamCommit]);
+            yield this.unstageAll();
+          } catch (err) {
+            this.plugin.displayError(`Sync failed (${this.plugin.settings.syncMethod}): ${err.message}`);
           }
         }
-      }));
-      if (!this.plugin.settings.mergeOnPull) {
-        const lastRemoteCommitAfter = yield this.getNewestRemoteCommit();
-        if (lastRemoteCommitAfter != lastRemoteCommitBefore) {
-          return 1;
-        } else {
-          return 0;
-        }
+        const filesChanged = yield this.git.diff([`${localCommit}..${upstreamCommit}`, "--name-only"]);
+        return filesChanged.split(/\r\n|\r|\n/).filter((value) => value.length > 0).length;
       } else {
-        return pullResult.files.length;
+        return 0;
       }
-    });
-  }
-  getNewestRemoteCommit() {
-    return __async(this, null, function* () {
-      const branchInfo = yield this.branchInfo();
-      const newestRemoteCommit = (yield this.git.log([`-n 1 ${branchInfo.tracking}`])).all[0].hash;
-      return newestRemoteCommit;
     });
   }
   push() {
@@ -14505,6 +14522,7 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
     return __async(this, null, function* () {
       console.log("loading " + this.manifest.name + " plugin");
       yield this.loadSettings();
+      this.migrateSettings();
       addIcons();
       this.registerView(GIT_VIEW_CONFIG.type, (leaf) => {
         return new GitView2(leaf, this);
@@ -14621,6 +14639,13 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
       }
       this.app.workspace.onLayoutReady(() => this.init());
     });
+  }
+  migrateSettings() {
+    if (this.settings.mergeOnPull != void 0) {
+      this.settings.syncMethod = this.settings.mergeOnPull ? "merge" : "rebase";
+      this.settings.mergeOnPull = void 0;
+      this.saveSettings();
+    }
   }
   onunload() {
     return __async(this, null, function* () {
@@ -14832,11 +14857,7 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
     return __async(this, null, function* () {
       const pulledFilesLength = yield this.gitManager.pull();
       if (pulledFilesLength > 0) {
-        if (this.settings.mergeOnPull) {
-          this.displayMessage(`Pulled ${pulledFilesLength} ${pulledFilesLength > 1 ? "files" : "file"} from remote`);
-        } else {
-          this.displayMessage("Rebased on pull");
-        }
+        this.displayMessage(`Pulled ${pulledFilesLength} ${pulledFilesLength > 1 ? "files" : "file"} from remote`);
       }
       return pulledFilesLength != 0;
     });

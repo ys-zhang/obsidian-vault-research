@@ -1,8 +1,12 @@
-# Dynamic loading in DotNet
+# CLR (Common Language Runtime)
+
+## Dynamic loading in DotNet
 
 [Dependency loading - .NET | Microsoft Docs](https://docs.microsoft.com/en-au/dotnet/core/dependency-loading/overview)
 
 # Data
+
+
 ## Database
 
 There are several technologies that can provide database access/manipulation for dotnet:
@@ -41,20 +45,6 @@ connection.Close();
 - Provider independent: `DataSet`
 
 
-### Data Frame: `Deedle`
-
-## References
-- [Introduction to ADO.NET Framework - Dot Net Tutorials](https://dotnettutorials.net/lesson/what-is-ado-net/)
-- [A Brief history of ODBC, OLEDB, ADO, and ADO. Net Evolution (alibabacloud.com)](https://topic.alibabacloud.com/a/brief-history-of-odbc-oledb-ado-and-ado-net-evolution_8_8_32314220.html)
-- [`System.Data` Namespace provides access to classes that represent the _ADO.NET_ architecture](https://docs.microsoft.com/en-us/dotnet/api/system.data?view=net-6.0)
-- Excel :
-  - [ExcelADO demonstrates how to use ADO to read and write data in Excel workbooks (microsoft.com)](https://support.microsoft.com/en-us/topic/excelado-demonstrates-how-to-use-ado-to-read-and-write-data-in-excel-workbooks-bfb26f12-ba6a-91be-7fd4-4aadf1ff1afa)
-  - [Read and Import Excel Sheet using ADO.Net and C# (aspsnippets.com)](https://www.aspsnippets.com/Articles/Read-and-Import-Excel-Sheet-using-ADO.Net-and-C.aspx)
-  - [Access Database Engine - Wikipedia](https://en.wikipedia.org/wiki/Access_Database_Engine), the Access Database Engine is formerly called Microsoft Jet Database engine.
-  - [NPOI](https://baike.baidu.com/item/NPOI/10374941)
-- [ADO.NET | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/)
-
-
 ## ADO.NET
 
 From the remarks of the reference of `System.Data`:
@@ -68,7 +58,29 @@ From the remarks of the reference of `System.Data`:
 |                        |                                                                            |
 
 
-# Data binding
+## Data Analysis Tools
+
+### Deedle
+#todo 
+
+
+
+## References
+- [Introduction to ADO.NET Framework - Dot Net Tutorials](https://dotnettutorials.net/lesson/what-is-ado-net/)
+- [A Brief history of ODBC, OLEDB, ADO, and ADO. Net Evolution (alibabacloud.com)](https://topic.alibabacloud.com/a/brief-history-of-odbc-oledb-ado-and-ado-net-evolution_8_8_32314220.html)
+- [`System.Data` Namespace provides access to classes that represent the _ADO.NET_ architecture](https://docs.microsoft.com/en-us/dotnet/api/system.data?view=net-6.0)
+- Excel :
+  - [ExcelADO demonstrates how to use ADO to read and write data in Excel workbooks (microsoft.com)](https://support.microsoft.com/en-us/topic/excelado-demonstrates-how-to-use-ado-to-read-and-write-data-in-excel-workbooks-bfb26f12-ba6a-91be-7fd4-4aadf1ff1afa)
+  - [Read and Import Excel Sheet using ADO.Net and C# (aspsnippets.com)](https://www.aspsnippets.com/Articles/Read-and-Import-Excel-Sheet-using-ADO.Net-and-C.aspx)
+  - [Access Database Engine - Wikipedia](https://en.wikipedia.org/wiki/Access_Database_Engine), the Access Database Engine is formerly called Microsoft Jet Database engine.
+  - [NPOI](https://baike.baidu.com/item/NPOI/10374941)
+- [ADO.NET | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/)
+
+
+
+# Reactive 
+
+## Data binding
 
 [Data binding - UWP applications | Microsoft Docs](https://docs.microsoft.com/en-us/windows/uwp/data-binding/)
 
@@ -94,55 +106,50 @@ To be _observable_ the `class` of the binding source should be any of:
 3. drive from `BindableBase`
 
 
-# Reactive Programming
-
-- [Introduction to Rx (introtorx.com)](http://introtorx.com/)
-- [FSharp.Control](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control.html#category-1_1)
-- [Observable (FSharp.Core)](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-observablemodule.html)
-- [Functional Reactive Programming | F# for fun and profit (fsharpforfunandprofit.com)](https://fsharpforfunandprofit.com/posts/concurrency-reactive/)
-
-
-```ad-note
-The _event driven paradigm_ allows for code to be invoked without the need for breaking encapsulation or applying expensive polling techniques. 
-This is commonly implemented with the _Observer pattern_, events exposed directly in the language (e.g. C#) or other forms of _callback via delegate registration_. 
-The **Reactive Extensions** extend the callback metaphor with LINQ to enable querying sequences of events and managing concurrency.
-```
-
-
-#### Foundation Types `IObservable` & `IObserver`
+## Delegate
 
 ```c#
-//Defines a provider for push-based notification.
-public interface IObservable<out T>
-{
-  // Notice the parameter of type IObserver
-  // which is `T -> unit` in the f# version
-  IDisposable Subscribe(IObserver<T> observer);
-}
 
-//Provides a mechanism for receiving push-based notifications.
-public interface IObserver<in T>
-{
-  //Provides the observer with new data.
-  void OnNext(T value);
-  //Notifies the observer that the provider has experienced an error condition.
-  void OnError(Exception error);
-  //Notifies the observer that the provider has finished sending push-based notifications.
-  void OnCompleted();
-}
-
+// Define the delegate type:
+//   Just like declaration of a function
+public delegate int Comparison<in T>(T left, T right);
+// Declare an instance of that type:
+public Comparison<T> comparator;
+int result = comparator(left, right);  // Invoke a delegate
 ```
 
-```fsharp
-var Observer.subscribe<'a> :
-    ('a -> unit) -> IObservable<'a> -> IDisposable
-```
 
 ```ad-note
-Rx has an implicit contract that must be followed:
+The most important fact to remember is that every delegate you work with is derived from `MulticastDelegate`. 
+A _multicast delegate_ means that _more than one_ method target can be invoked when invoking through a delegate.
 
-An implementation of _IObserver<T>_ may have zero or more calls to _OnNext(T)_ followed optionally by a call to either _OnError(Exception)_ or _OnCompleted()_.
+- `Invoke()`: invoke all the methods that have been attached to a particular delegate instance
+- `BeginInvoke()`:
+- `EndInvoke()`
 ```
+
+
+## Event
+
+- [Introduction to events | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/events-overview)
+- [Events - C# Programming Guide | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/events/)
+- [Events - F# | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/members/events)
+
+
+```c#
+// declare an event source
+public event EventHandler<T> Event;
+EventHandler<FileListArgs> action = (sender, t) => {return;} // T -> unit
+// raise the event
+Event?.Invoke(this, new T());
+Event += action;  // subscribe
+Event -= action;  // unsubscribe
+```
+
+- The type of the _event_ source (`EventHandler<FileListArgs>`) must be a _delegate_ type.
+- `.?` make sure raising nothing when the event has not been
+- subscribe to an event by using the `+=` operator
+- unsubscribe using the `-=` operator
 
 
 # Interop of C# & F#

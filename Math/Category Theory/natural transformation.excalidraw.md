@@ -86,8 +86,8 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"y": -224.6796875,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 16,
-			"height": 36,
+			"width": 17,
+			"height": 35,
 			"seed": 1544529189,
 			"groupIds": [
 				"rfVpWLUGizwexgsM5YW9Y"
@@ -95,6 +95,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168095,
+			"link": null,
 			"fontSize": 28,
 			"fontFamily": 1,
 			"text": "X",
@@ -166,7 +167,8 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 					"type": "arrow"
 				}
 			],
-			"updated": 1641119168095
+			"updated": 1641119168095,
+			"link": null
 		},
 		{
 			"type": "text",
@@ -184,8 +186,8 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"y": -64.6796875,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 14,
-			"height": 36,
+			"width": 15,
+			"height": 35,
 			"seed": 2005514373,
 			"groupIds": [
 				"DLk27a6gQOvD6KorWeDtA"
@@ -193,6 +195,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168095,
+			"link": null,
 			"fontSize": 28,
 			"fontFamily": 1,
 			"text": "Y",
@@ -256,7 +259,8 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 					"type": "arrow"
 				}
 			],
-			"updated": 1641119168095
+			"updated": 1641119168095,
+			"link": null
 		},
 		{
 			"type": "arrow",
@@ -281,6 +285,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "round",
 			"boundElements": [],
 			"updated": 1641119168095,
+			"link": null,
 			"startBinding": {
 				"elementId": "8rWuPjs_34MmPKRpIRkZm",
 				"focus": 0.043732666168301494,
@@ -321,7 +326,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"y": -148.6467633928571,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 18,
+			"width": 17,
 			"height": 45,
 			"seed": 210167691,
 			"groupIds": [],
@@ -341,6 +346,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 				}
 			],
 			"updated": 1641119168095,
+			"link": null,
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "f",
@@ -368,7 +374,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeColor": "#2b8a3e",
 			"backgroundColor": "transparent",
 			"width": 33,
-			"height": 36,
+			"height": 35,
 			"seed": 1493880325,
 			"groupIds": [
 				"-28dnT1eRYghGFSr4Jl20"
@@ -376,6 +382,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168095,
+			"link": null,
 			"fontSize": 28,
 			"fontFamily": 1,
 			"text": "FX",
@@ -435,7 +442,8 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 					"type": "arrow"
 				}
 			],
-			"updated": 1641119168095
+			"updated": 1641119168095,
+			"link": null
 		},
 		{
 			"type": "text",
@@ -454,7 +462,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeColor": "#2b8a3e",
 			"backgroundColor": "transparent",
 			"width": 31,
-			"height": 36,
+			"height": 35,
 			"seed": 15517029,
 			"groupIds": [
 				"__0YfVpTO2Y1MgDzAVlox"
@@ -462,6 +470,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168095,
+			"link": null,
 			"fontSize": 28,
 			"fontFamily": 1,
 			"text": "FY",
@@ -517,7 +526,8 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 					"type": "arrow"
 				}
 			],
-			"updated": 1641119168095
+			"updated": 1641119168095,
+			"link": null
 		},
 		{
 			"type": "arrow",
@@ -542,6 +552,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "round",
 			"boundElements": [],
 			"updated": 1641119168095,
+			"link": null,
 			"startBinding": {
 				"elementId": "8aoKeDg9Q9QiOBnD80mvC",
 				"focus": -0.11336536940558581,
@@ -598,6 +609,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 				}
 			],
 			"updated": 1641119168095,
+			"link": null,
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "Ff",
@@ -624,8 +636,8 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"y": -221.13337053571422,
 			"strokeColor": "#364fc7",
 			"backgroundColor": "transparent",
-			"width": 38,
-			"height": 36,
+			"width": 39,
+			"height": 35,
 			"seed": 816860299,
 			"groupIds": [
 				"gH4jC5Q7qI1IpUPTRhlz3"
@@ -633,6 +645,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168095,
+			"link": null,
 			"fontSize": 28,
 			"fontFamily": 1,
 			"text": "GX",
@@ -692,7 +705,8 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 					"type": "arrow"
 				}
 			],
-			"updated": 1641119168095
+			"updated": 1641119168095,
+			"link": null
 		},
 		{
 			"type": "text",
@@ -710,8 +724,8 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"y": -60.61941964285717,
 			"strokeColor": "#364fc7",
 			"backgroundColor": "transparent",
-			"width": 36,
-			"height": 36,
+			"width": 37,
+			"height": 35,
 			"seed": 900498219,
 			"groupIds": [
 				"rxIFKxhRX0izmS-_UkmzN"
@@ -719,6 +733,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168095,
+			"link": null,
 			"fontSize": 28,
 			"fontFamily": 1,
 			"text": "GY",
@@ -774,7 +789,8 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 					"type": "arrow"
 				}
 			],
-			"updated": 1641119168095
+			"updated": 1641119168095,
+			"link": null
 		},
 		{
 			"type": "arrow",
@@ -799,6 +815,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "round",
 			"boundElements": [],
 			"updated": 1641119168095,
+			"link": null,
 			"startBinding": {
 				"elementId": "WJJAX-zVXyv7l4RLy6UIu",
 				"focus": -0.11336536940559008,
@@ -855,6 +872,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 				}
 			],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "Gf",
@@ -888,6 +906,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "round",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"startBinding": {
 				"elementId": "8aoKeDg9Q9QiOBnD80mvC",
 				"focus": 0.04980350171922929,
@@ -935,6 +954,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "round",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"startBinding": null,
 			"endBinding": {
 				"elementId": "98NjSTZcn04T8U5Jeu5QA",
@@ -980,6 +1000,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "α",
@@ -1015,11 +1036,12 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 20,
 			"fontFamily": 1,
 			"text": "X",
 			"rawText": "X",
-			"baseline": 17,
+			"baseline": 18,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
@@ -1050,6 +1072,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "α",
@@ -1085,11 +1108,12 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 20,
 			"fontFamily": 1,
 			"text": "Y",
 			"rawText": "Y",
-			"baseline": 17,
+			"baseline": 18,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
@@ -1118,6 +1142,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "round",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"startBinding": {
 				"elementId": "8rWuPjs_34MmPKRpIRkZm",
 				"focus": 0.10974254060045788,
@@ -1165,6 +1190,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "round",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"startBinding": {
 				"elementId": "4-eqxc4nMxd1ZgxcTI9CI",
 				"focus": 0.018518272455249618,
@@ -1211,7 +1237,8 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"groupIds": [],
 			"strokeSharpness": "sharp",
 			"boundElements": [],
-			"updated": 1641119168096
+			"updated": 1641119168096,
+			"link": null
 		},
 		{
 			"type": "rectangle",
@@ -1235,7 +1262,8 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"groupIds": [],
 			"strokeSharpness": "sharp",
 			"boundElements": [],
-			"updated": 1641119168096
+			"updated": 1641119168096,
+			"link": null
 		},
 		{
 			"type": "text",
@@ -1260,6 +1288,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "C",
@@ -1293,6 +1322,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "D",
@@ -1319,18 +1349,19 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"y": 180,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 644,
-			"height": 46,
+			"width": 645,
+			"height": 45,
 			"seed": 865768933,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 20,
 			"fontFamily": 2,
 			"text": "Natural transformation maps a functor to another functor.\nIt is a collection of morphism parameterised by object in source category.",
 			"rawText": "Natural transformation maps a functor to another functor.\nIt is a collection of morphism parameterised by object in source category.",
-			"baseline": 42,
+			"baseline": 41,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
@@ -1362,6 +1393,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "α",
@@ -1398,11 +1430,12 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 20,
 			"fontFamily": 1,
 			"text": "X",
 			"rawText": "X",
-			"baseline": 17,
+			"baseline": 18,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
@@ -1424,8 +1457,8 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"y": 240,
 			"strokeColor": "#495057",
 			"backgroundColor": "transparent",
-			"width": 43,
-			"height": 44,
+			"width": 42,
+			"height": 43,
 			"seed": 289176075,
 			"groupIds": [
 				"UTYIQbKgUAV1RETmwbr73"
@@ -1433,6 +1466,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 36,
 			"fontFamily": 3,
 			"text": "::",
@@ -1459,7 +1493,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"y": 245.39453125,
 			"strokeColor": "#495057",
 			"backgroundColor": "transparent",
-			"width": 43,
+			"width": 42,
 			"height": 45,
 			"seed": 1329093605,
 			"groupIds": [
@@ -1468,6 +1502,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "FX",
@@ -1494,8 +1529,8 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"y": 245.39453125,
 			"strokeColor": "#495057",
 			"backgroundColor": "transparent",
-			"width": 64,
-			"height": 44,
+			"width": 63,
+			"height": 43,
 			"seed": 152211147,
 			"groupIds": [
 				"UTYIQbKgUAV1RETmwbr73"
@@ -1503,6 +1538,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 36,
 			"fontFamily": 3,
 			"text": "-->",
@@ -1538,6 +1574,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "GX",
@@ -1571,11 +1608,12 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 20,
 			"fontFamily": 2,
 			"text": "In Haskell, a natural transformation is parameterised function",
 			"rawText": "In Haskell, a natural transformation is parameterised function",
-			"baseline": 19,
+			"baseline": 18,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
@@ -1604,11 +1642,12 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168096,
+			"link": null,
 			"fontSize": 28,
 			"fontFamily": 3,
 			"text": "alpha :: forall a . F a -> G a",
 			"rawText": "alpha :: forall a . F a -> G a",
-			"baseline": 27,
+			"baseline": 28,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
@@ -1637,11 +1676,12 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168097,
+			"link": null,
 			"fontSize": 20,
 			"fontFamily": 2,
 			"text": "where",
 			"rawText": "where",
-			"baseline": 19,
+			"baseline": 18,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
@@ -1663,18 +1703,19 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"y": 440,
 			"strokeColor": "#495057",
 			"backgroundColor": "transparent",
-			"width": 590,
+			"width": 591,
 			"height": 34,
 			"seed": 47672997,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168097,
+			"link": null,
 			"fontSize": 28,
 			"fontFamily": 3,
 			"text": "alpha . (fmap f) = (fmap f) . alpha ",
 			"rawText": "alpha . (fmap f) = (fmap f) . alpha ",
-			"baseline": 27,
+			"baseline": 28,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
@@ -1703,6 +1744,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "round",
 			"boundElements": [],
 			"updated": 1641119168097,
+			"link": null,
 			"startBinding": {
 				"elementId": "O3B5eH2j",
 				"focus": 0.2743173876708157,
@@ -1750,6 +1792,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "round",
 			"boundElements": [],
 			"updated": 1641119168097,
+			"link": null,
 			"startBinding": {
 				"elementId": "8rWuPjs_34MmPKRpIRkZm",
 				"focus": -1.1100239455187693,
@@ -1801,6 +1844,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "round",
 			"boundElements": [],
 			"updated": 1641119168097,
+			"link": null,
 			"startBinding": {
 				"elementId": "O3B5eH2j",
 				"focus": 0.3267865180580166,
@@ -1852,6 +1896,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "round",
 			"boundElements": [],
 			"updated": 1641119168097,
+			"link": null,
 			"startBinding": {
 				"elementId": "4-eqxc4nMxd1ZgxcTI9CI",
 				"focus": -0.29200934010810287,
@@ -1903,11 +1948,12 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 			"strokeSharpness": "sharp",
 			"boundElements": [],
 			"updated": 1641119168097,
+			"link": null,
 			"fontSize": 20,
 			"fontFamily": 2,
 			"text": "Natural transformation is isomorphic iff. all its associated arrows are isomorphic.",
 			"rawText": "Natural transformation is isomorphic iff. all its associated arrows are isomorphic.",
-			"baseline": 19,
+			"baseline": 18,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
@@ -1915,7 +1961,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 		}
 	],
 	"appState": {
-		"theme": "dark",
+		"theme": "light",
 		"viewBackgroundColor": "#ffffff",
 		"currentItemStrokeColor": "#000000",
 		"currentItemBackgroundColor": "transparent",

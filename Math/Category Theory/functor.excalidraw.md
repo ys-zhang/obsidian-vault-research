@@ -83,8 +83,8 @@ contravariant functor F ^ffnwAV3I
 			"y": -277.5786830357142,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 16,
-			"height": 36,
+			"width": 17,
+			"height": 35,
 			"seed": 837304210,
 			"groupIds": [
 				"e9bAQkrK_8tl1qKZSIY4_"
@@ -155,8 +155,8 @@ contravariant functor F ^ffnwAV3I
 			"y": -117.57868303571422,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 14,
-			"height": 36,
+			"width": 15,
+			"height": 35,
 			"seed": 496926034,
 			"groupIds": [
 				"Aji5y3kMoH95ylmYFulcf"
@@ -224,7 +224,7 @@ contravariant functor F ^ffnwAV3I
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 22,
-			"height": 36,
+			"height": 35,
 			"seed": 994509586,
 			"groupIds": [
 				"KNmUzHl1CpCK_4Bwv6N0F"
@@ -343,7 +343,7 @@ contravariant functor F ^ffnwAV3I
 			"y": -201.54575892857133,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 18,
+			"width": 17,
 			"height": 45,
 			"seed": 368500046,
 			"groupIds": [],
@@ -470,7 +470,7 @@ contravariant functor F ^ffnwAV3I
 			"strokeColor": "#2b8a3e",
 			"backgroundColor": "transparent",
 			"width": 33,
-			"height": 36,
+			"height": 35,
 			"seed": 573850706,
 			"groupIds": [
 				"xHGqY0GcfQ9fbg9yCXpUj"
@@ -546,7 +546,7 @@ contravariant functor F ^ffnwAV3I
 			"strokeColor": "#2b8a3e",
 			"backgroundColor": "transparent",
 			"width": 31,
-			"height": 36,
+			"height": 35,
 			"seed": 1468787218,
 			"groupIds": [
 				"Cgh623aUJnzxfA4TNHndr"
@@ -621,8 +621,8 @@ contravariant functor F ^ffnwAV3I
 			"y": 45.27845982142867,
 			"strokeColor": "#2b8a3e",
 			"backgroundColor": "transparent",
-			"width": 38,
-			"height": 36,
+			"width": 39,
+			"height": 35,
 			"seed": 1449711570,
 			"groupIds": [
 				"DPXMxa5dc7YDguZXKJfff"
@@ -832,7 +832,7 @@ contravariant functor F ^ffnwAV3I
 			"y": -47.943080357142776,
 			"strokeColor": "#2b8a3e",
 			"backgroundColor": "transparent",
-			"width": 38,
+			"width": 39,
 			"height": 45,
 			"seed": 1380977358,
 			"groupIds": [],
@@ -1341,7 +1341,7 @@ contravariant functor F ^ffnwAV3I
 			"y": 109.37165178571416,
 			"strokeColor": "#862e9c",
 			"backgroundColor": "transparent",
-			"width": 168,
+			"width": 167,
 			"height": 45,
 			"seed": 857105874,
 			"groupIds": [],
@@ -1375,8 +1375,8 @@ contravariant functor F ^ffnwAV3I
 			"y": 200.77765376984144,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 16,
-			"height": 36,
+			"width": 17,
+			"height": 35,
 			"seed": 1537445006,
 			"groupIds": [
 				"rjpjlncea8PEa7G-udIb5"
@@ -1451,8 +1451,8 @@ contravariant functor F ^ffnwAV3I
 			"y": 360.77765376984144,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 14,
-			"height": 36,
+			"width": 15,
+			"height": 35,
 			"seed": 1088342734,
 			"groupIds": [
 				"JjHrEzJsUussjYIqo5zQt"
@@ -1528,7 +1528,7 @@ contravariant functor F ^ffnwAV3I
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 22,
-			"height": 36,
+			"height": 35,
 			"seed": 1352155406,
 			"groupIds": [
 				"QqBDY2puz0O3adNqjIgMC"
@@ -1651,7 +1651,7 @@ contravariant functor F ^ffnwAV3I
 			"y": 276.8105778769843,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 18,
+			"width": 17,
 			"height": 45,
 			"seed": 175830162,
 			"groupIds": [],
@@ -1778,7 +1778,7 @@ contravariant functor F ^ffnwAV3I
 			"strokeColor": "#2b8a3e",
 			"backgroundColor": "transparent",
 			"width": 33,
-			"height": 36,
+			"height": 35,
 			"seed": 1372845006,
 			"groupIds": [
 				"0Lk3FdrlqCs9ab5a-j_rf"
@@ -1854,7 +1854,7 @@ contravariant functor F ^ffnwAV3I
 			"strokeColor": "#2b8a3e",
 			"backgroundColor": "transparent",
 			"width": 31,
-			"height": 36,
+			"height": 35,
 			"seed": 989874702,
 			"groupIds": [
 				"N9Er8IiqejJwCaaMTsp_V"
@@ -1929,8 +1929,8 @@ contravariant functor F ^ffnwAV3I
 			"y": 523.6347966269843,
 			"strokeColor": "#2b8a3e",
 			"backgroundColor": "transparent",
-			"width": 38,
-			"height": 36,
+			"width": 39,
+			"height": 35,
 			"seed": 1623709774,
 			"groupIds": [
 				"Fu03SJXrlMwn3X8FCWhBu"
@@ -2140,7 +2140,7 @@ contravariant functor F ^ffnwAV3I
 			"y": 430.4132564484129,
 			"strokeColor": "#2b8a3e",
 			"backgroundColor": "transparent",
-			"width": 38,
+			"width": 39,
 			"height": 45,
 			"seed": 30596882,
 			"groupIds": [],
@@ -2669,7 +2669,7 @@ contravariant functor F ^ffnwAV3I
 		}
 	],
 	"appState": {
-		"theme": "dark",
+		"theme": "light",
 		"viewBackgroundColor": "#ffffff",
 		"currentItemStrokeColor": "#000000",
 		"currentItemBackgroundColor": "transparent",

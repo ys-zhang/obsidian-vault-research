@@ -8,7 +8,7 @@ L &: D \to C \\
 R &: C \to D
 \end{align}
 $$
-satisfies and two natural transform _unit_ and _counit_,
+satisfies and two natural transformation _unit_ and _counit_,
 
 $$
 \begin{align}
@@ -43,14 +43,14 @@ We say that $L$ is left adjoint to $R$ iff there is an isomorphism of hom-set
 $$
 \mathbf C(Ld, c) \cong \mathbf D(d, Rc)
 $$
-In detail, there exists natural transform between 
+In detail, there exists natural transformation between 
 $$
 \begin{align}
 c &\to \mathbf C(Ld, c) \\
 c &\to \mathbf D(d, Rc)
 \end{align}
 $$
-and another natural transform between
+and another natural transformation between
 $$
 \begin{align}
 d &\to \mathbf C(Ld, c) \\

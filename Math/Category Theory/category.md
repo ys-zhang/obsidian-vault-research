@@ -52,7 +52,7 @@ $$
 The _product_ of 2 objects $P, Q$ in category $\mathscr C$ is an object $C$ with a pair of morphism $p: C \to P$ and $q: C \to Q$ ; and, $\forall (Z', p': Z' \to X, q': Z' \to Y)$ , $\exists! m: Z' \to Z$, such that 
 $p' = p \circ m$ and $q' = q \circ m$.
 
-![[product (category).excalidraw]]
+![[Product (category).excalidraw]]
 
 
 ```ad-note
@@ -61,7 +61,7 @@ It's like the _product_ $C$ is the _closest_ object to $P$ and $Q$ that can maps
 
 ## Coproduct (categorical sum)
 
-![[coproduct (category).excalidraw]]
+![[Coproduct (category).excalidraw]]
 
 ```ad-note
 - Coproduct is product in the opposite category.
@@ -75,8 +75,8 @@ let $\mathscr C$ and $\mathscr D$  be two small category. the product category, 
 ## ADT (algebraic data type)
 
 1. **Product** and **Coproduct** is _commutative_ and _associative_ (up to isomorphism).
-2. **Product** with `Void` is a [[monoid]].
-3. **Coproduct** with `Unit` is [[monoid]].
+2. **Product** with `Void` is a [[Monoid]].
+3. **Coproduct** with `Unit` is [[Monoid]].
 4. **Product** and **Coproduct** together form a __Rig__ (_ring with out negative, or semi-ring_)
 
 - `Bool = Unit + Unit`
@@ -85,7 +85,7 @@ let $\mathscr C$ and $\mathscr D$  be two small category. the product category, 
 
 # Functor
 
-![[functor.excalidraw]]
+![[Functor.excalidraw]]
 
 **Functor** keeps internal structure (_morphism_) of _category_.
 1. (id): $F(id_X) = id_{FX}$;
@@ -177,19 +177,31 @@ class Bifunctor b where
 
 # Natural Transformation
 
-![[natural transformation.excalidraw]]
+![[Natural transformation.excalidraw]]
 
 [Natural transformation is free](https://bartoszmilewski.com/2014/09/22/parametricity-money-for-nothing-and-theorems-for-free/) in [[Haskell]] due to [[parametric polymorphism]], which is different from [[ad-hoc polymorphism]].
 
+
+## Composition
+
+A natural transformation can be thought as a function:
+$$
+\alpha: \forall c \in \mathscr C,\; c \to (F\;c \to G\;c) 
+$$
+
+1. To make $\alpha \circ T$  a natural transformation we need $T$ to map objects to objects, _functors restrict to $\mathbf{Obj}(C)$_;
+2. To make $T \circ \alpha$ a natural transformation we need $T$ to map morphisms to morphisms, _functors restrict to $\mathbf{Hom}(C)$_. 
+
+
 ## Cone
 
-![[cone (category).excalidraw]]
+![[Cone (category).excalidraw]]
 
 TLDR;
-A _Cone_ is a natural morphism that maps the _apex functor_ to the _diagram functor_:
+A _Cone_ is a natural transformation that maps the _apex functor_ to the _diagram functor_:
 1. the _apex functor_ maps the category to the apex of the cone;
 2. the _diagram functor_ maps the category to the bottom of the cone;
-3. the arrows of the natural morphism is arms of the cones
+3. the arrows of the natural transformation is arms of the cones
 4. Naturality requires that all wall triangles commute. 
 
  
@@ -256,7 +268,7 @@ where
 
 In other words, _cones with the same apex is isomorphic to arrow from the apex to the limit_.
 
-![[limit (category)]]
+![[Limit (category)]]
 
 To construct the $limit$, for each $c\in \mathcal D$ we have a set of cones with apex $c$, we need to find the _unique_ morphism from $c$ to the $limit$.
 
@@ -275,11 +287,11 @@ $$
 
 #### Proof
 
-##### The Natural Transform 
+##### The Natural Transformation 
 
 We define two factors from $\mathscr C$ to $\mathbf{Set}$ (the category of set):
 
-_The first one_ is another contravariant functor that maps an object to a set of cones (natural transforms). 
+_The first one_ is another contravariant functor that maps an object to a set of cones (natural transformations). 
 $$
 F(c) = \mathbf{Nat}(\Delta_c, D )
 $$
@@ -305,9 +317,9 @@ $$
 (Gf)\;m := m \circ f
 $$
 
-$F, G$ are [[presheaf]] (contravariant functors maps to $\mathbf{Set}$) 
+$F, G$ are [[Presheaf]] (contravariant functors maps to $\mathbf{Set}$) 
 1. $F$ maps $c$ to all cones with $c$ as apex
-2. $G$ is the [[presheaf#Representable Presheaf |representable presheaf]] of $\mathbf{Lim}D$ maps $c$ to the hom-set.
+2. $G$ is the [[Presheaf#Representable Presheaf |representable presheaf]] of $\mathbf{Lim}D$ maps $c$ to the hom-set.
 
 
 ##### The proof
@@ -327,7 +339,7 @@ Then, if $\alpha, \beta$ exists, it easy to verify that $\mathbf{Lim} D$ is the 
 
 # Function type (exponential object)
 
-![[function (category).excalidraw]]
+![[Function (category).excalidraw]]
 
 
 # Kleisli Category

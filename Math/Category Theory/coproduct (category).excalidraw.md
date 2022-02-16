@@ -289,7 +289,7 @@ m is unique ^5yjAtUt1
 			"y": -229.59765625,
 			"strokeColor": "#087f5b",
 			"backgroundColor": "transparent",
-			"width": 4,
+			"width": 5,
 			"height": 25,
 			"seed": 1527547154,
 			"groupIds": [
@@ -664,7 +664,7 @@ m is unique ^5yjAtUt1
 			"strokeColor": "#e67700",
 			"backgroundColor": "transparent",
 			"width": 204,
-			"height": 10,
+			"height": 11,
 			"seed": 941200910,
 			"groupIds": [
 				"XWxvPXgxjmAQtfPc6slxL"
@@ -676,7 +676,7 @@ m is unique ^5yjAtUt1
 			"fontFamily": 2,
 			"text": "C is the coproduct/sum/disjoint-union of P and Q",
 			"rawText": "C is the coproduct/sum/disjoint-union of P and Q",
-			"baseline": 8,
+			"baseline": 9,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
@@ -699,7 +699,7 @@ m is unique ^5yjAtUt1
 			"strokeColor": "#e67700",
 			"backgroundColor": "transparent",
 			"width": 151,
-			"height": 10,
+			"height": 11,
 			"seed": 545069522,
 			"groupIds": [
 				"XWxvPXgxjmAQtfPc6slxL"
@@ -711,7 +711,7 @@ m is unique ^5yjAtUt1
 			"fontFamily": 2,
 			"text": "m = i' + j' is the coproduct of i' and j''",
 			"rawText": "m = i' + j' is the coproduct of i' and j''",
-			"baseline": 8,
+			"baseline": 9,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
@@ -733,7 +733,7 @@ m is unique ^5yjAtUt1
 			"y": -288.8245376275511,
 			"strokeColor": "#e67700",
 			"backgroundColor": "transparent",
-			"width": 48,
+			"width": 47,
 			"height": 11,
 			"seed": 81241166,
 			"groupIds": [

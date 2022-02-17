@@ -7,4 +7,4 @@ In short, a [[group]] is a monoid where each element has an inversion element.
 - (_associativity_) $\forall x, y, z \in M$ , $(x \cdot y) \cdot z = x \cdot (y \cdot z)$.
 
 
-A **Monoidal Category** is a category in which there exists a **endo-bifunctor**.
+See [[Monad#Monoid in Monoidal Category]]

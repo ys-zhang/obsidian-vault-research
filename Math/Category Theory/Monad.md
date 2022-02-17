@@ -46,24 +46,100 @@ _The second rule is says that __unit__ is __almost__ the identity morphism in Kl
 1. $\eta$ is the left identity, i.e. $\forall f: C\to TC,\; \eta \leftarrowtail f = f$;
 2. $\eta$ is the right identity in $TC\subset C$, i.e. $\forall f: TC \to T(TC),\; f\leftarrowtail \eta = f$
 
-# Monoidal Category
+
+# Monoid 
+
+## Monoidal Category
+
+TLDR;
+> All told, monad is just a monoid in the category of endofunctors.
+
 
 A _tensor product_ is a bifunctor that is associative up to natural isomorphism.
-A _monoidal category_ is a category with :
+A __monoidal category__ is a category with :
 1. a _tensor product_,
-2. a special object $i$ called _unit_,
-3. and 3 natural isomorphisms
+2. a special _object_ $i$ called _unit_,
+3. and _natural isomorphisms_ (associator, left unitor, right unitor):
 $$
 \begin{align}
-\alpha|_{abc} &: (a\otimes b) \otimes c \to a\otimes (b \otimes c) \\
-\lambda_a &: i \times a \to a \\
-\rho_a &: a \times i \to a \\
+\otimes &: \mathbf{C} \times \mathbf{C} \to \mathbf{C} \\
+\alpha_{abc} &: (a\otimes b) \otimes c \to a\otimes (b \otimes c) \\
+\lambda_a &: i \otimes a \to a \\
+\rho_a &: a \otimes i \to a \\
 \end{align}
 $$
 
-> All told, monad is just a monoid in the category of endofunctors.
+```ad-note
+Easy to see the objects in monoidal category have a monoid structure (up to isomorphism), the difference with the original [[monoid]] definition is that the objects may not form a Set
+```
 
-# Example
+## Define monoid through Monoidal Category
+
+The problems is how to define a monoid structure inside an object $m$ without peek in to $m$. 
+To define a monoid we need a _multiply_ defined on $m$ and an identity in $m$:
+$$
+\begin{align}
+\mu &: m \otimes m \to m \\
+\eta &: i \to m
+\end{align}
+$$
+and following rules:
+1. unit rule:
+$$
+\begin{align}
+\mu \circ (\eta \otimes id) = \lambda_m\\  
+\mu \circ (id \otimes \eta) = \rho_m
+\end{align}
+$$
+![[Pasted image 20220217132055.png]]
+2. associativity rule:
+$$
+\mu \circ (\mu \otimes id) = \mu \circ (id \otimes \mu) \circ \alpha 
+$$
+![[Pasted image 20220217132029.png]]
+
+The category of endofunctors is a monoidal category:
+1. objects are endofunctors
+2. morphisms are natural transformations
+3. functor composition serves as tensor product.
+        functor composition is indeed a bifunctor
+        let $F, G, F', G' \in \mathscr F$ and $\alpha : F \to F', \; \beta: G \to G'$.
+$$
+\begin{align}
+&\beta \otimes \alpha \; : \; G\circ F = G\otimes F \to G' \otimes F' = G'\circ F' \\
+(&\beta \otimes \alpha)_a 
+  = \beta_{F'a} \circ G(\alpha_a)
+  = G'(\alpha_a) \circ \beta_{Fa}
+\end{align}
+$$
+![[Pasted image 20220217142941.png]]
+![[Pasted image 20220217142922.png]]
+   
+
+  # Comonad
+
+  ```ad-note
+A comonad, on the other hand, provides the means of extracting a single value from it. It does not give the means to insert values. 
+So if you want to think of a comonad as a container, it always comes _pre-filled with contents_, and it lets you peek at it.
+
+Just as a Kleisli arrow takes a value and produces some embellished result — it embellishes it with context — a co-Kleisli arrow takes a value together with a whole context and produces a result.
+  ```
+The intuition behind these functions is based on the idea that, in general, a comonad can be thought of as a container filled with values of type a (the product comonad was a special case of just one value). There is a notion of the “current” value, one that’s easily accessible through extract. 
+
+> A co-Kleisli arrow performs some computation that is focused on the current value, but it has access to all the surrounding values.
+
+
+```haskell
+class Functor w => Comonad w where 
+  extract :: w a -> a
+  duplicate :: w a -> w (w a)
+  duplicate = extend id
+  extend :: (w a -> b) -> w a -> w b 
+  extend f = fmap f . duplicate
+
+```
+
+ # Example
 
 
 ## The Continue Monad
@@ -95,3 +171,8 @@ There is no equivalent of `runState` or `runReader` for the `IO` monad. There is
 It’s just like the box with the Schrödinger’s cat inside — except that there is no way to open or peek inside the box.
 
 In Haskell, `IO` is a monad. It means that you are able to compose Kleisli arrows that produce `IO` objects.
+
+
+## The Stream Comonad
+
+A stream is just like a list, except that it doesn’t have the empty constructor

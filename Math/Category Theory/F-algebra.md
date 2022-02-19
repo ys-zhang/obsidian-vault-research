@@ -24,3 +24,4 @@ evalZ One  = 1
 
 ![[Pasted image 20220219104337.png]]
 
+**The initial object in the F-algebra in **

@@ -139,6 +139,29 @@ class Functor w => Comonad w where
 
 ```
 
+
+
+# Equip with a F-algebra
+
+A monad can be equip with a [[F-algebra]].
+let $\eta$ and $\mu$ are the _unit_ and _multiplier_ of the monad $T$ 
+let $alg$ be the algebraic evaluator
+1. The intuition is that $\eta_a$ creates a trivial expression from a value of type $a$;
+2. evaluation of $m \circ m \; a$ is compatible with the multiplier.
+
+$$
+\begin{align}
+alg \circ \eta &= id \\
+alg \circ \mu &= alg \circ T(alg)
+\end{align}
+$$
+
+![[Pasted image 20220219164156.png]]
+
+
+
+
+
  # Example
 
 

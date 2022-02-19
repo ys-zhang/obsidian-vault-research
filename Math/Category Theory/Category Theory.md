@@ -75,8 +75,8 @@ let $\mathscr C$ and $\mathscr D$  be two small category. the product category, 
 ## ADT (algebraic data type)
 
 1. **Product** and **Coproduct** is _commutative_ and _associative_ (up to isomorphism).
-2. **Product** with `Void` is a [[monoid]].
-3. **Coproduct** with `Unit` is [[monoid]].
+2. **Product** with `Void` is a [[Monoid]].
+3. **Coproduct** with `Unit` is [[Monoid]].
 4. **Product** and **Coproduct** together form a __Rig__ (_ring with out negative, or semi-ring_)
 
 - `Bool = Unit + Unit`
@@ -181,6 +181,9 @@ class Bifunctor b where
 
 [Natural transformation is free](https://bartoszmilewski.com/2014/09/22/parametricity-money-for-nothing-and-theorems-for-free/) in [[Haskell]] due to [[parametric polymorphism]], which is different from [[ad-hoc polymorphism]].
 
+```ad-note
+A natural tranformation maps a morphism to a commute diagram
+```
 
 ## Composition
 

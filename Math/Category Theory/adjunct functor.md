@@ -35,10 +35,7 @@ $$
 # Another definition
 
  ![[Pasted image 20220214225617.png]]
-
- 
-
-We say that $L$ is left adjoint to $R$ iff there is an isomorphism of hom-set
+We say that $L$ is left adjoint to $R$ iff. there is an isomorphism of hom-set
 
 $$
 \mathbf C(Ld, c) \cong \mathbf D(d, Rc)

@@ -25,7 +25,7 @@ $$
 # Objects
 
 the _initial object_ and the _terminal object_
-- For all objects in the category, _initial object_ have one arrow to it. _Initial object_ is unique. This object is $\emptyset$  or `Void` in [[The Hask Category]];
+- For all objects in the category, _initial object_ have one unique arrow to it. _Initial object_ is unique. This object is $\emptyset$  or `Void` in [[The Hask Category]];
 - For all objects in the category, there is one unique arrow from it to the _terminal object_. _Terminal object_ is unique up to isomorphism. This object is `Unit` in [[The Hask Category]].
 
 # Opposite Category
@@ -184,6 +184,9 @@ class Bifunctor b where
 
 ## Composition
 
+[natural transformation (nlab)](http://nlab-pages.s3.us-east-2.amazonaws.com/nlab/show/natural+transformation#composition)
+
+### Compose with functors
 A natural transformation can be thought as a function:
 $$
 \alpha: \forall c \in \mathscr C,\; c \to (F\;c \to G\;c) 
@@ -191,6 +194,60 @@ $$
 
 1. To make $\alpha \circ T$  a natural transformation we need $T$ to map objects to objects, _functors restrict to $\mathbf{Obj}(C)$_;
 2. To make $T \circ \alpha$ a natural transformation we need $T$ to map morphisms to morphisms, _functors restrict to $\mathbf{Hom}(C)$_. 
+
+$$
+\begin{align}
+(\alpha \circ H)_x = \alpha_{Hx} \\
+(H\circ \alpha)_x = H(\alpha_x)
+\end{align}
+$$
+
+![[Natural transformation composition.excalidraw]]
+
+
+### Horizontal Composition
+
+[horizontal composition (nlab)](http://nlab-pages.s3.us-east-2.amazonaws.com/nlab/show/horizontal+composition)
+
+$$
+\begin{align}
+\mathscr C \overset{F}{\to} \mathscr D \overset{G}{\to} \mathscr E \\
+\mathscr C \overset{F'}{\to} \mathscr D \overset{G'}{\to} \mathscr E \\
+\alpha : F \to F' \\
+\beta: G \to G' \\
+\end{align}
+$$
+and be need a composition $\beta \circ \alpha$:
+$$
+\beta \circ \alpha : G \circ F \to G'\circ F'
+
+$$
+
+![[Pasted image 20220217142941.png]]
+
+the composition is defined as 
+$$
+(\beta \circ \alpha)_a 
+  = \beta_{F'a} \circ G(\alpha_a)
+  = G'(\alpha_a) \circ \beta_{Fa}
+$$
+
+![[Pasted image 20220217142922.png]]
+
+### Vertical Composition
+
+$$
+\begin{align}
+F: \mathscr C \to \mathscr D\\
+G: \mathscr C \to \mathscr D\\
+H: \mathscr C \to \mathscr D \\
+\alpha : F \to G\\
+\beta : G \to H 
+\end{align}
+$$
+$$
+(\beta \circ \alpha)_a = \beta_a \circ \alpha_a
+$$
 
 
 ## Cone

@@ -102,7 +102,7 @@ The category of endofunctors is a monoidal category:
 1. objects are endofunctors
 2. morphisms are natural transformations
 3. functor composition serves as tensor product.
-        functor composition is indeed a bifunctor
+        functor composition is indeed a bifunctor (see [[Category Theory#Horizontal Composition |horizontal composition]])
         let $F, G, F', G' \in \mathscr F$ and $\alpha : F \to F', \; \beta: G \to G'$.
 $$
 \begin{align}
@@ -112,8 +112,8 @@ $$
   = G'(\alpha_a) \circ \beta_{Fa}
 \end{align}
 $$
-![[Pasted image 20220217142941.png]]
-![[Pasted image 20220217142922.png]]
+
+
    
 
   # Comonad

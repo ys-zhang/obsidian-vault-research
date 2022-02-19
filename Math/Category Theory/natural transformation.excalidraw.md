@@ -1961,7 +1961,7 @@ Natural transformation is isomorphic iff. all its associated arrows are isomorph
 		}
 	],
 	"appState": {
-		"theme": "light",
+		"theme": "dark",
 		"viewBackgroundColor": "#ffffff",
 		"currentItemStrokeColor": "#000000",
 		"currentItemBackgroundColor": "transparent",

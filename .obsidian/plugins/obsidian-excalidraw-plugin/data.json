@@ -1,8 +1,12 @@
 {
   "folder": "Excalidraw",
+  "embedUseExcalidrawFolder": false,
   "templateFilePath": "Excalidraw/Template.excalidraw",
   "scriptFolderPath": "Excalidraw/Scripts",
+  "autosave": true,
+  "autosaveInterval": 30000,
   "drawingFilenamePrefix": "Drawing ",
+  "drawingEmbedPrefixWithFilename": true,
   "drawingFilenameDateTime": "YYYY-MM-DD HH.mm.ss",
   "displaySVGInPreview": true,
   "previewMatchObsidianTheme": true,
@@ -15,6 +19,8 @@
   "zoomToFitMaxLevel": 2,
   "linkPrefix": "👉",
   "urlPrefix": "🌐",
+  "hoverPreviewWithoutCTRL": false,
+  "linkOpacity": 1,
   "openInAdjacentPane": false,
   "showLinkBrackets": false,
   "allowCtrlClick": true,
@@ -24,6 +30,7 @@
   "pngExportScale": 1,
   "exportWithTheme": true,
   "exportWithBackground": false,
+  "exportPaddingSVG": 10,
   "keepInSync": false,
   "autoexportSVG": false,
   "autoexportPNG": false,
@@ -32,6 +39,10 @@
   "syncExcalidraw": false,
   "experimentalFileType": true,
   "experimentalFileTag": "✏️",
+  "experimentalLivePreview": true,
+  "experimentalEnableFourthFont": false,
+  "experimantalFourthFont": "Virgil",
+  "fieldSuggestor": true,
   "compatibilityMode": false,
   "loadCount": 6,
   "drawingOpenCount": 28,
@@ -41,6 +52,47 @@
     "version": 2,
     "source": "https://excalidraw.com",
     "libraryItems": [
+      {
+        "status": "unpublished",
+        "elements": [
+          {
+            "id": "FMFrye9xrkLJg26XGlBmZ",
+            "type": "text",
+            "x": 60.5,
+            "y": -139.16668701171875,
+            "width": 19,
+            "height": 35,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "sharp",
+            "seed": 1478120413,
+            "version": 7,
+            "versionNonce": 1592525629,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1645093459445,
+            "link": null,
+            "text": "β",
+            "rawText": "β",
+            "fontSize": 28,
+            "fontFamily": 1,
+            "textAlign": "left",
+            "verticalAlign": "top",
+            "baseline": 25,
+            "containerId": null,
+            "originalText": "β"
+          }
+        ],
+        "id": "hQFnSXU9-KRZkONWm6vfd",
+        "created": 1645093464709
+      },
       {
         "status": "unpublished",
         "elements": [
@@ -2238,5 +2290,6 @@
   "mdSVGmaxHeight": 800,
   "mdFont": "Virgil",
   "mdFontColor": "Black",
-  "mdCSS": ""
+  "mdCSS": "",
+  "scriptEngineSettings": {}
 }

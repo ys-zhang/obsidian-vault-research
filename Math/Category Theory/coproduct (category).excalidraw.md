@@ -754,7 +754,7 @@ m is unique ^5yjAtUt1
 		}
 	],
 	"appState": {
-		"theme": "light",
+		"theme": "dark",
 		"viewBackgroundColor": "#ffffff",
 		"currentItemStrokeColor": "#e67700",
 		"currentItemBackgroundColor": "transparent",

@@ -244,7 +244,10 @@
     "syscall",
     "async",
     "proc",
-    "tracee"
+    "tracee",
+    "NuGet",
+    "Uno",
+    "OneDrive"
   ],
   "vimMode": false,
   "alwaysUpdateLinks": true,
@@ -253,7 +256,7 @@
   "foldIndent": true,
   "newFileLocation": "current",
   "showUnsupportedFiles": true,
-  "fileSortOrder": "alphabetical",
+  "fileSortOrder": "byModifiedTime",
   "promptDelete": true,
   "strictLineBreaks": true,
   "defaultViewMode": "source",

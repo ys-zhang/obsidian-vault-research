@@ -55,7 +55,6 @@ From the remarks of the reference of `System.Data`:
 | `DataTable`            | represents data from a single data source, contains `DataColumnCollection` |
 | `DataColumnCollection` | defines the _schema_ of the table, contains multiple `DataColumn`          |
 | `DataColumn`           | determines the type of data it holds                                       |
-|                        |                                                                            |
 
 
 ## Data Analysis Tools
@@ -106,6 +105,9 @@ To be _observable_ the `class` of the binding source should be any of:
 3. drive from `BindableBase`
 
 
+### Bind to Function
+
+
 ## Delegate
 
 ```c#
@@ -151,6 +153,17 @@ Event -= action;  // unsubscribe
 - subscribe to an event by using the `+=` operator
 - unsubscribe using the `-=` operator
 
+# WinUI3
+
+## ListView
+
+[Uwp ListView Tips And Common Mistakes · Yet Another Tech & Life blog (arashadbm.com)](http://www.arashadbm.com/post/uwp-listview-tips/)
+```ad-note
+title: ListView Cannot Scroll
+
+Put `ListView` in a `Grid` and set the `RowDefination` Height to `"*"`
+
+```
 
 # Interop of C# & F#
 

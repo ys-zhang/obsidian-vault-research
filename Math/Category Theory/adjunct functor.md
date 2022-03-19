@@ -71,7 +71,6 @@ extract :: w c -> c   -- w is the endofunctor of L . R
 extract . (fmap f) = f . extract 
 ```
 
-
 In Haskell the typeclass `Adjunction` defines the  adjunction relationship of two endo-functors.
 
 ```haskell

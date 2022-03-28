@@ -1,3 +1,5 @@
+# `matplotlib`
+
 ![[Pasted image 20210824220835.png]]
 -   Figure `fig = plt.figure()`: 可以解释为画布。
 	-   画图的第一件事，就是创建一个画布figure，然后在这个画布上加各种元素。

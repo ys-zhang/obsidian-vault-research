@@ -274,7 +274,7 @@ $$
 var_g[{f(X_1, X_2) \over g(X_1, X_2)}] = var_g[E_g[\frac{f(X_1, X_2)}{g(X_1, X_2)}|X_1]] + E_g[var_g[\frac{f(X_1, X_2)}{g(X_1, X_2)}|X_1]]
 $$
 
->In the [[Analysis of Variance (ANOVA)]] terminology, is the average "within-group" variation with the group indexed by $X_1$
+>In the [[ANOVA (Analysis of Variance)]] terminology, is the average "within-group" variation with the group indexed by $X_1$
 
 ##    Adaptive importance sampling
 

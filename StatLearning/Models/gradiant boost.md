@@ -3,7 +3,3 @@
 
 # Function estimation
 
-目标求
-$$
-	
-$$

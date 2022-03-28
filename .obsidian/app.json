@@ -247,11 +247,13 @@
     "tracee",
     "NuGet",
     "Uno",
-    "OneDrive"
+    "OneDrive",
+    "collinearity",
+    "regressors"
   ],
   "vimMode": false,
   "alwaysUpdateLinks": true,
-  "communityPluginSortOrder": "release",
+  "communityPluginSortOrder": "download",
   "attachmentFolderPath": "attachments",
   "foldIndent": true,
   "newFileLocation": "current",

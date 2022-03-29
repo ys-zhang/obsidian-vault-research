@@ -271,7 +271,6 @@ This estimator of $\sigma^2$ requires the error $e$ are _normal_ and _i.i.d._
 ```
 
 
-
 ### Geometric Interpretation
 
 
@@ -336,6 +335,7 @@ $$
 - If $H_0$ is not rejected, it indicates that regressor $x_i$ can be removed from the model.
 - This is a test of the contribution of $x_i$ _given other regressors_ in the model .
 ```
+
 
 #### Extra-sum-of-squares (Group of Coefficients)
 
@@ -518,5 +518,41 @@ Lindstrom, M. J., & Bates, D. M. (1988). Newton-Raphson and EM Algorithms for Li
 ```
 
 
+## Categorical Data
+
+Categorical data encoded with **one-hot vector**, i.e., each level of each categorical variable takes a dimension of the **one-hot vector**.
+
+Generally, for $m$ categorical dimensions with $n_j$ levels for the $j$th dimension, the one-hot vector's length at least to be $(\sum_1^m n_j) -1$, i.e., $0$ for the 1st level, $e_i$ for the left levels.
+
+The above full model is equivalent to fit a linear model in each level independently. 
+$$
+y = \beta_{0, i} + \beta_{1, i}x_1 + \cdots+ \beta_{p, i}x_p + \varepsilon
+$$
+
+However, more constraint models can be considered:
+
+1. _Parallel lines_: i.e.  $\beta_{k, i} = \beta_k$ , slopes are constant over different levels.
+2. _Concurrent lines_: equal intercepts but different slopes
+3. Coincident lines: equal intercepts and equal slopes.
+
+```ad-warning
+title: Allocated Code
+
+It seems more convenient to allocate a unique integer code for each level; however, the allocated codes **impose a particular metric** on the levels of the qualitative factor.
+
+For example, if the code is assigned as $x_g = 0, 1, 2, \dots, k, \dots$, it implicitly assumes the differences of each level are equal. 
+
+suppose after fit:
+
+$$
+y = \beta_0 \cdots + \beta_gx_g + \cdots
+$$
+
+then intercept for level $k$ is 
+$$
+\beta_{0,k} = \beta_0 + k\beta_g
+$$
+thus we have, the differences of adjacent group's intercept are all equal to $\beta_g$ 
+```
 
 

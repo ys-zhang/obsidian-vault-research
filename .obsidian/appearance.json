@@ -1,7 +1,7 @@
 {
   "baseFontSize": 16,
-  "cssTheme": "Cybertron",
-  "theme": "obsidian",
+  "cssTheme": "Minimal",
+  "theme": "moonstone",
   "translucency": false,
   "baseFontSizeAction": false
 }

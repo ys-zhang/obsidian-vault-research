@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "title": "ANOVA (Analysis of Variance)",
+      "path": "StatLearning/Models/ANOVA (Analysis of Variance).md"
+    },
+    {
+      "type": "file",
+      "title": "Linear Model",
+      "path": "StatLearning/Models/Linear Model.md"
+    }
+  ]
+}

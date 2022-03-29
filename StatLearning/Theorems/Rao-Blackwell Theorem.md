@@ -1,4 +1,4 @@
->The** Rao–Blackwell theorem** states that if $g(X)$ is any kind of estimator of a parameter $\theta$, then the $E[g(X)|T]$ is typically a better estimator of θ, and is never worse, where $T$ is a [[sufficient statistic]]. 
+>The **Rao–Blackwell theorem** states that if $g(X)$ is any kind of estimator of a parameter $\theta$, then the $E[g(X)|T]$ is typically a better estimator of θ, and is never worse, where $T$ is a [[sufficient statistic]]. 
 
 Let $\delta(X)$ be an estimator of parameter $\theta$,
 Let $\delta'(X)=E[\delta(X)|T(X)]$

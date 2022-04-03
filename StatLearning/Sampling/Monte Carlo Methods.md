@@ -283,7 +283,7 @@ the target distribution $\pi$.
 
 > With weighted Monte Carlo  samples, one can estimate the mean and covariance matrix, denoted as $\mu_1$  and $\Sigma_1$, respectively, of the target distribution.
 > Then, a new trial density  can be constructed as $g_1(x) = t_\alpha(x, \mu_1, \Sigma_1)$ (Oh and Berger 1992). 
-> This procedure can be iterated until a certain measure of discrepancy between the trial distribution and the target distribution, such as the [[coefficient of variation]] of the importance weights, does not improve any more.
+> This procedure can be iterated until a certain measure of discrepancy between the trial distribution and the target distribution, such as the [[Coefficient of Variation]] of the importance weights, does not improve any more.
 
 ##### Optimal Trial Distributions
 

@@ -7,8 +7,13 @@
     },
     {
       "type": "file",
-      "title": "Linear Model",
-      "path": "StatLearning/Models/Linear Model.md"
+      "title": "linear model",
+      "path": "StatLearning/Models/Linear Models.md"
+    },
+    {
+      "type": "file",
+      "title": "multicollinearity",
+      "path": "StatLearning/Concepts/statistics/Multicollinearity.md"
     }
   ]
 }

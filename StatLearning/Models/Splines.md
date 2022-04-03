@@ -1,3 +1,6 @@
+# Spline Method
+
+
 **Splines** are _piecewise polynomials_ of order $k$. 
 The joint points of the pieces are usually called **knots**.
 
@@ -22,12 +25,17 @@ In real computation, often the **B-spline basis** is used.
 ![[Pasted image 20220328211207.png]]
 
 
-
-
-
-
-
 ![[Pasted image 20220328211404.png]]
+
+
+# Basis Method
+
+$$
+\begin{align}
+y &= \sum_{i=1}^p f_i(x_i) + \varepsilon \\
+&= \sum_{i=1}^{p}\sum_{j=1}^{m_i} \beta_{ij}h_{ij}(x_i) + \varepsilon
+\end{align}
+$$
 
 
 

@@ -1,1 +1,1 @@
-Smallest $\sigma-$algebra ([[sigma-algebra]]) containing open set.
+Smallest $\sigma-$algebra ([[Sigma-algebra]]) containing open set.

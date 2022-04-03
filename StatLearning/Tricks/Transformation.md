@@ -16,7 +16,7 @@ Unfortunately, applying the _inverse transformation directly_ to the predicted v
 
 ## Linearize the Model
 
-Nonlinearity may be detected via the [[Linear Model#Lack of Fit test|Lack of Fit Test]]. 
+Nonlinearity may be detected via the [[Linear Models#Lack of Fit test|Lack of Fit Test]]. 
 
 ![[Pasted image 20220325134105.png]]
 

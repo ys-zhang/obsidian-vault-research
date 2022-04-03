@@ -20,38 +20,11 @@ Where:
 
 ### Design Matrix 
 
-$$
-X = 
-\begin{bmatrix}
-  1 & x^{(1)}_1 & x^{(1)}_2 & \cdots & x^{(1)}_p \\
-  1 & x^{(2)}_1 & x^{(2)}_2 & \cdots & x^{(2)}_p \\
-  \vdots & \vdots & \vdots & \ddots & \vdots \\
-  1 & x^{(N)}_1 & x^{(N)}_2 & \cdots & x^{(N)}_p \\
-\end{bmatrix}
-\in \mathbb R^{N\times(1+p)}
-$$
-
-
-
-```ad-note
-title: Rows and Columns of the Design Matrix
-1. Each _row_ of the design matrix represents a _sample_;
-2. Each _col_ of the design matrix represents a _regressor/design/explanatory variable_;
-```
-
-
-```ad-warning
-title: Centered Design Matrix
-We require that the design matrix is **centered**, i.e., except the first column all columns has a average of $0$.
-
-$$
-\forall j > 1,\; \sum_i x_j^{(i)} = 0
-$$
-```
+![[Design Matrix]]
 
 
 ### Covariance Matrix
-let $x = (x_1,\dots,x_p)^T$ and $X=[x^{(1)}, \dots, x^{(N)}]^T$, which is exactly the **standardized** [[#Design Matrix]] drop the first column.
+let $x = (x_1,\dots,x_p)^T$ and $X=[x^{(1)}, \dots, x^{(N)}]^T$, which is exactly the **standardised** [[#Design Matrix]] drop the first column.
 
 Then
 $$
@@ -95,27 +68,9 @@ It is easy to see that $H$ is the projection matrix.
 
 
 
-### R Square
+### R Square (coefficient of determination)
 
-- $SS_T = \sum_i (y^{(i)} - \bar y)^2$: sum of total variance
-- $SS_R = \sum_i (\hat y^{(i)} - \bar y)^2$: sum of model variance
-- $SS_{Res} = \sum_i (\hat y^{(i)} - y^{(i)})^2$ : sum of model residual / sum of training error
-
-$$
-R^2 = \frac{SS_R}{SS_T}
-$$
-
-$$
-R_{Adj}^2 = 1-\frac{SS_{Res}/(N-p-1)}{SS_T/(N-1)}
-$$
-
-```ad-warning
-
-
-This describes the power/potential of the model.
-Larger $R^2$ indicates better training error, however, _does not neccessary mean a better prediction error_.
-```
-
+![[Coefficient of Determination]]
 
 
 ### Influence & Leverage Points
@@ -153,7 +108,7 @@ these are difference of leave one out estimate of $\beta$ and $\hat y$
 $$
 \begin{align}
 DFBetaS_{ij} &= \frac{\hat \beta_j - \hat \beta_j^{(i)}}{\sqrt{S^2_{(i)}(X^TX)^{-1}_{jj}}} \\
-DFFitS_i &= \frac{\hat y_i - \hat y_I^{(i)}}{\sqrt{S^2_{(i)}h_{ii}}}
+DFFitS_i &= \frac{\hat y_i - \hat y_i^{(i)}}{\sqrt{S^2_{(i)}h_{ii}}}
 \end{align}
 $$
 
@@ -172,9 +127,9 @@ Many multiple regression computer programs use this scaling to **reduce problems
 ![[Data Scaling]]
 
 
-### Multi-collinearity 
-multi-collinearity: linearity of columns, near-linear dependence among the regression variables.
+### Multicollinearity 
 
+![[Multicollinearity]]
 
 
 
@@ -386,7 +341,7 @@ $$
 #### Outlier 
 
 1. use student-t test on training error, outliers usually have a large T value.
-2. consider **press residuals** which is the prediction error with model trained with the predicted sample removed, i.e., the **leave one out estimator*s*. High **press residual** indicate high influence points which may be outliers.
+2. consider **press residuals** which is the prediction error with model trained with the predicted sample removed, i.e., the **leave one out estimator**s. High **press residual** indicate high influence points which may be outliers.
 
 $$
 \tilde e^{(i)} = y_i - \hat y^{(i)}

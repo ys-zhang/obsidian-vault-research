@@ -9,8 +9,8 @@
 
 # Generative Adversarial Nets
 
-> a **[[generative model]] $G$** that captures the data distribution
-> and a **[[discriminative model]] $D$** that *estimates the probability that a sample came from the training data rather than $G$*
+> a **[[Generative Model]] $G$** that captures the data distribution
+> and a **[[Discriminative Model]] $D$** that *estimates the probability that a sample came from the training data rather than $G$*
 
 > This framework corresponds to *a minimax two-player game*. In the space of arbitrary functions $G$ and $D$, a unique solution exists, with $G$ recovering the training data distribution and $D$ equal to $1/2$ everywhere.
 

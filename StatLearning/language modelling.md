@@ -1,4 +1,4 @@
-give a sentence $y=\langle y_1, \cdots, y_n \range$. modelling the chance to see the sentence under some context  i.e. its probability
+give a sentence $y=\langle y_1, \cdots, y_n \rangle$. modelling the chance to see the sentence under some context  i.e. its probability
 
 $$
 \Pr(y_1, \cdots, y_n)

@@ -11,4 +11,4 @@ typical generative model approaches include
 - [[GAN]]
 and others.
 
-see [[discriminative model]]
+see [[Discriminative Model]]

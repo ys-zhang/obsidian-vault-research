@@ -49,6 +49,11 @@ This value of $\lambda$ is usually determined by fitting a model to $y(\lambda)$
 
 ```
 
+```r
+fabletools::box_cox
+```
+
+
 ## x-Transforms
 
 Assumption:

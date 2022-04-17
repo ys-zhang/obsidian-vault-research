@@ -1,3 +1,5 @@
+#statistics #distribution
+
 $$
 \begin{align}
 f(x|\theta) &=  \frac{h(x)}{g(\theta)} e^{ \eta^T(\theta)T(x) } \\

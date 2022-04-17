@@ -40,9 +40,9 @@ There is no plain `*T` type; you must always specify either `const` or `mut`:
 
 for more info of the parameter, constrain and clobber see [[assembly#GNU Assembly gcc inline syntax]].
 
-```ad-note
-inline assembly on works on nightly build. (at least in Rust 2021).
-```
+> [!NOTE]
+> Inline assembly on works on nightly build. (at least in Rust 2021).
+
 
 ## the old convention `llvm_asm!`
 
@@ -71,11 +71,10 @@ llvm_asm!(assembly template
 
 The `asm!` macro is governed by the same rules as `format!`, however, arguments to the template string is controlled by constrains.
 
-```ad-note 
-title: default syntex
+> [!NOTE] Default syntax
+> 
+> On x86 platform the _Intel Syntax_ is default. 
 
-On x86 platform the Intel Syntax is default. 
-```
 
 ### Register operands
 
@@ -86,7 +85,7 @@ Think the inline asm code as function, it has inputs and outputs.
 these specifiers tells compiler constrains on register allocation/caching, etc.
 
 - `in`: specify an expression as input parameter,
-- `out`: specify an lvalue expression as output parameter 
+- `out`: specify an `lvalue` expression as output parameter 
 - `inout`: both input and output, `inout(reg) x => y` takes `x` as input and `y` as output
 - `const`: a literal value to pass in the template.
 - `in(reg)`: tell the compiler to choose a register for us

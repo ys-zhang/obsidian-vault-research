@@ -1,3 +1,4 @@
+#algorithm  #concurrency #flow-control
 
 ![[Pasted image 20210909172527.png]]
 -   请求来了放入桶中

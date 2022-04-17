@@ -15,8 +15,7 @@ $$
 \pi = \frac{\exp(x^T\beta)}{1+\exp(x^T\beta)}
 $$
 
-```ad-note
-title: Relation with LDA
+##  Relation with LDA
 
 Logistic regression has a connection with [[LDA (Linear Discriminate Analysis)]].
 Suppose 
@@ -37,7 +36,7 @@ $$
 \Pr(X=x, Y=0) &= \exp(-x^T\beta_0) \\
 \end{align}
 $$
-By Bayesion formula,
+By Bayesian formula,
 $$
 \begin{align}
 \pi &= \Pr(Y=1|X=x) \\
@@ -47,7 +46,6 @@ $$
 $$
 
 
-```
 
 
 # Multi-level 

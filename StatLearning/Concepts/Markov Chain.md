@@ -40,7 +40,7 @@ is independent of $t$
 ## State Properties
 
 ### Recurrent states
-Let $R_s$ be r.v that denotes start from state `s` the first time back to `s`.
+Let $R_s$ be r.v. that denotes start from state `s` the first time back to `s`.
 The probability of returning back to state `s` for the first time after exactly `n` steps is defined as:
 $$
 	f_s(n)=\Pr(R_s=n) = \Pr(X_n=s,X_{n-1}\neq s,\dots,X_1\neq s | X_0=s)
@@ -64,17 +64,17 @@ In a finite state MC, **irreducibility** is equal to the requirement that all st
 
 A state `s` is **periodic** if
 $$
-   \exists d > 1 : (\forall n : n \mod d \neq 0 )
+   \exists \; d > 1 : (\forall n : n \mod d \neq 0 )
 $$
 
 A state `s` is called ***ergodic*** if it is **aperiodic** and** positive recurrent**.
 
 ### Stationary Distribution
 
-- irreducible, aperiodic and positive reccurent then
-	- Exists *uinique* station distribution.
+- irreducible, aperiodic and positive recurrent then
+	- Exists *unique* station distribution.
 	- Limit distribution converge to stationary distribution.
-- irreducible and positive reccurent then Exists *uinique* station distribution.
+- irreducible and positive recurrent then Exists *unique* station distribution.
 
 # Dynamic programming
 

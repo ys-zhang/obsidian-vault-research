@@ -1,3 +1,5 @@
+#statistics  #hypothesis-test 
+
 Levene's test ( [Levene 1960](https://www.itl.nist.gov/div898/handbook/eda/section4/eda43.htm#Levene)) is used to test if _k_ samples have equal variances. Equal variances across samples is called homogeneity of variance.
 Some statistical tests, for example the analysis of variance, assume that variances are equal across groups or samples. The Levene test can be used to verify that assumption.
 

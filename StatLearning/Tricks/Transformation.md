@@ -8,11 +8,11 @@ A common reason for the violation of the **Constant Covariance** assumption is f
 
 If this problem is not eliminated, the **least-squares estimators** will still be **unbiased**, but they will _no longer have the minimum variance property_. 
 
-```ad-warning
+> [!WARNING]
+> It is often necessary to convert the predicted values back to the original units. 
+> 
+> Unfortunately, applying the _inverse transformation directly_ to the predicted values gives an estimate of the _median of the distribution_ of the response instead of the mean.
 
-It is often necessary to convert the predicted values back to the original units. 
-Unfortunately, applying the _inverse transformation directly_ to the predicted values gives an estimate of the _median of the distribution_ of the response instead of the mean.
-```
 
 ## Linearize the Model
 
@@ -42,16 +42,16 @@ $$
 where $GM$ is the geometric mean of the samples.
 
 
-```ad-note
-MLE of $\lambda$ minimizes the training error.
+> [!NOTE]
+> MLE of $\lambda$ minimizes the training error.
+> 
+> This value of $\lambda$ is usually determined by fitting a model to $y(\lambda)$ for various values of $\lambda$ , plotting the residual sum of squares $SS_{Res}(\lambda)$ versus $\lambda$ , and then reading the value of $\lambda$ that minimizes $SS_{Res}(\lambda)$ from the graph. Usually 10–20 values of $\lambda$ are sufficient for estimation of the optimum value. 
 
-This value of $\lambda$ is usually determined by fitting a model to $y(\lambda)$ for various values of $\lambda$ , plotting the residual sum of squares $SS_{Res}(\lambda)$ versus $\lambda$ , and then reading the value of $\lambda$ that minimizes $SS_{Res}(\lambda)$ from the graph. Usually 10–20 values of $\lambda$ are sufficient for estimation of the optimum value. 
-
-```
 
 ```r
 fabletools::box_cox
 ```
+
 
 
 ## x-Transforms

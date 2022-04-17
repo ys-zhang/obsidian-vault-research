@@ -41,8 +41,7 @@ Matrix condition number is used in [[Multicollinearity]] diagnose.
 
 A problem with a low condition number is said to be **well-conditioned**, while a problem with a high condition number is said to be **ill-conditioned**.
 
-```ad-note
-title: Rule of thumb
+> [!NOTE]  Rule of thumb
+>
+> If the condition number $\kappa(A) = 10^k$, then you may lose up to $k$ digits of accuracy on top of what would be lost to the numerical method due to loss of precision from arithmetic methods.
 
-If the condition number $\kappa(A) = 10^k$, then you may lose up to $k$ digits of accuracy on top of what would be lost to the numerical method due to loss of precision from arithmetic methods.
-```

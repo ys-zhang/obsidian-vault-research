@@ -35,12 +35,11 @@ TLDR;
 # Grid Layout (网格布局)
 [CSS Grid Layout - CSS: Cascading Style Sheets | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 
-```ad-note
-The basic difference between CSS Grid Layout and [CSS Flexbox Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout) is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.
-
-
-- Flexbox works from the **content out**. An ideal use case for flexbox is when you have a set of items and want to space them out evenly in a container. _You let the size of the content decide how much individual space each item takes up._
-- Grid works from the **layout in**. When you use CSS Grid Layout you create a layout and then you place items into it, or you allow the auto-placement rules to place the items into the grid cells according to that strict grid. _It is possible to create tracks that respond to the size of the content, however, they will also change the entire track._
+> [!NOTE]
+> The basic difference between CSS Grid Layout and [CSS Flexbox Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout) is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.
+>
+> - Flexbox works from the **content out**. An ideal use case for flexbox is when you have a set of items and want to space them out evenly in a container. _You let the size of the content decide how much individual space each item takes up._
+> - Grid works from the **layout in**. When you use CSS Grid Layout you create a layout and then you place items into it, or you allow the auto-placement rules to place the items into the grid cells according to that strict grid. _It is possible to create tracks that respond to the size of the content, however, they will also change the entire track._
 ```
 
 

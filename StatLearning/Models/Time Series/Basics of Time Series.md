@@ -1,3 +1,5 @@
+#timeseries 
+
 [Forecasting: Principles and Practice (3rd ed) (otexts.com)](https://otexts.com/fpp3/)
 [Econ 584: Time Series Econometrics (washington.edu)](https://faculty.washington.edu/ezivot/econ584/econ584.htm)
 
@@ -25,11 +27,11 @@ Four Algorithms:
 3. SEATS
 4. STL (Loess) 
 
-```ad-note
-title: Reference
 
-Dagum, E. B., & Bianconcini, S. (2016). _Seasonal adjustment methods and real time trend-cycle estimation. Springer_. [[Amazon](http://buy.geni.us/Proxy.ashx?TSID=140570&GR_URL=http%3A%2F%2Fwww.amazon.com%2Fdp%2F3319318209)]
-```
+> [!NOTE]  Reference
+> 
+> Dagum, E. B., & Bianconcini, S. (2016). _Seasonal adjustment methods and real time trend-cycle estimation. Springer_. [[Amazon](http://buy.geni.us/Proxy.ashx?TSID=140570&GR_URL=http%3A%2F%2Fwww.amazon.com%2Fdp%2F3319318209)]
+
 
 ## Features
 

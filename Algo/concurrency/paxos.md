@@ -1,3 +1,5 @@
+#algorithm  #concurrency  #consistent
+
 [Neat Algorithms - Paxos - Will You Harry Me](http://harry.me/blog/2014/12/27/neat-algorithms-paxos/)
 
 # Read (as a learner)

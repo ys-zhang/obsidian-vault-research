@@ -13,9 +13,9 @@ A **managed module** includes:
     -  tables that describe the types and members referenced by your source code
 4. IL code
 
-```ad-note
-Of all of the Microsoft compilers mentioned, _C++ is unique_ in that it is the only compiler that _allows the developer to write both managed and unmanaged code_ and have it emitted into a single module.
-```
+
+> [!NOTE]
+> Of all of the Microsoft compilers mentioned, _C++ is unique_ in that it is the only compiler that _allows the developer to write both managed and unmanaged code_ and have it emitted into a single module.
 
 
 ## Assembly
@@ -27,11 +27,13 @@ Of all of the Microsoft compilers mentioned, _C++ is unique_ in that it is the o
 3. Each **assembly** you build can be _either an executable_ application _or a DLL_. 
 4. The **assembly manifest** is simply another _set of metadata tables_. These tables describe the files that make up the assembly, the publicly exported types implemented by the files in the assembly, and the resource or data files that are associated with the assembly.
 
-```ad-note
-By default, compilers turning the emitted managed module into an assembly (with only one managed module an d no resources).
 
-If you want to group a set of files into an assembly, you’ll have to be aware of more tools (such as the assembly linker, _AL.exe_) and their command-line options.
-```
+> [!NOTE]
+> By default, compilers turning the emitted managed module into an assembly (with only one managed module an d no resources).
+> 
+> If you want to group a set of files into an assembly, you’ll have to be aware of more tools (such as the assembly linker, _AL.exe_) and their command-line options.
+
+
 
 ## CLR
 

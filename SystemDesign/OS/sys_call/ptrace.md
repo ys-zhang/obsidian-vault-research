@@ -41,15 +41,16 @@ see [[procfs]], which allows the owner process have direct access to the target 
 
 When a process wants to invoke a system call, it puts the arguments to system calls in registers and calls soft interrupt `0x80`.
 
-```ad-note
-title: syscall on i386
-The system call number is put in the register `%eax`.
+> [!NOTE] syscall on i386
+> 
+> The system call number is put in the register `%eax`.
+> 
+> The arguments to this system call are put into registers `%ebx`, `%ecx`, `%edx`, `%esi` and `%edi`, in that order.
+>
+> see [[register]]
 
-The arguments to this system call are put into registers `%ebx`, `%ecx`, `%edx`, `%esi` and `%edi`, in that order.
 
-see [[register]]
-```
-
+> [!INFO]
 > Before executing the system call, the kernel checks whether the process is being traced. If it is, the kernel stops the process and gives control to the tracking process so it can examine and modify the traced process' registers.
 
 # Example

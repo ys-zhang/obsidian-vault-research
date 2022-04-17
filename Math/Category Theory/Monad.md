@@ -60,43 +60,44 @@ A __monoidal category__ is a category with :
 1. a _tensor product_,
 2. a special _object_ $i$ called _unit_,
 3. and _natural isomorphisms_ (associator, left unitor, right unitor):
-$$
-\begin{align}
-\otimes &: \mathbf{C} \times \mathbf{C} \to \mathbf{C} \\
-\alpha_{abc} &: (a\otimes b) \otimes c \to a\otimes (b \otimes c) \\
-\lambda_a &: i \otimes a \to a \\
-\rho_a &: a \otimes i \to a \\
-\end{align}
-$$
+    $$
+    \begin{align}
+    \otimes &: \mathbf{C} \times \mathbf{C} \to \mathbf{C} \\
+    \alpha_{abc} &: (a\otimes b) \otimes c \to a\otimes (b \otimes c) \\
+    \lambda_a &: i \otimes a \to a \\
+    \rho_a &: a \otimes i \to a \\
+    \end{align}
+  $$
 
-```ad-note
-Easy to see the objects in monoidal category have a monoid structure (up to isomorphism), the difference with the original [[monoid]] definition is that the objects may not form a Set
-```
+
+> [!NOTE]
+> Easy to see the objects in monoidal category have a monoid structure (up to isomorphism), the difference with the original [[monoid]] definition is that the objects may not form a Set
+
 
 ## Define monoid through Monoidal Category
 
 The problems is how to define a monoid structure inside an object $m$ without peek in to $m$. 
 To define a monoid we need a _multiply_ defined on $m$ and an identity in $m$:
 $$
-\begin{align}
-\mu &: m \otimes m \to m \\
-\eta &: i \to m
-\end{align}
+  \begin{align}
+    \mu &: m \otimes m \to m \\
+    \eta &: i \to m
+  \end{align}
 $$
 and following rules:
 1. unit rule:
-$$
-\begin{align}
-\mu \circ (\eta \otimes id) = \lambda_m\\  
-\mu \circ (id \otimes \eta) = \rho_m
-\end{align}
-$$
-![[Pasted image 20220217132055.png]]
-2. associativity rule:
-$$
-\mu \circ (\mu \otimes id) = \mu \circ (id \otimes \mu) \circ \alpha 
-$$
-![[Pasted image 20220217132029.png]]
+  $$
+    \begin{align}
+      \mu \circ (\eta \otimes id) = \lambda_m\\  
+      \mu \circ (id \otimes \eta) = \rho_m
+    \end{align}
+  $$
+  ![[Pasted image 20220217132055.png]]
+1. associativity rule:
+  $$
+  \mu \circ (\mu \otimes id) = \mu \circ (id \otimes \mu) \circ \alpha 
+  $$
+  ![[Pasted image 20220217132029.png]]
 
 The category of endofunctors is a monoidal category:
 1. objects are endofunctors
@@ -118,12 +119,13 @@ $$
 
   # Comonad
 
-  ```ad-note
-A comonad, on the other hand, provides the means of extracting a single value from it. It does not give the means to insert values. 
-So if you want to think of a comonad as a container, it always comes _pre-filled with contents_, and it lets you peek at it.
+> [!NOTE]
+> A comonad, on the other hand, provides the means of extracting a single value from it. It does not give the means to insert values. 
+> So if you want to think of a comonad as a container, it always comes _pre-filled with contents_, and it lets you peek at it.
+> 
+> Just as a Kleisli arrow takes a value and produces some embellished result — it embellishes it with context — a co-Kleisli arrow takes a value together with a whole context and produces a result.
 
-Just as a Kleisli arrow takes a value and produces some embellished result — it embellishes it with context — a co-Kleisli arrow takes a value together with a whole context and produces a result.
-  ```
+
 The intuition behind these functions is based on the idea that, in general, a comonad can be thought of as a container filled with values of type a (the product comonad was a special case of just one value). There is a notion of the “current” value, one that’s easily accessible through extract. 
 
 > A co-Kleisli arrow performs some computation that is focused on the current value, but it has access to all the surrounding values.
@@ -182,10 +184,10 @@ instance Monad (Cont r) where
 
 ![[The Continue Monad.excalidraw]]
 
-```ad-note
-As you can see, continuations are composed _inside out_.
-The final handler `rb` is called from the innermost layer of the computation.
-```
+> [!NOTE]
+> As you can see, continuations are composed _inside out_.
+> The final handler `rb` is called from the innermost layer of the computation.
+
 
 ## IO Monad
 

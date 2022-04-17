@@ -1,5 +1,7 @@
-TLDR: 
-> linearity of columns, near-linear dependence among the regression variables.
+#statistics #linear-regression
+
+>[!TLDR]
+>linearity of columns, near-linear dependence among the regression variables.
 
  
 > Generally, the covariance of least square estimator $\hat \beta_i$ and $\hat \beta_j$ will also be large if the regressors $x_i$ and $x_j$ are involved in a multicollinear relationship.
@@ -20,7 +22,7 @@ Multicollinearity may also be induced by the **choice of model**. For example, a
 
 # Mitigate the Problem
 - use [[Principle Component Analysis]] on the regressors
-- use [[Ridge Regression]].
+- use [[Shrinkage Methods]].
 
 
 # R code

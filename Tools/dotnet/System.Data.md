@@ -25,9 +25,8 @@ var theSameTable = dataSet.Tables["New Table"];
 
 ## Data Table
 
-```ad-note
-A **DataTable** represents one table of in-memory relational data; the data is local to the .NET-based application in which it resides, but can be populated from a data source such as Microsoft SQL Server using a **DataAdapter**
-```
+> [!NOTE]
+> A `DataTable` represents one table of in-memory relational data; the data is local to the .NET-based application in which it resides, but can be populated from a data source such as Microsoft SQL Server using a `DataAdapter`
 
 - `dataTable.Columns`, `dataTable.Constrains`: defines the schema of the table
 - `dataTable.Rows`: holding the actual data.
@@ -59,6 +58,7 @@ A **DataTable** represents one table of in-memory relational data; the data is l
 | Proposed    |
 | Default     |
 
+
 | Row State |
 | --------- |
 | Unchanged |
@@ -66,6 +66,7 @@ A **DataTable** represents one table of in-memory relational data; the data is l
 | Modified  |
 | Deleted   |
 | Detached          |
+
 
 When `AcceptChanges` is called on a [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset), [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) , or [DataRow](https://docs.microsoft.com/en-us/dotnet/api/system.data.datarow):
 1. Rows with a row state of `Deleted` are removed.
@@ -181,20 +182,16 @@ The semantics of merging:
     - _new columns_: controlled by `MissingSchemaAction` parameter
 2. _rows with same primary key_: appended
 
-```ad-note
-title: table namespace
-Starting with version 2.0, merging causes two new `DataTables` to be created in the target `DataSet`. The original `DataTables` will be unaffected by the merge.
-``````
+>[!INFO] Table Namespace
+>
+>Starting with version 2.0, _merging_ causes two new `DataTables` to be created in the target `DataSet`. The original `DataTables` will be unaffected by the merge.
 
 
-```ad-note
-title: PreserveChanges
+>[!INFO]  Preserve Changes
+>
+> [PreserveChanges](https://docs.microsoft.com/en-us/dotnet/api/system.data.loadoption#system-data-loadoption-preservechanges), which specifies whether or not to preserve the changes in the existing `DataSet`.
+>
+> - `PreserveChanges=true`: Incoming values do not overwrite existing values in the `Current` row version of the existing row.
+> - `PreserveChanges=true`: Overwrite `Current` row version of existing `DataSet`.
 
-[PreserveChanges](https://docs.microsoft.com/en-us/dotnet/api/system.data.loadoption#system-data-loadoption-preservechanges), which specifies whether or not to preserve the changes in the existing `DataSet`.
-
-
-- `PreserveChanges=true`: Incoming values do not overwrite existing values in the `Current` row version of the existing row.
-- `PreserveChanges=true`: Overwrite `Current` row version of existing `DataSet`.
-
-```
 

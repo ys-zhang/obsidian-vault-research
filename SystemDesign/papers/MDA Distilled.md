@@ -9,6 +9,7 @@
 
 > Dividing work into horizontal subject-matter areas, or domain models, such as bank, database, authorization, user interface, and so forth, exposes interfaces at the level of rules.
 
+
 # Concepts
 
 ## Model
@@ -22,15 +23,17 @@
 - A _realization_ that stands on its own is a **primitive realization**; a _realization_ comprised of one or more realizations is a **composed realization**.
 
 
-```ad-note
-Central to **MDA** is the notion of creating different _models_ at different levels of _abstraction_ and then linking them together to form an _implementation_.
+> [!NOTE]
+> Central to **MDA** is the notion of creating different _models_ at different levels of _abstraction_ and then linking them together to form an _implementation_.
+> 
+> A **metamodel** is merely a model whose instances are types in another model.
 
-A **metamodel** is merely a model whose instances are types in another model.
-```
 
 ![[Pasted image 20220109163415.png]]
 
 ![[Pasted image 20220109202509.png]]
+
+
 
 ### Model Stack
 
@@ -40,6 +43,8 @@ A **metamodel** is merely a model whose instances are types in another model.
 - **M3** is the _metametadata_ that describes the properties that metadata can exhibit. This is the level at which modelling languages and metamodels operate, providing for interchange between tools.
 
 ![[Pasted image 20220109203243.png]]
+
+
 
 ## Mapping
 
@@ -52,9 +57,13 @@ A **metamodel** is merely a model whose instances are types in another model.
 
 > mapping rules in MPS is the generator, specified by the generator language (as meta-model)
 
+
+
 ## Other Concepts
 
 - A **problem domain** is a _subject_ matter that can be understood _independently_ of other subject matters. Separately, each domain model is expressed in some kind of modelling language.
+
+
 
 ## Language
 
@@ -67,3 +76,4 @@ Each domain model is expressed in some kind of modelling language.
 - Hollywood gets by on recreational drugs.
 
 By thinking about the problem at a high level of abstraction, specifying a system is much more convenient, efficient, and reusable. We increase productivity because we can say more, more quickly. The higher the level of the language, the greater the amount of functionality that can be delivered for a given amount of effort.
+

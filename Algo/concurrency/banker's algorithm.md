@@ -1,3 +1,5 @@
+#algorithm  #concurrency
+
 # 银行家算法
 
 [【操作系统】银行家算法 - 华为云 (huaweicloud.com)](https://www.huaweicloud.com/articles/c50896992b3d4ffc7cbd48acf5e257a1.html)

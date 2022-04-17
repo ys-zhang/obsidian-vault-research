@@ -1,3 +1,5 @@
+#statistics  #hypothesis-test 
+
 # F-Test
 
 [F-test - Wikipedia](https://en.wikipedia.org/wiki/F-test)
@@ -32,11 +34,8 @@ $$
 $$
 
 
-
-```ad-note
-title: Wilks Test
-
-As the sample size $N\to \infty$, the test statistic $\lambda_{\textrm{LR}}$ defined above will be asymptotically chi-squared distributed with **degrees of freedom** equal to the difference in dimensionality of $\Theta$ and $\Theta_0$.
-```
+> [!NOTE] Wilks Test
+>
+> As the sample size $N\to \infty$, the test statistic $\lambda_{\textrm{LR}}$ defined above will be asymptotically chi-squared distributed with **degrees of freedom** equal to the difference in dimensionality of $\Theta$ and $\Theta_0$.
 
 

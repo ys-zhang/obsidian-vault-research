@@ -24,7 +24,8 @@ Where:
 
 
 ### Covariance Matrix
-let $x = (x_1,\dots,x_p)^T$ and $X=[x^{(1)}, \dots, x^{(N)}]^T$, which is exactly the **standardised** [[#Design Matrix]] drop the first column.
+
+Let $x = (x_1,\dots,x_p)^T$ and $X=[x^{(1)}, \dots, x^{(N)}]^T$, which is exactly the **standardised** [[#Design Matrix]] drop the first column.
 
 Then
 $$
@@ -221,9 +222,9 @@ $$
 \hat\sigma^2 = MS_{Res} = \frac{SS_{Res}}{n-p}  
 $$
 
-```ad-warning
-This estimator of $\sigma^2$ requires the error $e$ are _normal_ and _i.i.d._ 
-```
+> [!WARNING]
+> This estimator of $\sigma^2$ requires the error $e$ are _normal_ and _i.i.d._ 
+
 
 
 ### Geometric Interpretation
@@ -286,10 +287,13 @@ t_0 &= \frac{\hat \beta_i}{se(\hat \beta_i)}
 \end{align}
 $$
 
-```ad-note
-- If $H_0$ is not rejected, it indicates that regressor $x_i$ can be removed from the model.
-- This is a test of the contribution of $x_i$ _given other regressors_ in the model .
-```
+$t_0$ is named as the **Z-score** or **standardized coefficient**. 
+A _Z-score_ greater than $2$ in absolute value is approximately significant at the $5\%$ level.
+
+> [!NOTE]
+> - If $H_0$ is not rejected, it indicates that regressor $x_i$ can be removed from the model.
+> - This is a test of the contribution of $x_i$ _given other regressors_ in the model .
+
 
 
 #### Extra-sum-of-squares (Group of Coefficients)
@@ -361,14 +365,14 @@ where $H$ is the [[#Hat Matrix]].
 
 The formal statistical test for the lack of fit of a regression model assumes that the normality, independence, and constant - variance requirements are met and that **only the first order or straight - line character of the relationship is in doubt.**
 
-```ad-note
-title: Idea
 
-sum square of residual = sum square of pure error + sum square of Lack of Fit
+> [!NOTE]  Idea
+>
+> sum square of residual = sum square of pure error + sum square of Lack of Fit
+> 
+> The _pure error_ can be estimated using _multiple observations_ at _same design point_
 
-The _pure error_ can be esitmated using _multiple observations_ at _same design point_
 
-```
 
 $$
 \begin{align}
@@ -377,6 +381,7 @@ SS_{PE} &= \sum_{ij} (y_{ij} - \bar y_i)^2 \\
 SS_{LoF} &= \sum_{ij} (\hat y_i - \bar y_i)^2 
 \end{align}
 $$
+
 
 #### Transform data for adapting to OLS
 
@@ -390,12 +395,10 @@ y = X\beta + \varepsilon
 $$
 with $var(\varepsilon) = \sigma^2 V$ with _covariance matrix_ of the response samples $V$ **known**
 
+> [!NOTE]  weighted least squares
+>
+> special case of $V$ is diagonal
 
-```ad-note
-title: weighted least squares
-
-special case of $V$ is diagnal
-```
 
 ## Linear Mixed Effects Model
 
@@ -414,43 +417,41 @@ The core of mixed models is that they incorporate _fixed and random effects_. (f
 - A **fixed effect** $\beta$ is a parameter that does not vary.
 - **Random effects** are parameters that are themselves random variables.
 
-```ad-note
-title: what does random mean here?
-
-Basically, the value of fixed effect are known precisely or picked up during experiment desing.
-
-Random effects are observed during the experiment and constant given the subject/group.
-
-Example:
-
-- fixed effects:
-  - age, sex (known)
-  - red blood cell count, white blood cell count (precisely observed)
-- random effects:
-  - factors related to groups/subjects
-  - doctor's income ...
-```
+> [!NOTE]  what does random mean here?
+> 
+> Basically, the value of fixed effect are known precisely or picked up during experiment desing.
+>
+> Random effects are observed during the experiment and constant given the subject/group.
+> 
+> Example:
+> 
+> - fixed effects:
+>    - age, sex (known)
+>    - red blood cell count, white blood cell count (precisely observed)
+> - random effects:
+>   - factors related to groups/subjects
+>   - doctor's income ...
 
 
-```ad-note
-title: Should my variables be fixed or random effects?
+> [!NOTE]  Should my variables be fixed or random effects?
+> 
+> In broad terms, **fixed effects** are variables that we expect will have an effect on the dependent/response variable: they’re what you call **explanatory** variables in a standard linear regression. In our case, we are interested in making conclusions about how dragon body length impacts the dragon’s test score. So body length is a fixed effect and test score is the dependent variable.
+> 
+> On the other hand, **random effects** are usually **grouping factors** for which we are trying to control. They are always categorical, as you can’t force R to treat a continuous variable as a random effect. A lot of the time we are not specifically interested in their impact on the response variable, but we know that they might be influencing the patterns we see.
+> 
+> Additionally, the data for our random effect is just **a sample of all the possibilities**: with unlimited time and funding we might have sampled every mountain where dragons live, every school in the country, every chocolate in the box), but we usually tend to generalise results to a whole population based on representative sampling. We don’t care about estimating how much better pupils in school A have done compared to pupils in school B, but we know that their respective teachers might be a reason why their scores would be different, and we’d like to know how much _variation_ is attributable to this when we predict scores for pupils in school Z.
 
-In broad terms, **fixed effects** are variables that we expect will have an effect on the dependent/response variable: they’re what you call **explanatory** variables in a standard linear regression. In our case, we are interested in making conclusions about how dragon body length impacts the dragon’s test score. So body length is a fixed effect and test score is the dependent variable.
 
-On the other hand, **random effects** are usually **grouping factors** for which we are trying to control. They are always categorical, as you can’t force R to treat a continuous variable as a random effect. A lot of the time we are not specifically interested in their impact on the response variable, but we know that they might be influencing the patterns we see.
+> [!WARNING]  More about random effects
+> 
+> Note that the golden rule is that you generally want your random effect to have **at least five levels**. So, for instance, if we wanted to control for the effects of dragon’s sex on intelligence, we would fit sex (a two level factor: male or female) **as a fixed, not random, effect**.
+> 
+> This is, put simply, because estimating variance on few data points is very imprecise. Mathematically you _could_, but you wouldn’t have a lot of confidence in it. If you only have two or three levels, the model will struggle to partition the variance - it _will_ give you an output, but not necessarily one you can trust.
+> 
+> Finally, keep in mind that the name _random_ doesn’t have much to do with _mathematical randomness_. Yes, it’s confusing. Just think about them as the _grouping_ variables for now. Strictly speaking it’s all about making our models representative of our questions **and getting better estimates**. Hopefully, our next few examples will help you make sense of how and why they’re used.
 
-Additionally, the data for our random effect is just **a sample of all the possibilities**: with unlimited time and funding we might have sampled every mountain where dragons live, every school in the country, every chocolate in the box), but we usually tend to generalise results to a whole population based on representative sampling. We don’t care about estimating how much better pupils in school A have done compared to pupils in school B, but we know that their respective teachers might be a reason why their scores would be different, and we’d like to know how much _variation_ is attributable to this when we predict scores for pupils in school Z.
-```
 
-```ad-warning
-title: More about random effects
 
-Note that the golden rule is that you generally want your random effect to have **at least five levels**. So, for instance, if we wanted to control for the effects of dragon’s sex on intelligence, we would fit sex (a two level factor: male or female) **as a fixed, not random, effect**.
-
-This is, put simply, because estimating variance on few data points is very imprecise. Mathematically you _could_, but you wouldn’t have a lot of confidence in it. If you only have two or three levels, the model will struggle to partition the variance - it _will_ give you an output, but not necessarily one you can trust.
-
-Finally, keep in mind that the name _random_ doesn’t have much to do with _mathematical randomness_. Yes, it’s confusing. Just think about them as the _grouping_ variables for now. Strictly speaking it’s all about making our models representative of our questions **and getting better estimates**. Hopefully, our next few examples will help you make sense of how and why they’re used.
-```
 
 $$
 \overbrace{\mathbf{y}}^{N \times 1} \quad = \quad
@@ -463,14 +464,15 @@ $$
 - $Z$ is an indicator matrix
 
 
-```ad-note
-title: implementation in R (LME4) and Python (statsmodels)
 
-Lindstrom, M. J., & Bates, D. M. (1988). Newton-Raphson and EM Algorithms for Linear Mixed-Effects Models for Repeated-Measures Data. _Journal of the American Statistical Association_, _83_(404), 1014–1022. https://doi.org/10.2307/2290128
 
-[[Newton-Raphson and EM Algorithms for Linear Mixed-Effects Models for Repeated-Measures Data.pdf]]
+> [!NOTE] Implementation in R (LME4) and Python (`statsmodels`)
+>
+> Lindstrom, M. J., & Bates, D. M. (1988). Newton-Raphson and EM Algorithms for Linear Mixed-Effects Models for Repeated-Measures Data. _Journal of the American Statistical Association_, _83_(404), 1014–1022. https://doi.org/10.2307/2290128
+> 
+> [[Newton-Raphson and EM Algorithms for Linear Mixed-Effects Models for Repeated-Measures Data.pdf]]
 
-```
+
 
 
 ## Categorical Data
@@ -490,24 +492,20 @@ However, more constraint models can be considered:
 2. _Concurrent lines_: equal intercepts but different slopes
 3. Coincident lines: equal intercepts and equal slopes.
 
-```ad-warning
-title: Allocated Code
 
-It seems more convenient to allocate a unique integer code for each level; however, the allocated codes **impose a particular metric** on the levels of the qualitative factor.
+>[!WARNING] Allocated Code
+>
+> It seems more convenient to allocate a unique integer code for each level; however, the allocated codes **impose a particular metric** on the levels of the qualitative factor.
+>
+> For example, if the code is assigned as $x_g = 0, 1, 2, \dots, k, \dots$, it implicitly assumes the differences of each level are equal. 
+>
+> suppose after fit:
+> 
+> $$ y = \beta_0 \cdots + \beta_gx_g + \cdots $$
+> 
+> then intercept for level $k$ is 
+> $$ \beta_{0,k} = \beta_0 + k\beta_g $$
+> thus we have, the differences of adjacent group's intercept are all equal to $\beta_g$ 
 
-For example, if the code is assigned as $x_g = 0, 1, 2, \dots, k, \dots$, it implicitly assumes the differences of each level are equal. 
-
-suppose after fit:
-
-$$
-y = \beta_0 \cdots + \beta_gx_g + \cdots
-$$
-
-then intercept for level $k$ is 
-$$
-\beta_{0,k} = \beta_0 + k\beta_g
-$$
-thus we have, the differences of adjacent group's intercept are all equal to $\beta_g$ 
-```
 
 

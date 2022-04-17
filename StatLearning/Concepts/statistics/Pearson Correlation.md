@@ -1,3 +1,4 @@
+
 Let $x, y \in \mathbb R^n$, the correlation is defined as 
 
   

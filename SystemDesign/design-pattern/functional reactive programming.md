@@ -6,11 +6,14 @@
 - [Functional Reactive Programming | F# for fun and profit (fsharpforfunandprofit.com)](https://fsharpforfunandprofit.com/posts/concurrency-reactive/)
 - [ReactiveUI - A new way of thinking by Kent Boogaart - YouTube](https://www.youtube.com/watch?v=A_qmik32Kos)
 
-```ad-note
-The _event driven paradigm_ allows for code to be invoked without the need for breaking encapsulation or applying expensive polling techniques. 
-This is commonly implemented with the _Observer pattern_, events exposed directly in the language (e.g. C#) or other forms of _callback via delegate registration_. 
-The **Reactive Extensions** extend the callback metaphor with LINQ to enable querying sequences of events and managing concurrency.
-```
+
+>[!NOTE]
+> The _event driven paradigm_ allows for code to be invoked without the need for breaking encapsulation or applying expensive polling techniques. 
+> 
+> This is commonly implemented with the _Observer pattern_, events exposed directly in the language (e.g. C#) or other forms of _callback via delegate registration_. 
+> 
+> The **Reactive Extensions** extend the callback metaphor with LINQ to enable querying sequences of events and managing concurrency.
+
 
 
 # Foundation Types `IObservable` & `IObserver`
@@ -42,11 +45,13 @@ var Observer.subscribe<'a> :
     ('a -> unit) -> IObservable<'a> -> IDisposable
 ```
 
-```ad-note
-Rx has an implicit contract that must be followed:
 
-An implementation of _IObserver<T>_ may have zero or more calls to _OnNext(T)_ followed optionally by a call to either _OnError(Exception)_ or _OnCompleted()_.
-```
+> [!NOTE]
+> Rx has an implicit contract that must be followed:
+> 
+> An implementation of `IObserver<T>` may have zero or more calls to `OnNext(T)` followed optionally by a call to either `OnError(Exception)` or `OnCompleted()`.
+
+
 
 # Observable Semantics
 
@@ -72,3 +77,4 @@ An implementation of _IObserver<T>_ may have zero or more calls to _OnNext(T)_ f
 - [ReactiveUI - A new way of thinking by Kent Boogaart - YouTube](https://www.youtube.com/watch?v=A_qmik32Kos)
 
 ## [[Akka]]
+

@@ -13,11 +13,11 @@ DSL structure contains _semantic_ and _syntactic_ level:
 3. _semantic level_ reflects this _context_ on the concepts of the target domain.
 4. (meta-meta-model) _semantic level_ absolutely depends on the model of the target domain, used during DSL creation. 
 
-```ad-note
-Allowing not only to define the tasks in terms of DSL, but also to modify DSL itself should be developed.
+>[!NOTE]
+> Allowing not only to define the tasks in terms of DSL, but also to modify DSL itself should be developed.
+>
+> It is much more effective to be able to implement **changes** in **DSL** _in parallel with_ **changes** in the **domain**, carrying out their _co-evolution_.
 
-It is much more effective to be able to implement __changes__ in **DSL** _in parallel with_ __changes__ in the **domain**, carrying out their _co-evolution_.
-```
 
 # Background
 

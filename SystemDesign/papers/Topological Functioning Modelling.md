@@ -65,9 +65,9 @@ Practically, studying topological and functional properties of topological model
 
 ## Application and Property
 
-```ad-warning
-Whats the difference with [[PDDR]]?
-```
+>[!WARNING]
+>What's the difference with [[PDDR]]?
+
 
 Continuous mapping states that direction of topological model arcs must be kept as in a refined as in a simplified model.
 

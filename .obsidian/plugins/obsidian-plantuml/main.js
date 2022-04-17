@@ -5022,7 +5022,11 @@ function isUsingLivePreviewEnabledEditor() {
     return false;
   if (config.legacyEditor)
     return false;
-  const version = navigator.userAgent.match(/obsidian([^ ]+)/).first().split("/")[1];
+  const userAgent = navigator.userAgent.match(/obsidian([^ ]+)/);
+  if (userAgent === null) {
+    return true;
+  }
+  const version = userAgent.first().split("/")[1];
   return compareVersions.compare(version, "0.13.0", ">=");
 }
 

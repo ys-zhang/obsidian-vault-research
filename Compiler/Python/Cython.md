@@ -257,17 +257,15 @@ All python builtin containers have one thing in common: *they all store referenc
 What we want is a way to represent and work with a homogeneous contiguous array, or *buffer*, of unboxed data types in Python.
 
 
-```ad-note
-title: new buffer protocol
+> [!NOTE] new buffer protocol
+> 
+> The new buffer protocol’s most important feature is its ability to represent the same underlying data in different ways. It allows NumPy arrays, several Python built-in types, and Cython-level array-like objects to *share the same data without copying.*
+> 
+> Buffers allow us to represent contiguous or simply strided unboxed data of a single data type. NumPy arrays—the most widely used array type in Python—support the buffer protocol. [PEP-3118]
 
-The new buffer protocol’s most important feature is its ability to represent the same underlying data in different ways. It allows NumPy arrays, several Python built-in types, and Cython-level array-like objects to *share the same data without copying.*
-
-Buffers allow us to represent contiguous or simply strided unboxed data of a single data type. NumPy arrays—the most widely used array type in Python—support the buffer protocol. [PEP-3118]
-```
 
 
 ```plantuml
-
 split
 	-[hidden]->
 	:a:A;

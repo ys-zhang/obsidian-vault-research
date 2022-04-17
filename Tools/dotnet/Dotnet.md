@@ -121,14 +121,14 @@ int result = comparator(left, right);  // Invoke a delegate
 ```
 
 
-```ad-note
-The most important fact to remember is that every delegate you work with is derived from `MulticastDelegate`. 
-A _multicast delegate_ means that _more than one_ method target can be invoked when invoking through a delegate.
+>[!NOTE]
+> The most important fact to remember is that every delegate you work with is derived from `MulticastDelegate`. 
+> A _multicast delegate_ means that _more than one_ method target can be invoked when invoking through a delegate.
+> 
+> - `Invoke()`: invoke all the methods that have been attached to a particular delegate instance
+> - `BeginInvoke()`:
+> - `EndInvoke()`
 
-- `Invoke()`: invoke all the methods that have been attached to a particular delegate instance
-- `BeginInvoke()`:
-- `EndInvoke()`
-```
 
 
 ## Event
@@ -158,12 +158,11 @@ Event -= action;  // unsubscribe
 ## ListView
 
 [Uwp ListView Tips And Common Mistakes · Yet Another Tech & Life blog (arashadbm.com)](http://www.arashadbm.com/post/uwp-listview-tips/)
-```ad-note
-title: ListView Cannot Scroll
 
-Put `ListView` in a `Grid` and set the `RowDefination` Height to `"*"`
+> [!NOTE]  ListView Cannot Scroll
+> 
+> Put `ListView` in a `Grid` and set the `RowDefination` Height to `"*"`
 
-```
 
 # Interop of C# & F#
 

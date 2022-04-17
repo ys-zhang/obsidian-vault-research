@@ -16,11 +16,12 @@ The child process and the parent process **run in separate memory spaces**.
 - returns 0  in the child process
 - returns negative if fails
 
+
 # Warnings
-```ad-warning 
-title: Not thread safe
-(In child process) only the caller thread survive after fork, all other threads disappear and may never have a chance to clearup (thinking about some other thread calling `malloc`, which is not thread safe, at the same time of forking, heap of child process get corrupted).
-```
+> [!WARNING]  Not thread safe
+> 
+> (In child process) only the caller thread survive after fork, all other threads disappear and may never have a chance to clear up (thinking about some other thread calling `malloc`, which is not thread safe, at the same time of forking, heap of child process get corrupted).
+
 
 # Example
 ```c

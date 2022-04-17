@@ -82,14 +82,16 @@ syntax:
   - _constraint_ decide addressing mode for operand
   - _operand_ is referenced by _numbers_; `%0`, `%1` ...
 
-```ad-note
-title: Output operand expr must be lvalue
-If the output expression cannot be _directly addressed_ (for example, it is a bit-field), our constraint must allow a _register_. In that case, `GCC` will use the register as the output of the `asm`, and then store that register contents into the output.
-```
 
-```ad-warning
-As stated above, ordinary output operands must be write-only; _GCC will assume that the values in these operands before the instruction are dead and need not be generated_. see [[SSA form]]
-```
+> [!NOTE] Output operand expr must be `lvalue`
+> 
+> If the output expression cannot be _directly addressed_ (for example, it is a bit-field), our constraint must allow a _register_. In that case, `GCC` will use the register as the output of the `asm`, and then store that register contents into the output.
+
+
+> [!WARNING]
+> 
+> As stated above, ordinary output operands must be write-only; _GCC will assume that the values in these operands before the instruction are dead and need not be generated_. see [[SSA form]]
+
 
 
 ```c
@@ -123,10 +125,8 @@ asm(  "leal (%%ecx, %%ecx, 4), %%ecx"
 
 > This is to inform gcc that we will _use and modify_ them _ourselves_. So gcc will not assume that the values it loads into these registers will be valid.
 
-
-```ad-note
-If the instructions use any other registers, implicitly or explicitly (and the registers are _not present_ either in _input_ or in the _output_ constraint list), then those registers have to be specified in the _clobbered_ list.
-```
+> [!NOTE]
+> If the instructions use any other registers, implicitly or explicitly (and the registers are _not present_ either in _input_ or in the _output_ constraint list), then those registers have to be specified in the _clobbered_ list.
 
 
 - If our instruction can alter the **condition code register**, we have to add "**cc**" to the list of clobbered registers.

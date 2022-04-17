@@ -1,3 +1,5 @@
+#linear-regression 
+
 Diagonal of $C=(X^TX)^{-1}$.
 
 $$

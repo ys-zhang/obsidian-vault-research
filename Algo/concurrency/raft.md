@@ -2,6 +2,7 @@
 annotation-target: https://raft.github.io/raft.pdf
 ---
 
+#algorithm  #concurrency  #consistent
 
 
 >%%

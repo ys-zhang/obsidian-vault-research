@@ -1,3 +1,5 @@
+#algorithm  #concurrency 
+
 # 一致 Hash 算法
 
 [一致性Hash算法详解 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/98030096)

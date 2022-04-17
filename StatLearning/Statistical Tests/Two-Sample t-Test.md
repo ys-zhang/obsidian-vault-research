@@ -10,12 +10,10 @@ $$
 \varepsilon_{ij} \sim N(\mu_i, \sigma_i^2)
 $$
 
-```ad-note
-title: R
+>[!NOTE] R
+>
+> see `t.test()` function in R
 
-see `t.test()` function in R
-
-```
 
 # Equal Variance $\sigma_1^2=\sigma_2^2$
 Estimation of $\sigma^2$:
@@ -40,10 +38,9 @@ $$
 notice $\bar y_1 - \bar y_2 \sim N(0, \sigma^2(1/n_1 + 1/n_2))$, notice the choice of $n_1$ and $n_2$ can affect the efficiency of the test.
 
 
+> [!WARNING]
+> Check the assumption of normal error and equal variance
 
-```ad-warning
-Check the assumption of normal error and equal variance
-```
 
 
 # Unequal Variance $\sigma_1^2 \ne \sigma_2^2$

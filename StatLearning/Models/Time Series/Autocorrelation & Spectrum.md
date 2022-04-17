@@ -1,3 +1,5 @@
+#timeseries 
+
 # Autocorrelation
 
 ###### ACF (autocorrelation function)
@@ -88,6 +90,14 @@ $$
 
 >[!WARNING]
 >This result shows that care is required in the interpretation of individual autocorrelations because **large covariances can exist between neighbouring values**.
+
+
+# Partial Autocorrelation
+
+$$
+\alpha(k) = \text{corr}(z_{t+k}-P_{t,k}(z_{t+k}), z_{t}-P_{t,k}(z_{t}))
+$$
+where  is the surjective operator of **orthogonal projection** of $x$ onto the linear subspace of Hilbert space spanned by $(z_{t+1},\dots,z_{t+k-1})$.
 
 
 # Spectrum

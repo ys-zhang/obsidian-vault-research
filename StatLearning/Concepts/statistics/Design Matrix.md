@@ -1,3 +1,5 @@
+#statistics 
+
 $$
 X = 
 \begin{bmatrix}
@@ -9,19 +11,14 @@ X =
 \in \mathbb R^{N\times(1+p)}
 $$
 
-
-```ad-note
-title: Rows and Columns of the Design Matrix
-1. Each _row_ of the design matrix represents a _sample_;
-2. Each _col_ of the design matrix represents a _regressor/design/explanatory variable_;
-```
+Rows and Columns of the Design Matrix:
+  1. Each _row_ of the design matrix represents a _sample_;
+  2. Each _col_ of the design matrix represents a _regressor/design/explanatory variable_;
 
 
-```ad-warning
-title: Centered Design Matrix
-We require that the design matrix is **centered**, i.e., except the first column all columns has a average of $0$.
+> [!WARNING]  Centered Design Matrix
+> 
+> We require that the design matrix is **centered**, i.e., except the first column all columns has a average of $0$.
+> $$ \forall j > 1,\; \sum_i x_j^{(i)} = 0 $$
 
-$$
-\forall j > 1,\; \sum_i x_j^{(i)} = 0
-$$
-```
+

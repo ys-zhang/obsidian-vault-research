@@ -6,11 +6,12 @@ Let $\mathscr C$ be a category,
     - (_identity arrow_) $\forall X \in Obj(\mathscr C)$, $\exists \; id_X \in Hom_{\mathscr C}(X, X)$, s.t. $\forall Y \in Obj(\mathscr C)$, $\forall g\in Hom_{\mathscr C}(X, Y), h \in Hom_{\mathscr C}(Y, X)$, we have $$g \circ id_X = g \; \textrm{and}\; id_X \circ h = h$$
     - (_composition_) $\forall X, Y, X \in Obj(\mathscr C), f \in Hom_{\mathscr C}(X, Y), g \in Hom_{\mathscr C}(Y, X)$,  we have $$g\circ f \in Hom_{\mathscr C}(X, Z)$$
     - (_associativity_) $$(f\circ g) \circ h = f \circ (g \circ h)$$ 
-```ad-note
-1. _Morphism_ always forms a set while _objects_ does not;
-2. If _objects_ forms a _set_, then the category is said to be _small_;
-3. Internal structure of objects are "forgotten", i.e. _objects_ are atoms of a _category_.
-```
+
+>[!NOTE]
+> 1. _Morphism_ always forms a set while _objects_ does not;
+> 2. If _objects_ forms a _set_, then the category is said to be _small_;
+> 3. Internal structure of objects are "forgotten", i.e. _objects_ are atoms of a _category_.
+
 
 # Isomorphism
 
@@ -54,19 +55,16 @@ $p' = p \circ m$ and $q' = q \circ m$.
 
 ![[Product (category).excalidraw]]
 
-
-```ad-note
-It's like the _product_ $C$ is the _closest_ object to $P$ and $Q$ that can maps to both $P$, and $Q$. In other words, it neither too big nor too small.
-```
+>[!NOTE]
+> It's like the _product_ $C$ is the _closest_ object to $P$ and $Q$ that can maps to both $P$, and $Q$. In other words, it neither too big nor too small.
 
 ## Coproduct (categorical sum)
 
 ![[Coproduct (category).excalidraw]]
 
-```ad-note
-- Coproduct is product in the opposite category.
-- Coproduct is $Set$ is disjoint union (taged union) of two sets.
-```
+> [!NOTE]
+> - Coproduct is product in the opposite category.
+> - Coproduct is $Set$ is disjoint union (tagged union) of two sets.
 
 ## Product of category
 
@@ -96,20 +94,20 @@ An **endofunctor** is a functor that the image category lies in the source categ
 
 A **Monoidal Category** is a category in which there exists a **endo-bifunctor**.
 
-```ad-note
-A functor “_embeds_” one category in another. It may collapse multiple things into one, but it never breaks connections. 
-One way of thinking about it is that with a functor we are _modelling one category inside another_. The source category serves as a model, a blueprint, for some structure that’s part of the target category.
-```
+>[!NOTE]
+> A functor “_embeds_” one category in another. It may collapse multiple things into one, but it never breaks connections. 
+>
+> One way of thinking about it is that with a functor we are _modelling one category inside another_. The source category serves as a model, a blueprint, for some structure that’s part of the target category.
 
-```ad-note
-1. each pair of related object in source category is maped to a related object in image category.
-2. it may squash objects or arrows, i.e., it may not be injective or surjective.
-3. A **faithfull functor** is _injective_ on _hom-sets_.
-4. A **full functor** is _surjective_ on _hom-sets_.
-5. `Functor`s in [[Haskell]] are parameterised types.
-```
+>[!NOTE]
+> 1. each pair of related object in source category is mapped to a related object in image category.
+> 2. it may squash objects or arrows, i.e., it may not be injective or surjective.
+> 3. A **faithful functor** is _injective_ on _hom-sets_.
+> 4. A **full functor** is _surjective_ on _hom-sets_.
+> 5. `Functor`s in [[Haskell]] are parameterised types.
 
 see [Haskell package `Data.Functor`](https://hackage.haskell.org/package/base-4.16.0.0/docs/Data-Functor.html)
+
 
 ## Contravariant functor
 $$
@@ -125,9 +123,9 @@ F(g \circ f) = F(f) \circ F(g)
 $$
 or a functor from $\mathscr C$ to $\mathscr D$ naturally introduce a cofunctor from $\mathscr C^{op}$ to $\mathscr D$.
 
-```ad-note
-**functors** are sead to be _covariant_, while **Contravariant functor** are _contravariant_.
-```
+> [!NOTE]
+> **functors** are said to be _covariant_, while **Contravariant functor** are _contravariant_.
+
 
 ```haskell
 class Contravariant f where
@@ -181,9 +179,8 @@ class Bifunctor b where
 
 [Natural transformation is free](https://bartoszmilewski.com/2014/09/22/parametricity-money-for-nothing-and-theorems-for-free/) in [[Haskell]] due to [[parametric polymorphism]], which is different from [[ad-hoc polymorphism]].
 
-```ad-note
-A natural tranformation maps a morphism to a commute diagram
-```
+> [!NOTE]
+> A natural transformation maps a morphism to a commute diagram
 
 ## Composition
 
@@ -264,16 +261,16 @@ A _Cone_ is a natural transformation that maps the _apex functor_ to the _diagra
 3. the arrows of the natural transformation is arms of the cones
 4. Naturality requires that all wall triangles commute. 
 
- 
-```ad-note
-title: Cone Construction
 
-In general, to build a **cone**:
-1. we start with a category $\mathscr I$ that defines the pattern. It’s a small, often finite category.
-2. We pick a _functor_ $$D: \mathscr I \to \mathscr C$$ and call it (or its image) a _diagram_. 
-3. We pick some $c \in \mathscr C$ as the _apex_ of our _cone_. We use it to define the _constant functor_ $$\Delta_c: \mathscr I \to \mathscr C$$
-4. A _natural transformation_ from $\Delta_c$ to $D$ is then our _cone_. 
-```
+> [!NOTE] Cone Construction
+>
+> In general, to build a **cone**:
+> 1. we start with a category $\mathscr I$ that defines the pattern. It’s a small, often finite category.
+> 2. We pick a _functor_ $$D: \mathscr I \to \mathscr C$$ and call it (or its image) a _diagram_. 
+> 3. We pick some $c \in \mathscr C$ as the _apex_ of our _cone_. We use it to define the _constant functor_ $$\Delta_c: \mathscr I \to \mathscr C$$
+> 4. A _natural transformation_ from $\Delta_c$ to $D$ is then our _cone_. 
+
+
 
 ![[Pasted image 20220101233831.png]]
 
@@ -292,19 +289,20 @@ Follow the construction of cones, with the source category $\mathscr I$ and the 
 
 The _terminal object_ of this cone category is the limit of the diagram, i.e., functor $D$. 
 
-```ad-note
-The intuition is that the **limit** _embodies the properties of the whole diagram in a single object_. And being universal means that it has no extraneous junk.
+> [!NOTE]
+> The intuition is that the **limit** _embodies the properties of the whole diagram in a single object_. And being universal means that it has no extraneous junk.
+>
+> Given any cone, there is a _unique_ morphism that is "compatible" with the diagram. We have a mapping of cones to special morphisms, and it’s a one-to-one mapping.
 
-Given any cone, there is a _unique_ morphism that is "compatible" with the diagram. We have a mapping of cones to special morphisms, and it’s a one-to-one mapping.
-```
 
-```ad-example
-1. The _terminal object_ is a limit generated by an empty category
-2. _Equalizer_ is a limit generated a two-element category with two parallel morphisms going between them.
-3. A _pullback_ is the limit of _Cospan_, which is the _diagram_ of 
-    
-    `1 -> 2 <- 3`
-```
+>[!EXAMPLE]
+> 1. The _terminal object_ is a limit generated by an empty category
+> 2. _Equalizer_ is a limit generated a two-element category with two parallel morphisms going between them.
+> 3. A _pullback_ is the limit of _Cospan_, which is the _diagram_ of 
+> 
+>    `1 -> 2 <- 3`
+
+
 
 ### Construction through natural formalisation
 

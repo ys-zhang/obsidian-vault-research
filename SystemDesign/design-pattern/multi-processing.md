@@ -26,17 +26,17 @@ _State change_ includes:
 
 ## `fork`
 
-```ad-warning
-title: Get concurrent execution
-It's is great danger if run another piece of your own program at the same time. 
+> [!WARNING]  Get concurrent execution
+> 
+> It's is great danger if run another piece of your own program at the same time. 
+> 
+> You should run a separate executable in the child process.
 
-You should run a seperate executable in the child process.
-```
 
-```ad-warning 
-title: allocate memory in child process
-see [[fork#Warnings]].
-```
+> [!WARNING] Allocate memory in child process
+> 
+> see [[fork#Warnings]].
+
 
 1. Accidentally nesting forks when spawning multiple child process.
 2. Runaway children: forget to `exit`....

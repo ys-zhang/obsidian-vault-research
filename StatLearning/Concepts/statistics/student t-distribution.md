@@ -1,3 +1,5 @@
+#distribution 
+
 $$
 t_k = \frac{z}{\sqrt{\chi^2_k/k}}
 $$
@@ -12,4 +14,10 @@ t_k \longrightarrow N(0,1) \; \textrm{as }\; k \to \infty
 $$
 - long tail
 ![[Pasted image 20220405135455.png]]
+
+![[Pasted image 20220411230159.png]]
+
+
+
+
 

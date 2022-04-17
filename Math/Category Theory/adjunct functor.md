@@ -17,11 +17,11 @@ $$
 \end{align}
 $$
 
-```ad-note
-Another way of looking at unit and counit is that 
-1. _Unit_ lets us introduce the composition $R\circ L$ anywhere we could insert an identity functor on $\mathscr D$; 
-2. _Counit_ lets us eliminate the composition $L\circ R$, replacing it with the identity on $\mathscr C$.
-```
+>[!NOTE]
+>Another way of looking at unit and counit is that 
+> 1. _Unit_ lets us introduce the composition $R\circ L$ anywhere we could insert an identity functor on $\mathscr D$; 
+> 2. _Counit_ lets us eliminate the composition $L\circ R$, replacing it with the identity on $\mathscr C$.
+
 
 ![[Pasted image 20220214204339.png]]
 

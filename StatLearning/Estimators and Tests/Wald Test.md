@@ -1,4 +1,4 @@
-#statistics #normal-distribution 
+#statistics #hypothesis-test  #normal-distribution 
 
 ###### Consider Hypothesis 
 $$
@@ -37,7 +37,10 @@ $$
 \frac{W_n - \theta}{S_n} \overset{d} \longrightarrow \mathscr N(0, 1)
 $$
 
-see also [[Score Test]].
+See also
+- [[Score Test]];
+- [[Graphical Representation of the “Holy Trinity”.pdf|Holy Trinity]].
+
 
 
 ###### MLE
@@ -47,7 +50,7 @@ MLE estimator is [[Asymptotically Efficient]], i.e.
 $$
 \sqrt{n}(\hat\theta_{mle}-\theta) \to \mathscr N(0, I_1^{-1}(\theta))
 $$
-Where $I(\theta)$ is the expected [[Fisher Information.pdf]] , then the observed Fisher Information is a good estimate of asymptotic variance of $W_n$.
+Where $I(\theta)$ is the expected [[Fisher Information.pdf]], then the observed Fisher Information is a good estimate of asymptotic variance of $W_n$.
 $$
 S_n = \sqrt{I_n^{-1}(\theta)}_{\theta=W_n} = \sqrt{\hat I_n^{-1}(W_n)}
 $$

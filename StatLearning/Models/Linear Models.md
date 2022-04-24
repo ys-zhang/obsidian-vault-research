@@ -1,3 +1,5 @@
+#statistics
+
 # Modelling Process
 ![[Pasted image 20220321215939.png]]
 
@@ -108,8 +110,9 @@ these are difference of leave one out estimate of $\beta$ and $\hat y$
 
 $$
 \begin{align}
-DFBetaS_{ij} &= \frac{\hat \beta_j - \hat \beta_j^{(i)}}{\sqrt{S^2_{(i)}(X^TX)^{-1}_{jj}}} \\
-DFFitS_i &= \frac{\hat y_i - \hat y_i^{(i)}}{\sqrt{S^2_{(i)}h_{ii}}}
+\text{DFBeta}S_{ij} &= \frac{\hat \beta_j - \hat \beta_j^{(i)}}{\sqrt{S^2_{(i)}(X^TX)^{-1}_{jj}}} \\
+\\
+\text{DFFit}S_i &= \frac{\hat y_i - \hat y_i^{(i)}}{\sqrt{S^2_{(i)}h_{ii}}}
 \end{align}
 $$
 
@@ -451,8 +454,6 @@ The core of mixed models is that they incorporate _fixed and random effects_. (f
 > Finally, keep in mind that the name _random_ doesn’t have much to do with _mathematical randomness_. Yes, it’s confusing. Just think about them as the _grouping_ variables for now. Strictly speaking it’s all about making our models representative of our questions **and getting better estimates**. Hopefully, our next few examples will help you make sense of how and why they’re used.
 
 
-
-
 $$
 \overbrace{\mathbf{y}}^{N \times 1} \quad = \quad
 \overbrace{\underbrace{\mathbf{X}}_{N \times (1+p)} \quad \underbrace{\boldsymbol{\beta}}_{(1+p) \times 1}}^{N \times 1} \quad + \quad
@@ -464,14 +465,13 @@ $$
 - $Z$ is an indicator matrix
 
 
-
-
 > [!NOTE] Implementation in R (LME4) and Python (`statsmodels`)
 >
 > Lindstrom, M. J., & Bates, D. M. (1988). Newton-Raphson and EM Algorithms for Linear Mixed-Effects Models for Repeated-Measures Data. _Journal of the American Statistical Association_, _83_(404), 1014–1022. https://doi.org/10.2307/2290128
 > 
 > [[Newton-Raphson and EM Algorithms for Linear Mixed-Effects Models for Repeated-Measures Data.pdf]]
 
+See also [[ANOVA (Analysis of Variance)#Random Effects Model Analysis]]
 
 
 

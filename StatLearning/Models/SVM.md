@@ -1,3 +1,5 @@
+#statistics #classification
+
 [sklearn doc](https://www.notion.so/yunshuiz/SVM-1929c77001d94c0593892d24cd1dc49e#90076d6aa1e64f2183df759925d8f840)
 
 > material from **A tutorial on support vector regression**.

@@ -1,4 +1,4 @@
-#timeseries 
+#timeseries  #statistics
 
 [Forecasting: Principles and Practice (3rd ed) (otexts.com)](https://otexts.com/fpp3/)
 [Econ 584: Time Series Econometrics (washington.edu)](https://faculty.washington.edu/ezivot/econ584/econ584.htm)

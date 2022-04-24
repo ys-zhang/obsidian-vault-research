@@ -1,4 +1,4 @@
-#timeseries 
+#timeseries  #statistics
 
 # Trend Models
 

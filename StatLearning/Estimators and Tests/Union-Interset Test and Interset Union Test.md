@@ -1,7 +1,7 @@
-#statistics  #hypothesis-test 
+#statistics #hypothesis-test  
 
 
-The idea of UIT and IUT is to disassemble a test in to smaller subtests.
+The idea of **UIT** and **IUT** is to disassemble a test in to smaller subtests.
 
 # UIT 
 

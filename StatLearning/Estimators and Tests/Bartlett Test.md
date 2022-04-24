@@ -1,5 +1,10 @@
 #statistics  #hypothesis-test 
 
+
+>[!WARNING]
+>Bartlett’s test is sensitive to the normality assumption
+
+
 ## Bartlett's Test
 
 _Purpose:  Test for Homogeneity of Variances_

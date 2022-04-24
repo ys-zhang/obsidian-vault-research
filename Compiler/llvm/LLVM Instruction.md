@@ -15,7 +15,7 @@ Certain memory accesses, such as [[#load]]’s, [[#store]]’s, and `llvm.memcpy
 
 1. _not atomic_: regular load/store, race condition produce undefined value;
 2. _unordered_:  races produce somewhat sane results
-3. #unfinished 
+3. #todo 
 
 # Memory
 

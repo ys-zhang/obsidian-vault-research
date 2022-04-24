@@ -4,7 +4,9 @@ $$
 \Pr(y_1, \cdots, y_n)
 $$
 
-# Modelling with [[RNN.md | RNN]]
+# Modelling with [[RNN]]
+
+
 
 ## Data clean
 

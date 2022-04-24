@@ -1,3 +1,5 @@
+#statistics 
+
 # Spline Method
 
 
@@ -28,17 +30,13 @@ In real computation, often the **B-spline basis** is used.
 ![[Pasted image 20220328211404.png]]
 
 
-# Basis Method
+# Smoothing Splines
+
+The Loss function with **smooth penalty**
 
 $$
-\begin{align}
-y &= \sum_{i=1}^p f_i(x_i) + \varepsilon \\
-&= \sum_{i=1}^{p}\sum_{j=1}^{m_i} \beta_{ij}h_{ij}(x_i) + \varepsilon
-\end{align}
+RSS(f,\lambda) = \sum_{i=1}^N (y_i - f(x_i))^2 + \lambda \int \|f''(t)\|^2 dt
 $$
-
-
-
 
 
 

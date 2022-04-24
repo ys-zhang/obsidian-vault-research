@@ -1,3 +1,5 @@
+#statistics #hypothesis-test 
+
 The Model:
 
 $$

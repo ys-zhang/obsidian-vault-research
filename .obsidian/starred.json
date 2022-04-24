@@ -7,13 +7,28 @@
     },
     {
       "type": "file",
-      "title": "linear model",
-      "path": "StatLearning/Models/Linear Models.md"
+      "title": "Dominator Tree",
+      "path": "Algo/Graph Algorithms/Dominator Tree.md"
     },
     {
       "type": "file",
-      "title": "multicollinearity",
-      "path": "StatLearning/Concepts/statistics/Multicollinearity.md"
+      "title": "Markov Chain Monte Carlo method (MCMC)",
+      "path": "StatLearning/Sampling/Markov Chain Monte Carlo method (MCMC).md"
+    },
+    {
+      "type": "file",
+      "title": "Understanding the difficulty of training deep feedforward neural networks",
+      "path": "StatLearning/Train/Understanding the difficulty of training deep feedforward neural networks.md"
+    },
+    {
+      "type": "file",
+      "title": "Hypothesis Tests",
+      "path": "StatLearning/Estimators and Tests/Hypothesis Tests.md"
+    },
+    {
+      "type": "file",
+      "title": "Transfer Function Model",
+      "path": "StatLearning/Models/Time Series/Transfer Function Model.md"
     }
   ]
 }

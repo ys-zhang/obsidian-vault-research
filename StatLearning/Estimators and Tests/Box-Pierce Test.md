@@ -1,3 +1,5 @@
+#statistics #hypothesis-test #timeseries 
+
 > A test for a group of autocorrelations is called a **portmanteau test**, from a French word describing a suitcase or coat rack carrying several items of clothing.
 
 
@@ -20,11 +22,9 @@ library(feasts)
 aug %>% features(.innov, box_pierce, lag = 10, dof = 0)
 ```
 
-# Ljung-Box Test
 
-$$
-\begin{align}
-  Q^* = & T(T+2) \sum_{k=1}^\ell {r_k^2 \over T-k} \\
-  \sim & \chi^2_{\ell-K}
-\end{align}
-$$
+# See also
+
+- [[Hypothesis Tests#White Noise Tests]]
+- [[Ljung-Box Test]]
+

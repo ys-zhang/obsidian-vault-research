@@ -1,4 +1,4 @@
-#statistics #anova
+#statistics #ANOVA 
 
 - $SS_T = \sum_i (y^{(i)} - \bar y)^2$: sum of total variance
 - $SS_R = \sum_i (\hat y^{(i)} - \bar y)^2$: sum of model variance

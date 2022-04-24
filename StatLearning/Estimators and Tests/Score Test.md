@@ -1,3 +1,6 @@
+#statistics #hypothesis-test 
+
+
 ###### Consider Hypothesis 
 $$
 \begin{align}
@@ -25,6 +28,7 @@ $$
 
 ###### Other tests
 
-see [[Wald Test]]
-
+See also
+- [[Wald Test]]
+- [[Graphical Representation of the “Holy Trinity”.pdf|Holy Trinity]]
 

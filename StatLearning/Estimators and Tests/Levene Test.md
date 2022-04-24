@@ -11,11 +11,13 @@ If you have strong evidence that your data do in fact come from a normal, or nea
 
 $$
 \begin{align}
-H_0 & : \sigma_1^2 = \sigma_2^2 = ... = \sigma_k^2\\
-H_1 & : \exists i\ne j, \; σ_i^2 \ne σ_j^2    
+H_0 & : \sigma_1^2 = \sigma_2^2 = \dots = \sigma_k^2\\
+\\
+H_1 & : \exists\; i\ne j, \; \sigma_i^2 \ne \sigma_j^2    
 \end{align}
 $$
 
 
+[[todo]]
 
 

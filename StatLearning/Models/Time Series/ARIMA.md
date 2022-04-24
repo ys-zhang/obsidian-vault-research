@@ -1,4 +1,4 @@
-#timeseries
+#timeseries #statistics 
 
 While [[Exponential Smooth Models]] are based on a description of the _trend_ and _seasonality_ in the data, ARIMA models aim to describe the _autocorrelations_ in the data.
 
@@ -36,7 +36,7 @@ There are some other constrains on $\phi$ required to conform to the stationary 
 
 $$
 \begin{align}
- (\Phi(B)y_t)y_{t-k} &= \varepsilon_ty_{t-k} \\ 
+ [\Phi(B)y_t]\cdot y_{t-k} &= \varepsilon_t\cdot y_{t-k} \\  \\
  \Phi(B)\gamma_k &= 0 \\
  \Phi(B)\rho_k &= 0 \\
 \end{align}
@@ -66,8 +66,9 @@ $$
 $$
 or:
 $$
-\mathbf P_p \phi = \rho
+\mathbf P_p \cdot \phi \; = \; \rho
 $$
+
 
 ###### PACF
 

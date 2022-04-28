@@ -1,4 +1,4 @@
-#statistics #impolation #LOESS #LOWESS #scatterplot-smoothing
+#statistics #interpolation #LOESS #LOWESS #scatterplot-smoothing
 
 > These memory based methods require in principle _little or no training_; all the work gets done at evaluation time.
 

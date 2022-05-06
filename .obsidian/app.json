@@ -259,7 +259,7 @@
   "newFileLocation": "current",
   "showUnsupportedFiles": true,
   "fileSortOrder": "alphabetical",
-  "promptDelete": false,
+  "promptDelete": true,
   "strictLineBreaks": true,
   "defaultViewMode": "preview",
   "readableLineLength": true,

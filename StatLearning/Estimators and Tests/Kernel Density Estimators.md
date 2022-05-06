@@ -1,4 +1,4 @@
-#statistics #nonparametric-statistics #summarize
+#statistics #nonparametric-statistics #summary 
 
 # Empirical Distribution Estimator
 

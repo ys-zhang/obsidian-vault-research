@@ -1,4 +1,4 @@
-[go/source.go at master · golang/go (github.com)](https://github.com/golang/go/blob/master/src/cmd/compile/internal/syntax/source.go)
+[golang source code](https://github.com/golang/go/blob/master/src/cmd/compile/internal/syntax/source.go)
 
 ```go
 type source struct {

@@ -1,6 +1,4 @@
-#statistics #hypothesis-test #summarize
-
-#todo
+#statistics #hypothesis-test #summary 
 
 
 # Test for Homogeneity of Variances
@@ -32,10 +30,9 @@ $$
 
 
 ## Tests
-
-![[Ljung-Box Test#Ljung-Box Test]]
-
-![[Box-Pierce Test#Box-Pierce Test]]
+- [[Chi-squared Test#Chi-squared Test of Association]]
+- [[Ljung-Box Test]]
+- [[Box-Pierce Test]]
 
 
 # Goodness-of-fit Normality Test

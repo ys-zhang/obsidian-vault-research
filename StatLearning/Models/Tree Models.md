@@ -1,23 +1,15 @@
-#statistics  #general-additive-model #algorithm  #nonparametric-statistics  #summarize 
+#statistics  #general-additive-model #algorithm #algorithm-greedy  #nonparametric-statistics  #summary  
 
+
+- [【机器学习】决策树（上）——ID3、C4.5、CART（非常详细） - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/85731206), [[Decision tree-zhizhu blog.pdf]]
 - [Decision Tree](https://scikit-learn.org/stable/modules/tree.html#)
 - [ID3](https://en.wikipedia.org/wiki/ID3_algorithm)
+- [Decision tree methods: applications for classification and prediction - PMC (nih.gov)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4466856/)
+- [[Decision tree methods applications for classification.pdf]], [[Decision trees- a recent overview.pdf]]
+
+
 
 # The Model
-Let 
-- $T$ denote the partition;
-- $|T|$ be the number of regions or leaf nodes  
-- $N_m$ be the number of samples in region $R_m$;
-- $Q_m$ some loss or criteria in region $R_m$, e.g. MSE:
-$$
-Q_m(T) = \frac{1}{N_m} \sum_{x_i\in R_m} (y_i - \hat c_m)^2
-$$
-There are 2 phases in a tree model:
-- grow phase
-- prune phase
-
-Different algorithms have different methods for grow and prune phase.
-
 
 
 ## Regression Tree
@@ -49,22 +41,55 @@ $$
 \hat c_m = \arg \max_k \hat p_{mk}
 $$
 
+## Concepts & Notations
 
-# Criteria (Loss function)
+Let 
+- $T$ denote the partition;
+- $|T|$ be the number of regions or leaf nodes  
+- $N_m$ be the number of samples in region $R_m$;
+- $Q_m$ some loss or criteria in region $R_m$, e.g. MSE:
+$$
+Q_m(T) = \frac{1}{N_m} \sum_{x_i\in R_m} (y_i - \hat c_m)^2
+$$
+
+![[Pasted image 20220429211011.png]]
+
+## Algorithm Phases
+
+1. Grow phase
+    - feature selection
+    - splitting criteria
+    - forward prune
+      - error rate
+      - $\chi^2$ test
+    - stopping rules
+      - minimum number of samples in a leaf;
+      - minimum number of samples before splitting;
+      - maximum depth the result tree.
+2. Prune phase (backward)
+
+
+![[Pasted image 20220429210701.png]]
+
+
+# Split/Prune Criteria (Loss function)
 
 ## Classification Criteria
 
 ##### Gini index
 $$
-\sum_{k\ne k'} \hat p_{mk} \hat p_{mk'} = \sum_{k=1}^K \hat p_{mk} (1-\hat p_{mk})
+\begin{align}
+Q_m(T) &= \sum_{k\ne k'} \hat p_{mk} \hat p_{mk'} \\
+&= \sum_{k=1}^K \hat p_{mk} (1-\hat p_{mk})
+\end{align}
 $$
 ##### Cross entropy
 $$
--\sum_{k=1}^K \hat p_{mk}\log \hat p_{mk}
+Q_m(T) = -\sum_{k=1}^K \hat p_{mk}\log \hat p_{mk}
 $$
 ##### Miss Classification
 $$
-\sum_{k=1}^K (1- \hat p_{mk})
+Q_m(T) = \sum_{k=1}^K (1- \hat p_{mk})
 $$
 
 
@@ -151,6 +176,19 @@ The **algorithm** to find $T_\alpha$ is dubbed as **Weakest Line Pruning**:
 > [!TLDR] 
 > ID3 is a **top-down greedy** algorithm deals with **categorical predictors**, **categorical response** and **multi-way split**.
 
+## Steps
+1.  初始化特征集合和数据集合；
+2.  计算数据集合信息熵和所有特征的条件熵，选择信息增益最大的特征作为当前决策节点；
+3.  更新数据集合和特征集合（删除上一步使用的特征，并按照特征值来划分不同分支的数据集合）；
+4.  重复 2，3 两步，若子集值包含单一特征，则为分支叶子节点。
+
+## Disadvantages
+-   ID3 没有剪枝策略，容易过拟合；
+-   信息增益准则对可取值数目较多的特征有所偏好，类似“编号”的特征其信息增益接近于 1；
+-   只能用于处理离散分布的特征；
+-   没有考虑缺失值。
+
+
 Let 
 - response $y \in \{1, 2, \dots, K\}$;
 
@@ -171,7 +209,7 @@ Let
 >       - If all examples are negative, Return the single-node tree Root, with `label` = $-$.
 >       - If number of predicting attributes is empty, then Return the single node tree Root, with `label` = most common value of the target attribute in the `Examples`.
 >       - Otherwise Begin
->           1. $A \gets$ The Attribute that best classifies `Examples`.
+>           1. $A \gets$ The attribute (feature) that best classifies `Examples`.
 >           2. Decision Tree attribute for `Root` = $A$.
 >           3. For each possible value, $v_i$ of $A$,
 >           4. Add a new tree branch below Root, corresponding to the test $A = v_i$.
@@ -179,3 +217,29 @@ Let
 >           6. If `Examples`($v_i$) is empty.  Then below this new branch add a leaf node with `label` = most common target value in the `Examples`. Else below this new branch add the subtree `ID3` (`Examples`($v_i$), `Target_Attribute`, `Attributes` – $\{A\}$)
 >        - End
 >   3. Return Root
+
+
+# C4.5
+
+This is an extension to [[#ID3 Iterative Dichotomiser 3]]:
+1. It suits continuous and categorical features;
+2. It performs multi-way split
+3. Adds a forward prune mechanism
+
+## Idea
+
+-   引入悲观剪枝策略进行后剪枝；
+-   引入信息增益率作为划分标准；
+-   将连续特征离散化，假设 $n$ 个样本的连续特征 $A$ 有 $m$ 个取值，C4.5 将其排序并取相邻两样本值的平均数共 $m-1$ 个划分点，分别计算以该划分点作为二元分类点时的信息增益，并选择信息增益最大的点作为该连续特征的二元离散分类点；
+-   对于缺失值的处理可以分为两个子问题：
+    1. 在特征缺失的情况下进行划分特征的选择？（即如何计算特征的信息增益率）
+      - C4.5 的做法是：对于具有缺失值特征，用没有缺失的样本子集所占比重来折算；
+    2. 选定该划分特征，对于缺失该特征值的样本如何处理？（即到底把这个样本划分到哪个结点里）
+      - C4.5 的做法是：将样本同时划分到所有子节点，不过要 _调整样本的权重值_，其实也就是以不同概率划分到不同节点中。
+
+
+
+# MARS
+
+See [[MARS (Multivariate Adaptive Regression Splines)]]
+

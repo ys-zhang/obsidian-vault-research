@@ -25,6 +25,6 @@ aug %>% features(.innov, box_pierce, lag = 10, dof = 0)
 
 # See also
 
-- [[Hypothesis Tests#White Noise Tests]]
+- [[Hypothesis Tests]]
 - [[Ljung-Box Test]]
 

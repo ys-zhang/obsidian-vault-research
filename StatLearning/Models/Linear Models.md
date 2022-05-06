@@ -290,7 +290,7 @@ t_0 &= \frac{\hat \beta_i}{se(\hat \beta_i)}
 \end{align}
 $$
 
-$t_0$ is named as the **Z-score** or **standardized coefficient**. 
+$t_0$ is named as the [[z-score]] or **standardized coefficient**. 
 A _Z-score_ greater than $2$ in absolute value is approximately significant at the $5\%$ level.
 
 > [!NOTE]

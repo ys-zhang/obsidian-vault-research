@@ -1,7 +1,8 @@
 {
-  "baseFontSize": 16,
-  "cssTheme": "Sanctum",
-  "theme": "obsidian",
+  "baseFontSize": 25,
+  "cssTheme": "Primary",
+  "theme": "system",
   "translucency": false,
-  "baseFontSizeAction": false
+  "baseFontSizeAction": true,
+  "textFontFamily": "Calibri"
 }

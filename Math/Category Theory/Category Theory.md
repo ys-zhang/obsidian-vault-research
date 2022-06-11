@@ -1,21 +1,29 @@
+#category-theory 
+
 A _Category_ is a collection of _objects_ with _morphisms_ (arrows) between objects.
 
 Let $\mathscr C$ be a category,
-- $Obj(\mathscr C)$ denotes the collection of objects;
-- $\forall X, Y \in Obj(\mathscr C)$, $Hom_{\mathscr C}(X, Y)$ denotes the _set_ of morphism from $X \to Y$.
-    - (_identity arrow_) $\forall X \in Obj(\mathscr C)$, $\exists \; id_X \in Hom_{\mathscr C}(X, X)$, s.t. $\forall Y \in Obj(\mathscr C)$, $\forall g\in Hom_{\mathscr C}(X, Y), h \in Hom_{\mathscr C}(Y, X)$, we have $$g \circ id_X = g \; \textrm{and}\; id_X \circ h = h$$
-    - (_composition_) $\forall X, Y, X \in Obj(\mathscr C), f \in Hom_{\mathscr C}(X, Y), g \in Hom_{\mathscr C}(Y, X)$,  we have $$g\circ f \in Hom_{\mathscr C}(X, Z)$$
+- $\mathbf{Obj}(\mathscr C)$ denotes the **collection** of objects;
+- $\forall X, Y \in \mathbf{Obj}(\mathscr C)$, $\mathbf{Hom}_{\mathscr C}(X, Y)$ denotes the _set_ of morphism from $X \to Y$.
+    - (_identity arrow_) $\forall X \in \mathbf{Obj}(\mathscr C)$, $\exists \; id_X \in \mathbf{Hom}_{\mathscr C}(X, X)$, s.t. $\forall Y \in \mathbf{Obj}(\mathscr C)$, $\forall g\in \mathbf{Hom}_{\mathscr C}(X, Y), h \in \mathbf{Hom}_{\mathscr C}(Y, X)$, we have $$g \circ id_X = g \; \textrm{and}\; id_X \circ h = h$$
+    - (_composition_) $\forall X, Y, X \in \mathbf{Obj}(\mathscr C), f \in \mathbf{Hom}_{\mathscr C}(X, Y), g \in \mathbf{Hom}_{\mathscr C}(Y, X)$,  we have $$g\circ f \in \mathbf{Hom}_{\mathscr C}(X, Z)$$
     - (_associativity_) $$(f\circ g) \circ h = f \circ (g \circ h)$$ 
 
 >[!NOTE]
-> 1. _Morphism_ always forms a set while _objects_ does not;
+> 1. [[Morphism|Arrows]] always forms a set while _objects_ does not;
 > 2. If _objects_ forms a _set_, then the category is said to be _small_;
 > 3. Internal structure of objects are "forgotten", i.e. _objects_ are atoms of a _category_.
+
+>[!EXAMPLES]
+> - [[Preorder]], [[Partial Order]]
+> - [[#Kleisli Category]]
+
+![[Morphism]]
 
 
 # Isomorphism
 
-For $X, Y \in Obj(\mathscr C)$, $f\in Hom_{\mathscr C}(X, Y)$ is an _isomorphism_ if $\exists g \in Hom_{\mathscr C}(Y, X)$, if
+For $X, Y \in \mathbf{Obj}(\mathscr C)$, $f\in \mathbf{Hom}_{\mathscr C}(X, Y)$ is an _isomorphism_ if $\exists g \in \mathbf{Hom}_{\mathscr C}(Y, X)$, if
 $$
 \begin{align}
 g \circ f = id_X \\
@@ -34,7 +42,7 @@ the _initial object_ and the _terminal object_
 The _opposite category_ of $\mathscr C$ , denoted by $\mathscr{C}^{op}$, has the same objects as $\mathscr C$  , but reversed arrows, i.e., 
 $$ 
 \begin{align}
-Hom_{\mathscr{C}^{op}}(X, Y) &= Hom_{\mathscr C}(Y, X) \\
+\mathbf{Hom}_{\mathscr{C}^{op}}(X, Y) &= \mathbf{Hom}_{\mathscr C}(Y, X) \\
 g^{op} \circ f^{op} &:= (f \circ g)^{op} 
 \end{align}
 $$
@@ -52,15 +60,14 @@ $$
 ## Categorical product
 The _product_ of 2 objects $P, Q$ in category $\mathscr C$ is an object $C$ with a pair of morphism $p: C \to P$ and $q: C \to Q$ ; and, $\forall (Z', p': Z' \to X, q': Z' \to Y)$ , $\exists! m: Z' \to Z$, such that 
 $p' = p \circ m$ and $q' = q \circ m$.
-
-![[Product (category).excalidraw]]
+![[Product (category).excalidraw|center]]
 
 >[!NOTE]
 > It's like the _product_ $C$ is the _closest_ object to $P$ and $Q$ that can maps to both $P$, and $Q$. In other words, it neither too big nor too small.
 
 ## Coproduct (categorical sum)
 
-![[Coproduct (category).excalidraw]]
+![[Coproduct (category).excalidraw|center]]
 
 > [!NOTE]
 > - Coproduct is product in the opposite category.
@@ -83,7 +90,7 @@ let $\mathscr C$ and $\mathscr D$  be two small category. the product category, 
 
 # Functor
 
-![[Functor.excalidraw]]
+![[Functor.excalidraw|600|center]]
 
 **Functor** keeps internal structure (_morphism_) of _category_.
 1. (id): $F(id_X) = id_{FX}$;
@@ -106,7 +113,13 @@ A **Monoidal Category** is a category in which there exists a **endo-bifunctor**
 > 4. A **full functor** is _surjective_ on _hom-sets_.
 > 5. `Functor`s in [[Haskell]] are parameterised types.
 
+>[!EXAMPLE]
+> - _Constant Functor_: a functor maps all objects to a constant object $c$, denoted by $\Delta_c$
+> - _Identity Functor_ maps a category to itself.
+> - $Cat$ is the category of categories, where objects are categories and morphisms are functors.
+
 see [Haskell package `Data.Functor`](https://hackage.haskell.org/package/base-4.16.0.0/docs/Data-Functor.html)
+
 
 
 ## Contravariant functor
@@ -121,17 +134,15 @@ and
 $$
 F(g \circ f) = F(f) \circ F(g)
 $$
-or a functor from $\mathscr C$ to $\mathscr D$ naturally introduce a cofunctor from $\mathscr C^{op}$ to $\mathscr D$.
+or a functor from $\mathscr C$ to $\mathscr D$ naturally introduce a _cofunctor_ from $\mathscr C^{op}$ to $\mathscr D$.
 
 > [!NOTE]
 > **functors** are said to be _covariant_, while **Contravariant functor** are _contravariant_.
-
 
 ```haskell
 class Contravariant f where
   contramap :: (b -> a) -> f a -> f b
 ```
-
 
 
 ## Bifunctor
@@ -149,19 +160,12 @@ A **Profunctor** is like a bifunctor; however, it is _contravariant_ in the firs
 $$
 f: \mathscr{C^{op} \times C \to C}
 $$
+see also [[#Dinatural Transformation]]
 
+>[!EXAMPLE]
+> - $\mathbf{Hom}: \mathscr C^{op} \times \mathscr C \to Set$, is a _profunctor_. 
+> - $\forall C \in \mathscr C$, $\mathbf{Hom}(C, -)$ is a functor which is referred as _hom-functor_.
 
-## Examples
-
-_Constant Functor_: a functor maps all objects to a constant object $c$, denoted by $\Delta_c$
-
-_Identity Functor_ maps a category to itself.
-
-$Cat$ is the category of categories, where objects are categories and morphisms are functors.
-
-$Hom: \mathscr C^{op} \times \mathscr C \to Set$, is a _profunctor_. 
-$\forall C \in \mathscr C$, $Hom(C, \cdot)$ is a functor which is referred as _hom-functor_.
- 
 ```haskell
 class Functor f where
   -- this `f a` hints the compiler that 
@@ -175,7 +179,7 @@ class Bifunctor b where
 
 # Natural Transformation
 
-![[Natural transformation.excalidraw]]
+![[Natural transformation.excalidraw|650|center]]
 
 [Natural transformation is free](https://bartoszmilewski.com/2014/09/22/parametricity-money-for-nothing-and-theorems-for-free/) in [[Haskell]] due to [[parametric polymorphism]], which is different from [[ad-hoc polymorphism]].
 
@@ -202,7 +206,7 @@ $$
 \end{align}
 $$
 
-![[Natural transformation composition.excalidraw]]
+![[Natural transformation composition.excalidraw|center|650]]
 
 
 ### Horizontal Composition
@@ -223,7 +227,7 @@ $$
 
 $$
 
-![[Pasted image 20220217142941.png]]
+![[Pasted image 20220217142941.png|center]]
 
 the composition is defined as 
 $$
@@ -249,10 +253,31 @@ $$
 (\beta \circ \alpha)_a = \beta_a \circ \alpha_a
 $$
 
+## Dinatural Transformation
+
+>[!TLDR]
+>Dinatural Transformation is a "natural transformation" defined only on the **diagonal** of [[#Profunctor]]s
+
+$\forall x\in \mathbf{Obj}(\mathscr C)$, a **dinatural transformation** is a collection of morphisms in the target category: 
+$$
+ \alpha_x: P(x, x) \to Q(x,x)
+$$
+where 
+$$
+P, Q: \mathscr C^{op} \times \mathscr C \to \mathscr D
+$$
+are profunctors.
+
+And the following diagram commutes:
+![[Pasted image 20220602231058.png]]
+
+which can be seen as a special case of natural transformation as 
+
+![[Pasted image 20220602231205.png]]
 
 ## Cone
 
-![[Cone (category).excalidraw]]
+![[Cone (category).excalidraw|650|center]]
 
 TLDR;
 A _Cone_ is a natural transformation that maps the _apex functor_ to the _diagram functor_:
@@ -298,8 +323,7 @@ The _terminal object_ of this cone category is the limit of the diagram, i.e., f
 >[!EXAMPLE]
 > 1. The _terminal object_ is a limit generated by an empty category
 > 2. _Equalizer_ is a limit generated a two-element category with two parallel morphisms going between them.
-> 3. A _pullback_ is the limit of _Cospan_, which is the _diagram_ of 
-> 
+> 3. A [[Pullback and Pushout#Pullback|pullback]] is the limit of _Cospan_, which is the _diagram_ of  
 >    `1 -> 2 <- 3`
 
 
@@ -325,8 +349,7 @@ where
 2. $\mathbf{Nat}(\Delta_c, D)$ is the collection of cones with $c$ as its apex
 
 In other words, _cones with the same apex is isomorphic to arrow from the apex to the limit_.
-
-![[Limit (category)]]
+![[Limit (category)|center]]
 
 To construct the $limit$, for each $c\in \mathcal D$ we have a set of cones with apex $c$, we need to find the _unique_ morphism from $c$ to the $limit$.
 
@@ -397,12 +420,12 @@ Then, if $\alpha, \beta$ exists, it easy to verify that $\mathbf{Lim} D$ is the 
 
 # Function type (exponential object)
 
-![[Function (category).excalidraw]]
+![[Exponentials.excalidraw|680|center]]
 
 
 # Kleisli Category
 
-![[Kleisli category]]
+![[Kleisli category|680|center]]
 
 The _Kleisli Category_ have same objects as the original category, with arrows defined as "embellished" arrows in the original category and a new composition definition, which usually denoted by the _fish operator_ `>=>`.
 
@@ -426,10 +449,6 @@ let compose (g: 'b -> M<'c>) (f: 'a -> M<'b>) (a: 'a) : M<'c>
     (c, s1 + s2)
 ```
 
-```scala
-
-```
-
 ```rust
 fn compose<X, Y, Z>(g: impl Fn(Y) -> (Z, String), f: impl Fn(X) -> (Y, String)) -> impl Fn(X) -> (Z, String) {
     move |x| {
@@ -439,3 +458,11 @@ fn compose<X, Y, Z>(g: impl Fn(Y) -> (Z, String), f: impl Fn(X) -> (Y, String)) 
     }
 }
 ```
+
+
+# References
+
+Books:
+- Topoi: The Categorical Analysis of Logic
+- Category Theory for Programmers
+

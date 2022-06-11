@@ -1,12 +1,12 @@
 {
   "getLangFromFile": true,
-  "defaultLanguage": "en_US",
-  "normalLang": "en_US",
+  "defaultLanguage": "cn",
+  "normalLang": "cn",
   "shouldShowSynonymPopover": false,
   "shouldShowCustomContextMenu": true,
   "apiSettings": {
     "en_US": {
-      "definitionApiName": "Offline Dictionary",
+      "definitionApiName": "Free Dictionary API",
       "synonymApiName": "Free Dictionary API"
     },
     "hi": {

@@ -36,7 +36,9 @@ $$
 
 
 
-# Example
+# Examples
+
+## Ex1
 
 $$
 K(n) = K(\frac{n}{2}) + 2K(\frac{n}{3}) + 3K(\frac{n}{4}) + n^2
@@ -67,5 +69,22 @@ K(n) \in \Theta(n^2)
 $$
 
 
+## Ex2
+
+This recursion often shows up in algorithms uses backtracking
+
+$$
+T(n) = \sum_{i=1}^n T(i) + f(n)
+$$
+thus we have 
+
+$$
+T(n) - T(n-1) = T(n-1) + f(n) - f(n-1)
+$$
+gives
+$$
+T(n) = 2T(n-1) + g(n)
+$$
+which often result in _exponential complexity_.
 
 

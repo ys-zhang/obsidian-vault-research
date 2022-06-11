@@ -1,3 +1,6 @@
+#python 
+#scientific-computing
+
 When considering binary data formats, we are talking about:  
   
 * *type* of the data  
@@ -6,8 +9,6 @@ When considering binary data formats, we are talking about:
   
 [Numpy dtype objects](https://numpy.org/doc/stable/reference/arrays.dtypes.html) describes these information  
 
-
-  
 | dtype             | info |
 | ----------------- | ---- |
 | `dtype.type`      | Text |

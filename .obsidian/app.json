@@ -253,7 +253,7 @@
   ],
   "vimMode": false,
   "alwaysUpdateLinks": true,
-  "communityPluginSortOrder": "download",
+  "communityPluginSortOrder": "release",
   "attachmentFolderPath": "attachments",
   "foldIndent": true,
   "newFileLocation": "current",
@@ -279,5 +279,5 @@
   "spellcheckLanguages": [
     "en-AU"
   ],
-  "communityThemeSortOrder": "release"
+  "communityThemeSortOrder": "download"
 }

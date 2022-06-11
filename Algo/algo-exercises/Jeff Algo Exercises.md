@@ -1,5 +1,9 @@
 - [[Hanoi]]
-- [[Master's Theorem#Example]]
+- [[Master's Theorem#Examples|Recursion tree ]]
 
+
+# Backtracking
+
+- [[Master's Theorem#Ex2]]
 
 

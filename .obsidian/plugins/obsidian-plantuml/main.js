@@ -4788,7 +4788,7 @@ var init_PumlView = __esm({
 __export(exports, {
   default: () => PlantumlPlugin
 });
-var import_obsidian5 = __toModule(require("obsidian"));
+var import_obsidian6 = __toModule(require("obsidian"));
 
 // src/settings.ts
 var import_obsidian = __toModule(require("obsidian"));
@@ -4796,7 +4796,9 @@ var DEFAULT_SETTINGS = {
   server_url: "https://www.plantuml.com/plantuml",
   header: "",
   debounce: 3,
-  localJar: ""
+  localJar: "",
+  javaPath: "java",
+  defaultProcessor: "png"
 };
 var PlantUMLSettingsTab = class extends import_obsidian.PluginSettingTab {
   constructor(plugin) {
@@ -4815,14 +4817,24 @@ var PlantUMLSettingsTab = class extends import_obsidian.PluginSettingTab {
         this.plugin.settings.localJar = value;
         yield this.plugin.saveSettings();
       })));
+      new import_obsidian.Setting(containerEl).setName("Java Path").setDesc("Path to Java executable").addText((text) => text.setPlaceholder(DEFAULT_SETTINGS.javaPath).setValue(this.plugin.settings.javaPath).onChange((value) => __async(this, null, function* () {
+        this.plugin.settings.javaPath = value;
+        yield this.plugin.saveSettings();
+      })));
     }
+    new import_obsidian.Setting(containerEl).setName("Default processor for includes").setDesc("Any .pu/.puml files linked will use this processor").addDropdown((dropdown) => {
+      dropdown.addOption("png", "PNG").addOption("svg", "SVG").setValue(this.plugin.settings.defaultProcessor).onChange((value) => __async(this, null, function* () {
+        this.plugin.settings.defaultProcessor = value;
+        yield this.plugin.saveSettings();
+      }));
+    });
     new import_obsidian.Setting(containerEl).setName("Header").setDesc("Included at the head in every diagram. Useful for specifying a common theme (.puml file)").addTextArea((text) => {
       text.setPlaceholder("!include https://raw.githubusercontent.com/....puml\n").setValue(this.plugin.settings.header).onChange((value) => __async(this, null, function* () {
         this.plugin.settings.header = value;
         yield this.plugin.saveSettings();
       }));
       text.inputEl.setAttr("rows", 4);
-      text.inputEl.addClass("settings_area");
+      text.inputEl.addClass("puml-settings-area");
     });
     new import_obsidian.Setting(containerEl).setName("Debounce").setDesc("How often should the diagram refresh in seconds").addText((text) => text.setPlaceholder(String(DEFAULT_SETTINGS.debounce)).setValue(String(this.plugin.settings.debounce)).onChange((value) => __async(this, null, function* () {
       if (!isNaN(Number(value)) || value === void 0) {
@@ -4856,19 +4868,22 @@ var Replacer = class {
     const result = resultLines.join("\r\n");
     return result.replace(/&nbsp;/gi, " ");
   }
-  replaceLinks(text, path) {
+  replaceLinks(text, path, filetype) {
     return text.replace(/\[\[\[([\s\S]*?)\]\]\]/g, (_, args) => {
       const split = args.split("|");
       const file = this.plugin.app.metadataCache.getFirstLinkpathDest(split[0], path);
       if (!file) {
         return "File with name: " + split[0] + " not found";
       }
-      const url = this.plugin.app.getObsidianUrl(file);
       let alias = file.basename;
-      if (split[1]) {
-        alias = split[1];
+      if (filetype === "png") {
+        const url = this.plugin.app.getObsidianUrl(file);
+        if (split[1]) {
+          alias = split[1];
+        }
+        return "[[" + url + " " + alias + "]]";
       }
-      return "[[" + url + " " + alias + "]]";
+      return "[[" + file.basename + "]]";
     });
   }
   getFullPath(path) {
@@ -4911,7 +4926,14 @@ function insertAsciiImage(el, image) {
 }
 function insertSvgImage(el, image) {
   el.empty();
-  el.insertAdjacentHTML("beforeend", image);
+  const parser = new DOMParser();
+  const svg = parser.parseFromString(image, "image/svg+xml");
+  const links = svg.getElementsByTagName("a");
+  for (let i = 0; i < links.length; i++) {
+    const link = links[i];
+    link.addClass("internal-link");
+  }
+  el.insertAdjacentHTML("beforeend", svg.documentElement.outerHTML);
 }
 
 // node_modules/compare-versions/index.mjs
@@ -5062,7 +5084,7 @@ var LocalProcessors = class {
         "-charset utf-8",
         "-pipemap"
       ];
-      const child = exec("java " + args.join(" "), { encoding: "binary", cwd: path });
+      const child = exec(this.plugin.settings.javaPath + " " + args.join(" "), { encoding: "binary", cwd: path });
       let stdout = "";
       if (child.stdout) {
         child.stdout.on("data", (data) => {
@@ -5102,9 +5124,9 @@ var LocalProcessors = class {
       ];
       let child;
       if (type === OutputType.PNG) {
-        child = exec("java " + args.join(" "), { encoding: "binary", cwd: path });
+        child = exec(this.plugin.settings.javaPath + " " + args.join(" "), { encoding: "binary", cwd: path });
       } else {
-        child = exec("java " + args.join(" "), { encoding: "utf-8", cwd: path });
+        child = exec(this.plugin.settings.javaPath + " " + args.join(" "), { encoding: "utf-8", cwd: path });
       }
       let stdout;
       let stderr;
@@ -5219,15 +5241,15 @@ var DebouncedProcessors = class {
     this.SECONDS_TO_MS_FACTOR = 1e3;
     this.debounceMap = /* @__PURE__ */ new Map();
     this.png = (source, el, ctx) => __async(this, null, function* () {
-      yield this.processor(source, el, ctx, this.plugin.getProcessor().png);
+      yield this.processor(source, el, ctx, "png", this.plugin.getProcessor().png);
     });
     this.ascii = (source, el, ctx) => __async(this, null, function* () {
-      yield this.processor(source, el, ctx, this.plugin.getProcessor().ascii);
+      yield this.processor(source, el, ctx, "ascii", this.plugin.getProcessor().ascii);
     });
     this.svg = (source, el, ctx) => __async(this, null, function* () {
-      yield this.processor(source, el, ctx, this.plugin.getProcessor().svg);
+      yield this.processor(source, el, ctx, "svg", this.plugin.getProcessor().svg);
     });
-    this.processor = (source, el, ctx, processor) => __async(this, null, function* () {
+    this.processor = (source, el, ctx, filetype, processor) => __async(this, null, function* () {
       el.createEl("h6", { text: "Generating PlantUML diagram", cls: "puml-loading" });
       if (el.dataset.plantumlDebounce) {
         const debounceId = el.dataset.plantumlDebounce;
@@ -5240,7 +5262,7 @@ var DebouncedProcessors = class {
         el.dataset.plantumlDebouce = uuid;
         this.debounceMap.set(uuid, func);
         source = this.plugin.replacer.replaceNonBreakingSpaces(source);
-        source = this.plugin.replacer.replaceLinks(source, this.plugin.replacer.getPath(ctx));
+        source = this.plugin.replacer.replaceLinks(source, this.plugin.replacer.getPath(ctx), filetype);
         source = this.plugin.settings.header + "\r\n" + source;
         yield processor(source, el, ctx);
       }
@@ -5304,9 +5326,137 @@ var ServerProcessor = class {
 };
 
 // src/main.ts
-var PlantumlPlugin = class extends import_obsidian5.Plugin {
+init_PumlView();
+var import_state3 = __toModule(require("@codemirror/state"));
+
+// src/decorations/EmbedDecoration.ts
+var import_obsidian5 = __toModule(require("obsidian"));
+var import_view2 = __toModule(require("@codemirror/view"));
+var import_state2 = __toModule(require("@codemirror/state"));
+var import_language = __toModule(require("@codemirror/language"));
+var import_stream_parser = __toModule(require("@codemirror/stream-parser"));
+var statefulDecorations = defineStatefulDecoration();
+var StatefulDecorationSet = class {
+  constructor(editor, plugin) {
+    this.decoCache = Object.create(null);
+    this.debouncedUpdate = (0, import_obsidian5.debounce)(this.updateAsyncDecorations, 100, true);
+    this.editor = editor;
+    this.plugin = plugin;
+  }
+  computeAsyncDecorations(tokens) {
+    return __async(this, null, function* () {
+      const decorations = [];
+      for (const token of tokens) {
+        let deco = this.decoCache[token.value];
+        if (!deco) {
+          const file = this.plugin.app.metadataCache.getFirstLinkpathDest(token.value, "");
+          if (!file)
+            return;
+          const fileContent = yield this.plugin.app.vault.read(file);
+          const div = createDiv();
+          if (this.plugin.settings.defaultProcessor === "png") {
+            yield this.plugin.getProcessor().png(fileContent, div, null);
+          } else {
+            yield this.plugin.getProcessor().svg(fileContent, div, null);
+          }
+          deco = this.decoCache[token.value] = import_view2.Decoration.replace({ widget: new EmojiWidget(div), block: true });
+        }
+        decorations.push(deco.range(token.from, token.from));
+      }
+      return import_view2.Decoration.set(decorations, true);
+    });
+  }
+  updateAsyncDecorations(tokens) {
+    return __async(this, null, function* () {
+      const decorations = yield this.computeAsyncDecorations(tokens);
+      if (decorations || this.editor.state.field(statefulDecorations.field).size) {
+        this.editor.dispatch({ effects: statefulDecorations.update.of(decorations || import_view2.Decoration.none) });
+      }
+    });
+  }
+};
+function buildViewPlugin(plugin) {
+  return import_view2.ViewPlugin.fromClass(class {
+    constructor(view) {
+      this.decoManager = new StatefulDecorationSet(view, plugin);
+      this.buildAsyncDecorations(view);
+    }
+    update(update) {
+      if (update.docChanged || update.viewportChanged) {
+        this.buildAsyncDecorations(update.view);
+      }
+    }
+    buildAsyncDecorations(view) {
+      const targetElements = [];
+      for (const { from, to } of view.visibleRanges) {
+        const tree = (0, import_language.syntaxTree)(view.state);
+        tree.iterate({
+          from,
+          to,
+          enter: (type, from2, to2) => {
+            const tokenProps = type.prop(import_stream_parser.tokenClassNodeProp);
+            if (tokenProps) {
+              const props = new Set(tokenProps.split(" "));
+              const isEmbed = props.has("formatting-embed");
+              if (isEmbed) {
+                const content = view.state.doc.sliceString(from2);
+                const index = content.indexOf("]]");
+                const filename = content.slice(3, index).split("|")[0];
+                if (filename.endsWith(".puml") || filename.endsWith(".pu")) {
+                  targetElements.push({ from: from2, to: index, value: filename });
+                }
+              }
+            }
+          }
+        });
+      }
+      this.decoManager.debouncedUpdate(targetElements);
+    }
+  });
+}
+function asyncDecoBuilderExt(plugin) {
+  return [statefulDecorations.field, buildViewPlugin(plugin)];
+}
+function defineStatefulDecoration() {
+  const update = import_state2.StateEffect.define();
+  const field = import_state2.StateField.define({
+    create() {
+      return import_view2.Decoration.none;
+    },
+    update(deco, tr) {
+      return tr.effects.reduce((deco2, effect) => effect.is(update) ? effect.value : deco2, deco.map(tr.changes));
+    },
+    provide: (field2) => import_view2.EditorView.decorations.from(field2)
+  });
+  return { update, field };
+}
+var EmojiWidget = class extends import_view2.WidgetType {
+  constructor(source) {
+    super();
+    this.source = source;
+  }
+  eq(other) {
+    return other == this;
+  }
+  toDOM() {
+    return this.source;
+  }
+  ignoreEvent() {
+    return false;
+  }
+};
+
+// src/main.ts
+var PlantumlPlugin = class extends import_obsidian6.Plugin {
+  constructor() {
+    super(...arguments);
+    this.hover = {
+      linkText: null,
+      sourcePath: null
+    };
+  }
   getProcessor() {
-    if (import_obsidian5.Platform.isMobileApp) {
+    if (import_obsidian6.Platform.isMobileApp) {
       return this.serverProcessor;
     }
     if (this.settings.localJar.length > 0) {
@@ -5321,17 +5471,18 @@ var PlantumlPlugin = class extends import_obsidian5.Plugin {
       this.addSettingTab(new PlantUMLSettingsTab(this));
       this.replacer = new Replacer(this);
       this.serverProcessor = new ServerProcessor(this);
-      if (import_obsidian5.Platform.isDesktopApp) {
+      if (import_obsidian6.Platform.isDesktopApp) {
         this.localProcessor = new LocalProcessors(this);
       }
       const processor = new DebouncedProcessors(this);
       if (isUsingLivePreviewEnabledEditor()) {
         const view = (init_PumlView(), PumlView_exports);
-        (0, import_obsidian5.addIcon)("document-" + view.VIEW_TYPE, LOGO_SVG);
+        (0, import_obsidian6.addIcon)("document-" + view.VIEW_TYPE, LOGO_SVG);
         this.registerView(view.VIEW_TYPE, (leaf) => {
           return new view.PumlView(leaf, this);
         });
-        this.registerExtensions(["puml"], view.VIEW_TYPE);
+        this.registerExtensions(["puml", "pu"], view.VIEW_TYPE);
+        this.registerEditorExtension(import_state3.Prec.lowest(asyncDecoBuilderExt(this)));
       }
       this.registerMarkdownCodeBlockProcessor("plantuml", processor.png);
       this.registerMarkdownCodeBlockProcessor("plantuml-ascii", processor.ascii);
@@ -5340,11 +5491,84 @@ var PlantumlPlugin = class extends import_obsidian5.Plugin {
       this.registerMarkdownCodeBlockProcessor("puml-svg", processor.svg);
       this.registerMarkdownCodeBlockProcessor("puml-ascii", processor.ascii);
       this.registerMarkdownCodeBlockProcessor("plantuml-map", processor.png);
+      this.observer = new MutationObserver((mutation) => __async(this, null, function* () {
+        if (mutation.length !== 1)
+          return;
+        if (mutation[0].addedNodes.length !== 1)
+          return;
+        if (this.hover.linkText === null)
+          return;
+        if (mutation[0].addedNodes[0].className !== "popover hover-popover file-embed is-loaded")
+          return;
+        const file = this.app.metadataCache.getFirstLinkpathDest(this.hover.linkText, this.hover.sourcePath);
+        if (!file)
+          return;
+        if (file.extension !== "puml" && file.extension !== "pu")
+          return;
+        const fileContent = yield this.app.vault.read(file);
+        const imgDiv = createDiv();
+        if (this.settings.defaultProcessor === "png") {
+          yield this.getProcessor().png(fileContent, imgDiv, null);
+        } else {
+          yield this.getProcessor().svg(fileContent, imgDiv, null);
+        }
+        const node = mutation[0].addedNodes[0];
+        node.empty();
+        const div = createDiv("", (element) => __async(this, null, function* () {
+          element.appendChild(imgDiv);
+          element.setAttribute("src", file.path);
+          element.onClickEvent((event) => {
+            event.stopImmediatePropagation();
+            const leaf = this.app.workspace.getLeaf(event.ctrlKey);
+            leaf.setViewState({
+              type: VIEW_TYPE,
+              state: { file: file.path }
+            });
+          });
+        }));
+        node.appendChild(div);
+      }));
+      this.registerEvent(this.app.workspace.on("hover-link", (event) => __async(this, null, function* () {
+        const linkText = event.linktext;
+        if (!linkText)
+          return;
+        const sourcePath = event.sourcePath;
+        if (!linkText.endsWith(".puml") && !linkText.endsWith(".pu")) {
+          return;
+        }
+        this.hover.linkText = linkText;
+        this.hover.sourcePath = sourcePath;
+      })));
+      this.observer.observe(document, { childList: true, subtree: true });
+      this.registerMarkdownPostProcessor((element, context) => __async(this, null, function* () {
+        const embeddedItems = element.querySelectorAll(".internal-embed");
+        if (embeddedItems.length === 0) {
+          return;
+        }
+        for (const key in embeddedItems) {
+          const item = embeddedItems[key];
+          if (typeof item.getAttribute !== "function")
+            return;
+          const filename = item.getAttribute("src");
+          const file = this.app.metadataCache.getFirstLinkpathDest(filename.split("#")[0], context.sourcePath);
+          if (file && file instanceof import_obsidian6.TFile && (file.extension === "puml" || file.extension === "pu")) {
+            const fileContent = yield this.app.vault.read(file);
+            const div = createDiv();
+            if (this.settings.defaultProcessor === "png") {
+              yield this.getProcessor().png(fileContent, div, context);
+            } else {
+              yield this.getProcessor().svg(fileContent, div, context);
+            }
+            item.parentElement.replaceChild(div, item);
+          }
+        }
+      }));
     });
   }
   onunload() {
     return __async(this, null, function* () {
       console.log("unloading plugin plantuml");
+      this.observer.disconnect();
     });
   }
   loadSettings() {

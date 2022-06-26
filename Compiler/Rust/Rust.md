@@ -1,13 +1,15 @@
 #Rust
 
-[Introduction - The Rust Programming Language (rust-lang.org)](https://doc.rust-lang.org/book/ch00-00-introduction.html)
 
-[A Rust game development talk](https://kyren.github.io/2018/09/14/rustconf-talk.html)  
+# References
 
+- [The Rust Programming Language](https://doc.rust-lang.org/book/ch00-00-introduction.html)
+- [The Rustonomicon](https://doc.rust-lang.org/nomicon/)
+- [The Rust Reference](https://doc.rust-lang.org/reference/)
+- [A Rust game development talk](https://kyren.github.io/2018/09/14/rustconf-talk.html)  
+- [Rust Magazine 中文月刊](https://rustmagazine.github.io/rust_magazine_2021/index.html)
+- [AFLplusplus/LibAFL: Advanced Fuzzing Library](https://github.com/AFLplusplus/LibAFL)
 
-[AFLplusplus/LibAFL: Advanced Fuzzing Library](https://github.com/AFLplusplus/LibAFL)
-
-[Rust Magazine 中文月刊](https://rustmagazine.github.io/rust_magazine_2021/index.html)
 
 # Components & Concepts
 
@@ -1177,3 +1179,18 @@ We don’t need to annotate any code in _tests/integration_test.rs_ with `#[cfg(
 
 
 ### Document Test
+
+
+# Async Rust
+
+> Reading notes from [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/)
+
+>[!NOTE] Decouple the Async Runtime
+>
+> - **Futures are inert** in Rust and make progress only when _polled_. Dropping a future stops it from making further progress.
+> - **Async is zero-cost** in Rust, which means that you only pay for what you use. Specifically, you can *use async without heap allocations and dynamic dispatch*, which is great for performance! This also lets you use async in constrained environments, such as embedded systems.
+> - **No built-in runtime** is provided by Rust. Instead, runtimes are provided by community maintained crates.
+> - **Both single and multithreaded** runtimes are available in Rust, which have different strengths and weaknesses.
+
+
+

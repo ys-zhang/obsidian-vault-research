@@ -1,1 +1,0 @@
-[Welcome! - The Nannou Guide](https://guide.nannou.cc/welcome.html)

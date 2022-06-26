@@ -1,6 +1,8 @@
 #Rust 
 
-An _unsafe feature_ is one that imposes a contract: rules that Rust cannot enforce automatically, but which you must nonetheless follow to avoid _undefined behavior_.
+[The Rustonomicon](https://doc.rust-lang.org/nomicon/)
+
+An _unsafe feature_ is one that imposes a contract: rules that Rust cannot enforce automatically, but which you must nonetheless follow to avoid _undefined behaviour_.
 
 
 ### Unsafe block
@@ -15,7 +17,7 @@ An unsafe block unlocks five additional options for you:
 
 ### Unsafe trait
 
-An _unsafe trait_ is a trait that has a contract Rust cannot check or enforce that implementers must satisfy to avoid undefined behavior.
+An _unsafe trait_ is a trait that has a contract Rust cannot check or enforce that implementers must satisfy to avoid undefined behaviour.
 
 A function that bounds its type variables with an _unsafe trait_ is typically one that uses unsafe features itself, and _satisfies their contracts only by depending on the unsafe trait’s contract_.
 

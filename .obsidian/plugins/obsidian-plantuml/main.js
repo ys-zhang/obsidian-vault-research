@@ -4813,7 +4813,9 @@ var PlantUMLSettingsTab = class extends import_obsidian.PluginSettingTab {
       yield this.plugin.saveSettings();
     })));
     if (import_obsidian.Platform.isDesktopApp) {
-      new import_obsidian.Setting(containerEl).setName("Local JAR").setDesc("Path to local PlantUML Jar").addText((text) => text.setPlaceholder(DEFAULT_SETTINGS.localJar).setValue(this.plugin.settings.localJar).onChange((value) => __async(this, null, function* () {
+      const jarDesc = new DocumentFragment();
+      jarDesc.createDiv().innerHTML = "Path to local JAR<br>Supports:<ul><li>Absolute path</li><li>Path relative to vault</li><li>Path relative to users home directory <code>~/</code></li></ul>";
+      new import_obsidian.Setting(containerEl).setName("Local JAR").setDesc(jarDesc).addText((text) => text.setPlaceholder(DEFAULT_SETTINGS.localJar).setValue(this.plugin.settings.localJar).onChange((value) => __async(this, null, function* () {
         this.plugin.settings.localJar = value;
         yield this.plugin.saveSettings();
       })));
@@ -5074,28 +5076,20 @@ var LocalProcessors = class {
   }
   generateLocalMap(source, path) {
     return __async(this, null, function* () {
-      const resolve = require("path").resolve;
       const { exec } = require("child_process");
-      const jar = resolve(__dirname, this.plugin.settings.localJar);
-      const args = [
-        "-jar",
-        "-Djava.awt.headless=true",
-        jar,
-        "-charset utf-8",
-        "-pipemap"
-      ];
-      const child = exec(this.plugin.settings.javaPath + " " + args.join(" "), { encoding: "binary", cwd: path });
+      const args = this.resolveLocalJarCmd().concat(["-pipemap"]);
+      const child = exec(args.join(" "), { encoding: "binary", cwd: path });
       let stdout = "";
       if (child.stdout) {
         child.stdout.on("data", (data) => {
           stdout += data;
         });
       }
-      return new Promise((resolve2, reject) => {
+      return new Promise((resolve, reject) => {
         child.on("error", reject);
         child.on("close", (code) => {
           if (code === 0) {
-            resolve2(stdout);
+            resolve(stdout);
             return;
           } else if (code === 1) {
             console.log(stdout);
@@ -5111,22 +5105,13 @@ var LocalProcessors = class {
   }
   generateLocalImage(source, type, path) {
     return __async(this, null, function* () {
-      const resolve = require("path").resolve;
       const { ChildProcess, exec } = require("child_process");
-      const jar = resolve(__dirname, this.plugin.settings.localJar);
-      const args = [
-        "-jar",
-        "-Djava.awt.headless=true",
-        jar,
-        "-t" + type,
-        "-charset utf-8",
-        "-pipe"
-      ];
+      const args = this.resolveLocalJarCmd().concat(["-t" + type, "-pipe"]);
       let child;
       if (type === OutputType.PNG) {
-        child = exec(this.plugin.settings.javaPath + " " + args.join(" "), { encoding: "binary", cwd: path });
+        child = exec(args.join(" "), { encoding: "binary", cwd: path });
       } else {
-        child = exec(this.plugin.settings.javaPath + " " + args.join(" "), { encoding: "utf-8", cwd: path });
+        child = exec(args.join(" "), { encoding: "utf-8", cwd: path });
       }
       let stdout;
       let stderr;
@@ -5146,16 +5131,16 @@ var LocalProcessors = class {
             stderr += data;
         });
       }
-      return new Promise((resolve2, reject) => {
+      return new Promise((resolve, reject) => {
         child.on("error", reject);
         child.on("close", (code) => {
           if (code === 0) {
             if (type === OutputType.PNG) {
               const buf = new Buffer(stdout, "binary");
-              resolve2(buf.toString("base64"));
+              resolve(buf.toString("base64"));
               return;
             }
-            resolve2(stdout);
+            resolve(stdout);
             return;
           } else if (code === 1) {
             console.log(stdout);
@@ -5163,10 +5148,10 @@ var LocalProcessors = class {
           } else {
             if (type === OutputType.PNG) {
               const buf = new Buffer(stdout, "binary");
-              resolve2(buf.toString("base64"));
+              resolve(buf.toString("base64"));
               return;
             }
-            resolve2(stdout);
+            resolve(stdout);
             return;
           }
         });
@@ -5174,6 +5159,33 @@ var LocalProcessors = class {
         child.stdin.end();
       });
     });
+  }
+  resolveLocalJarCmd() {
+    const jarFromSettings = this.plugin.settings.localJar;
+    const { isAbsolute, resolve } = require("path");
+    const { userInfo } = require("os");
+    let jarFullPath;
+    const path = this.plugin.replacer.getFullPath("");
+    if (jarFromSettings[0] === "~") {
+      jarFullPath = userInfo().homedir + jarFromSettings.slice(1);
+    } else {
+      if (isAbsolute(jarFromSettings)) {
+        jarFullPath = jarFromSettings;
+      } else {
+        jarFullPath = resolve(path, jarFromSettings);
+      }
+    }
+    if (jarFullPath.length == 0) {
+      throw Error("Invalid local jar file");
+    }
+    return [
+      this.plugin.settings.javaPath,
+      "-jar",
+      "-Djava.awt.headless=true",
+      '"' + jarFullPath + '"',
+      "-charset",
+      "utf-8"
+    ];
   }
 };
 

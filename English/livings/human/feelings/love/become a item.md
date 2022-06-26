@@ -1,0 +1,1 @@
+It means that they were **usually seen in the** company of one another, so much so that others would have every reason to conclude that they were **lovers** or at least **extremely good friends**.

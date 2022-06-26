@@ -1,6 +1,6 @@
 {
-  "baseFontSize": 25,
-  "cssTheme": "Primary",
+  "baseFontSize": 18,
+  "cssTheme": "Friendly",
   "theme": "system",
   "translucency": false,
   "baseFontSizeAction": true,

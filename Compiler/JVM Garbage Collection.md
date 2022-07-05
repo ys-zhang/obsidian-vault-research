@@ -1,3 +1,5 @@
+#gc
+
 # GC
 [一文看懂JVM内存布局及GC原理-InfoQ](https://www.infoq.cn/article/3wyretkqrhivtw4frmr3)
 

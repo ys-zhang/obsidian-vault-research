@@ -253,7 +253,7 @@
   ],
   "vimMode": false,
   "alwaysUpdateLinks": true,
-  "communityPluginSortOrder": "release",
+  "communityPluginSortOrder": "download",
   "attachmentFolderPath": "attachments",
   "foldIndent": true,
   "newFileLocation": "current",
@@ -262,7 +262,7 @@
   "promptDelete": true,
   "strictLineBreaks": true,
   "defaultViewMode": "preview",
-  "readableLineLength": true,
+  "readableLineLength": false,
   "foldHeading": true,
   "lineWrap": true,
   "showFrontmatter": true,
@@ -279,5 +279,5 @@
   "spellcheckLanguages": [
     "en-AU"
   ],
-  "communityThemeSortOrder": "release"
+  "communityThemeSortOrder": "download"
 }

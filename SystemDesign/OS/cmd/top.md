@@ -1,3 +1,5 @@
+#cmd 
+
 The **top** program provides a dynamic real-time view of a running system.  It can display **system** summary information as well as a list of **processes** or **threads** currently being managed by the Linux kernel.
 
 

@@ -1,3 +1,5 @@
+#cmd
+
 `sed` stands for _stream editor_.
 
     sed [options] commands [inputfile...]

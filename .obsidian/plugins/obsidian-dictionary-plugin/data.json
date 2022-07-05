@@ -1,13 +1,13 @@
 {
   "getLangFromFile": true,
-  "defaultLanguage": "en_GB",
-  "normalLang": "en_GB",
+  "defaultLanguage": "en_US",
+  "normalLang": "en_US",
   "shouldShowSynonymPopover": false,
   "shouldShowCustomContextMenu": true,
   "apiSettings": {
     "en_US": {
       "definitionApiName": "Free Dictionary API",
-      "synonymApiName": "Free Dictionary API"
+      "synonymApiName": "Google"
     },
     "hi": {
       "definitionApiName": "Free Dictionary API",
@@ -65,7 +65,7 @@
   "partOfSpeechApiName": "Systran API",
   "advancedSynonymAnalysis": false,
   "useCaching": false,
-  "folder": "",
+  "folder": "English",
   "capitalizedFileName": true,
   "prefix": "",
   "suffix": "",

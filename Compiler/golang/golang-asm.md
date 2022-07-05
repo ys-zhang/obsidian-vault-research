@@ -1,4 +1,4 @@
-IR for golang  #assembly #golang
+IR for golang  #asm #golang
 
 # Symbols
 

@@ -1,3 +1,6 @@
+#cmd 
+
+
 create hard link `ln src dst`
 create soft link `ln -s src dst`
 

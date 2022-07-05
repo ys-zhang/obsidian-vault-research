@@ -1,3 +1,5 @@
+#cmd
+
 `ls` list a directory
 - `alias ll=ls -lh`
 - `-a` show all ; `-A` show almost all

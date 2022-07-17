@@ -1,5 +1,6 @@
 #python 
 #scientific-computing
+#blog 
 
 When considering binary data formats, we are talking about:  
   

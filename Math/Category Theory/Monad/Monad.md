@@ -10,6 +10,7 @@ $$
 \end{align}
 $$
 **Monadic rules**:
+
 ![[Pasted image 20220215224846.png]]
 
 $$
@@ -184,7 +185,7 @@ instance Monad (Cont r) where
                       in ka ra 
 ```
 
-![[The Continue Monad.excalidraw]]
+![[The Continue Monad.excalidraw|700]]
 
 > [!NOTE]
 > As you can see, continuations are composed _inside out_.

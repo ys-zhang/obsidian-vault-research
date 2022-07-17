@@ -1,9 +1,9 @@
 #Rust 
 #concurrency 
 #code-reading 
+#blog 
 
-
-copy from [Tokio internals: Understanding Rust's asynchronous I/O framework from the bottom up](https://cafbit.com/post/tokio_internals/) and a Chinese translation [【譯】Tokio 內部機制：從頭理解 Rust 非同步 I/O 框架 | Weihang Lo](https://weihanglo.tw/posts/2018/tokio-internals/)
+Copied from [Tokio internals: Understanding Rust's asynchronous I/O framework from the bottom up](https://cafbit.com/post/tokio_internals/) and a Chinese translation [【譯】Tokio 內部機制：從頭理解 Rust 非同步 I/O 框架 | Weihang Lo](https://weihanglo.tw/posts/2018/tokio-internals/)
 
 
 # Tokio internals: Understanding Rust's asynchronous I/O framework from the bottom up

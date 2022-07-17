@@ -1,4 +1,5 @@
 #linker 
+#blog 
 
 copy from [All about Procedure Linkage Table | MaskRay](https://maskray.me/blog/2021-09-19-all-about-procedure-linkage-table)
 

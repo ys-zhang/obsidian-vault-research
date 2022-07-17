@@ -1,6 +1,6 @@
 #asm  
 #linker
-
+#blog
 
 copied from [All about Global Offset Table | MaskRay](https://maskray.me/blog/2021-08-29-all-about-global-offset-table)
 

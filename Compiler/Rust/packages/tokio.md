@@ -1,6 +1,6 @@
 #Rust
 #concurrency 
-#multithreading
+#multi-threading
 #coroutine
 
 
@@ -252,7 +252,143 @@ The thread pool's working threads has a upper limit.
 
 ## Thread Pool
 
+The default multi-thread runtime is build through
+```rust
+// The number `61` is fairly arbitrary. 
+// I believe this value was copied from golang.
+Builder::new(Kind::MultiThread, 
+             /* global queue interval */  61,   
+             /* event interval */         61)   
+        .enable_all()
+        .build();
+```
+and build function calls
 
+```rust
+fn build_threaded_runtime(&mut self /* Builder */) -> io::Result<Runtime> {
+    use crate::loom::sys::num_cpus;
+    use crate::runtime::{HandleInner, Kind, ThreadPool};
+    
+    let core_threads: Option<usize> // number of executor OS threads
+        = self.worker_threads.unwrap_or_else(num_cpus);
+
+    let (driver, resources) = driver::Driver::new(self.get_cfg())?;
+
+    // Create the blocking pool
+    let blocking_pool = /* executor event loops are spawned in block mode
+                           using the blocking pool */
+        blocking::create_blocking_pool(self, self.max_blocking_threads + core_threads);
+    let blocking_spawner = blocking_pool.spawner().clone();
+
+    let handle_inner = HandleInner {
+        io_handle: resources.io_handle,
+        time_handle: resources.time_handle,
+        signal_handle: resources.signal_handle,
+        clock: resources.clock,
+        blocking_spawner,
+    };
+
+    /* THIS EVENTUALLY CALLS worker::create */
+    let (scheduler, launch) = ThreadPool::new(
+        core_threads,
+        driver,
+        handle_inner,
+        self.before_park.clone(),    /*callback func runs before park*/
+        self.after_unpark.clone(),   /*callback func runs after  park*/
+        self.global_queue_interval,
+        self.event_interval,
+    );
+    let spawner = Spawner::ThreadPool(scheduler.spawner().clone());
+
+    // Create the runtime handle
+    let handle = Handle { spawner };
+
+    // Spawn the thread pool workers
+    let _enter = crate::runtime::context::enter(handle.clone());
+    launch.launch();
+
+    Ok(Runtime {
+        kind: Kind::ThreadPool(scheduler),
+        handle,
+        blocking_pool,
+    })
+}
+```
+
+`worker::create` actually creates the thread pool and the launcher
+```rust
+// scr: <runtime/thread_pool/worker.rs>
+pub(super) fn create(
+    size: usize,
+    park: Parker,
+    handle_inner: HandleInner,
+    before_park: Option<Callback>,
+    after_unpark: Option<Callback>,
+    global_queue_interval: u32,
+    event_interval: u32,
+) -> (Arc<Shared>, Launch) {
+
+    let mut cores:          Vec<Box<Core>>     = Vec::with_capacity(size);
+    let mut remotes:        Vec<Remote>        = Vec::with_capacity(size);
+    let mut worker_metrics: Vec<WorkerMetrics> = Vec::with_capacity(size);
+
+    // Create the local queues
+    for _ in 0..size {
+        /**
+         * This implements a work-stealing queue
+         * see <https://en.wikipedia.org/wiki/Work_stealing>
+         *     <https://dl.acm.org/doi/10.1145/324133.324234>
+         * the code implements a dequeue or in particular 
+         *   BUFFERED CHANNEL
+         */
+        let (steal, run_queue) = queue::local();
+
+        let park = park.clone();
+        let unpark = park.unpark();
+
+        cores.push(Box::new(Core {
+            tick: 0,
+            lifo_slot: None,
+            run_queue,
+            is_searching: false,
+            is_shutdown: false,
+            park: Some(park),
+            metrics: MetricsBatch::new(),
+            rand: FastRand::new(seed()),
+            global_queue_interval,
+            event_interval,
+        }));
+
+        remotes.push(Remote { steal, unpark });
+        worker_metrics.push(WorkerMetrics::new());
+    }
+
+    let shared = Arc::new(Shared {
+        handle_inner,
+        remotes: remotes.into_boxed_slice(),
+        inject: Inject::new(),
+        idle: Idle::new(size),
+        owned: OwnedTasks::new(),
+        shutdown_cores: Mutex::new(vec![]),
+        before_park,
+        after_unpark,
+        scheduler_metrics: SchedulerMetrics::new(),
+        worker_metrics: worker_metrics.into_boxed_slice(),
+    });
+
+    let mut launch = Launch(vec![]);
+
+    for (index, core) in cores.drain(..).enumerate() {
+        launch.0.push(Arc::new(Worker {
+            shared: shared.clone(),
+            index,
+            core: AtomicCell::new(Some(core)),
+        }));
+    }
+
+    (shared, launch)
+}
+```
 
 # Further reading
 
@@ -260,3 +396,7 @@ The thread pool's working threads has a upper limit.
 2. [[Tokio internals (Staled)]]
 3. [Async: What is blocking? – Alice Ryhl](https://ryhl.io/blog/async-what-is-blocking/)
 4. [Reducing tail latencies with automatic cooperative task yielding | Tokio - An asynchronous Rust runtime](https://tokio.rs/blog/2020-04-preemption)
+5. [Work stealing algorithm](https://en.wikipedia.org/wiki/Work_stealing)
+6. [Scheduling multithreaded computations by work stealing](https://dl.acm.org/doi/10.1145/324133.324234)
+
+

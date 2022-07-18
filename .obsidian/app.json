@@ -262,7 +262,7 @@
   "promptDelete": true,
   "strictLineBreaks": true,
   "defaultViewMode": "preview",
-  "readableLineLength": false,
+  "readableLineLength": true,
   "foldHeading": true,
   "lineWrap": true,
   "showFrontmatter": true,

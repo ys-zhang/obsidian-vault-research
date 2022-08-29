@@ -1,49 +1,73 @@
-[CS 110L: Safety in Systems Programming (reberhardt.com)](https://reberhardt.com/cs110l/spring-2021/handouts/tools-tips/)
+- [CS 110L: Safety in Systems Programming (reberhardt.com)](https://reberhardt.com/cs110l/spring-2021/handouts/tools-tips/)
+- [Vim Cheat Sheet (rtorr.com)](https://vim.rtorr.com/)
+- [Vim FaQ](https://vimhelp.org/vim_faq.txt.html)
+- [Learn Neovim The Practical Way](https://alpha2phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f)
 
-```toml
-# All SpaceVim option below [option] section
-[options]
-    colorscheme = "gruvbox"
-    colorscheme_bg = "dark"
-    enable_guicolors = true
-    # Disable statusline separator, if you want to use other value, please
-    # install nerd fonts
-    statusline_separator = "arrow"
-    statusline_iseparator = "arrow"
-    buffer_index_type = 4
-    enable_tabline_filetype_icon = true
-    enable_statusline_mode = true
+# Basic
 
-# Enable autocomplete layer
-[[layers]]
-  name = 'autocomplete'
-  auto_completion_return_key_behavior = "complete"
-  auto_completion_tab_key_behavior = "smart"
-
-[[layers]]
-  name = 'colorscheme'
-  random_theme = true
-  frequency = 'hourly'   # change every  hours
-
-[[layers]]
-  name = 'fzf'   # cmds starts with <Leader> f
-
-# Enable Language layers
-[[layers]]
-  name = 'shell'
-  default_position = 'top'
-  default_width = 30
-
-[[layers]]
-  name = 'lang#rust'
+- `:help vim-modes`: help about vim modes 
+- `:view {file}` open in read-only mode
 
 
-[[layers]]
-  name = 'lsp'
-  filetypes = [
-    'rust'
-  ]
-  [layers.override_cmd]
-    rust = ['rls']
+# Neovim Commands
+
+| full                         | short  | description                         |
+| ---------------------------- | ------ | ----------------------------------- |
+| `:{count}mes[sages] [clear]` | `:mes` | show/clear message history          |
+| `:se[t] {option}?`           | `:se`  | options, see `:help option-summary` |
+| `:view {file}`               |        | open file in read-only mode         |
+| `:b[uffer] {name}`           | `:b`   | switch btw buffers                  | 
+
+
+# Tag 
+
+`:tselect {pattern}`, select tags in current buffer
+
+# Help
+
+- `<Ctrl-]>`  jump in to _tag_.
+- `<Ctrl-T>` jump back to previous position
+- `:help {subject}` get help of the subject
+- `:help index`:  a list of all available _subjects_
+- type `<Ctrl-D>` after `:help` to get a list of all the help keywords containing the supplied pattern.
+    - `:help init<C-D>`
+    - `:help str*<C-D>`
+    - `:help '*indent<C-D>`
+- `:helpgrep` 
+
+
+# Vim Model
 
 ```
+                                     +------+
+                                 +---|Window|
+                      +---+      |   +------+
+                 +----|Tab|------+
++--------+       |    +---+      |   +------+      +-------------+
+|Vim Proc|-------+               +---|Window|------|active buffer|
++--------+       |    +---+          +------+      +-------------+
+                 +----|Tab|
+                      +---+
+```
+
+A **status line** is used to separate windows.
+
+# LSP Model
+
+```
+                      +------+      +------+
+                +-----|Client|------|Server|
+                |     +------+      +------+
++--------+      |
+| Buffer |------+
++--------+      |
+                |     +------+      +------+
+                +-----|Client|------|Server|
+                      +------+      +------+
+```
+
+Buffer and Clients are implemented in Neovim, but Server are standalone apps lives outside.
+
+see 
+- `:h lsp`
+- `:h lspconfig`

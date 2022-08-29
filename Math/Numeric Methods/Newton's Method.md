@@ -1,0 +1,1 @@
+see [[Newton-Raphson Algorism]]

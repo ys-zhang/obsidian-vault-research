@@ -13,11 +13,18 @@ The GNU Assembler uses AT&T by default, here we use the AT&T syntax.
 
 `%reg-name`: `%ax`, `bx`
 
+| Register | Meaning                                                                                   |
+| -------- | ----------------------------------------------------------------------------------------- |
+| `esp`    | stack pointer, points to the top of the current stack frame                               |
+| `ebp`    | stack frame/base pointer, backs up `esp`, points to the bottom of the current stack frame |
+
+![[register]]
+
 ## Literal
 
 `$value`: `$100`
 
-```asm
+```
 mov	$100,	%bx    # move 100 to %bx
 mov	$A,	%al	     # move 'A' to %al
 ```
@@ -157,7 +164,7 @@ asm(  "leal (%%ecx, %%ecx, 4), %%ecx"
 
 #### Constraints
 
-When operands are specified using this constraint, they get stored in [[register#GPR general purposed registers | GPR]].
+When operands are specified using this constraint, they get stored in [[register#GPR general purposed registers |GPR]].
 
 ###### Register operand constraint (`r`)
 
@@ -180,8 +187,8 @@ When the operands are in the memory, any operations performed on them will occur
 
 #### Constraint Modifiers
 
-1.  "=" : Means that this operand is _write-only_ for this instruction; the previous value is discarded and replaced by output data.
-2.  "&" : Means that this operand is an _early clobber operand_, which is modified before the instruction is finished using the input operands. Therefore, this operand may not lie in a register that is used as an input operand or as part of any memory address.
+1.  `"="` : Means that this operand is _write-only_ for this instruction; the previous value is discarded and replaced by output data.
+2.  `"&"` : Means that this operand is an _early clobber operand_, which is modified before the instruction is finished using the input operands. Therefore, this operand may not lie in a register that is used as an input operand or as part of any memory address.
 
 
 ## Rust inline ASM

@@ -206,7 +206,7 @@ $$
 \end{align}
 $$
 
-![[Natural transformation composition.excalidraw|center|650]]
+![[Natural transformation composition.excalidraw|center|800]]
 
 
 ### Horizontal Composition

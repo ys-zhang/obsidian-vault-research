@@ -1,4 +1,4 @@
-vanilla js scripts do not support module, there are a number of JavaScript libraries and frameworks that enable module usage (for example, other [[CommonJS]] and AMD-based module systems like [[RequireJS]], and more recently [[Webpack]] and [[Babel]]).
+**vanilla js** scripts do not support module, there are a number of JavaScript libraries and frameworks that enable module usage (for example, other [[CommonJS]] and AMD-based module systems like [[RequireJS]], and more recently [[Webpack]] and [[Babel]]).
 
 
 # `.mjs` V.S. `.js`

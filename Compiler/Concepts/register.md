@@ -55,6 +55,7 @@ The register with an "E" prefix can only be used in _protected mode_.
 The EFLAGS register hold the state of the processor.
 
 The following is only for Intel.
+
 | Bit (Position) | Label | Description                    |
 | -------------- | ----- | ------------------------------ |
 | 0              | CF    | carry flag                     |

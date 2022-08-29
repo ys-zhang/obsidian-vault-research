@@ -233,7 +233,7 @@ fn turn(&mut self, max_wait: Option<Duration>) -> io::Result<()> {
 ```
 
 
-## Blocking Poll
+## Blocking Pool
 When dealing with an operation that prevents the task from reaching an `.await` for an extended period of time, e.g.
 - CPU bound computation
 - Synchronous IO
@@ -378,6 +378,7 @@ pub(super) fn create(
 
     let mut launch = Launch(vec![]);
 
+    /* Launch contains a vector of Worker, which owns the Core */
     for (index, core) in cores.drain(..).enumerate() {
         launch.0.push(Arc::new(Worker {
             shared: shared.clone(),
@@ -390,6 +391,95 @@ pub(super) fn create(
 }
 ```
 
+
+### The Event Loop of a Worker
+
+the following loops is spawned in to [[#Blocking Pool]]
+
+```rust
+impl Context {
+    fn run(&self, mut core: Box<Core>) -> RunResult {
+        while !core.is_shutdown {
+            // Increment the tick
+            core.tick();
+
+            // Run maintenance, if needed
+            core = self.maintenance(core);
+
+            // First, check work available to the current worker.
+            if let Some(task) = core.next_task(&self.worker) {
+                core = self.run_task(task, core)?;
+                continue;
+            }
+
+            // There is no more **local** work to process, try to steal work
+            // from other workers.
+            if let Some(task) = core.steal_work(&self.worker) {
+                core = self.run_task(task, core)?;
+            } else {
+                // Wait for work
+                core = self.park(core);
+            }
+        }
+
+        core.pre_shutdown(&self.worker);
+
+        // Signal shutdown
+        self.worker.shared.shutdown(core);
+        Err(())
+    }
+
+    fn run_task(&self, task: Notified, mut core: Box<Core>) -> RunResult {
+        let task = self.worker.shared.owned.assert_owner(task);
+
+        // Make sure the worker is not in the **searching** state. This enables
+        // another idle worker to try to steal work.
+        core.transition_from_searching(&self.worker);
+
+        // Make the core available to the runtime context
+        core.metrics.incr_poll_count();
+        *self.core.borrow_mut() = Some(core);
+
+        // Run the task
+        coop::budget(|| {
+            task.run();
+
+            // As long as there is budget remaining and a task exists in the
+            // `lifo_slot`, then keep running.
+            loop {
+                // Check if we still have the core. If not, the core was stolen
+                // by another worker.
+                let mut core = match self.core.borrow_mut().take() {
+                    Some(core) => core,
+                    None => return Err(()),
+                };
+
+                // Check for a task in the LIFO slot
+                let task = match core.lifo_slot.take() {
+                    Some(task) => task,
+                    None => return Ok(core),
+                };
+
+                if coop::has_budget_remaining() {
+                    // Run the LIFO task, then loop
+                    core.metrics.incr_poll_count();
+                    *self.core.borrow_mut() = Some(core);
+                    let task = self.worker.shared.owned.assert_owner(task);
+                    task.run();
+                } else {
+                    // Not enough budget left to run the LIFO task, push it to
+                    // the back of the queue and return.
+                    core.run_queue
+                        .push_back(task, self.worker.inject(), &mut core.metrics);
+                    return Ok(core);
+                }
+            }
+        })
+    }
+}
+```
+
+
 # Further reading
 
 1. [[Tokio internals (note)]]
@@ -398,5 +488,5 @@ pub(super) fn create(
 4. [Reducing tail latencies with automatic cooperative task yielding | Tokio - An asynchronous Rust runtime](https://tokio.rs/blog/2020-04-preemption)
 5. [Work stealing algorithm](https://en.wikipedia.org/wiki/Work_stealing)
 6. [Scheduling multithreaded computations by work stealing](https://dl.acm.org/doi/10.1145/324133.324234)
-
+7. [介绍 - Tokio Internals (tony612.github.io)](https://tony612.github.io/tokio-internals/01.html)
 

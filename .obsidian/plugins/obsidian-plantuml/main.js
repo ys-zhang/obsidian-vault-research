@@ -4620,15 +4620,13 @@ function syncDispatch(from) {
     }
   };
 }
-var import_obsidian4, import_view, import_state, import_gutter, import_search, import_history, import_commands, VIEW_TYPE, views, syncAnnotation, PumlView;
+var import_obsidian4, import_view, import_state, import_search, import_commands, VIEW_TYPE, views, syncAnnotation, PumlView;
 var init_PumlView = __esm({
   "src/PumlView.ts"() {
     import_obsidian4 = __toModule(require("obsidian"));
     import_view = __toModule(require("@codemirror/view"));
     import_state = __toModule(require("@codemirror/state"));
-    import_gutter = __toModule(require("@codemirror/gutter"));
     import_search = __toModule(require("@codemirror/search"));
-    import_history = __toModule(require("@codemirror/history"));
     import_commands = __toModule(require("@codemirror/commands"));
     VIEW_TYPE = "plantuml";
     views = [];
@@ -4639,18 +4637,18 @@ var init_PumlView = __esm({
         this.dispatchId = -1;
         this.extensions = [
           (0, import_view.highlightActiveLine)(),
-          (0, import_gutter.highlightActiveLineGutter)(),
+          (0, import_view.highlightActiveLineGutter)(),
           (0, import_search.highlightSelectionMatches)(),
           (0, import_view.drawSelection)(),
           import_view.keymap.of([...import_commands.defaultKeymap, import_commands.indentWithTab]),
-          (0, import_history.history)(),
+          (0, import_commands.history)(),
           (0, import_search.search)(),
-          import_view.EditorView.updateListener.of((v) => {
+          import_view.EditorView.updateListener.of((v) => __async(this, null, function* () {
             if (v.docChanged) {
               this.requestSave();
-              this.renderPreview();
+              yield this.renderPreview();
             }
-          })
+          }))
         ];
         this.plugin = plugin;
         this.debounced = (0, import_obsidian4.debounce)(this.plugin.getProcessor().png, this.plugin.settings.debounce * 1e3, true);
@@ -4658,7 +4656,7 @@ var init_PumlView = __esm({
         this.previewEl = this.contentEl.createDiv({ cls: "plantuml-preview-view", attr: { "style": "display: none" } });
         const vault = this.app.vault;
         if (vault.getConfig("showLineNumber")) {
-          this.extensions.push((0, import_gutter.lineNumbers)());
+          this.extensions.push((0, import_view.lineNumbers)());
         }
         if (vault.getConfig("lineWrap")) {
           this.extensions.push(import_view.EditorView.lineWrapping);
@@ -5063,12 +5061,25 @@ var LocalProcessors = class {
     });
     this.png = (source, el, ctx) => __async(this, null, function* () {
       const encodedDiagram = plantuml.encode(source);
+      if (localStorage.getItem(encodedDiagram + "-png")) {
+        const image2 = localStorage.getItem(encodedDiagram + "-png");
+        const map2 = localStorage.getItem(encodedDiagram + "-map");
+        insertImageWithMap(el, image2, map2, encodedDiagram);
+        return;
+      }
       const path = this.plugin.replacer.getPath(ctx);
       const image = yield this.generateLocalImage(source, OutputType.PNG, path);
       const map = yield this.generateLocalMap(source, path);
+      localStorage.setItem(encodedDiagram + "-png", image);
+      localStorage.setItem(encodedDiagram + "-map", map);
       insertImageWithMap(el, image, map, encodedDiagram);
     });
     this.svg = (source, el, ctx) => __async(this, null, function* () {
+      const encodedDiagram = plantuml.encode(source);
+      if (localStorage.getItem(encodedDiagram + "-svg")) {
+        insertSvgImage(el, localStorage.getItem(encodedDiagram + "-svg"));
+        return;
+      }
       const image = yield this.generateLocalImage(source, OutputType.SVG, this.plugin.replacer.getPath(ctx));
       insertSvgImage(el, image);
     });
@@ -5134,6 +5145,9 @@ var LocalProcessors = class {
       return new Promise((resolve, reject) => {
         child.on("error", reject);
         child.on("close", (code) => {
+          if (stdout === void 0) {
+            return;
+          }
           if (code === 0) {
             if (type === OutputType.PNG) {
               const buf = new Buffer(stdout, "binary");
@@ -5143,7 +5157,7 @@ var LocalProcessors = class {
             resolve(stdout);
             return;
           } else if (code === 1) {
-            console.log(stdout);
+            console.error(stdout);
             reject(new Error(stderr));
           } else {
             if (type === OutputType.PNG) {
@@ -5346,7 +5360,6 @@ var import_obsidian5 = __toModule(require("obsidian"));
 var import_view2 = __toModule(require("@codemirror/view"));
 var import_state2 = __toModule(require("@codemirror/state"));
 var import_language = __toModule(require("@codemirror/language"));
-var import_stream_parser = __toModule(require("@codemirror/stream-parser"));
 var statefulDecorations = defineStatefulDecoration();
 var StatefulDecorationSet = class {
   constructor(editor, plugin) {
@@ -5400,22 +5413,20 @@ function buildViewPlugin(plugin) {
     }
     buildAsyncDecorations(view) {
       const targetElements = [];
-      for (const { from, to } of view.visibleRanges) {
+      for (const { from } of view.visibleRanges) {
         const tree = (0, import_language.syntaxTree)(view.state);
         tree.iterate({
-          from,
-          to,
-          enter: (type, from2, to2) => {
-            const tokenProps = type.prop(import_stream_parser.tokenClassNodeProp);
+          enter: (node) => {
+            const tokenProps = node.type.prop(import_language.tokenClassNodeProp);
             if (tokenProps) {
               const props = new Set(tokenProps.split(" "));
               const isEmbed = props.has("formatting-embed");
               if (isEmbed) {
-                const content = view.state.doc.sliceString(from2);
+                const content = view.state.doc.sliceString(from);
                 const index = content.indexOf("]]");
                 const filename = content.slice(3, index).split("|")[0];
                 if (filename.endsWith(".puml") || filename.endsWith(".pu")) {
-                  targetElements.push({ from: from2, to: index, value: filename });
+                  targetElements.push({ from, to: index, value: filename });
                 }
               }
             }

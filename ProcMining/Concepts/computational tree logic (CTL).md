@@ -1,8 +1,9 @@
 #model-checking
+#logic
 
 Computational Tree Logic (CTL) is based on notion of [[branching time]].
 
-Infinite tree of states represents **behavior** of system (incl. all possible traces of the system), like state tree in [[Reinforcement Learning]].
+Infinite tree of states represents **behaviour** of system (incl. all possible traces of the system), like state tree in [[Reinforcement Learning]].
 
 -   **state properties**: predicates on state sets
 -   **path properties**: predicates on path sets

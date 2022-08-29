@@ -24,7 +24,7 @@ For the first case, this component must be a **position-dependent executable**: 
 
 The text section can hold the absolute virtual address directly or use a PC-relative addressing.
 
-```asm
+```
 # AT&T: op src, dst 
 
 # `var` is a symbol, the linker will substitude
@@ -43,7 +43,7 @@ The first byte of the program image, the ELF header, is loaded at the load base.
 
 The text section can get the current program counter, then add the distance from PC to the symbol (PC-relative address), to compute the run-time virtual address.
 
-```asm
+```
 # x86_64  
 movl    var(%rip), %eax      # R_X86_64_PC32
 ```
@@ -63,7 +63,7 @@ _The compiler emits code which uses position-independent addressing to extract t
 The relocations (e.g. `R_AARCH64_ADR_GOT_PAGE`, `R_X86_64_REX_GOTPCRELX`) are called **GOT-generating**. 
 The linker will create entries in the Global Offset Table.
 
-```asm
+```
 # x86_64  
 # var@GOTPCREL = &got(var) - rip  
 # var@GOTPCREL(%rip): load the GOT entry  
@@ -93,7 +93,8 @@ Defined symbols generally belong to the first and second cases. However, on ELF,
 int var;  
 int foo() { return var; }
 ```
-```asm
+
+```
 # -fno-pic or -fpie
 movl    var(%rip), %eax  # R_X86_64_PC32
 
@@ -111,7 +112,8 @@ If the symbol has the default visibility, the definition may be in a different c
 extern int ext_var;  
 int foo() { return ext_var; }
 ```
-```asm
+
+```
 movq    ext_var@GOTPCREL(%rip), %rax  
 movl    (%rax), %eax
 ```
@@ -125,7 +127,8 @@ __attribute__((visibility("hidden")))
 extern int ext_hidden_var;  
 int foo() { return ext_hidden_var; }
 ```
-```asm
+
+```
 movl ext_hidden_var(%rip), %eax
 ```
 

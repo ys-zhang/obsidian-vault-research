@@ -93,4 +93,10 @@ $$
 \min_{x_{1:s-1}} \pi_s(x_{1:s-1}, x_s) = \min_{x_{s-1}} \{ \pi_s(x_s|x_{s-1}) \min_{x_{1:s-2}}[\pi_{s-1}(x_{1:s-2}, x_{s-1})] \}
 $$
 
+# Other variants
+
+![[DTMC (discrete-time Markov chain)]]
+
+![[CTMC (continues-time markov chain)]]
+
 

@@ -10,7 +10,7 @@ A transition system is a triplet $TS = (S,A,T )$:
 - $S_{start} \subset S$ is the set of **initial/start states**
 - $S_{end} \subset S$ is the set of **final/accept states**
 
-类似于 [[Finite state autometa (FSA)]]
+类似于 [[Finite State Automaton (FSA)]]
 
 问题：太多states。
 

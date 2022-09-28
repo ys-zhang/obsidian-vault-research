@@ -47,3 +47,37 @@ and
 
 1.  Convert the predicate into a **ENF** (existential normal form) and parse the predicate into a parse tree.
 2. The leaf of the parse tree are consist of **atomic predicates** and satisfying sets can be computed, then computation is performed bottom up.
+
+
+# CTL* Logic
+
+CTL* logic can express both [[linear-time temporal logic (LTL)]] and _branching time logic_, by release the CTL constrain of all temporal logic connectivities must be preceded by either $E$ or $A$. 
+
+## State formula & Path formula
+1. _State formulas_ have a truth value in a specific state;
+    - _Atomic propositions_ are state formulas;
+    - $f\lor g$ and $\neg f$ are state formulas if $f$ and $g$ are state formulas;
+    - $Ef$ is a state formula if $f$ is a path formula.
+2. _Path formulas_ have a truth value along a specific path.
+    - $f$ is a path formula if it is a state formula;
+    - $f\lor g$, $\neg f$, $Xf$ and $fUg$ are path formulas if $f$ and $g$ are path formulas.
+
+## Define semantics using Kripke structure
+
+Given a [[Kripke structure]] $M = (S, R, L)$.
+
+- A _path_ in $M$ is an infinite sequence of states
+    $$ \pi = s_0, s_1, s_2, \dots $$
+- Denote the _suffix_ of $\pi$ starting from $s_i$ as $\pi^i$.
+- $M, s \models f$ means that _state formula_ $f$ holds at state $s$.
+    - $\forall p \in L(s)$ we have $s \models p$.
+- $M, \pi \models f$ means that _path formula_ $f$ holds along the path $\pi$.
+    - $\pi \models Xf \iff \pi^1 \models f$
+
+## Relation with LTL and CTL
+
+CTL has a restriction that $X,F,G,U,R$ must be preceded by $E, A$.
+LTL do not have the branching logic connectivity $E$. All formulas have the form $Af$ where $f$ is a _path formula_ in which the only state sub-formulas are _atomic proposition_.
+
+
+

@@ -1,4 +1,5 @@
 #model-checking 
+#logic 
 
 >[!CITE] Etymology
 > 

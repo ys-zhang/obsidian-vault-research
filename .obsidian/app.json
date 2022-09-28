@@ -1,5 +1,5 @@
 {
-  "showLineNumber": true,
+  "showLineNumber": false,
   "useTab": false,
   "spellcheck": true,
   "spellcheckDictionary": [
@@ -279,5 +279,7 @@
   "spellcheckLanguages": [
     "en-AU"
   ],
-  "communityThemeSortOrder": "download"
+  "communityThemeSortOrder": "release",
+  "showIndentGuide": true,
+  "smartIndentList": false
 }

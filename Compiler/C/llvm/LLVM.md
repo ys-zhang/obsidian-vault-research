@@ -14,52 +14,70 @@ clang -O3 -Xclang -disable-llvm-passes   \ # prepare for O3 but don't run it
 opt -S -mem2reg -instnamer code.ll -o code_before_opt.ll   \ # slite clean up; -mem2reg: use register instead of stack; -instnamer: give name to instructions
 ```
 
-# LLVM-IR
 
-## hierarchy
-- llvm::module
-	- llvm::global_variable
-	- llvm::function:   (declarations and definitions)
-		- llvm::basic_block
-			- llvm::instr
-	- constant_literals
-	- value: almost anything, mostly constants and instructions
+# LLVM Tutorial
 
-## naming
-| symbol type                | naming rule      | 
-| -------------------------- | ---------------- |
-| global                     | start with `@`   |
-| local                      | start with `%`   |
-| basic block (when used)    | start with `%`   |
-| basic block (when defined) | **end with** `:` |
+[original blog](https://mukulrathi.com/create-your-own-programming-language/llvm-ir-cpp-api-tutorial/)
+
+## Understanding LLVM IR
+
+> LLVM IR looks like assembly with types
+
+1. unlimited _virtual registers_: `%0, %1, %2 ...`, register names have prefix `%`;
+2. _registers_ and _instructions_ are strongly typed: `int8`, `int32`, `int1`
+3. **static single assignment (SSA)** [[SSA form]]
+
+```llvm
+define i32 @factorial(i32) {
+entry:
+  %eq = icmp eq i32 %0, 0                         // n == 0
+  br i1 %eq, label %then, label %else
+
+then:                                             ; preds = %entry
+  br label %ifcont
+
+else:                                             ; preds = %entry
+  %sub = sub i32 %0, 1                            // n - 1
+  %2 = call i32 @factorial(i32 %sub)              // factorial(n-1)
+  %mult = mul i32 %0, %2                          // n * factorial(n-1)
+  br label %ifcont
+
+ifcont:                                           ; preds = %else, %then
+  %iftmp = phi i32 [ 1, %then ], [ %mult, %else ]
+  ret i32 %iftmp
+}
+```
+
+![[Pasted image 20220928131251.png]]
+![[Pasted image 20220928131335.png]]
+
+![[Pasted image 20220928131713.png]]
+![[Pasted image 20220928132044.png]]
+
+>[!NOTE] PHI instruction
+> The `phi` instruction represents **conditional assignment**: assigning different values depending on which _preceding basic block_ we’ve just come from.
+>
+> It is of the form `phi type [val1, predecessor1], [val2, predecessor2], ...` 
+>
+> In the example above, we set `%iftmp` to 1 if we’ve come from the `then` block, and `%mult` if we’ve come from the `else` block.
+
+
+## LLVM API
+
+The C++ LLVM api is organised to match LLVM's IR structure.
+```
+[module]
+  - [function]
+    - [basic block]
+```
+
+`Value` is the base class for any IR related concepts, including
+
+- `Module`, `Function` and `BasicBlock`;
+- `Instruction` and result of intermediate computation ( `Register` )
+
+The `Expression` type represents source language's expression. 
 
 
 
-# Info
 
-[LLVM’s Analysis and Transform Passes](https://llvm.org/docs/Passes.html)
-
-[Getting Started with the LLVM System](https://llvm.org/docs/GettingStarted.html)
-
-[LLVM Reference](https://llvm.org/docs/Reference.html)
-
-[LLVM Programmer’s Manual — C++ API](https://llvm.org/docs/ProgrammersManual.html)
-[LLVM Coding Standards](https://llvm.org/docs/CodingStandards.html)
-
-file extension name:
-- `ll`: human readable LLVM IR
-- `bc`: byte code LLVM IR
-
-## Source code
-[GitHub - llvm/llvm-project: The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. Note: the repository does not accept github pull requests at this moment. Please submit your patches at http://reviews.llvm.org.](https://github.com/llvm/llvm-project)
-
-	Each sub folder of the git repository of a separate sub-project. 
-	
-  
-  ## Pass
-  
-  [Writing an LLVM Pass](https://llvm.org/docs/WritingAnLLVMPass.html)
-  
-  
-## Command line tools
-[LLVM Command Guide](https://llvm.org/docs/CommandGuide/index.html)

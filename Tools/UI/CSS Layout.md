@@ -18,18 +18,34 @@ Formally, the **`display`** property sets an element's **inner** and **outer** _
     - `display: inline-grid`
 
 
+# Measure Units
+
+1. `px` 
+    
+    stands for pixel;
+2. `pt` stands for point;
+    
+    A point (`pt`) is a measurement of space that is **independent** on screen resolution. For instance, in `@1x` resolution, `1pt = 1px`, in `@2x` resolution, `1pt = 2px`.  
+  ![[Pasted image 20221001144929.png]]
+3. `em` & `rem` 
+    
+    represents a calculated length from the current element's font-size and root's font-size respectively.
+4. `ex`
+    
+    represents length of current elements font-size's x-height
+
 
 # Flow Layout (流式布局)
+
 [CSS Flow Layout - CSS: Cascading Style Sheets | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout)
 
 TLDR;
 
-1. _inline elements_ display one after the other, starting on the left;
-2. _block elements_ start at the top and move down the page.
+1. _Inline elements_ display one after the other, starting on the left;
+2. _Block elements_ start at the top and move down the page.
 
 
 # Flex Layout
-
 
 
 # Grid Layout (网格布局)
@@ -66,8 +82,39 @@ TLDR;
 - use `z-index` to control _overlapping_ grid items.
 
 
+# 8-Point Grid
+
+[Original blog](https://spec.fm/specifics/8-pt-grid)
+
+>[!NOTE] The Basic Principles
+> 1. _Dimensions_, _padding_ and _margin_ of both _block_ and _inline_ elements are all `8x` i.e., multiply of $8$;
+> 2. When the **only** contents of a _block_ are _text_, set the text-size consistent with the rest of the UI, then use _padding_ to determine the size of the _container_ block
+
+## Tips
+
+1. Rems and Variables
+    
+    If you set your root text size to $16$, you can easily use .$5rem$ increments to build your layouts on an 8-point grid.
+2. Frame your icons
+    
+    Putting a frame around an icon is a simple way to keep measurements consistent.
 
 
+## The Hard Grid Approach
 
+**Hard grid** involves placing objects on a fixed grid with 8-point increments. In Figma, this would involve applying a uniform grid to the frame with a size of $8$.
+
+![[Pasted image 20221001160412.png]]
+
+The primary argument for the _Hard Grid method_ is that by using additional transparent background elements and then grouping them to small groups of foreground elements, _you can keep track of margin and padding on a per-element basis_ and just snap these containers to the grid like bricks.
+
+
+## The Soft Grid Approach
+
+**Soft grid** involves placing objects at distances from each other that are divisible by $8$. This would involve applying a row or column layout grid with properties divisible by $8$.
+
+![[Pasted image 20221001160442.png]]
+
+The argument for the _Soft Grid method_ is that when it comes time to code up an interface, using an actual grid is irrelevant because programming languages don’t use that kind of grid structure - it’ll just get thrown away. When the speed at which you arrive at a high-quality, programmable set of mockups is a priority, bypassing Hard Grid’s extra overhead of managing additional layers in favour of Soft Grid’s more fluid, minimal structure can be an advantage. This also can be more favourable to iOS where many system UI elements are not defined by an even grid.
 
 

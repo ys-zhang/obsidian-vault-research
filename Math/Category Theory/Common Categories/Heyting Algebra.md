@@ -10,7 +10,7 @@ In Heyting Algebra, the exponential object $Y^X$ is denoted by $X \implies Y$  w
 
 ##### Introduction of implication
 
-By universal construction of exponential family we have 
+By universal construction of [[exponential family]] we have 
 
 $$
 \forall Z, Z \land X \le Y

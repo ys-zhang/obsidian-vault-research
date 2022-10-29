@@ -35,7 +35,7 @@ is called in **Natural Form**
 - *Exponential family* is the only distribution family have a **finite sized** [[Sufficient Statistic]]
 - It is **self conjugate**
 - Support [[GLM (Generalized Linear Model)]]
-- Support **variational inference**
+- Support [[variational inference]]
 
 
 

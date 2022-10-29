@@ -148,7 +148,7 @@ $$
 \hat{I} = \frac{1}{m} \sum_1^m h(X_i) 
 $$
 
-Suppose, in addition, that x can be decomposed into two parts $(x_1, x_2)$ and that the conditional expectation $E[h(x)|x_2]$ can be carried out analytically.
+Suppose, in addition, that x can be decomposed into two parts $(x_1, x_2)$ and that the _conditional expectation_ $E[h(x)|x_2]$ can be carried out **analytically**.
 
 We have the [[mixed estimator]] 
 $$

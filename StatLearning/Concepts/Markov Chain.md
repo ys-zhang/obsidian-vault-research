@@ -1,3 +1,6 @@
+#statistics #algorithm #algorithm-dynamic-programming 
+
+
 # The Model
 
 Given a statistic process 
@@ -16,9 +19,9 @@ $$
 	\pi(x_k|x_{1:k-1}) = \pi(x_k|x_{k-1})
 $$
 
-![[mc-dp.excalidraw]]
+![[mc-dp.excalidraw|center]]
 
-Thus we have the factorization
+Thus we have the factorisation
 
 $$
 \pi(x_{1:k}) = \pi(x_1)\pi(x_2|x_1) \cdots\pi(x_k|x_{k-1})
@@ -40,7 +43,8 @@ is independent of $t$
 ## State Properties
 
 ### Recurrent states
-Let $R_s$ be r.v. that denotes start from state `s` the first time back to `s`.
+Let $R_s$ be r.v. that denotes the first time back to state `s` after starting from the same state `s`.
+
 The probability of returning back to state `s` for the first time after exactly `n` steps is defined as:
 $$
 	f_s(n)=\Pr(R_s=n) = \Pr(X_n=s,X_{n-1}\neq s,\dots,X_1\neq s | X_0=s)
@@ -56,7 +60,7 @@ $$
 	- **positive recurrent** $E[R_s] < \infty$
 	- **null recurrent** $E[R_s] = \infty$
 - **Absorb**: $P(s, s)=1$ or equivalently $R_s=1$
--  **Irreducibility**:    A MC is called irreducible if from each state `s`, one can *reach any other state in a finite number of steps*.
+-  **Irreducibility**:    A Markov Chain is called _irreducible_ if from each state `s`, one can *reach any other state in a finite number of steps*.
 
 In a finite state MC, **irreducibility** is equal to the requirement that all states are **recurrent**.
 
@@ -64,10 +68,10 @@ In a finite state MC, **irreducibility** is equal to the requirement that all st
 
 A state `s` is **periodic** if
 $$
-   \exists \; d > 1 : (\forall n : n \mod d \neq 0 )
+   \exists \; d > 1 \text{ s.t. } \forall n,\; n \text{ mod } d \neq 0 
 $$
 
-A state `s` is called ***ergodic*** if it is **aperiodic** and** positive recurrent**.
+A state `s` is called ***ergodic*** if it is **aperiodic** and **positive recurrent**.
 
 ### Stationary Distribution
 

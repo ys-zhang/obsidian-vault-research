@@ -37,7 +37,7 @@ movl var, %eax
 
 For the second case, this component is either a **position-independent executable** or a **shared object**. 
 
-    The difference between the link-time addresses of two symbols equals their virtual address difference at run-time. 
+> The difference between the link-time addresses of two symbols equals their virtual address difference at run-time. 
 
 The first byte of the program image, the ELF header, is loaded at the load base. 
 

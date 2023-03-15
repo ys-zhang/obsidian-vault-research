@@ -262,5 +262,6 @@ the tools to create these are
 1. _constrains_ seems to be a global fence for all settings including actions, substitution, etc. For instance, a substitute menu with some action transform $A \to B$ in an AST (or model), the action will not run if $B$ violates the constrains at the actual position in the AST, even though it can pass the `can execute` predicate defined in the action of the substitute menu.
 2. The _DELETE_ and _BACKSPACE action_ handlers have specific semantics. If an action map **defines or imports** a DELETE handler and **does not define or import** a BACKSPACE handler, a default BACKSPACE handler identical to the one for DELETE is registered automatically.
 3. (_wrap substitute menu_) you can create a _wrap substitute menu part_ in _substitution menu_ for some concept $A$.  The menu part wraps a concept $B$, which means, the substitution menu item's associated action will substitute the node with a new instance of concept $A$ which wraps a node of concept $B$
+4. _someNode.replace with(..)_ will throw an exception if `someNode` is null
 
 

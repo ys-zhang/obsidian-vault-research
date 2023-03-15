@@ -1,3 +1,5 @@
+#version-control
+
 # The Data Model of git
 
 ## Blob, Tree and Snapshot
@@ -12,7 +14,7 @@
 | object          | blob, tree or commit                     |
 | reference       | pointers to commits                      |
 | repository      | objects and references                   |
-|                 |                                          |
+
 
 ```
 <root> (tree)
@@ -24,7 +26,7 @@
 +- baz.txt (blob, contents = "git is wonderful")
 ```
 
-```shell
+```bash
 # show object
 git cat-file -p <object-hash>;
 ```
@@ -33,14 +35,27 @@ git cat-file -p <object-hash>;
 
 > In Git, a **_history_** is a _directed acyclic graph_ (DAG) of _snapshots_.
 
-![[Git history.excalidraw]]
+![[Git history.excalidraw|center 65%]]
 1. Each node in the DAG is a **snapshot** or **commit**;
 2. **Commits** are _immutable_, _edits_ to _commits_ history are actually creating new commits;
 3. **References** are _mutable_ pointers point to _commits_;
 
 ## Staging Area
 
-**Staging area** is orthogonal to the data model.
+> [!CONCEPT] Staging Area
+> To _keep a track of modifications or changes_ in the file we have to bring that changes to our **Staging Area** which we bring by using **Staging**.
+
+**Staging area** is orthogonal to the data model. 
+
+>[!CONCEPT] Hunk
+> **Hunk** means a piece of changes.
+
+
+![[git-staging.excalidraw|center 65%]]
+
+
+
+
 
 ## Pseudo Code
 ```typescript
@@ -95,4 +110,6 @@ function load_reference(name_or_id){
 - [[Git-Cheatsheet.pdf]]
 - [MIT Git Lecture](https://missing.csail.mit.edu/2020/version-control/)
 - [Stack overflow: pretty git branch graphs](https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs)
+- [The Git book](https://shafiul.github.io//gitbook/index.html)
+    - [Git Index](https://shafiul.github.io//gitbook/7_the_git_index.html)
 - [Book: Pro Git](https://git-scm.com/book/en/v2)

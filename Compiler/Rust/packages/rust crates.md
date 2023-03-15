@@ -115,3 +115,7 @@ assert_eq!(
 [eqrion/cbindgen: A project for generating C bindings from Rust code (github.com)](https://github.com/eqrion/cbindgen)
 
 
+# Misc
+
+- [`slotmap`](https://docs.rs/slotmap/latest) is a perfect tool to adopt the design from [this blog](https://kyren.github.io/2018/09/14/rustconf-talk.html)
+

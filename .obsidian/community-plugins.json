@@ -13,5 +13,7 @@
   "lapel",
   "tag-wrangler",
   "obsidian-code-block-enhancer",
-  "obsidian-minimal-settings"
+  "obsidian-livesync",
+  "obsidian-tikzjax",
+  "obsidian-zotero-desktop-connector"
 ]

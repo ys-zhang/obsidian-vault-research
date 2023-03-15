@@ -1,4 +1,5 @@
-#category-theory 
+#category-theory  #Haskell 
+
 
 A _Category_ is a collection of _objects_ with _morphisms_ (arrows) between objects.
 
@@ -208,6 +209,25 @@ $$
 
 ![[Natural transformation composition.excalidraw|center|800]]
 
+
+1. Vertical 
+$$
+\begin{align}
+\alpha_X &: F X \to F'X \\
+\beta_X &: F X' \to F'' X \\
+(\beta' \circ_v \alpha)_X &: F X \to F'' X \\
+(\beta' \circ_v \alpha)_X &= \beta'_X \circ \alpha_X  \\
+\end{align}
+$$
+2. horizontal 
+$$
+\begin{align}
+  G \alpha_X &: GFX \to GF'X \\
+  \beta_{F'X} &: GF'X \to G'F'X \\
+  (\beta \circ_h \alpha)_X &: G F X \to G' F' X \\
+  (\beta \circ_h \alpha)_X &= \beta_{F'X} \circ (G\alpha_X) \\
+\end{align}
+$$
 
 ### Horizontal Composition
 

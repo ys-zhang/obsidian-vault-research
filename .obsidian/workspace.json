@@ -1,0 +1,210 @@
+{
+  "main": {
+    "id": "bb33c99bbdc05ba7",
+    "type": "split",
+    "children": [
+      {
+        "id": "93ef1a7138746226",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69a6d035920c946e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "915a47c42a2a58dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/UI/Web/CSS.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2f96bbc45b86bd74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/UI/Redux.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "733934ec23b8b53b",
+    "type": "split",
+    "children": [
+      {
+        "id": "0cca2250f171a4cf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac28fb6cdb22516a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d1f88128b20a4c77",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "decee154048335dc",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 287.0110321044922,
+    "collapsed": true
+  },
+  "right": {
+    "id": "90a6f9defb7a3379",
+    "type": "split",
+    "children": [
+      {
+        "id": "97591479d84044fe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "871d0877ac246d72",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Tools/UI/Redux.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "68a85669b2daa9ac",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Tools/UI/Redux.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "65045d8a872afb38",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "cc5097a51618c504",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Tools/UI/Redux.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "43908533fb4c38f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0054b66bebb11a4d",
+            "type": "leaf",
+            "state": {
+              "type": "dictionary-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 316.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "open-vscode:VSCode": true,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": true,
+      "audio-recorder:Start/stop recording": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-livesync:Replicate": false,
+      "obsidian-livesync:Show log": false
+    }
+  },
+  "active": "2f96bbc45b86bd74",
+  "lastOpenFiles": [
+    "Tools/UI/Web/CSS.md",
+    "Tools/UI/Redux.md",
+    "Math/Category Theory/Monad/Monad.md",
+    "Compiler/FP/GADT.md",
+    "Compiler/FP/Denotational Semantics.md",
+    "Projects/li-zy/Project Proposal.md",
+    "Compiler/Thunk.md",
+    "Math/Category Theory/Monad/Lazy Functional State Threads.md",
+    "papers/dsl/Actuary/A GENERIC DOMAIN SPECIFIC LANGUAGE FOR CONTRACTS.pdf",
+    "Projects/li-zy/Contract Formalisation.md",
+    "Compiler/FP/Haskell.md",
+    "papers/dsl/Actuary/An Actuarial Programming Language.pdf"
+  ]
+}

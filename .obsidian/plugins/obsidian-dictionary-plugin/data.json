@@ -2,12 +2,12 @@
   "getLangFromFile": true,
   "defaultLanguage": "en_US",
   "normalLang": "en_US",
-  "shouldShowSynonymPopover": false,
-  "shouldShowCustomContextMenu": true,
+  "shouldShowSynonymPopover": true,
+  "shouldShowCustomContextMenu": false,
   "apiSettings": {
     "en_US": {
       "definitionApiName": "Free Dictionary API",
-      "synonymApiName": "Google"
+      "synonymApiName": "Free Dictionary API"
     },
     "hi": {
       "definitionApiName": "Free Dictionary API",
@@ -65,12 +65,10 @@
   "partOfSpeechApiName": "Systran API",
   "advancedSynonymAnalysis": false,
   "useCaching": false,
-  "folder": "English",
+  "folder": "",
   "capitalizedFileName": true,
   "prefix": "",
-  "suffix": "",
-  "template": "---\n# {{notice}}\n---\n\n# {{word}}\n\n## {{pronunciationHeader}}\n\n{{phoneticList}}\n\n## {{meaningHeader}}\n\n{{meanings}}\n",
-  "languageSpecificSubFolders": false,
-  "definitionApiName": "Offline Dictionary",
-  "synonymApiName": ""
+  "suffix": " ({{lang}})",
+  "template": "---\n# {{notice}}\naliases: [\"{{word}}\"]\n---\n\n# {{word}}\n\n## {{pronunciationHeader}}\n\n{{phoneticList}}\n\n## {{meaningHeader}}\n\n{{meanings}}\n\n## {{originHeader}}\n\n{{origin}}\n",
+  "languageSpecificSubFolders": false
 }

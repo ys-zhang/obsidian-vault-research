@@ -7,8 +7,8 @@
 [display - CSS: Cascading Style Sheets | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 
 Formally, the **`display`** property sets an element's **inner** and **outer** _display types_.
-- the inner type sets the layout of children
-- The outer type sets an element's participation in [[flow layout]], which can be 
+- the _inner type_ sets the layout of children
+- The _outer type_ sets an element's participation in [[#Flow Layout (流式布局)]], which can be 
     - _inline element_
     - _block element_
     
@@ -43,6 +43,14 @@ TLDR;
 
 1. _Inline elements_ display one after the other, starting on the left;
 2. _Block elements_ start at the top and move down the page.
+
+
+## Normal Flow
+
+By default, 
+- a _block level element_'s content fills the _available inline space_ of the parent element containing it and grows along the block dimension to accommodate its content. 
+- The size of [inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements) is just the size of their _content_.
+
 
 
 # Flex Layout

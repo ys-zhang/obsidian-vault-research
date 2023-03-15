@@ -1,8 +1,11 @@
 {
-  "baseFontSize": 20,
-  "cssTheme": "Ukiyo",
-  "theme": "obsidian",
-  "translucency": false,
+  "baseFontSize": 16,
+  "cssTheme": "Things",
+  "theme": "system",
+  "translucency": true,
   "baseFontSizeAction": true,
-  "textFontFamily": "Calibri"
+  "textFontFamily": "Arial,Ayuthaya",
+  "accentColor": "",
+  "monospaceFontFamily": "JetBrains Mono",
+  "interfaceFontFamily": ""
 }

@@ -1,5 +1,5 @@
 {
-  "showLineNumber": false,
+  "showLineNumber": true,
   "useTab": false,
   "spellcheck": true,
   "spellcheckDictionary": [
@@ -281,5 +281,6 @@
   ],
   "communityThemeSortOrder": "release",
   "showIndentGuide": true,
-  "smartIndentList": false
+  "smartIndentList": true,
+  "showInlineTitle": false
 }

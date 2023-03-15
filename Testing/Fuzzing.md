@@ -66,7 +66,7 @@ The problem here is how to design mutate operators:
 -   Randomly generated inputs are frequently invalid – and thus exercise mostly input processing functionality.
 -   Mutations from existing valid inputs have much higher chances to be valid, and thus to exercise functionality beyond input processing.
 
-## Graybox Fuzzing
+## Greybox Fuzzing
 
 [[greybox fuzzing]] uses lightweight instrumentation to glean some information about the (branch) coverage of a generated input. If a generated input increases coverage, it is added to the seed corpus for further fuzzing. 
 

@@ -22,10 +22,10 @@
 
 The standard Copy types include all the machine integer and floating-point numeric types, the `char` and `bool` types, and a few others. **A tuple or fixed-size array of Copy types is itself a Copy type.**
 
-> Copies happen implicitly, for example as part of an assignment `y = x`. The behavior of `Copy` is not overloadable; **it is always a simple bit-wise copy**.
+> Copies happen implicitly, for example as part of an assignment `y = x`. The behaviour of `Copy` is not overloadable; **it is always a simple bit-wise copy**.
 
 > A type can implement `Copy` if all of its components implement `Copy`.
 
-> Generalizing the latter case, any type implementing `Drop` can’t be `Copy`, because it’s managing some resource besides its own `size_of::<T>` bytes.
+> Generalising the latter case, any type implementing `Drop` can’t be `Copy`, because it’s managing some resource besides its own `size_of::<T>` bytes.
 
 > Generally speaking, if your type _can_ implement `Copy`, it should. Keep in mind, though, that implementing `Copy` is part of the public API of your type.

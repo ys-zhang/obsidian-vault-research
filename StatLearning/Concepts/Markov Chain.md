@@ -60,25 +60,49 @@ $$
 	- **positive recurrent** $E[R_s] < \infty$
 	- **null recurrent** $E[R_s] = \infty$
 - **Absorb**: $P(s, s)=1$ or equivalently $R_s=1$
--  **Irreducibility**:    A Markov Chain is called _irreducible_ if from each state `s`, one can *reach any other state in a finite number of steps*.
+- **Irreducibility**:    A Markov Chain is called _irreducible_ if from each state `s`, one can *reach any other state in a finite number of steps*.
 
-In a finite state MC, **irreducibility** is equal to the requirement that all states are **recurrent**.
+> In a __finite state__ MC, **irreducibility** is equal to the requirement that all states are **recurrent**.
 
 ### Period
 
 A state `s` is **periodic** if
 $$
-   \exists \; d > 1 \text{ s.t. } \forall n,\; n \text{ mod } d \neq 0 
+   \exists \; d > 1 \text{ s.t. } \forall n, \;\Pr_n(s, s) > 0  \implies n \text{ mod } d \neq 0 
+$$
+which implies if $s$ is periodic then
+$$
+  \text{Period}(s) = \min_n \Pr_n(s, s) > 0
 $$
 
 A state `s` is called ***ergodic*** if it is **aperiodic** and **positive recurrent**.
 
+> all state in the same component of a DTMC have the same period, where a component is a largest irreducible subset of the state space 
+
+
 ### Stationary Distribution
 
-- irreducible, aperiodic and positive recurrent then
-	- Exists *unique* station distribution.
+- _irreducible_, _aperiodic_ and _positive recurrent_ then
+	- Exists **unique** station distribution.
 	- Limit distribution converge to stationary distribution.
-- irreducible and positive recurrent then Exists *unique* station distribution.
+- _irreducible_ and _positive recurrent_ then Exists *unique* station distribution.
+
+Let $P$ be the transition matrix where $p_{ij} = \Pr(i, j)$. then $\pi$ is a stationary distribution over the state space iff
+$$
+  \pi = \pi P
+$$
+further if the DTMC is _irreducible_ and _positive recurrent_ we have
+$$
+  \pi(s) = \frac{1}{m(s)}
+$$
+where 
+$$
+\begin{align}
+  m(s) &= \text{expectation of first return time of state } s \\
+       &= E[R(s)] \\
+       &= \sum nf(n) 
+\end{align}
+$$
 
 # Dynamic programming
 

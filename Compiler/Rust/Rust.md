@@ -319,9 +319,12 @@ The `Fn` traits are provided by the standard library. All closures implement at 
 -   `FnMut` can change the environment because it mutably borrows values.
 -   `Fn` borrows values from the environment immutably.
 
-When a closure captures a value from its environment, it uses memory to store the values for use in the closure body.
-
-The `move` keyword before the parameter list force the closure to take ownership of the values it uses in the environment
+> [!NOTE]
+> When a closure captures a value from its environment, it uses memory to store the values for use in the closure body.
+> 
+> The `move` keyword before the parameter list force the closure to take ownership of the values it uses in the environment.
+> 
+> If you want to force the closure to take ownership of the values it uses in the environment _even though the body of the closure doesn’t strictly need ownership_, you can use the `move` keyword before the parameter list.
 
 ```rust
 fn main() {
@@ -1195,3 +1198,16 @@ We don’t need to annotate any code in _tests/integration_test.rs_ with `#[cfg(
 
 
 
+
+
+# Tricks
+
+- _auto dereference_ can be used to implement something like _delegate by_ in _Kotlin_.
+- there is a difference btw the following:
+```rust
+trait Trait_A<T> : BaseTrait {}
+
+/* is different with */
+trait Trait_B<T> where Self: BaseTrait {}
+```
+  

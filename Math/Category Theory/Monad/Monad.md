@@ -1,5 +1,6 @@
-#category-theory 
+#category-theory  #functional-programming 
 
+ 
 # Algebraic Interpretation
 A **monad** is defined as an _endofunctor_ $T$ equipped with _a pair of natural transformations_ $\mu$ (join/multiplication) and $\eta$ (return/unit).
 
@@ -14,8 +15,19 @@ $$
 ![[Pasted image 20220215224846.png]]
 
 $$
-\mu \circ \mu T = \mu \circ T\mu
+\begin{align}
+  \mu \circ \mu T = \mu \circ T\mu
+\end{align}
 $$
+
+$$
+\begin{align}
+  \mu_a : T^2 a \to T a \\
+  (\mu \circ T)_a = \mu_{Ta}\\
+  (T \circ \mu)_a = T (\mu_a)
+\end{align}
+$$
+
 
 ![[Pasted image 20220215230228.png]]
 

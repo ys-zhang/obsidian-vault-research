@@ -1,0 +1,1 @@
+v. make (someone) nervous, worried, or irritated.

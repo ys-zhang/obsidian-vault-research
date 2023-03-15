@@ -8,6 +8,6 @@ implementations:
 
 - CommonJS Compiler
 - CommonJS for PHP
-- [[CouchDB]], [[MongoDB]]
+- [[couchdb]], [[MongoDB]]
 - [[Node.js]], [[Jetpack]]
 

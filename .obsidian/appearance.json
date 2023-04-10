@@ -1,11 +1,11 @@
 {
-  "baseFontSize": 16,
+  "baseFontSize": 14,
   "cssTheme": "Things",
   "theme": "system",
   "translucency": true,
   "baseFontSizeAction": true,
   "textFontFamily": "Arial,Ayuthaya",
-  "accentColor": "",
+  "accentColor": "#b271d6",
   "monospaceFontFamily": "JetBrains Mono",
   "interfaceFontFamily": ""
 }

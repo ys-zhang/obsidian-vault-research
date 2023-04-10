@@ -55,6 +55,56 @@ By default,
 
 # Flex Layout
 
+A flex container _expands_ items to fill available free space or _shrinks_ them to prevent overflow.
+
+![](https://css-tricks.com/wp-content/uploads/2018/11/00-basic-terminology.svg)
+
+## Flex Container
+
+![flex-direction](https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg)
+
+
+1. flex container shall have `display: flex`
+2. 2 axis specified through `flex-direction` 
+3. `flex-wrap: nowrap | wrap | wrap-reverse` controls whether items  will be fit onto one line 
+4. shorthand `flex-flow`  combines `flex-direction` and `flex-wrap`.
+
+![flex-wrap](https://css-tricks.com/wp-content/uploads/2018/10/flex-wrap.svg)
+
+## Content alignment
+
+5. `justify-content` along main axis
+![justify-content](https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg)
+
+6. `align-items` cross axis
+![](https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg)
+
+7. `align-content` use with `flex-wrap`
+
+## Gap
+
+```css
+.container { 
+  display: flex;
+  ... 
+  gap: 10px; 
+  gap: 10px 20px; /* row-gap column gap */ 
+  row-gap: 10px; 
+  column-gap: 20px; 
+}
+```
+
+The behaviour could be thought of as a _minimum_ gutter, as if the gutter is bigger somehow (because of something like `justify-content: space-between;`) then the gap will only take effect if that space would end up smaller.
+
+## Flex Items
+
+1. `order` controls the order the item appears in its container
+2. `flex-grow` and `flex-shrink`
+    - `flex-grow` assigns remaining space to item, where he remaining space is the size of the flex container _minus_ the size of all flex items' sizes together.
+    - `flex-shrink` will take effect when all flex items' sizes add up to larger than the container.
+3. `align-self` just like `align-item` in container setting
+![align-self](https://css-tricks.com/wp-content/uploads/2018/10/align-self.svg)
+
 
 # Grid Layout (网格布局)
 [CSS Grid Layout - CSS: Cascading Style Sheets | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)

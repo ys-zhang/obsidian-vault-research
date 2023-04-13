@@ -18,6 +18,8 @@ Intuitively, the meaning of a **behaviour**, as given by `at` is a function mapp
 The meaning of an **event**, given by `occ`, is a function that takes also a start time $T$ and a time of interest $t$, and returns a nite list of time-ascending occurrences of the event in the interval $(T, t]$
 
 
+
+
 ## A Stream Implementation
 
 ```haskell

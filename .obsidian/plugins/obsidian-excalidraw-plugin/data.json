@@ -69,7 +69,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/1.8.20",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/1.8.22",
     "libraryItems": [
       {
         "status": "unpublished",
@@ -3457,7 +3457,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": ">"
+            "originalText": ">",
+            "lineHeight": 1.2271480804387611
           },
           {
             "type": "line",
@@ -3563,7 +3564,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "<"
+            "originalText": "<",
+            "lineHeight": 1.2430555555555565
           },
           {
             "type": "line",
@@ -4491,7 +4493,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "YhGrRQGYfIQxFnNl-Pwc3",
-            "originalText": "A"
+            "originalText": "A",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -4525,7 +4528,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "cA2ypmk7wfl0WT9z4R4KJ",
-            "originalText": "B"
+            "originalText": "B",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -4559,7 +4563,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "WxacxUdcCBxy2TVVYxHNK",
-            "originalText": "C"
+            "originalText": "C",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -4593,7 +4598,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "MJeFkFVdvGPWfVV61uNgV",
-            "originalText": "D"
+            "originalText": "D",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -4627,7 +4633,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "qAzVaZBxmO-2I8WzrPGjt",
-            "originalText": "G"
+            "originalText": "G",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -4661,7 +4668,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "N6yrQWnXee12l4F3zERWA",
-            "originalText": "F"
+            "originalText": "F",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -4695,7 +4703,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "o4f0ubDslt5yZEqRrpiQ-",
-            "originalText": "E"
+            "originalText": "E",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "rectangle",
@@ -6003,7 +6012,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "A"
+            "originalText": "A",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -6037,7 +6047,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "B"
+            "originalText": "B",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -6071,7 +6082,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "C"
+            "originalText": "C",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -6105,7 +6117,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "D"
+            "originalText": "D",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -6139,7 +6152,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "E"
+            "originalText": "E",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -6173,7 +6187,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "F"
+            "originalText": "F",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -6207,7 +6222,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "G"
+            "originalText": "G",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -6241,7 +6257,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "A"
+            "originalText": "A",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -6275,7 +6292,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "B"
+            "originalText": "B",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -6309,7 +6327,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "C"
+            "originalText": "C",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -6343,7 +6362,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "D"
+            "originalText": "D",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -6377,7 +6397,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "E"
+            "originalText": "E",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -6411,7 +6432,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "F"
+            "originalText": "F",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -6445,7 +6467,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "G"
+            "originalText": "G",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "arrow",
@@ -8615,7 +8638,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "n9jP7lTHBPOVm7adwYsm_",
-            "originalText": "Flattened"
+            "originalText": "Flattened",
+            "lineHeight": 1.25
           },
           {
             "type": "arrow",
@@ -9674,7 +9698,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Conv_1"
+            "originalText": "Conv_1",
+            "lineHeight": 1.26760563380282
           },
           {
             "type": "text",
@@ -9708,7 +9733,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Max_pooling"
+            "originalText": "Max_pooling",
+            "lineHeight": 1.26760563380282
           },
           {
             "type": "text",
@@ -9742,7 +9768,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Conv_2"
+            "originalText": "Conv_2",
+            "lineHeight": 1.26760563380282
           },
           {
             "type": "text",
@@ -9776,7 +9803,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Max_pooling"
+            "originalText": "Max_pooling",
+            "lineHeight": 1.26760563380282
           },
           {
             "type": "text",
@@ -9810,7 +9838,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Flentten"
+            "originalText": "Flentten",
+            "lineHeight": 1.26760563380282
           },
           {
             "type": "text",
@@ -9844,7 +9873,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Dense"
+            "originalText": "Dense",
+            "lineHeight": 1.26760563380282
           }
         ],
         "id": "DDmocOhDfSvgYrkfqsQ0j",
@@ -9969,7 +9999,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "h"
+            "originalText": "h",
+            "lineHeight": 1.2306157783800047
           },
           {
             "type": "text",
@@ -10005,7 +10036,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "t-1"
+            "originalText": "t-1",
+            "lineHeight": 1.2530973026939802
           },
           {
             "type": "line",
@@ -10084,7 +10116,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "X"
+            "originalText": "X",
+            "lineHeight": 1.2306157783800051
           },
           {
             "type": "text",
@@ -10120,7 +10153,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "t"
+            "originalText": "t",
+            "lineHeight": 1.2530973026939807
           },
           {
             "type": "arrow",
@@ -10365,7 +10399,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "tYPpmBemNfPboc2v7AmVp",
-            "originalText": "Tanh"
+            "originalText": "Tanh",
+            "lineHeight": 1.2567693900435983
           },
           {
             "type": "line",
@@ -10543,7 +10578,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "h"
+            "originalText": "h",
+            "lineHeight": 1.2306157783800047
           },
           {
             "type": "text",
@@ -10584,7 +10620,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "t"
+            "originalText": "t",
+            "lineHeight": 1.2758395404924252
           },
           {
             "type": "line",
@@ -10899,7 +10936,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "X"
+            "originalText": "X",
+            "lineHeight": 1.2306157783800051
           },
           {
             "type": "text",
@@ -10935,7 +10973,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "t-1"
+            "originalText": "t-1",
+            "lineHeight": 1.2530973026939807
           },
           {
             "type": "arrow",
@@ -11180,7 +11219,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "yaEW3gOA52GWFpAR30FOI",
-            "originalText": "Tanh"
+            "originalText": "Tanh",
+            "lineHeight": 1.2567693900435983
           },
           {
             "type": "line",
@@ -11637,7 +11677,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "X"
+            "originalText": "X",
+            "lineHeight": 1.2306157783800051
           },
           {
             "type": "text",
@@ -11673,7 +11714,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "t+1"
+            "originalText": "t+1",
+            "lineHeight": 1.2530973026939807
           },
           {
             "type": "arrow",
@@ -11914,7 +11956,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "fKeuBe3OH5h1aVzedjR9G",
-            "originalText": "Tanh"
+            "originalText": "Tanh",
+            "lineHeight": 1.2567693900435983
           },
           {
             "type": "line",
@@ -12261,7 +12304,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "h"
+            "originalText": "h",
+            "lineHeight": 1.2306157783800047
           },
           {
             "type": "text",
@@ -12297,7 +12341,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "t+1"
+            "originalText": "t+1",
+            "lineHeight": 1.2530973026939802
           },
           {
             "type": "text",
@@ -12333,7 +12378,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "RNN Cell"
+            "originalText": "RNN Cell",
+            "lineHeight": 1.2702400893355672
           },
           {
             "type": "line",
@@ -13203,7 +13249,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Output"
+            "originalText": "Output",
+            "lineHeight": 1.283135927805979
           },
           {
             "type": "text",
@@ -13237,7 +13284,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "X"
+            "originalText": "X",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "text",
@@ -13276,7 +13324,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "1"
+            "originalText": "1",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "text",
@@ -13310,7 +13359,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "X"
+            "originalText": "X",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "text",
@@ -13349,7 +13399,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "2"
+            "originalText": "2",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "arrow",
@@ -14365,7 +14416,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "C"
+            "originalText": "C",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "text",
@@ -14401,7 +14453,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "t-1"
+            "originalText": "t-1",
+            "lineHeight": 1.2707765667574917
           },
           {
             "type": "text",
@@ -14437,7 +14490,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "h"
+            "originalText": "h",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "text",
@@ -14473,7 +14527,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "t-1"
+            "originalText": "t-1",
+            "lineHeight": 1.2707765667574917
           },
           {
             "type": "line",
@@ -14820,7 +14875,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "X"
+            "originalText": "X",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "text",
@@ -14856,7 +14912,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "t"
+            "originalText": "t",
+            "lineHeight": 1.2707765667574917
           },
           {
             "type": "line",
@@ -15635,7 +15692,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "RbxFmO4HGBWbHCHUiX_Cw",
-            "originalText": "Tanh"
+            "originalText": "Tanh",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "ellipse",
@@ -16011,7 +16069,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "p78SOQMqM3YSJdNTa0BbR",
-            "originalText": "Tanh"
+            "originalText": "Tanh",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "ellipse",
@@ -16589,7 +16648,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "C"
+            "originalText": "C",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "text",
@@ -16625,7 +16685,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "t"
+            "originalText": "t",
+            "lineHeight": 1.2707765667574917
           },
           {
             "type": "text",
@@ -16661,7 +16722,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "h"
+            "originalText": "h",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "text",
@@ -16697,7 +16759,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "t\n"
+            "originalText": "t\n",
+            "lineHeight": 1.2707765667574917
           },
           {
             "type": "text",
@@ -16738,7 +16801,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "h"
+            "originalText": "h",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "text",
@@ -16774,7 +16838,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "t\n"
+            "originalText": "t\n",
+            "lineHeight": 1.2707765667574917
           },
           {
             "type": "rectangle",
@@ -16836,7 +16901,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "LSTM Cell"
+            "originalText": "LSTM Cell",
+            "lineHeight": 1.2702400893355672
           },
           {
             "type": "line",
@@ -17008,7 +17074,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "s4atKNQluyw88-rGnF8Zj",
-            "originalText": "Linear"
+            "originalText": "Linear",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "rectangle",
@@ -17129,7 +17196,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "7MjdKvLbKI-U9qZYo1kxv",
-            "originalText": "Linear"
+            "originalText": "Linear",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "rectangle",
@@ -17250,7 +17318,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "3Zm8kfQoybIUFkHUcLvWy",
-            "originalText": "Linear"
+            "originalText": "Linear",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -17284,7 +17353,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Q"
+            "originalText": "Q",
+            "lineHeight": 1.2488986784141096
           },
           {
             "type": "text",
@@ -17323,7 +17393,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "K"
+            "originalText": "K",
+            "lineHeight": 1.2488986784141096
           },
           {
             "type": "text",
@@ -17362,7 +17433,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "V"
+            "originalText": "V",
+            "lineHeight": 1.2488986784141096
           },
           {
             "type": "arrow",
@@ -17661,7 +17733,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "DqVoMA7Z6JEZrOUxyYxf8",
-            "originalText": "SCaled Dot-Product\nAttention"
+            "originalText": "SCaled Dot-Product\nAttention",
+            "lineHeight": 1.2478554932365584
           },
           {
             "type": "arrow",
@@ -18145,7 +18218,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "PNDGdDABjuZ_WG3ReWf37",
-            "originalText": "Concat"
+            "originalText": "Concat",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "arrow",
@@ -18422,7 +18496,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "778rAW_3GeQwApBBgYKfb",
-            "originalText": "Linear"
+            "originalText": "Linear",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "arrow",
@@ -18504,7 +18579,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Multi-Head Attention"
+            "originalText": "Multi-Head Attention",
+            "lineHeight": 1.2488986784141096
           }
         ],
         "id": "CjnAykhnBYeIdD3tfYUea",
@@ -18589,7 +18665,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "XEkdAR0RlAmMI9I2xb5qZ",
-            "originalText": "Matmul"
+            "originalText": "Matmul",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "rectangle",
@@ -18662,7 +18739,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "RnaIHHpauaj5WwauaJPSA",
-            "originalText": "Scale"
+            "originalText": "Scale",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "rectangle",
@@ -18735,7 +18813,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "Vwe0AsaT9qBhA5fnerakh",
-            "originalText": "Mask(opt.)"
+            "originalText": "Mask(opt.)",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "rectangle",
@@ -18808,7 +18887,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "2RZx5BDx426mZieb-kFfV",
-            "originalText": "Softmax"
+            "originalText": "Softmax",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "rectangle",
@@ -18881,7 +18961,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "A5w0vRTDvm33FkW26AzeW",
-            "originalText": "Matmul"
+            "originalText": "Matmul",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "arrow",
@@ -19273,7 +19354,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Q"
+            "originalText": "Q",
+            "lineHeight": 1.2488986784141096
           },
           {
             "type": "text",
@@ -19316,7 +19398,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "K"
+            "originalText": "K",
+            "lineHeight": 1.2488986784141096
           },
           {
             "type": "text",
@@ -19359,7 +19442,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "V"
+            "originalText": "V",
+            "lineHeight": 1.2488986784141096
           },
           {
             "type": "text",
@@ -19398,7 +19482,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Attention(Q,K,V)=softmax(     )"
+            "originalText": "Attention(Q,K,V)=softmax(     )",
+            "lineHeight": 1.2488986784141096
           },
           {
             "type": "line",
@@ -19480,7 +19565,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Q"
+            "originalText": "Q",
+            "lineHeight": 1.2488986784141096
           },
           {
             "type": "text",
@@ -19523,7 +19609,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "K"
+            "originalText": "K",
+            "lineHeight": 1.2488986784141096
           },
           {
             "type": "text",
@@ -19566,7 +19653,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "T"
+            "originalText": "T",
+            "lineHeight": 1.2488986784141096
           },
           {
             "type": "freedraw",
@@ -20009,7 +20097,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "d"
+            "originalText": "d",
+            "lineHeight": 1.2488986784141096
           },
           {
             "type": "text",
@@ -20048,7 +20137,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "k"
+            "originalText": "k",
+            "lineHeight": 1.2488986784141096
           }
         ],
         "id": "CRFio_PT27IERQfMJhi_8",
@@ -20223,7 +20313,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "DIPnpsuUpLNqrcHukGlZn",
-            "originalText": "C"
+            "originalText": "C",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -20257,7 +20348,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "Ye70B7fc1jzHg8CkWVz6V",
-            "originalText": "Encoder"
+            "originalText": "Encoder",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -20291,7 +20383,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "qA4RC7pTZpVQZGACVzeCj",
-            "originalText": "Decoder"
+            "originalText": "Decoder",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "arrow",
@@ -20458,7 +20551,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "X"
+            "originalText": "X",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "text",
@@ -20492,7 +20586,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "1"
+            "originalText": "1",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "ellipse",
@@ -20557,7 +20652,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "X"
+            "originalText": "X",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "text",
@@ -20591,7 +20687,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "2"
+            "originalText": "2",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "ellipse",
@@ -20656,7 +20753,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "X"
+            "originalText": "X",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "text",
@@ -20690,7 +20788,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "3"
+            "originalText": "3",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "arrow",
@@ -20908,7 +21007,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "y"
+            "originalText": "y",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "text",
@@ -20942,7 +21042,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "1"
+            "originalText": "1",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "ellipse",
@@ -21007,7 +21108,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "y"
+            "originalText": "y",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "text",
@@ -21041,7 +21143,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "2"
+            "originalText": "2",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "ellipse",
@@ -21101,7 +21204,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "y"
+            "originalText": "y",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "text",
@@ -21140,7 +21244,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "3"
+            "originalText": "3",
+            "lineHeight": 1.2537458980867988
           },
           {
             "type": "arrow",
@@ -21327,7 +21432,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Encoder-Decoder"
+            "originalText": "Encoder-Decoder",
+            "lineHeight": 1.2777777777777755
           }
         ],
         "id": "sqvleuqwsqu6I5mDCdOTJ",
@@ -21527,7 +21633,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "X"
+            "originalText": "X",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "rectangle",
@@ -21927,7 +22034,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "W"
+            "originalText": "W",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "text",
@@ -21963,7 +22071,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Q"
+            "originalText": "Q",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "freedraw",
@@ -22841,7 +22950,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Q"
+            "originalText": "Q",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "rectangle",
@@ -23033,7 +23143,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "X"
+            "originalText": "X",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "rectangle",
@@ -23433,7 +23544,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "W"
+            "originalText": "W",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "text",
@@ -23469,7 +23581,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "K"
+            "originalText": "K",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "freedraw",
@@ -24347,7 +24460,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "K"
+            "originalText": "K",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "rectangle",
@@ -24539,7 +24653,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "X"
+            "originalText": "X",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "rectangle",
@@ -24939,7 +25054,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "W"
+            "originalText": "W",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "text",
@@ -24975,7 +25091,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "V"
+            "originalText": "V",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "freedraw",
@@ -25853,7 +25970,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "V"
+            "originalText": "V",
+            "lineHeight": 1.2839506172839505
           }
         ],
         "id": "5ehy6a3kkpMjbmL4MvjTy",
@@ -25897,7 +26015,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "softmax"
+            "originalText": "softmax",
+            "lineHeight": 1.2648514851485193
           },
           {
             "type": "freedraw",
@@ -27598,7 +27717,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Q"
+            "originalText": "Q",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "text",
@@ -27634,7 +27754,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "K"
+            "originalText": "K",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "text",
@@ -27670,7 +27791,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "T"
+            "originalText": "T",
+            "lineHeight": 1.2453567937438894
           },
           {
             "type": "text",
@@ -27706,7 +27828,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "d"
+            "originalText": "d",
+            "lineHeight": 1.241847976526609
           },
           {
             "type": "text",
@@ -27742,7 +27865,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "k"
+            "originalText": "k",
+            "lineHeight": 1.241847976526609
           },
           {
             "type": "text",
@@ -27778,7 +27902,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "V"
+            "originalText": "V",
+            "lineHeight": 1.2839506172839505
           },
           {
             "type": "rectangle",
@@ -28524,7 +28649,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Z"
+            "originalText": "Z",
+            "lineHeight": 1.2839506172839505
           }
         ],
         "id": "xLjFyFoMA7k63tmz8z1Q_",
@@ -28613,7 +28739,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "1QZonWJb77KchjFF6rct8",
-            "originalText": "Multi-Head \nAttention"
+            "originalText": "Multi-Head \nAttention",
+            "lineHeight": 1.2578830626110953
           },
           {
             "type": "rectangle",
@@ -28690,7 +28817,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "je2uMX6tRPee-Z63B6QQp",
-            "originalText": "Add&Norm"
+            "originalText": "Add&Norm",
+            "lineHeight": 1.2766574366799177
           },
           {
             "type": "rectangle",
@@ -28763,7 +28891,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "Q-hNkTk8fvLagjdYRfDyf",
-            "originalText": "Input Embedding"
+            "originalText": "Input Embedding",
+            "lineHeight": 1.2766574366799177
           },
           {
             "type": "text",
@@ -28799,7 +28928,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Positional\n Encoding"
+            "originalText": "Positional\n Encoding",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "arrow",
@@ -29600,7 +29730,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "A-zA7DBeRR5mFYHu_Q9qP",
-            "originalText": "Feed\nForward"
+            "originalText": "Feed\nForward",
+            "lineHeight": 1.2578830626110953
           },
           {
             "type": "rectangle",
@@ -29677,7 +29808,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "lX0npjWammRqS7tPbYcnl",
-            "originalText": "Add&Norm"
+            "originalText": "Add&Norm",
+            "lineHeight": 1.2766574366799177
           },
           {
             "type": "arrow",
@@ -30713,7 +30845,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "LUsm3MYjndFVN99-IuZgP",
-            "originalText": "Mask\nMulti-Head \nAttention"
+            "originalText": "Mask\nMulti-Head \nAttention",
+            "lineHeight": 1.2641411873007027
           },
           {
             "type": "rectangle",
@@ -30790,7 +30923,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "Uuv-NuZFhBwwQkNYZo-kM",
-            "originalText": "Add&Norm"
+            "originalText": "Add&Norm",
+            "lineHeight": 1.2766574366799177
           },
           {
             "type": "line",
@@ -31053,7 +31187,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "XHh_Ta8spNtTPcaG0Lf2O",
-            "originalText": "Output Embedding"
+            "originalText": "Output Embedding",
+            "lineHeight": 1.2766574366799177
           },
           {
             "type": "arrow",
@@ -31566,7 +31701,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Positional\n Encoding"
+            "originalText": "Positional\n Encoding",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -31607,7 +31743,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Input"
+            "originalText": "Input",
+            "lineHeight": 1.2777777777777777
           },
           {
             "type": "text",
@@ -31648,7 +31785,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "    Ouput\n(shifted right)"
+            "originalText": "    Ouput\n(shifted right)",
+            "lineHeight": 1.2638888888888888
           },
           {
             "type": "arrow",
@@ -31839,7 +31977,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "7Lgwc1a3UH24HoPRXKRpO",
-            "originalText": "Multi-Head \nAttention"
+            "originalText": "Multi-Head \nAttention",
+            "lineHeight": 1.2578830626110953
           },
           {
             "type": "rectangle",
@@ -31916,7 +32055,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "FDsUoFrwSwIyvcGaA1R7e",
-            "originalText": "Add&Norm"
+            "originalText": "Add&Norm",
+            "lineHeight": 1.2766574366799177
           },
           {
             "type": "line",
@@ -32459,7 +32599,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "NYNXr5jEpUfan1kCBXgcC",
-            "originalText": "Feed\nForward"
+            "originalText": "Feed\nForward",
+            "lineHeight": 1.2578830626110953
           },
           {
             "type": "rectangle",
@@ -32544,7 +32685,8 @@
             "textAlign": "center",
             "verticalAlign": "middle",
             "containerId": "PzzBp4rG97CDE6lYt5q1m",
-            "originalText": "Add&Norm"
+            "originalText": "Add&Norm",
+            "lineHeight": 1.2766574366799177
           },
           {
             "type": "arrow",
@@ -32781,7 +32923,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "Output"
+            "originalText": "Output",
+            "lineHeight": 1.2777777777777777
           },
           {
             "type": "text",
@@ -32822,7 +32965,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "N*"
+            "originalText": "N*",
+            "lineHeight": 1.2777777777777777
           },
           {
             "type": "text",
@@ -32863,7 +33007,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "N*"
+            "originalText": "N*",
+            "lineHeight": 1.2777777777777777
           }
         ],
         "id": "6rch0aCmmu2oNaQEKaUSt",
@@ -42265,7 +42410,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "tokens"
+            "originalText": "tokens",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -42299,7 +42445,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "pad"
+            "originalText": "pad",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -42333,7 +42480,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "pad"
+            "originalText": "pad",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -42367,7 +42515,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "s_mark"
+            "originalText": "s_mark",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -42401,7 +42550,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "e_mark"
+            "originalText": "e_mark",
+            "lineHeight": 1.2857142857142858
           },
           {
             "type": "text",
@@ -42435,7 +42585,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "pad"
+            "originalText": "pad",
+            "lineHeight": 1.2857142857142858
           }
         ],
         "id": "B4UuiPF5YQK3youn8bQxR",
@@ -43005,7 +43156,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "0"
+            "originalText": "0",
+            "lineHeight": 1.3074810294935968
           },
           {
             "type": "text",
@@ -43039,7 +43191,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "1"
+            "originalText": "1",
+            "lineHeight": 1.3074810294935983
           },
           {
             "type": "text",
@@ -43073,7 +43226,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "2"
+            "originalText": "2",
+            "lineHeight": 1.307481029493597
           },
           {
             "type": "text",
@@ -43107,7 +43261,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "3"
+            "originalText": "3",
+            "lineHeight": 1.307481029493598
           },
           {
             "type": "text",
@@ -43141,7 +43296,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "4"
+            "originalText": "4",
+            "lineHeight": 1.3074810294935972
           },
           {
             "type": "text",
@@ -43175,7 +43331,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "5"
+            "originalText": "5",
+            "lineHeight": 1.3074810294935981
           },
           {
             "type": "text",
@@ -43209,7 +43366,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "6"
+            "originalText": "6",
+            "lineHeight": 1.3074810294935972
           },
           {
             "type": "text",
@@ -43243,7 +43401,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "7"
+            "originalText": "7",
+            "lineHeight": 1.307481029493597
           },
           {
             "type": "text",
@@ -43277,7 +43436,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "8"
+            "originalText": "8",
+            "lineHeight": 1.3074810294935997
           },
           {
             "type": "text",
@@ -43311,7 +43471,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "9"
+            "originalText": "9",
+            "lineHeight": 1.3074810294935972
           }
         ],
         "id": "psLCi-1LiZc7A6mt7_onB",
@@ -44401,7 +44562,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "0"
+            "originalText": "0",
+            "lineHeight": 1.3113923759731263
           },
           {
             "type": "text",
@@ -44435,7 +44597,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "1"
+            "originalText": "1",
+            "lineHeight": 1.3113923759731259
           },
           {
             "type": "text",
@@ -44469,7 +44632,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "2"
+            "originalText": "2",
+            "lineHeight": 1.3113923759731283
           },
           {
             "type": "text",
@@ -44503,7 +44667,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "3"
+            "originalText": "3",
+            "lineHeight": 1.3113923759731245
           },
           {
             "type": "text",
@@ -44537,7 +44702,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "4"
+            "originalText": "4",
+            "lineHeight": 1.311392375973124
           },
           {
             "type": "text",
@@ -44571,7 +44737,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "5"
+            "originalText": "5",
+            "lineHeight": 1.3113923759731254
           },
           {
             "type": "text",
@@ -44605,7 +44772,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "6"
+            "originalText": "6",
+            "lineHeight": 1.311392375973124
           },
           {
             "type": "text",
@@ -44639,7 +44807,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "7"
+            "originalText": "7",
+            "lineHeight": 1.3113923759731252
           },
           {
             "type": "text",
@@ -44673,7 +44842,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "8"
+            "originalText": "8",
+            "lineHeight": 1.3113923759731263
           },
           {
             "type": "text",
@@ -44707,7 +44877,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "9"
+            "originalText": "9",
+            "lineHeight": 1.311392375973127
           },
           {
             "type": "text",
@@ -44741,7 +44912,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "10"
+            "originalText": "10",
+            "lineHeight": 1.3113923759731256
           },
           {
             "type": "text",
@@ -44775,7 +44947,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "11"
+            "originalText": "11",
+            "lineHeight": 1.3113923759731252
           },
           {
             "type": "text",
@@ -44809,7 +44982,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "12"
+            "originalText": "12",
+            "lineHeight": 1.3113923759731259
           },
           {
             "type": "text",
@@ -44843,7 +45017,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "13"
+            "originalText": "13",
+            "lineHeight": 1.311392375973124
           },
           {
             "type": "text",
@@ -44877,7 +45052,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "14"
+            "originalText": "14",
+            "lineHeight": 1.311392375973125
           },
           {
             "type": "text",
@@ -44911,7 +45087,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "15"
+            "originalText": "15",
+            "lineHeight": 1.311392375973127
           },
           {
             "type": "text",
@@ -44945,7 +45122,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "16"
+            "originalText": "16",
+            "lineHeight": 1.311392375973125
           },
           {
             "type": "text",
@@ -44979,7 +45157,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "17"
+            "originalText": "17",
+            "lineHeight": 1.3113923759731267
           },
           {
             "type": "text",
@@ -45013,7 +45192,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "18"
+            "originalText": "18",
+            "lineHeight": 1.3113923759731259
           },
           {
             "type": "text",
@@ -45047,7 +45227,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "19"
+            "originalText": "19",
+            "lineHeight": 1.3113923759731259
           }
         ],
         "id": "b1wRweyo2_4mi0ie-vudl",
@@ -45369,7 +45550,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "0"
+            "originalText": "0",
+            "lineHeight": 1.2326974743519439
           },
           {
             "type": "text",
@@ -45403,7 +45585,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "1"
+            "originalText": "1",
+            "lineHeight": 1.2326974743519437
           },
           {
             "type": "text",
@@ -45437,7 +45620,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "2"
+            "originalText": "2",
+            "lineHeight": 1.232697474351943
           },
           {
             "type": "text",
@@ -45471,7 +45655,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "3"
+            "originalText": "3",
+            "lineHeight": 1.2326974743519439
           },
           {
             "type": "text",
@@ -45505,7 +45690,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "4"
+            "originalText": "4",
+            "lineHeight": 1.2326974743519432
           },
           {
             "type": "text",
@@ -45539,7 +45725,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "KEY"
+            "originalText": "KEY",
+            "lineHeight": 1.2989276108437504
           },
           {
             "type": "text",
@@ -45573,7 +45760,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "DATA"
+            "originalText": "DATA",
+            "lineHeight": 1.2989276108437484
           }
         ],
         "id": "0fN1YgloN8QEBcG1nuLU0",
@@ -46319,7 +46507,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "0"
+            "originalText": "0",
+            "lineHeight": 1.2417199861904975
           },
           {
             "type": "text",
@@ -46353,7 +46542,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "1"
+            "originalText": "1",
+            "lineHeight": 1.2417199861904982
           },
           {
             "type": "text",
@@ -46387,7 +46577,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "2"
+            "originalText": "2",
+            "lineHeight": 1.2417199861904982
           },
           {
             "type": "text",
@@ -46421,7 +46612,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "3"
+            "originalText": "3",
+            "lineHeight": 1.2417199861904975
           },
           {
             "type": "text",
@@ -46455,7 +46647,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "4"
+            "originalText": "4",
+            "lineHeight": 1.2417199861904968
           }
         ],
         "id": "dn3ejPxYMToAsqzRs23T7",
@@ -52529,7 +52722,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "0"
+            "originalText": "0",
+            "lineHeight": 1.286519371104897
           },
           {
             "type": "text",
@@ -52563,7 +52757,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "1"
+            "originalText": "1",
+            "lineHeight": 1.2865193711048963
           },
           {
             "type": "text",
@@ -52597,7 +52792,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "2"
+            "originalText": "2",
+            "lineHeight": 1.2865193711048963
           },
           {
             "type": "text",
@@ -52631,7 +52827,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "3"
+            "originalText": "3",
+            "lineHeight": 1.2865193711048988
           },
           {
             "type": "text",
@@ -52665,7 +52862,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "4"
+            "originalText": "4",
+            "lineHeight": 1.2865193711048972
           },
           {
             "type": "text",
@@ -52699,7 +52897,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "0"
+            "originalText": "0",
+            "lineHeight": 1.2665105496217897
           },
           {
             "type": "text",
@@ -52733,7 +52932,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "1"
+            "originalText": "1",
+            "lineHeight": 1.266510549621791
           },
           {
             "type": "text",
@@ -52767,7 +52967,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "2"
+            "originalText": "2",
+            "lineHeight": 1.2665105496217899
           },
           {
             "type": "text",
@@ -52801,7 +53002,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "3"
+            "originalText": "3",
+            "lineHeight": 1.2665105496217897
           },
           {
             "type": "text",
@@ -52835,7 +53037,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "4"
+            "originalText": "4",
+            "lineHeight": 1.2665105496217892
           },
           {
             "type": "rectangle",
@@ -53649,7 +53852,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "5"
+            "originalText": "5",
+            "lineHeight": 1.2865193711048972
           },
           {
             "type": "rectangle",
@@ -53943,7 +54147,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "6"
+            "originalText": "6",
+            "lineHeight": 1.2865193711048988
           },
           {
             "type": "rectangle",
@@ -54237,7 +54442,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "7"
+            "originalText": "7",
+            "lineHeight": 1.286519371104898
           },
           {
             "type": "rectangle",
@@ -54531,7 +54737,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "8"
+            "originalText": "8",
+            "lineHeight": 1.2865193711048977
           },
           {
             "type": "rectangle",
@@ -54825,7 +55032,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "9"
+            "originalText": "9",
+            "lineHeight": 1.2865193711048966
           },
           {
             "type": "rectangle",
@@ -54989,7 +55197,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "5"
+            "originalText": "5",
+            "lineHeight": 1.2665105496217908
           },
           {
             "type": "text",
@@ -55023,7 +55232,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "6"
+            "originalText": "6",
+            "lineHeight": 1.2665105496217908
           },
           {
             "type": "text",
@@ -55057,7 +55267,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "7"
+            "originalText": "7",
+            "lineHeight": 1.2665105496217899
           },
           {
             "type": "text",
@@ -55091,7 +55302,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "8"
+            "originalText": "8",
+            "lineHeight": 1.2665105496217905
           },
           {
             "type": "text",
@@ -55125,7 +55337,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "9"
+            "originalText": "9",
+            "lineHeight": 1.2665105496217908
           }
         ],
         "id": "v64rHLhwhoMh6YxxcvFRW",
@@ -55817,7 +56030,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "0"
+            "originalText": "0",
+            "lineHeight": 1.2815693631765253
           },
           {
             "type": "text",
@@ -55851,7 +56065,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "1"
+            "originalText": "1",
+            "lineHeight": 1.2815693631765253
           },
           {
             "type": "text",
@@ -55885,7 +56100,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "2"
+            "originalText": "2",
+            "lineHeight": 1.281569363176523
           },
           {
             "type": "text",
@@ -55919,7 +56135,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "3"
+            "originalText": "3",
+            "lineHeight": 1.2815693631765257
           },
           {
             "type": "text",
@@ -55953,7 +56170,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "4"
+            "originalText": "4",
+            "lineHeight": 1.2815693631765268
           },
           {
             "type": "text",
@@ -55987,7 +56205,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "0"
+            "originalText": "0",
+            "lineHeight": 1.2616375275726863
           },
           {
             "type": "text",
@@ -56021,7 +56240,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "1"
+            "originalText": "1",
+            "lineHeight": 1.261637527572686
           },
           {
             "type": "text",
@@ -56055,7 +56275,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "2"
+            "originalText": "2",
+            "lineHeight": 1.261637527572686
           },
           {
             "type": "text",
@@ -56089,7 +56310,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "3"
+            "originalText": "3",
+            "lineHeight": 1.2616375275726863
           },
           {
             "type": "text",
@@ -56123,7 +56345,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "4"
+            "originalText": "4",
+            "lineHeight": 1.2616375275726854
           }
         ],
         "id": "sBkTdoe-l6vBmHom_n-Qw",
@@ -56581,7 +56804,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "0"
+            "originalText": "0",
+            "lineHeight": 1.278364001037525
           },
           {
             "type": "text",
@@ -56615,7 +56839,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "1"
+            "originalText": "1",
+            "lineHeight": 1.2783640010375275
           },
           {
             "type": "text",
@@ -56649,7 +56874,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "2"
+            "originalText": "2",
+            "lineHeight": 1.2783640010375263
           },
           {
             "type": "text",
@@ -56683,7 +56909,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "3"
+            "originalText": "3",
+            "lineHeight": 1.2783640010375255
           },
           {
             "type": "text",
@@ -56717,7 +56944,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "0"
+            "originalText": "0",
+            "lineHeight": 1.2584820173988185
           },
           {
             "type": "text",
@@ -56751,7 +56979,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "1"
+            "originalText": "1",
+            "lineHeight": 1.2584820173988205
           },
           {
             "type": "text",
@@ -56785,7 +57014,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "2"
+            "originalText": "2",
+            "lineHeight": 1.25848201739882
           },
           {
             "type": "text",
@@ -56819,7 +57049,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "3"
+            "originalText": "3",
+            "lineHeight": 1.2584820173988185
           }
         ],
         "id": "JYOqs3Pw7owzXD30LNjvF",
@@ -57095,7 +57326,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "0"
+            "originalText": "0",
+            "lineHeight": 1.302223696646887
           },
           {
             "type": "text",
@@ -57129,7 +57361,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "1"
+            "originalText": "1",
+            "lineHeight": 1.3022236966468865
           },
           {
             "type": "text",
@@ -57163,7 +57396,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "2"
+            "originalText": "2",
+            "lineHeight": 1.302223696646884
           },
           {
             "type": "text",
@@ -57197,7 +57431,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "0"
+            "originalText": "0",
+            "lineHeight": 1.2285551878939533
           },
           {
             "type": "text",
@@ -57231,7 +57466,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "1"
+            "originalText": "1",
+            "lineHeight": 1.2285551878939533
           },
           {
             "type": "text",
@@ -57265,7 +57501,8 @@
             "textAlign": "left",
             "verticalAlign": "top",
             "containerId": null,
-            "originalText": "2"
+            "originalText": "2",
+            "lineHeight": 1.2285551878939538
           }
         ],
         "id": "xMO213v-uw9aRGtXTdHFv",

@@ -1,3 +1,6 @@
+#Haskell #functional-programming #concurrency #transaction
+
+
 # Locks & Conditional Variables Do Not Compose
 
 suppose a get function
@@ -30,12 +33,34 @@ A value of type `IORef t` should be thought of as a pointer, or reference, to a 
 > primitives of `IORef a` do not guarantee run in the order that they are used
 
 
-
-## `STM` Monad , `TVar`
+##  Transactions:  `STM` Monad and `TVar`
 
 > An `STM` action is like an `IO` action, in that it can have side effects, but the range of side effects for `STM` actions is much smaller. The main thing you can do in an `STM` action is to read or write a **transactional variable**, of type (`TVar a`), much as we could read or write `IORef`s in an `IO` action
 
 ```haskell
+data STM a
+
+-- | atomicity, this function try perform the transaction 
+--   represented by the imput atomically.
+--   N.B. this is the only way to escape STM
+atomically :: STM a -> IO a
+-- | if a retry action is performed, 
+--   the current/whole transaction is abandoned 
+--   and retried at some later time.
+retry :: STM a
+check :: Bool -> STM ()
+check True = return ()
+check False = retry
+-- | If the first action completes without retrying
+--   then it forms the result of the orElse. 
+--
+--   Otherwise, if the first action retries, 
+--   then the second action is tried in its place. 
+--
+--   If both actions retry then the orElse as a whole retries.
+orElse :: STM a -> STM a -> STM a
+
+
 -- Transactional variables 
 data TVar a 
 
@@ -43,6 +68,7 @@ newTVar   :: a -> STM (TVar a)
 readTVar  :: TVar a -> STM a 
 writeTVar :: TVar a -> a -> STM ()
 ```
+
 
 ## Threading
 

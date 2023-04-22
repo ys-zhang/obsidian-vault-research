@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/Category Theory/Monad/Monad Transformer.md",
-                "mode": "source",
+                "file": "Compiler/FP/GADT.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
@@ -26,28 +26,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Compiler/FP/STM (Software transaction memory).md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2ee2e22e9b70f0ac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Haskell Summer 2023/haskell prettyprinter.md",
+                "file": "Compiler/FP/FRP (Functional Reactive Programming).md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,8 +79,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -114,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Compiler/FP/STM (Software transaction memory).md",
+                "file": "Compiler/FP/GADT.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Compiler/FP/STM (Software transaction memory).md",
+                "file": "Compiler/FP/GADT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Compiler/FP/STM (Software transaction memory).md"
+                "file": "Compiler/FP/GADT.md"
               }
             }
           }
@@ -194,14 +179,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "85bf61a47de9f3dc",
+  "active": "ffc22ea04827e5ee",
   "lastOpenFiles": [
-    "Compiler/FP/FPR (Functional Reactive Programming).md",
     "Compiler/FP/STM (Software transaction memory).md",
+    "Compiler/FP/FRP (Functional Reactive Programming).md",
     "Math/Category Theory/Monad/Monad Transformer.md",
+    "Projects/Haskell Summer 2023/haskell prettyprinter.md",
+    "SystemDesign/design-pattern/Rx (Reactive Programming).md",
+    "Math/Category Theory/Concepts/Functor.excalidraw.md",
     "Projects/Haskell Summer 2023/haskell language server.md",
     "Projects/Haskell Summer 2023/Summer of Haskell Canvas (2023).canvas",
-    "Projects/Haskell Summer 2023/haskell prettyprinter.md",
     "Projects/Haskell Summer 2023",
     "action/rattle.md",
     "papers/distribute system/Green Threads in Rust.pdf",
@@ -223,8 +210,6 @@
     "Compiler/Parallel/GPGPU (General Purpose Computing on Graphics Processing Units).md",
     "Compiler/Parallel/Coalesced memory access.md",
     "Blog/The ABA Problem.md",
-    "Blog/Mio - Wrapping epoll.md",
-    "Blog/All about Global Offset Table.md",
     "SystemDesign/Model Driven Engineer/Model-based_DSL_frameworks20151027-14218-1dgxor2-with-cover-page-v2.pdf",
     "SystemDesign/Model Driven Engineer/Model-bases DSL Frameworks.pdf",
     "StatLearning/Concepts/statistics/Sub-Exponential Random variables.pdf",

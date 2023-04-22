@@ -1,11 +1,11 @@
 {
   "baseFontSize": 14,
-  "cssTheme": "Minimal",
+  "cssTheme": "Atom",
   "theme": "system",
   "translucency": true,
   "baseFontSizeAction": true,
   "textFontFamily": "Arial,Ayuthaya",
   "accentColor": "#b271d6",
-  "monospaceFontFamily": "JetBrains Mono",
+  "monospaceFontFamily": "JetBrains Mono NL",
   "interfaceFontFamily": ""
 }

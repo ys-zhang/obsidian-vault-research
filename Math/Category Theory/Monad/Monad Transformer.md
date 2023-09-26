@@ -51,6 +51,122 @@ instance (MonadFoo m) => MonadFoo (BarT m) where
 > to extend the system by adding a new transformer, you have to instance for all other old monad classes
 
 
+# Examples
+
+## Writer
+
+A _writer_ `m a` represents an embellished value (type `a`) with actions write to some environment `w` determined by `m`, i.e., `m -> w`
+
+`w` is also dubbed as the _output_ of the _action_ `m`.
+
+```haskell
+type Writer w a = (a, w)
+```
+
+```haskell
+-- | The monad class
+class (Monoid w, Monad m) => MonadWriter w m | m -> w where 
+  writer :: (a, w) -> m a
+  -- ^ constructor, create a writer with env w and value a
+  tell   :: w -> m ()
+  -- ^ constructor tell = writer . ((), ), tells the current env to the monad
+  listen :: m a -> m (a, w)
+  -- ^ get the env out
+  pass   :: m (a, w -> w) -> m a
+
+listens :: (MonadWriter w m) => (w -> b) -> m a -> m (a, b)
+censor  :: (MonadWriter w m) => (w -> w) -> m a -> m a
+
+-- The monad transformer
+WriterT :: * 
+        -- ^ The output type
+        -> (* -> *) 
+        -- ^ The inner monad
+        -> * -> *
+        -- ^ The output monad
+
+-- | Constructor, just like `writer`
+writerT :: (Functor m, Monoid w)
+        => m (a, w)
+        -> WriterT w m a
+
+-- | Unwrap WriterT w, just like `listen`
+runWriterT :: Monoid w
+           => Writer w m a
+           -> m (a, w)
+
+-- | Unwrap WriterT w
+execWriterT :: (Monad m, Monoid w) 
+            => WriterT w m a
+            -> m w
+
+instance (Monoid w, Monad m) => MonadWriter w (WriterT w m) where 
+  ...
+
+```
+
+## Reader
+
+_Reader monad_ (also called the _Environment monad_). Represents a computation, which can read values from a shared environment, pass values from function to function, and execute sub-computations in a modified environment.
+
+```haskell
+type Reader r a = r -> a
+```
+
+the type `r` is also dubbed as _environment_
+
+```haskell
+
+class Monad m => MonadReader r m | m -> r where
+  ask    :: m r
+  -- ^ retrieve env
+  local  :: (r -> r) -> m a -> m a
+  -- ^ modifies environment
+  local = withReaderT
+  reader :: (r -> a) -> m a
+  -- ^ retrieves a value from the environment
+
+asks :: MonadReader r m 
+     => (r -> a) -> m a
+
+
+ReaderT :: * 
+        -- ^ r, the environment
+        -> (* -> *) 
+        -- ^ m, the inner monad
+        -> * -> *
+        -- ^ the output monad
+
+withReaderT :: (r' -> r) -> ReaderT r m a -> ReaderT r' m a
+
+newtype ReaderT r m a = ReaderT { 
+    runReaderT :: r -> m a 
+    -- ^ unwrap ReaderT
+  }
+```
+
+
+## State
+
+| State `MonadState s m` | Writer `MonadWrite w m` | Reader `MonadRead r m` |
+| ---------------------- | ----------------------- | ---------------------- |
+| `get :: m s`           |                         | `ask :: m r`           |
+| `put :: s -> m ()`     | `tell :: w -> m ()`     |                        |
+
+```haskell
+State s a = Writer s (Reader s a) = (s -> a, s)
+```
+
+```haskell
+class Monad m => MonadState s m | m -> s where 
+  get :: m s
+  put :: s -> m ()
+  state :: (s -> (a, s)) -> m a
+
+modify :: MonadState s m => (s -> s) -> m ()
+gets :: MonadState s m => (s -> a) -> m a
+```
+
 # Under the hood
 
 

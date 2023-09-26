@@ -43,16 +43,33 @@ data Prism a b s t = Prism {
 >[!Problem]
 > `update` and `match`  cannot compose naturally
 
+## Adaptor / Iso
+
+![[Pasted image 20230511185646.png]]
+
+```haskell
+data Adaptor a b s t = Adaptor {
+  from :: s -> a 
+  to   :: b -> t
+}
+```
+
+> Although adapters look like rather trivial data accessors, they are very useful as ‘plumbing’ combinators, converting between representations.
 
 ## Traversal
 
-> Traversal can be seen as a generalisation of lenses and of prisms, providing access not just to a single component within a whole structure but onto an entire sequence of such components.
+> Traversal can be seen as a **generalisation** of lenses and of prisms, providing access not just to a single component within a whole structure but onto an entire sequence of such components.
 
 ```haskell
 -- A Traversal is much like a Traversable see 
 --   https://en.wikibooks.org/wiki/Haskell/Traversable
 class Traversal a b s t where
   traverse :: (Applicative f, Functor f) => (a -> f b) -> s -> f t
+
+class TraversalIntuition a b = TraversalIntuition {
+    toListOf :: a -> [b],
+    over     :: (b -> b) -> (a -> a)
+  }
 ```
 
 The intuitions here are
@@ -257,6 +274,24 @@ instance Cartesian (Lens a b) where
 \end{tikzcd}
   
 \end{document}
+```
+
+
+```haskell
+
+viewP :: LensP a b s t 
+      -- ^    forall p . Cartesian p => p a b -> p s t
+      -- ^ or forall f . Functor f   => (a -> f b) -> (s -> f t)       
+      -> s -> a
+viewP lens = let getter = lens $ \a -> Const { getConst = a } 
+             -- ^ getter :: s -> Const a t
+             in getConst . getter
+
+updateP :: LensP a b s t
+        -> s -> b -> t
+updateP lens = let setter = lens $ counst id
+               -- ^ setter :: s -> (b -> t)
+               in setter
 ```
 
 

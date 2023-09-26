@@ -1,5 +1,5 @@
 #javascript
-#metaprogramming 
+#meta-programming 
 
 
 [Proxy - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)

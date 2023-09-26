@@ -129,10 +129,7 @@ $$
 \end{align}
 $$
 
-
-   
-
-  # Comonad
+# Comonad
 
 > [!NOTE]
 > A comonad, on the other hand, provides the means of extracting a single value from it. It does not give the means to insert values. 
@@ -149,13 +146,41 @@ The intuition behind these functions is based on the idea that, in general, a co
 ```haskell
 class Functor w => Comonad w where 
   extract :: w a -> a
+  -- ^ dual of return :: a -> m a
   duplicate :: w a -> w (w a)
+  -- ^ dual of join :: m (m a) -> m a
   duplicate = extend id
   extend :: (w a -> b) -> w a -> w b 
+  -- ^ dual of bind :: m a -> (a -> m b) -> m b
   extend f = fmap f . duplicate
+  (=>=) :: (w a -> b) -> (w b -> c) -> (w a -> c)
 
 ```
 
+## Comonoid 
+
+```haskell
+class Comonoid m where 
+  split   :: m -> (m, m)
+  destroy :: m -> ()
+```
+
+Comonoid Rules:
+
+```haskell
+id == fst . bimap id destroy . split 
+id == snd . bimap destroy id . split
+```
+
+## Store/Costate Comonad
+
+```haskell
+data Store s a = Store (s -> a) s
+
+instance Comonad (Store s) where 
+  extract (Store f s) = f s
+  duplicate (Store f s) = Store (Store f) s
+```
 
 
 # Equip with a F-algebra

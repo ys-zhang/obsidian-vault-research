@@ -1,4 +1,4 @@
-A Lattice or Order is a [[Partial Order]] satisfies:
+A Lattice or Order is a [[Math/Category Theory/Common Categories/Partial Order]] satisfies:
 1. (**meet**) every pair of objects $(X, Y)$ has an unique infimum/meet/greatest-lower-bound $X\land Y := X \times Y$, i.e. _product_.
 2. (**join**) every pair of objects $(X, Y)$ has an unique supreme/join/least-upper-bound  $X\lor Y := X + Y$, i.e. _coproduct_.
 

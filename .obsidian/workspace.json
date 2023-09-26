@@ -4,36 +4,76 @@
     "type": "split",
     "children": [
       {
-        "id": "42fe439dcbc23721",
+        "id": "12c95cc0fd6c0ddb",
         "type": "tabs",
         "children": [
           {
-            "id": "ffc22ea04827e5ee",
+            "id": "e003f08844bbbabf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Compiler/FP/GADT.md",
-                "mode": "preview",
+                "file": "Compiler/Program Synthesis/Inductive Synthesis.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           },
           {
-            "id": "85bf61a47de9f3dc",
+            "id": "de3dc123e76d5aa1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Compiler/FP/FRP (Functional Reactive Programming).md",
+                "file": "Algo/Data Structure/Difference List.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c68d7261f6ae03ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Compiler/FP/Demand Analysis.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "800ca7aab787db2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Math/Category Theory/Concepts/Lattice.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0b492c56387bc8c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Math/Category Theory/Concepts/Pullback and Pushout.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -62,12 +102,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Haskell",
-                "matchingCase": false,
+                "query": "\\begin",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTime"
               }
             }
           },
@@ -78,12 +118,21 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "fdf6afc00418705d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 214.5
+    "width": 247.5,
+    "collapsed": true
   },
   "right": {
     "id": "90a6f9defb7a3379",
@@ -99,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Compiler/FP/GADT.md",
+                "file": "Compiler/FP/Demand Analysis.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Compiler/FP/GADT.md",
+                "file": "Compiler/FP/Demand Analysis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +188,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Compiler/FP/GADT.md"
+                "file": "Compiler/FP/Demand Analysis.md"
+              }
+            }
+          },
+          {
+            "id": "b82a86c9ce97ea37",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
               }
             }
           }
@@ -162,7 +221,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 316.5
+    "width": 218.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,49 +234,54 @@
       "command-palette:Open command palette": true,
       "markdown-importer:Open format converter": true,
       "audio-recorder:Start/stop recording": true,
-      "table-editor-obsidian:Advanced Tables Toolbar": true,
       "oz-clear-unused-images:Clear Unused Images": true,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ffc22ea04827e5ee",
+  "active": "c68d7261f6ae03ca",
   "lastOpenFiles": [
-    "Compiler/FP/STM (Software transaction memory).md",
-    "Compiler/FP/FRP (Functional Reactive Programming).md",
-    "Math/Category Theory/Monad/Monad Transformer.md",
-    "Projects/Haskell Summer 2023/haskell prettyprinter.md",
-    "SystemDesign/design-pattern/Rx (Reactive Programming).md",
-    "Math/Category Theory/Concepts/Functor.excalidraw.md",
-    "Projects/Haskell Summer 2023/haskell language server.md",
-    "Projects/Haskell Summer 2023/Summer of Haskell Canvas (2023).canvas",
-    "Projects/Haskell Summer 2023",
-    "action/rattle.md",
-    "papers/distribute system/Green Threads in Rust.pdf",
-    "Math/MDP (markov decision process).md",
-    "Math/Markov's inequality.md",
-    "Math/Hilbert Space.md",
-    "Math/Discrete Optimization.md",
-    "Math/Logic/Probabilistic Soft Logic & Hinge-loss Markov Random Field.md",
-    "Math/Logic/computational tree logic (CTL).md",
-    "Math/Logic/BDD (binary decision diagram).md",
+    "Math/Category Theory/Concepts/Lattice.md",
+    "Math/Category Theory/Concepts/CPO (Complete Partial Order).md",
+    "Compiler/FP/Demand Analysis.md",
+    "Math/Category Theory/Concepts/Partial Order.md",
+    "Algo/Data Structure/Difference List.md",
+    "Math/Category Theory/Knaster–Tarski Theorem.md",
+    "Math/Category Theory/Concepts/Poset.md",
+    "Algo/General Theory of Representation and Abstraction.md",
+    "Math/Category Theory/Concepts/Pullback and Pushout.md",
+    "StatLearning/Models/Time Series/ARIMA.md",
+    "Math/Category Theory/Lens and Other Optics.md",
+    "Compiler/Prolog.md",
+    "Math/Logic/Deontic Logic.md",
     "Math/Logic/Buchi Automaton (BA).md",
+    "Math/Logic/BDD (binary decision diagram).md",
     "Math/Category Theory/Yoneda Lemma.md",
-    "Compiler/Thunk.md",
-    "Compiler/Probilistic Programming.md",
-    "Compiler/FP/Haskell.md",
-    "Tools/UI/CSS Layout.md",
+    "Math/Category Theory/Concepts/End and Coend.md",
     "Math/Category Theory/Category Theory.md",
-    "Compiler/Parallel/CUDA.excalidraw.md",
-    "Compiler/Parallel/GPGPU (General Purpose Computing on Graphics Processing Units).md",
-    "Compiler/Parallel/Coalesced memory access.md",
-    "Blog/The ABA Problem.md",
-    "SystemDesign/Model Driven Engineer/Model-based_DSL_frameworks20151027-14218-1dgxor2-with-cover-page-v2.pdf",
-    "SystemDesign/Model Driven Engineer/Model-bases DSL Frameworks.pdf",
-    "StatLearning/Concepts/statistics/Sub-Exponential Random variables.pdf",
-    "StatLearning/Torch/A tutorial on support vector regression.pdf",
-    "StatLearning/A tutorial on support vector regression.pdf",
-    "StatLearning/Estimators and Tests/Unit Root Tests.pdf",
-    "StatLearning/Models/variational_inference.pdf",
-    "StatLearning/Models/NN/LSTM.pdf"
+    "Compiler/Program Synthesis/STUN.excalidraw.md",
+    "Compiler/Program Synthesis/Inductive Synthesis.md",
+    "Compiler/Program Synthesis/Untitled.md",
+    "Compiler/Program Synthesis/Program Synthesis.md",
+    "Compiler/Probilistic Programming.md",
+    "Compiler/Program Synthesis",
+    "Compiler/Drawing 2023-09-22 21.23.42.excalidraw.md",
+    "Algo/Search Algorithms.md",
+    "Algo/Master's Theorem.md",
+    "Scratch.canvas",
+    "StatLearning/Estimators and Tests/Graphical Representation of the “Holy Trinity”.pdf",
+    "Compiler/Memory Management.pdf",
+    "attachments/Pasted image 20230825110735.png",
+    "Math/Quantum Computing",
+    "StatLearning/Models/NN/Transformer/Attention Is All You Need.pdf",
+    "StatLearning/Models/A tutorial on support vector regression.pdf",
+    "StatLearning/Models/NN/Transformer",
+    "Compiler/FP/Type Families in Haskell: The Definitive Guide.webarchive",
+    "papers/distribute system/Green Threads in Rust.pdf",
+    "SystemDesign/distribute system/03-ds-snapshots.excalidraw",
+    "attachments/Pasted image 20230516162241.png",
+    "attachments/Pasted image 20230511185646.png",
+    "attachments/Pasted image 20230423114456.png",
+    "Projects/Haskell Summer 2023/Summer of Haskell Canvas (2023).canvas"
   ]
 }

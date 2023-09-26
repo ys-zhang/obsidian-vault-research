@@ -50,7 +50,14 @@ bar :: forall a . (a -> a) -> (Char, Bool)  -- rank 1
 The `forall` at the _outermost_ level means that `bar` promises to work with any argument `f` as long as `f` has the shape `a -> a`for _some_ type `a` unknown to `bar`. 
 Contrast this with `foo`, where it's the argument `f` which promises to be of shape `a -> a` for all types `a` **at the same time** , and it's `foo` which makes use of that promise by choosing both `a = Char` and `a = Bool`.
 
+# Evaluation
 
+An _expression_ is either a _redex (reducible expression)_  or in _normal form_ i.e., irreducible. 
+
+Reduction strategies:
+
+1. __innermost reduction__, a redex is an _innermost redex_ if it has no other redex as subexpressions inside it.
+2. **outermost reduction** and always reduces **outermost redex**es that are not inside another redex.
 # Library
 
 ## Type classes
@@ -106,5 +113,19 @@ Contrast this with `foo`, where it's the argument `f` which promises to be of
     second = bimap id
 ```
 
-#### Monad
+# Template Haskell
 
+```haskell
+{- LANGUAGE TemplateHaskell -}
+import Language.Haskell.TH
+```
+
+AST groups:
+1. expression (`infixE`, `[e|1+1]` or `[|1+1|]`)    
+2. pattern
+3. declaration
+4. type
+
+# Cabal 
+
+- generate dependency constrains: `cabal gen-bounds`, `cabal outdated`

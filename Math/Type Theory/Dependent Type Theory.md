@@ -1,4 +1,4 @@
-#todo #type-theory
+#todo #type-theory #dependent-type #Haskell  #type-level-programming
 
 Type Theory is different from Set Theory in the sense of <mark class="hltr-orange">inhabitants of Types is not as natural as elements of Sets.</mark> 
 
@@ -140,6 +140,59 @@ $$
 >   - Let $f: \mathbb N\to Q$ defined as $$ f(\text{succ}(n)) := c(n, f(n)) $$ where $c: \mathbb N\to Q\to Q$. and $f(0) = s_0$
 
 
+# Haskell Example
+
+## Existential Type
+
+```haskell
+{-# LANGUAGE GADTs #-}
+data Some f where 
+  Some :: f a -> Some f
+```
+$$
+  \text{Some} = \sum_{a: Type} (\text{f a})
+$$
+
+## Dependent Sum
+
+The following Haskell code are from [dependent-sum](https://github.com/obsidiansystems/dependent-sum) package
+```haskell
+infix 1 :=>, ==>  -- the lowest precedence
+
+DSum :: forall k. (k -> *) -> (k -> *) -> *
+data DSum tag f = forall a. !(tag a) :=> f a
+
+(==>) :: Applicative f => tag a -> f a -> DSum tag f
+t ==> v = t :=> (pure v)
+```
+the type `DSum tag f` associates type `tag a` to type `f a`
+$$
+\forall x\in (\text{tag a}), (\text{DSum tag f})_x \in (\text{f a})
+$$
+or 
+$$
+  \text{DSum tag f} = \sum_a (\text{tag a}) \times (\text{f a})
+$$
+
+usually `tag a` only have one value and `f == Identity` such as 
+```haskell
+{-# LANGUAGE GADTs #-}
+import Data.Dependent.Sum ( DSum(..) )
+
+data Tag a where 
+  TagStr :: Tag String
+  TagInt :: Tag Int 
+  TagRec :: Tag (DSum Tag Identity)
+
+name = TagStr ==> "Jerrie"
+age  = TagInt ==> 34
+theGirl = TagRec name ==> age 
+```
+
+## Dependent Prod
+
+the package [dependent-map](https://hackage.haskell.org/package/dependent-map) provides a data type `DMap` which is equivalent to 
+a partial dependent function/product
 
 # References
 

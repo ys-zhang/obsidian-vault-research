@@ -282,5 +282,5 @@
   "communityThemeSortOrder": "release",
   "showIndentGuide": true,
   "smartIndentList": true,
-  "showInlineTitle": false
+  "showInlineTitle": true
 }

@@ -1,11 +1,11 @@
 {
-  "baseFontSize": 14,
-  "cssTheme": "Atom",
+  "baseFontSize": 16,
+  "cssTheme": "Material Gruvbox",
   "theme": "system",
   "translucency": true,
   "baseFontSizeAction": true,
-  "textFontFamily": "Arial,Ayuthaya",
-  "accentColor": "#b271d6",
-  "monospaceFontFamily": "JetBrains Mono NL",
+  "textFontFamily": "Ayuthaya,Apple Chancery,Arial",
+  "accentColor": "",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font",
   "interfaceFontFamily": ""
 }

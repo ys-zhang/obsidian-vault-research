@@ -2,7 +2,6 @@
   "graph:open": [],
   "editor:delete-paragraph": [],
   "obsidian-citation-plugin:insert-citation": [],
-  "app:toggle-left-sidebar": [],
   "switcher:open": [
     {
       "modifiers": [
@@ -18,6 +17,38 @@
         "Shift"
       ],
       "key": "P"
+    }
+  ],
+  "window:reset-zoom": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "0"
+    }
+  ],
+  "editor:toggle-highlight": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "H"
+    }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "N"
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "O"
     }
   ]
 }

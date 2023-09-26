@@ -41,11 +41,29 @@ $$
 
 There are 3 basic "kind" of kinds
 
-| "kind" of kind | symbol   |
-| -------------- | -------- |
-| `Type` Kind    | `*`      |
-| Arrow Kind     | `* -> *` |
-| Constraint     | `Constraint`         |
+| "kind" of kind | symbol       | examples       |
+| -------------- | ------------ | -------------- |
+| `Type` Kind    | `*`          | `Bool`         |
+| Arrow Kind     | `* -> *`     | `Bool -> Bool` |
+| Constraint     | `Constraint` | `Num a`        |
 
+we also have `DataKinds` which basically lifts 
+1. data constructor to type level constructor
+2. type constructor to kind
 
+for instance 
+
+```haskell
+type {- this shall be read as KIND -} Append :: forall a. [a] -> [a] -> [a]
+type family Append xs ys where 
+  Append '[] {- the tick lifts a data construct to type level -} ys = ys
+  Append (x:xs) ys = x : Append xs ys
+```
+
+the type level function `Append` maps _type level value_ of **kind** `[a]` and a ... to a ...
+
+>[!note] The tick
+> The reason of the tick in `'[]` is that `[]` it self is a type constructor which lives in the type level.
+> the _type family_ `Append` maps type level things of kind `[a]` to kind `[a] -> [a]`. 
+> if we remove the tick then it is impossible to differentiate the _type constructor_ and the _lifted data constructor_ 
 

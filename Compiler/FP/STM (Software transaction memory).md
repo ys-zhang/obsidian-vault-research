@@ -74,7 +74,7 @@ writeTVar :: TVar a -> a -> STM ()
 
 ```haskell
 forkIO :: IO () 
-  .    -- ^ action to run on the forked thread
+       -- ^ action to run on the forked thread
        -> IO ThreadId
 ```
 

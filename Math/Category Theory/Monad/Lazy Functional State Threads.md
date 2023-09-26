@@ -84,6 +84,7 @@ To assure thread safety (prevent race condition, and maintain pure) we need to g
 
 -- WE NEED TO MAKE THE FOLLOWING ILEGAL
 let 
+  v :: STRef s a
   v = runST (newSTRef True) -- STRef created in thread A
 in 
   runST $ readSTRef v       -- but read in thread B

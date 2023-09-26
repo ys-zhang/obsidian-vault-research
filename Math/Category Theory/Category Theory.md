@@ -16,7 +16,7 @@ Let $\mathscr C$ be a category,
 > 3. Internal structure of objects are "forgotten", i.e. _objects_ are atoms of a _category_.
 
 >[!EXAMPLES]
-> - [[Preorder]], [[Partial Order]]
+> - [[Preorder]], [[Math/Category Theory/Common Categories/Partial Order]]
 > - [[#Kleisli Category]]
 
 ![[Morphism]]

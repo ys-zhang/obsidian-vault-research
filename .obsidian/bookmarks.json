@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "path": "StatLearning/Models/ANOVA (Analysis of Variance).md",
+      "ctime": 1683207532482
+    },
+    {
+      "type": "file",
+      "path": "Algo/Graph Algorithms/Dominator Tree.md",
+      "ctime": 1683207532482
+    },
+    {
+      "type": "file",
+      "path": "StatLearning/Sampling/Markov Chain Monte Carlo method (MCMC).md",
+      "ctime": 1683207532482
+    },
+    {
+      "type": "file",
+      "path": "StatLearning/Train/Understanding the difficulty of training deep feedforward neural networks.md",
+      "ctime": 1683207532482
+    },
+    {
+      "type": "file",
+      "path": "StatLearning/Estimators and Tests/Hypothesis Tests.md",
+      "ctime": 1683207532482
+    },
+    {
+      "type": "file",
+      "path": "StatLearning/Models/Time Series/Transfer Function Model.md",
+      "ctime": 1683207532482
+    }
+  ]
+}

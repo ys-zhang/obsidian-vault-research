@@ -251,7 +251,7 @@
     "collinearity",
     "regressors"
   ],
-  "vimMode": false,
+  "vimMode": true,
   "alwaysUpdateLinks": true,
   "communityPluginSortOrder": "download",
   "attachmentFolderPath": "attachments",
@@ -259,7 +259,7 @@
   "newFileLocation": "current",
   "showUnsupportedFiles": true,
   "fileSortOrder": "alphabetical",
-  "promptDelete": true,
+  "promptDelete": false,
   "strictLineBreaks": true,
   "defaultViewMode": "preview",
   "readableLineLength": true,

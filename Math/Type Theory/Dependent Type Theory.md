@@ -68,7 +68,7 @@ $$
 > 
 > if the type family $B$ is a constant, i.e. $\forall x:A, y:A$ we have $B=B(x)=B(y)$ then we have $$\sum_{x:A} B \equiv A\times B $$
 
-
+      z`
 ### Dependent Product (dependent function)
 
 A dependent product of dependent type $P$ is denoted by

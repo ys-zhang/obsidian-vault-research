@@ -60,6 +60,37 @@ For instance,
 - (_fill_) the list `List = [a, b, c | X], X = d` is a _proper_ list;
 - (_partial fill_) `List = [a, b, c | X], X = [d|X1]`
 
+>[!Observation] 
+>Filling holes is is just like `append(+,+,-)` with one difference that first input is served as both an input and an output. 
+>```prolog
+>% open_append/2: append 3 elements at the head
+>open_append([H1, H2, H3|Hole], L2) :- Hole = L2.
+>```
+
+$$
+\begin{align}
+&rep : \mathbf{List} \to \mathbf{DiffList} \\
+\end{align}
+$$
+
+convert an open list as difference list by specifying its hole explicitly 
+$$[a, b, c|Hole] \implies [a, b, c|Hole] - Hole$$
+$$
+rep([a, b, c]) = [a, b, c|Hole] - Hole
+$$
+
+```prolog
+% difference_append/2
+difference_append(OpenList-Hole, L2) :- Hole = L2.
+
+?- X = [a, b, c|Ho] , difference_append(X-Ho, [d, e, f]).
+X = [a, b, c, d, e, f]
+
+% difference_append/3
+difference_append (OpenList-Hole, L2, OpenList) :- Hole=L2.
+```
+
+
 
 # References
 

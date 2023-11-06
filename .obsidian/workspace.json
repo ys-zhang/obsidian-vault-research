@@ -4,68 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "12c95cc0fd6c0ddb",
+        "id": "41fc5351a373dcb1",
         "type": "tabs",
         "children": [
           {
-            "id": "e003f08844bbbabf",
+            "id": "fd20df00bc5a3c78",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Compiler/Program Synthesis/Inductive Synthesis.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "Projects/dreaming/Yase_Persistant_Model.excalidraw.md"
               }
             }
           },
           {
-            "id": "de3dc123e76d5aa1",
+            "id": "7ccf53c346fd12b5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algo/Data Structure/Difference List.md",
+                "file": "Compiler/FP/Defuntionalisation.md",
                 "mode": "source",
                 "backlinks": true,
-                "source": false
+                "source": true
               }
             }
           },
           {
-            "id": "c68d7261f6ae03ca",
+            "id": "ab13ca6aca1f87a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Compiler/FP/Demand Analysis.md",
-                "mode": "source",
+                "file": "Compiler/FP/Generic Programming in Haskell.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
-            }
+            },
+            "group": "dbfe384eefd91c57"
           },
           {
-            "id": "800ca7aab787db2b",
+            "id": "3c40a964930a3ce0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/Category Theory/Concepts/Lattice.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0b492c56387bc8c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Math/Category Theory/Concepts/Pullback and Pushout.md",
+                "file": "Compiler/FP/Type Level Programming in Haskell.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -74,6 +59,26 @@
           }
         ],
         "currentTab": 2
+      },
+      {
+        "id": "33d43f281320094b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b2d5791582ad0ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Compiler/FP/Generic Programming in Haskell.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            },
+            "group": "dbfe384eefd91c57"
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,21 +107,13 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\\begin",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "byModifiedTime"
               }
-            }
-          },
-          {
-            "id": "decee154048335dc",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
             }
           },
           {
@@ -127,12 +124,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 247.5,
-    "collapsed": true
+    "width": 231.5
   },
   "right": {
     "id": "90a6f9defb7a3379",
@@ -148,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Compiler/FP/Demand Analysis.md",
+                "file": "Compiler/FP/Generic Programming in Haskell.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Compiler/FP/Demand Analysis.md",
+                "file": "Compiler/FP/Generic Programming in Haskell.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Compiler/FP/Demand Analysis.md"
+                "file": "Compiler/FP/Generic Programming in Haskell.md"
               }
             }
           },
@@ -221,8 +218,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 218.5,
-    "collapsed": true
+    "width": 218.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -239,35 +235,39 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c68d7261f6ae03ca",
+  "active": "d1f88128b20a4c77",
   "lastOpenFiles": [
-    "Math/Category Theory/Concepts/Lattice.md",
-    "Math/Category Theory/Concepts/CPO (Complete Partial Order).md",
-    "Compiler/FP/Demand Analysis.md",
-    "Math/Category Theory/Concepts/Partial Order.md",
-    "Algo/Data Structure/Difference List.md",
-    "Math/Category Theory/Knaster–Tarski Theorem.md",
-    "Math/Category Theory/Concepts/Poset.md",
-    "Algo/General Theory of Representation and Abstraction.md",
-    "Math/Category Theory/Concepts/Pullback and Pushout.md",
-    "StatLearning/Models/Time Series/ARIMA.md",
-    "Math/Category Theory/Lens and Other Optics.md",
-    "Compiler/Prolog.md",
-    "Math/Logic/Deontic Logic.md",
-    "Math/Logic/Buchi Automaton (BA).md",
-    "Math/Logic/BDD (binary decision diagram).md",
-    "Math/Category Theory/Yoneda Lemma.md",
-    "Math/Category Theory/Concepts/End and Coend.md",
-    "Math/Category Theory/Category Theory.md",
-    "Compiler/Program Synthesis/STUN.excalidraw.md",
-    "Compiler/Program Synthesis/Inductive Synthesis.md",
-    "Compiler/Program Synthesis/Untitled.md",
-    "Compiler/Program Synthesis/Program Synthesis.md",
+    "Compiler/FP/Defuntionalisation.md",
+    "Projects/dreaming/Yase_Persistant_Model.excalidraw.md",
+    "Compiler/FP/Type Level Programming in Haskell.md",
+    "Compiler/FP/Generic Programming in Haskell.md",
+    "Math/Type Theory/Dependent Type Theory.md",
+    "Compiler/FP/Literate Haskell.md",
+    "Compiler/FP/Thinking with Types.md",
+    "Compiler/Theory of Computation Model.md",
+    "Compiler/FP/Thunk.md",
     "Compiler/Probilistic Programming.md",
+    "Compiler/FP/The Singleton Technique in Type-level Haskell Programming.md",
+    "Compiler/FP/Haskell",
+    "Code/toml-parser.md",
+    "Projects/Japanese/Family.md",
+    "Algo/Data Structure/E-graph.md",
+    "Code/generics-sop.md",
+    "Compiler/FP/Strict or Lazy.md",
+    "Projects/Japanese/Greetings & Farewells.md",
+    "Projects/Japanese/Body.md",
+    "Projects/dreaming/li-zy-arch.excalidraw.md",
+    "Projects/dreaming/Specifications.md",
+    "Projects/dreaming/Project & Bootstrapping.md",
+    "Projects/dreaming/Project Proposal.md",
+    "Code/Servant - Type Level Api.md",
+    "Projects/dreaming/Untitled.md",
+    "Projects/Japanese/Bed ＆bath.md",
+    "Projects/Japanese",
+    "Projects/dreaming/Contract Formalisation.md",
+    "attachments/Session-Cookie Based Authentication.png",
+    "attachments/Pasted image 20231010165322.png",
     "Compiler/Program Synthesis",
-    "Compiler/Drawing 2023-09-22 21.23.42.excalidraw.md",
-    "Algo/Search Algorithms.md",
-    "Algo/Master's Theorem.md",
     "Scratch.canvas",
     "StatLearning/Estimators and Tests/Graphical Representation of the “Holy Trinity”.pdf",
     "Compiler/Memory Management.pdf",
@@ -277,8 +277,6 @@
     "StatLearning/Models/A tutorial on support vector regression.pdf",
     "StatLearning/Models/NN/Transformer",
     "Compiler/FP/Type Families in Haskell: The Definitive Guide.webarchive",
-    "papers/distribute system/Green Threads in Rust.pdf",
-    "SystemDesign/distribute system/03-ds-snapshots.excalidraw",
     "attachments/Pasted image 20230516162241.png",
     "attachments/Pasted image 20230511185646.png",
     "attachments/Pasted image 20230423114456.png",

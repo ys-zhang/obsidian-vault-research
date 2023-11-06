@@ -1,7 +1,7 @@
 {
   "baseFontSize": 16,
-  "cssTheme": "Material Gruvbox",
-  "theme": "system",
+  "cssTheme": "Prism",
+  "theme": "moonstone",
   "translucency": true,
   "baseFontSizeAction": true,
   "textFontFamily": "Ayuthaya,Apple Chancery,Arial",

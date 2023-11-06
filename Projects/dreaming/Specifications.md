@@ -104,7 +104,6 @@ data EditorState = EditorState {
 ```
 
 
-
 # Live Model Checking
 
 ## Scoping

@@ -115,6 +115,8 @@ is a demand transformer that transforms a demand on the result of a call `(C)` t
 
 ## Projection Operators
 
+Let $Pr(D)$ be the set of all projections on a domain $D$.
+
 1. Defined the _product_ of projections $\times : Pr(D_\infty) \times Pr(D_\infty) \to Pr(D_\infty)$
     $$
       (p\times q)(d) = \begin{cases}
@@ -129,4 +131,11 @@ is a demand transformer that transforms a demand on the result of a call `(C)` t
         \bot & \text{otherwise}
         \end{cases}
     $$
+
+## Value Environments & Projection environments
+
+1. (_value environment_) Value environments can be modelled as _partial functions_,
+    $$ \text{env} : \text{Var} \to D_\infty $$
+2. (_projection environment_) projections on value environments.
+
 

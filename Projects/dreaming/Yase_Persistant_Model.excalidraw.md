@@ -37,7 +37,7 @@ loadNodesFromNodeDb ^N8BldnEr
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/1.9.23",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/1.9.28",
 	"elements": [
 		{
 			"type": "rectangle",
@@ -419,8 +419,8 @@ loadNodesFromNodeDb ^N8BldnEr
 		},
 		{
 			"type": "arrow",
-			"version": 1969,
-			"versionNonce": 1710421359,
+			"version": 1975,
+			"versionNonce": 1689535416,
 			"isDeleted": false,
 			"id": "jIlcVOHdKyBPN2wx_RhIL",
 			"fillStyle": "hachure",
@@ -447,7 +447,7 @@ loadNodesFromNodeDb ^N8BldnEr
 					"id": "cDEjOWGs"
 				}
 			],
-			"updated": 1698979936818,
+			"updated": 1702016976940,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -778,8 +778,8 @@ loadNodesFromNodeDb ^N8BldnEr
 		},
 		{
 			"type": "arrow",
-			"version": 335,
-			"versionNonce": 679060911,
+			"version": 347,
+			"versionNonce": 2018555320,
 			"isDeleted": false,
 			"id": "lJ0CRsAHM8XUwfc2hJES1",
 			"fillStyle": "hachure",
@@ -799,7 +799,7 @@ loadNodesFromNodeDb ^N8BldnEr
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1698979936818,
+			"updated": 1702016976941,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -970,7 +970,7 @@ loadNodesFromNodeDb ^N8BldnEr
 		}
 	],
 	"appState": {
-		"theme": "light",
+		"theme": "dark",
 		"viewBackgroundColor": "#ffffff",
 		"currentItemStrokeColor": "#e03131",
 		"currentItemBackgroundColor": "transparent",
@@ -985,7 +985,7 @@ loadNodesFromNodeDb ^N8BldnEr
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "triangle",
 		"scrollX": -130.30385432587934,
-		"scrollY": -32,
+		"scrollY": 7.5,
 		"zoom": {
 			"value": 1
 		},

@@ -52,7 +52,7 @@
 
 ## Focus Trapping
 
-![[Focus#Tricks]]
+![[Tools/UI/Web/Focus#Tricks]]
 
 
 ## Input Suggestion and Completion (fish-shell like)

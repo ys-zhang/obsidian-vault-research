@@ -5,18 +5,16 @@
   "oz-image-plugin",
   "obsidian-plantuml",
   "oz-clear-unused-images",
-  "table-editor-obsidian",
   "obsidian-annotator",
   "obsidian-dictionary-plugin",
-  "cm-editor-syntax-highlight-obsidian",
   "highlightr-plugin",
   "lapel",
   "tag-wrangler",
   "obsidian-tikzjax",
   "obsidian-zotero-desktop-connector",
-  "obsidian-minimal-settings",
   "dataview",
   "mathlinks",
   "math-booster",
-  "obsidian-style-settings"
+  "obsidian-linter",
+  "cm-editor-syntax-highlight-obsidian"
 ]

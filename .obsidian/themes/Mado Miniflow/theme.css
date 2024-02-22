@@ -815,7 +815,7 @@ body.is-translucent .modal{
 	100% { transform:scale(100%); opacity:1; }
 }
 
-body:is(:not(.css-settings-manager), .toggle-note-animation) .workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked)  .view-content{
+body:is(:not(.css-settings-manager), .toggle-note-animation) .workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) .workspace-leaf-content:not([data-type="pdf"]) .view-content{
 	animation:0.2s slide-up forwards;
 }
 @keyframes slide-up{
@@ -960,6 +960,11 @@ body:not(.native-scrollbars) .modal-close-button{
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
+/* Append some spaces so that when on-focused, the border does not get cut */
+.nav-files-container{
+	padding-top:2px;
+}
+
 
 :is(.nav-folder, .nav-file) :is(.nav-folder-title, .nav-file-title),
 .vertical-tab-nav-item,

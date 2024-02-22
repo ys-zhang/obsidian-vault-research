@@ -188,7 +188,7 @@ $$
     1. If $(\boldsymbol y, \boldsymbol x) \notin D$ then 
       $$\Pr(\boldsymbol y|\boldsymbol x)=0$$
     2. Else 
-      $$
+  $$
       \Pr(\boldsymbol y|\boldsymbol x) = \frac{1}{Z(\boldsymbol w, \boldsymbol x)} \exp(-f_w(\boldsymbol y, \boldsymbol x))
   $$
     we have the MAP is equivalent to minimising the _hinge loss energy_.

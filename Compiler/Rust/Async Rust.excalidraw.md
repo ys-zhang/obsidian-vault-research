@@ -31,8 +31,6 @@ Ready ^9OGIfBZd
 
 Output ^pViyHSiO
 
- ^xEorYYNo
-
 - FUTURE are internally FSA which only advances eagerly 
     when the function POLL is called;
 
@@ -121,8 +119,6 @@ PENDING ^A0Zvv7n6
 wake up working thread through a call to the WAKER ^vTlLh6Rw
 
 Time Ends ^wH4H03rr
-
- ^DYCTJ8js
 
 4 ^69MjYApv
 
@@ -221,8 +217,6 @@ Pin<&T>, Pin<&mut T>, Pin<Box<T>> ^10AwEL8J
 ( almost all 
   normal types ) ^h642X40D
 
- ^uaVCkMqB
-
 see also ^SOSz3tSx
 
 http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
@@ -233,7 +227,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://excalidraw.com",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.17",
 	"elements": [
 		{
 			"type": "text",
@@ -251,12 +245,13 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1940,
 			"strokeColor": "#862e9c",
 			"backgroundColor": "transparent",
-			"width": 559,
-			"height": 87,
+			"width": 557.3368530273438,
+			"height": 85.71428571428571,
 			"seed": 550467817,
 			"groupIds": [
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -268,11 +263,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "A Timer Example",
 			"rawText": "A Timer Example",
-			"baseline": 61,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "A Timer Example"
+			"originalText": "A Timer Example",
+			"lineHeight": 1.25,
+			"baseline": 60
 		},
 		{
 			"type": "rectangle",
@@ -299,6 +295,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -314,7 +311,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1673431727795,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
@@ -332,8 +332,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1647.1348260003545,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 69,
-			"height": 51,
+			"width": 67.5994873046875,
+			"height": 51.651492142961324,
 			"seed": 1333144455,
 			"groupIds": [
 				"Mk_rvGRgYgjAQN_vN8hBJ",
@@ -341,6 +341,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -352,11 +353,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "working\nthread",
 			"rawText": "working\nthread",
-			"baseline": 44,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "working\nthread"
+			"originalText": "working\nthread",
+			"lineHeight": 1.25,
+			"baseline": 43
 		},
 		{
 			"type": "rectangle",
@@ -383,6 +385,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -407,8 +410,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1644.8294287172323,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 72,
-			"height": 50,
+			"width": 70.00929260253906,
+			"height": 49.87039080812859,
 			"seed": 300051593,
 			"groupIds": [
 				"b0kkBbihkHlo0PeONGkCu",
@@ -416,6 +419,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -427,11 +431,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "Timer \nThread",
 			"rawText": "Timer \nThread",
-			"baseline": 43,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Timer \nThread"
+			"originalText": "Timer \nThread",
+			"lineHeight": 1.25,
+			"baseline": 41
 		},
 		{
 			"type": "text",
@@ -449,8 +454,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1633.806309781847,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 75,
-			"height": 57,
+			"width": 73.69029235839844,
+			"height": 56.66244459082801,
 			"seed": 253475943,
 			"groupIds": [
 				"ne9BJzrzkIjk4LJ2sxU9F",
@@ -459,6 +464,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -470,11 +476,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "Timer \nFuture",
 			"rawText": "Timer \nFuture",
-			"baseline": 49,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Timer \nFuture"
+			"originalText": "Timer \nFuture",
+			"lineHeight": 1.25,
+			"baseline": 47
 		},
 		{
 			"type": "diamond",
@@ -501,6 +508,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -511,8 +519,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 		},
 		{
 			"type": "text",
-			"version": 334,
-			"versionNonce": 1382958157,
+			"version": 336,
+			"versionNonce": 1935634907,
 			"isDeleted": false,
 			"id": "XGGaUQB8",
 			"fillStyle": "hachure",
@@ -521,12 +529,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -630,
-			"y": -1542.0386186429384,
+			"x": -629.0219879150391,
+			"y": -1541.5386186429384,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 46,
-			"height": 36,
+			"width": 44.043975830078125,
+			"height": 35,
 			"seed": 642784841,
 			"groupIds": [
 				"Mk_rvGRgYgjAQN_vN8hBJ",
@@ -534,22 +542,24 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307911,
+			"updated": 1706153080914,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
 			"fontFamily": 1,
 			"text": "poll",
 			"rawText": "poll",
-			"baseline": 25,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "_ROsMvDZiXPMzkl8nqv8B",
-			"originalText": "poll"
+			"originalText": "poll",
+			"lineHeight": 1.25,
+			"baseline": 24
 		},
 		{
 			"type": "rectangle",
@@ -578,6 +588,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -589,7 +600,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655212816100,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
@@ -607,8 +621,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1644.588364405436,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 69,
-			"height": 51,
+			"width": 67.22254545533836,
+			"height": 51.36347799157795,
 			"seed": 1617001863,
 			"groupIds": [
 				"qj7t5qvM9YAzFO27526SK",
@@ -618,6 +632,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -630,15 +645,19 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"updated": 1673532279929,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			},
 			"fontSize": 20.545391196631183,
 			"fontFamily": 1,
 			"text": "working\nthread",
 			"rawText": "working\nthread",
-			"baseline": 44,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "working\nthread"
+			"originalText": "working\nthread",
+			"lineHeight": 1.2499999999999998,
+			"baseline": 43
 		},
 		{
 			"type": "rectangle",
@@ -667,6 +686,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -678,7 +698,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655212816100,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
@@ -696,8 +719,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1642.2958222599782,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 72,
-			"height": 50,
+			"width": 69.61891342545621,
+			"height": 49.59230826507242,
 			"seed": 1854289063,
 			"groupIds": [
 				"kjCv3VVob1bG9VdduwLSR",
@@ -707,6 +730,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -718,11 +742,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "Timer \nThread",
 			"rawText": "Timer \nThread",
-			"baseline": 43,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Timer \nThread"
+			"originalText": "Timer \nThread",
+			"lineHeight": 1.25,
+			"baseline": 41
 		},
 		{
 			"type": "text",
@@ -740,8 +765,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1631.3341693948653,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 75,
-			"height": 56,
+			"width": 73.27938753961699,
+			"height": 56.34648884168985,
 			"seed": 1268911433,
 			"groupIds": [
 				"kCkwIL_tkG1lfqs-8rVyT",
@@ -752,6 +777,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -763,11 +789,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "Timer \nFuture",
 			"rawText": "Timer \nFuture",
-			"baseline": 48,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Timer \nFuture"
+			"originalText": "Timer \nFuture",
+			"lineHeight": 1.25,
+			"baseline": 47
 		},
 		{
 			"type": "diamond",
@@ -796,6 +823,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -815,7 +843,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655212816100,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
@@ -833,8 +864,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1545.905476550619,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 56,
-			"height": 25,
+			"width": 54.33415222167969,
+			"height": 24.796154132536216,
 			"seed": 1939748935,
 			"groupIds": [
 				"RoT1JQRagz5rnBWIWU5e5",
@@ -843,6 +874,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -854,11 +886,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "waker",
 			"rawText": "waker",
-			"baseline": 17,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "waker"
+			"originalText": "waker",
+			"lineHeight": 1.25,
+			"baseline": 16
 		},
 		{
 			"type": "ellipse",
@@ -886,6 +919,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -897,7 +931,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655212816100,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "arrow",
@@ -924,6 +961,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -971,7 +1009,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1497.3671196242499,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 78,
+			"width": 75.79193115234375,
 			"height": 20,
 			"seed": 514600457,
 			"groupIds": [
@@ -979,6 +1017,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -990,11 +1029,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "PENDING",
 			"rawText": "PENDING",
-			"baseline": 14,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "PENDING"
+			"originalText": "PENDING",
+			"lineHeight": 1.25,
+			"baseline": 14
 		},
 		{
 			"type": "rectangle",
@@ -1024,6 +1064,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -1035,7 +1076,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655212816100,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
@@ -1053,8 +1097,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1264.5883644054363,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 69,
-			"height": 51,
+			"width": 67.22254545533836,
+			"height": 51.36347799157795,
 			"seed": 905966825,
 			"groupIds": [
 				"kj7LAb0UY-PRgpBY6QZba",
@@ -1065,6 +1109,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -1076,11 +1121,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "working\nthread",
 			"rawText": "working\nthread",
-			"baseline": 44,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "working\nthread"
+			"originalText": "working\nthread",
+			"lineHeight": 1.2499999999999998,
+			"baseline": 43
 		},
 		{
 			"type": "rectangle",
@@ -1110,6 +1156,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -1129,7 +1176,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1673431727797,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
@@ -1147,8 +1197,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1262.2958222599784,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 72,
-			"height": 50,
+			"width": 69.61891342545621,
+			"height": 49.59230826507242,
 			"seed": 1105424329,
 			"groupIds": [
 				"yHcGDeqYlPL05COpwT_5y",
@@ -1159,6 +1209,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -1170,11 +1221,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "Timer \nThread",
 			"rawText": "Timer \nThread",
-			"baseline": 43,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Timer \nThread"
+			"originalText": "Timer \nThread",
+			"lineHeight": 1.25,
+			"baseline": 41
 		},
 		{
 			"type": "text",
@@ -1192,8 +1244,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1251.3341693948657,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 75,
-			"height": 56,
+			"width": 73.27938753961699,
+			"height": 56.34648884168985,
 			"seed": 1411583303,
 			"groupIds": [
 				"YQ0gCso7Ts8OOPGG34oNp",
@@ -1205,6 +1257,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -1216,11 +1269,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "Timer \nFuture",
 			"rawText": "Timer \nFuture",
-			"baseline": 48,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Timer \nFuture"
+			"originalText": "Timer \nFuture",
+			"lineHeight": 1.25,
+			"baseline": 47
 		},
 		{
 			"type": "diamond",
@@ -1250,6 +1304,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -1269,7 +1324,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655212816100,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
@@ -1287,8 +1345,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1165.9054765506191,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 56,
-			"height": 25,
+			"width": 54.33415222167969,
+			"height": 24.796154132536216,
 			"seed": 1526713447,
 			"groupIds": [
 				"mTy5uiyTSzoDWqCEAH1GP",
@@ -1298,6 +1356,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -1309,11 +1368,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "waker",
 			"rawText": "waker",
-			"baseline": 17,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "waker"
+			"originalText": "waker",
+			"lineHeight": 1.25,
+			"baseline": 16
 		},
 		{
 			"type": "ellipse",
@@ -1342,6 +1402,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -1353,7 +1414,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655212816100,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "arrow",
@@ -1381,6 +1445,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -1428,7 +1493,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1117.36711962425,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 78,
+			"width": 75.79193115234375,
 			"height": 20,
 			"seed": 1008580713,
 			"groupIds": [
@@ -1437,6 +1502,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -1448,16 +1514,17 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "PENDING",
 			"rawText": "PENDING",
-			"baseline": 14,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "PENDING"
+			"originalText": "PENDING",
+			"lineHeight": 1.25,
+			"baseline": 14
 		},
 		{
 			"type": "text",
-			"version": 384,
-			"versionNonce": 263982659,
+			"version": 386,
+			"versionNonce": 2080706971,
 			"isDeleted": false,
 			"id": "yTfs4Z3R",
 			"fillStyle": "hachure",
@@ -1466,12 +1533,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 298.53766415179155,
-			"y": -1158.0602609757357,
+			"x": 299.22269985735795,
+			"y": -1157.2441353685153,
 			"strokeColor": "#087f5b",
 			"backgroundColor": "transparent",
-			"width": 74,
-			"height": 42,
+			"width": 72.62992858886719,
+			"height": 40.36774878555921,
 			"seed": 1743849447,
 			"groupIds": [
 				"yHcGDeqYlPL05COpwT_5y",
@@ -1482,27 +1549,29 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307912,
+			"updated": 1706153080914,
 			"link": null,
 			"locked": false,
 			"fontSize": 16.147099514223683,
 			"fontFamily": 1,
-			"text": "execute \nthe timer",
+			"text": "execute\nthe timer",
 			"rawText": "execute the timer",
-			"baseline": 36,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "w5r4xvPvVaI52xifv6g_t",
-			"originalText": "execute the timer"
+			"originalText": "execute the timer",
+			"lineHeight": 1.25,
+			"baseline": 33
 		},
 		{
 			"type": "arrow",
-			"version": 2142,
-			"versionNonce": 974795437,
+			"version": 2144,
+			"versionNonce": 2091579163,
 			"isDeleted": false,
 			"id": "8qT-WK0iETJVTUKKjsCdM",
 			"fillStyle": "hachure",
@@ -1512,22 +1581,23 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"opacity": 100,
 			"angle": 0,
 			"x": 279.68093605868944,
-			"y": -1136.478465902575,
+			"y": -1136.462418739096,
 			"strokeColor": "#087f5b",
 			"backgroundColor": "transparent",
-			"width": 60.728418534853205,
-			"height": 42.556660195115455,
+			"width": 60.73314305930273,
+			"height": 42.56887160651627,
 			"seed": 1717963945,
 			"groupIds": [
 				"brxeBbOAwaBBeqk71PO9A",
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307912,
+			"updated": 1706153080914,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1549,15 +1619,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 					0
 				],
 				[
-					-60.728418534853205,
-					-42.556660195115455
+					-60.73314305930273,
+					-42.56887160651627
 				]
 			]
 		},
 		{
 			"type": "arrow",
-			"version": 1928,
-			"versionNonce": 516134755,
+			"version": 1929,
+			"versionNonce": 2039454875,
 			"isDeleted": false,
 			"id": "CrEyMab-Tc2j5mKREYLUk",
 			"fillStyle": "hachure",
@@ -1577,11 +1647,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307911,
+			"updated": 1706153080914,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1628,13 +1699,14 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1799.9999999999998,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 381,
-			"height": 74,
+			"width": 379.68328857421875,
+			"height": 73.21100917431193,
 			"seed": 618041289,
 			"groupIds": [
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -1646,11 +1718,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "the working thread try POLL the timer,\nwhich register a WAKER \nin the timer FUTURE",
 			"rawText": "the working thread try POLL the timer,\nwhich register a WAKER \nin the timer FUTURE",
-			"baseline": 67,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "the working thread try POLL the timer,\nwhich register a WAKER \nin the timer FUTURE"
+			"originalText": "the working thread try POLL the timer,\nwhich register a WAKER \nin the timer FUTURE",
+			"lineHeight": 1.25,
+			"baseline": 65
 		},
 		{
 			"type": "ellipse",
@@ -1675,6 +1748,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -1686,12 +1760,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655212816101,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
-			"version": 398,
-			"versionNonce": 1686449005,
+			"version": 400,
+			"versionNonce": 884713179,
 			"isDeleted": false,
 			"id": "1WxyQOQB",
 			"fillStyle": "hachure",
@@ -1700,33 +1777,35 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -456,
+			"x": -454.8779983520508,
 			"y": -1454.9999999999998,
 			"strokeColor": "#5f3dc4",
 			"backgroundColor": "transparent",
-			"width": 12,
+			"width": 9.755996704101562,
 			"height": 45,
 			"seed": 284070663,
 			"groupIds": [
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307913,
+			"updated": 1706153080914,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "1",
 			"rawText": "1",
-			"baseline": 31,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "haadiuHODqXb7DWttRNFO",
-			"originalText": "1"
+			"originalText": "1",
+			"lineHeight": 1.25,
+			"baseline": 32
 		},
 		{
 			"type": "ellipse",
@@ -1751,6 +1830,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -1762,12 +1842,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655212816101,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
-			"version": 375,
-			"versionNonce": 1917275619,
+			"version": 377,
+			"versionNonce": 37612571,
 			"isDeleted": false,
 			"id": "hVFaLKEM",
 			"fillStyle": "hachure",
@@ -1776,38 +1859,40 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 156.5,
+			"x": 157.74200439453125,
 			"y": -1074.9999999999998,
 			"strokeColor": "#5f3dc4",
 			"backgroundColor": "transparent",
-			"width": 27,
+			"width": 24.5159912109375,
 			"height": 45,
 			"seed": 355958089,
 			"groupIds": [
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307914,
+			"updated": 1706153080914,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "3",
 			"rawText": "3",
-			"baseline": 31,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "DvZoexHK7MLGDcYSfwDw0",
-			"originalText": "3"
+			"originalText": "3",
+			"lineHeight": 1.25,
+			"baseline": 32
 		},
 		{
 			"type": "arrow",
-			"version": 2009,
-			"versionNonce": 1996051725,
+			"version": 2011,
+			"versionNonce": 1313221723,
 			"isDeleted": false,
 			"id": "NnNXI_7G1YnqGPI8O5y-P",
 			"fillStyle": "hachure",
@@ -1816,22 +1901,23 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 331.60230858154705,
+			"x": 331.574642038713,
 			"y": -1359.8850999781196,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 5.13824081870024,
+			"width": 5.126081858906218,
 			"height": 79.41158334603438,
 			"seed": 1433833575,
 			"groupIds": [
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307912,
+			"updated": 1706153080914,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1853,7 +1939,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 					0
 				],
 				[
-					-5.13824081870024,
+					-5.126081858906218,
 					79.41158334603438
 				]
 			]
@@ -1881,6 +1967,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -1892,12 +1979,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655212816101,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
-			"version": 411,
-			"versionNonce": 856110541,
+			"version": 413,
+			"versionNonce": 157278555,
 			"isDeleted": false,
 			"id": "cx10NIJM",
 			"fillStyle": "hachure",
@@ -1906,33 +1996,35 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 156,
+			"x": 157.1840057373047,
 			"y": -1454.9999999999998,
 			"strokeColor": "#5f3dc4",
 			"backgroundColor": "transparent",
-			"width": 28,
+			"width": 25.631988525390625,
 			"height": 45,
 			"seed": 1556443017,
 			"groupIds": [
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307914,
+			"updated": 1706153080914,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "2",
 			"rawText": "2",
-			"baseline": 31,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "CdEIfMnbawpexooy8jLn8",
-			"originalText": "2"
+			"originalText": "2",
+			"lineHeight": 1.25,
+			"baseline": 32
 		},
 		{
 			"type": "text",
@@ -1950,13 +2042,14 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1379.9999999999998,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 172,
-			"height": 76,
+			"width": 171.59983825683594,
+			"height": 75,
 			"seed": 2073000041,
 			"groupIds": [
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -1968,11 +2061,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "start running \ntimer in the timer\nthread",
 			"rawText": "start running \ntimer in the timer\nthread",
-			"baseline": 68,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "start running \ntimer in the timer\nthread"
+			"originalText": "start running \ntimer in the timer\nthread",
+			"lineHeight": 1.25,
+			"baseline": 66
 		},
 		{
 			"type": "rectangle",
@@ -2002,6 +2096,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -2026,8 +2121,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1264.5883644054363,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 69,
-			"height": 51,
+			"width": 67.22254545533836,
+			"height": 51.36347799157795,
 			"seed": 1953447559,
 			"groupIds": [
 				"-7UM66fqZwIEE2CmIVnI_",
@@ -2038,6 +2133,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -2049,11 +2145,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "working\nthread",
 			"rawText": "working\nthread",
-			"baseline": 44,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "working\nthread"
+			"originalText": "working\nthread",
+			"lineHeight": 1.2499999999999998,
+			"baseline": 43
 		},
 		{
 			"type": "rectangle",
@@ -2083,6 +2180,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -2110,7 +2208,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1673431727800,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
@@ -2128,8 +2229,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1262.2958222599784,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 72,
-			"height": 50,
+			"width": 69.61891342545621,
+			"height": 49.59230826507242,
 			"seed": 489936295,
 			"groupIds": [
 				"atlsHydjmF5HqVQ4RCIaJ",
@@ -2140,6 +2241,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -2151,11 +2253,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "Timer \nThread",
 			"rawText": "Timer \nThread",
-			"baseline": 43,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Timer \nThread"
+			"originalText": "Timer \nThread",
+			"lineHeight": 1.25,
+			"baseline": 41
 		},
 		{
 			"type": "text",
@@ -2173,8 +2276,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1251.3341693948657,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 75,
-			"height": 56,
+			"width": 73.27938753961699,
+			"height": 56.34648884168985,
 			"seed": 1624964169,
 			"groupIds": [
 				"NlKTzHwqI6lL3PMGc2ycI",
@@ -2186,6 +2289,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -2197,11 +2301,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "Timer \nFuture",
 			"rawText": "Timer \nFuture",
-			"baseline": 48,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Timer \nFuture"
+			"originalText": "Timer \nFuture",
+			"lineHeight": 1.25,
+			"baseline": 47
 		},
 		{
 			"type": "diamond",
@@ -2231,6 +2336,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -2250,7 +2356,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655212816101,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
@@ -2268,8 +2377,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1165.9054765506191,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 56,
-			"height": 25,
+			"width": 54.33415222167969,
+			"height": 24.796154132536216,
 			"seed": 514231081,
 			"groupIds": [
 				"3d6brLQIf4c7LjNK3Op0s",
@@ -2279,6 +2388,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -2291,15 +2401,19 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"updated": 1673532279934,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			},
 			"fontSize": 19.83692330602897,
 			"fontFamily": 1,
 			"text": "waker",
 			"rawText": "waker",
-			"baseline": 17,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "waker"
+			"originalText": "waker",
+			"lineHeight": 1.25,
+			"baseline": 16
 		},
 		{
 			"type": "ellipse",
@@ -2328,6 +2442,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -2343,7 +2458,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655212816101,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "arrow",
@@ -2371,6 +2489,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -2418,7 +2537,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1117.36711962425,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 78,
+			"width": 75.79193115234375,
 			"height": 20,
 			"seed": 1210336007,
 			"groupIds": [
@@ -2427,6 +2546,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -2438,16 +2558,17 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "PENDING",
 			"rawText": "PENDING",
-			"baseline": 14,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "PENDING"
+			"originalText": "PENDING",
+			"lineHeight": 1.25,
+			"baseline": 14
 		},
 		{
 			"type": "text",
-			"version": 462,
-			"versionNonce": 1901941955,
+			"version": 464,
+			"versionNonce": 1036771611,
 			"isDeleted": false,
 			"id": "vTlLh6Rw",
 			"fillStyle": "hachure",
@@ -2456,12 +2577,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -328.96233584820845,
-			"y": -1200.0602609757357,
+			"x": -328.41848208844283,
+			"y": -1197.889594639959,
 			"strokeColor": "#087f5b",
 			"backgroundColor": "transparent",
-			"width": 89,
-			"height": 126,
+			"width": 87.91229248046875,
+			"height": 121.65866732844631,
 			"seed": 1836750057,
 			"groupIds": [
 				"atlsHydjmF5HqVQ4RCIaJ",
@@ -2472,27 +2593,29 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307916,
+			"updated": 1706153080914,
 			"link": null,
 			"locked": false,
 			"fontSize": 16.22115564379284,
 			"fontFamily": 1,
-			"text": "wake up \nworking \nthread \nthrough a \ncall to the\nWAKER",
+			"text": "wake up\nworking\nthread\nthrough a\ncall to the\nWAKER",
 			"rawText": "wake up working thread through a call to the WAKER",
-			"baseline": 119,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "XKZn-5DO5trCgowNXPwwt",
-			"originalText": "wake up working thread through a call to the WAKER"
+			"originalText": "wake up working thread through a call to the WAKER",
+			"lineHeight": 1.25,
+			"baseline": 115
 		},
 		{
 			"type": "arrow",
-			"version": 1976,
-			"versionNonce": 1301869613,
+			"version": 1978,
+			"versionNonce": 1240827547,
 			"isDeleted": false,
 			"id": "Wqn7SK6_hlBPFmfO2z-cn",
 			"fillStyle": "hachure",
@@ -2502,21 +2625,22 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"opacity": 100,
 			"angle": 0,
 			"x": -60.11490002188013,
-			"y": -1159.9999999999998,
+			"y": -1160.0181099572997,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
 			"width": 159.51476378814965,
-			"height": 0.05439989588762728,
+			"height": 0.04101411942906452,
 			"seed": 1727275559,
 			"groupIds": [
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307915,
+			"updated": 1706153080914,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -2539,14 +2663,14 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				],
 				[
 					-159.51476378814965,
-					-0.05439989588762728
+					-0.04101411942906452
 				]
 			]
 		},
 		{
 			"type": "arrow",
-			"version": 1858,
-			"versionNonce": 2352781,
+			"version": 1860,
+			"versionNonce": 1590877147,
 			"isDeleted": false,
 			"id": "do4JLP6QnandDaHTc3rP3",
 			"fillStyle": "hachure",
@@ -2556,21 +2680,22 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"opacity": 100,
 			"angle": 0,
 			"x": -360.43396396319076,
-			"y": -1099.9514202314342,
+			"y": -1099.9397202389328,
 			"strokeColor": "#087f5b",
 			"backgroundColor": "transparent",
-			"width": 219.12009515926104,
-			"height": 39.94831131809087,
+			"width": 219.87169893784937,
+			"height": 40.163857178056105,
 			"seed": 362759111,
 			"groupIds": [
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307915,
+			"updated": 1706153080914,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -2592,8 +2717,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 					0
 				],
 				[
-					-219.12009515926104,
-					-39.94831131809087
+					-219.87169893784937,
+					-40.163857178056105
 				]
 			]
 		},
@@ -2613,13 +2738,14 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1139.9999999999998,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 101,
+			"width": 99.11991882324219,
 			"height": 25,
 			"seed": 1651997513,
 			"groupIds": [
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -2631,11 +2757,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "Time Ends",
 			"rawText": "Time Ends",
-			"baseline": 17,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Time Ends"
+			"originalText": "Time Ends",
+			"lineHeight": 1.25,
+			"baseline": 16
 		},
 		{
 			"type": "rectangle",
@@ -2659,6 +2786,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"groupIds": [
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -2666,50 +2794,6 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"updated": 1655212816101,
 			"link": null,
 			"locked": false
-		},
-		{
-			"type": "text",
-			"version": 34,
-			"versionNonce": 848832680,
-			"isDeleted": false,
-			"id": "DYCTJ8js",
-			"fillStyle": "hachure",
-			"strokeWidth": 4,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 27.774588059861344,
-			"y": -1260.7004985040403,
-			"strokeColor": "#862e9c",
-			"backgroundColor": "transparent",
-			"width": 20,
-			"height": 45,
-			"seed": 1327834473,
-			"groupIds": [],
-			"roundness": null,
-			"boundElements": [
-				{
-					"id": "Wqn7SK6_hlBPFmfO2z-cn",
-					"type": "arrow"
-				},
-				{
-					"id": "qU2ishlsf7_fGQG9tfDiy",
-					"type": "arrow"
-				}
-			],
-			"updated": 1655212816101,
-			"link": null,
-			"locked": false,
-			"fontSize": 36,
-			"fontFamily": 1,
-			"text": "",
-			"rawText": "",
-			"baseline": 32,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": ""
 		},
 		{
 			"type": "ellipse",
@@ -2734,6 +2818,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -2745,12 +2830,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655212816101,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
-			"version": 405,
-			"versionNonce": 1566674157,
+			"version": 407,
+			"versionNonce": 2008323675,
 			"isDeleted": false,
 			"id": "69MjYApv",
 			"fillStyle": "hachure",
@@ -2759,33 +2847,35 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -462.5,
+			"x": -461.5199966430664,
 			"y": -1075.0000000000002,
 			"strokeColor": "#5f3dc4",
 			"backgroundColor": "transparent",
-			"width": 25,
+			"width": 23.039993286132812,
 			"height": 45,
 			"seed": 1731053481,
 			"groupIds": [
 				"SZxO674v1LOveR7sy8Jdh",
 				"MTGhdTjlvPbxCBrcP7ka0"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307916,
+			"updated": 1706153080914,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
 			"fontFamily": 1,
 			"text": "4",
 			"rawText": "4",
-			"baseline": 31,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "CeaAkEe0WXip2dshMcPtC",
-			"originalText": "4"
+			"originalText": "4",
+			"lineHeight": 1.25,
+			"baseline": 32
 		},
 		{
 			"type": "text",
@@ -2803,12 +2893,13 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": 713.9739064911444,
 			"strokeColor": "#d9480f",
 			"backgroundColor": "transparent",
-			"width": 1003,
-			"height": 129,
+			"width": 1002.9027099609375,
+			"height": 126.29838742989507,
 			"seed": 936953545,
 			"groupIds": [
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279936,
@@ -2818,11 +2909,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 2,
 			"text": "1. TASKs are the top-level FUTUREs that have been submitted to an EXECUTOR.\n\n2. Dependent jobs suspending for READY of FUTURES, and can be waken up \n        by WAKER bind to that FUTURE ",
 			"rawText": "1. TASKs are the top-level FUTUREs that have been submitted to an EXECUTOR.\n\n2. Dependent jobs suspending for READY of FUTURES, and can be waken up \n        by WAKER bind to that FUTURE ",
-			"baseline": 123,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "1. TASKs are the top-level FUTUREs that have been submitted to an EXECUTOR.\n\n2. Dependent jobs suspending for READY of FUTURES, and can be waken up \n        by WAKER bind to that FUTURE "
+			"originalText": "1. TASKs are the top-level FUTUREs that have been submitted to an EXECUTOR.\n\n2. Dependent jobs suspending for READY of FUTURES, and can be waken up \n        by WAKER bind to that FUTURE ",
+			"lineHeight": 1.15,
+			"baseline": 119
 		},
 		{
 			"type": "rectangle",
@@ -2847,6 +2939,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [
 				{
@@ -2868,12 +2961,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1673431727802,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
-			"version": 1318,
-			"versionNonce": 927808909,
+			"version": 1320,
+			"versionNonce": 1849969499,
 			"isDeleted": false,
 			"id": "WmXe5p4n",
 			"fillStyle": "hachure",
@@ -2882,36 +2978,38 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -200.81094857204243,
-			"y": -106.59628381984686,
+			"x": -199.91891976344868,
+			"y": -106.28551620173592,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 260,
-			"height": 55,
+			"width": 258.2159423828125,
+			"height": 54.37846476377811,
 			"seed": 1290010535,
 			"groupIds": [
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1673532279937,
+			"updated": 1706153080915,
 			"link": null,
 			"locked": false,
 			"fontSize": 43.50277181102249,
 			"fontFamily": 1,
 			"text": "Task Queue",
 			"rawText": "Task Queue",
-			"baseline": 38,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "Ljb3s_vV3dMcgJyHqhc8n",
-			"originalText": "Task Queue"
+			"originalText": "Task Queue",
+			"lineHeight": 1.25,
+			"baseline": 37
 		},
 		{
 			"type": "arrow",
-			"version": 4963,
-			"versionNonce": 1347082445,
+			"version": 4967,
+			"versionNonce": 718850843,
 			"isDeleted": false,
 			"id": "xC1wUROV94V1er-jJ1PF8",
 			"fillStyle": "hachure",
@@ -2920,22 +3018,23 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -318.4263085615413,
+			"x": -318.42630463485716,
 			"y": -26.610975781772737,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 1.3995529189201648,
-			"height": 197.60676746476284,
+			"width": 1.3995496677233064,
+			"height": 197.60676754010893,
 			"seed": 527763721,
 			"groupIds": [
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307919,
+			"updated": 1706153080915,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -2957,15 +3056,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 					0
 				],
 				[
-					1.3995529189201648,
-					197.60676746476284
+					1.3995496677233064,
+					197.60676754010893
 				]
 			]
 		},
 		{
 			"type": "arrow",
-			"version": 4444,
-			"versionNonce": 347312877,
+			"version": 4448,
+			"versionNonce": 63601659,
 			"isDeleted": false,
 			"id": "z-gzD6FauWYeWkP42dda8",
 			"fillStyle": "hachure",
@@ -2974,20 +3073,21 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": 234.08469315758677,
-			"y": 157.3092156220701,
+			"x": 234.0847167575012,
+			"y": 157.30922390274182,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 0.00022356132811296447,
-			"height": 183.99972029955427,
+			"width": 0.00024046553994594433,
+			"height": 183.999728580226,
 			"seed": 1470119079,
 			"groupIds": [
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1673532307922,
+			"updated": 1706153080916,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -3009,15 +3109,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 					0
 				],
 				[
-					-0.00022356132811296447,
-					-183.99972029955427
+					-0.00024046553994594433,
+					-183.999728580226
 				]
 			]
 		},
 		{
 			"type": "arrow",
-			"version": 4422,
-			"versionNonce": 1916874349,
+			"version": 4426,
+			"versionNonce": 474443931,
 			"isDeleted": false,
 			"id": "KZ0b_AFn3rooMJ98glzz2",
 			"fillStyle": "hachure",
@@ -3026,20 +3126,21 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -83.10402802846716,
-			"y": -276.60868816416587,
+			"x": -83.10402325225293,
+			"y": -276.60868894198137,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 1.647466842949811,
-			"height": 148.42288964276457,
+			"width": 1.6474704519544332,
+			"height": 148.4228904205801,
 			"seed": 1516579527,
 			"groupIds": [
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1673532307918,
+			"updated": 1706153080915,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -3061,8 +3162,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 					0
 				],
 				[
-					-1.647466842949811,
-					148.42288964276457
+					-1.6474704519544332,
+					148.4228904205801
 				]
 			]
 		},
@@ -3091,6 +3192,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [
 				{
@@ -3112,12 +3214,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1673431727803,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
-			"version": 1411,
-			"versionNonce": 492367299,
+			"version": 1413,
+			"versionNonce": 1093813723,
 			"isDeleted": false,
 			"id": "W6ndZ0lC",
 			"fillStyle": "hachure",
@@ -3126,12 +3231,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -142.45758647792834,
-			"y": -352.5608447057168,
+			"x": -141.66339702480334,
+			"y": -352.25670942291396,
 			"strokeColor": "#d9480f",
 			"backgroundColor": "transparent",
-			"width": 114,
-			"height": 43,
+			"width": 112.41162109375,
+			"height": 42.39172943439429,
 			"seed": 350192297,
 			"groupIds": [
 				"tXvySWykr4cYRSs6H3xiO",
@@ -3139,20 +3244,22 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1673532279937,
+			"updated": 1706153080915,
 			"link": null,
 			"locked": false,
 			"fontSize": 33.91338354751544,
 			"fontFamily": 1,
 			"text": "SPAWN",
 			"rawText": "SPAWN",
-			"baseline": 30,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "zcQlte4WlN4zXUoEBWqFz",
-			"originalText": "SPAWN"
+			"originalText": "SPAWN",
+			"lineHeight": 1.25,
+			"baseline": 28
 		},
 		{
 			"type": "text",
@@ -3170,8 +3277,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -244.7135052715223,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 129,
-			"height": 42,
+			"width": 127.34396362304688,
+			"height": 42.00063263892372,
 			"seed": 659245959,
 			"groupIds": [
 				"3mA5UXZyasezhtL1MCuXH",
@@ -3179,6 +3286,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1655212816102,
@@ -3188,11 +3296,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "enqueue",
 			"rawText": "enqueue",
-			"baseline": 29,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "enqueue"
+			"originalText": "enqueue",
+			"lineHeight": 1.25,
+			"baseline": 30
 		},
 		{
 			"type": "text",
@@ -3210,14 +3319,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -339.9165307687542,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 246,
-			"height": 42,
+			"width": 243.7343292236328,
+			"height": 42.00063263892372,
 			"seed": 1668900103,
 			"groupIds": [
 				"ruwOyLvkdR1Wi87jhbMfY",
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279937,
@@ -3227,11 +3337,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "MAIN THREAD",
 			"rawText": "MAIN THREAD",
-			"baseline": 29,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "MAIN THREAD"
+			"originalText": "MAIN THREAD",
+			"lineHeight": 1.25,
+			"baseline": 30
 		},
 		{
 			"type": "rectangle",
@@ -3257,6 +3368,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1655212816102,
@@ -3287,6 +3399,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [
 				{
@@ -3308,12 +3421,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1673431727804,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
-			"version": 1346,
-			"versionNonce": 1696254349,
+			"version": 1348,
+			"versionNonce": 1162836539,
 			"isDeleted": false,
 			"id": "XfdqBVzH",
 			"fillStyle": "hachure",
@@ -3322,37 +3438,39 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -362.8651981086341,
-			"y": 184.51253829242773,
+			"x": -361.77905461498176,
+			"y": 184.59211354324032,
 			"strokeColor": "#364fc7",
 			"backgroundColor": "transparent",
-			"width": 90,
-			"height": 55,
+			"width": 87.82771301269531,
+			"height": 54.84084949837484,
 			"seed": 309436297,
 			"groupIds": [
 				"ut7_5zYlspFntwRb1D3gx",
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1673532307919,
+			"updated": 1706153080915,
 			"link": null,
 			"locked": false,
 			"fontSize": 43.87267959869987,
 			"fontFamily": 1,
 			"text": "recv",
 			"rawText": "recv",
-			"baseline": 38,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "aaKcw7Nc_57L6IQ-CJ-cn",
-			"originalText": "recv"
+			"originalText": "recv",
+			"lineHeight": 1.25,
+			"baseline": 38
 		},
 		{
 			"type": "arrow",
-			"version": 4555,
-			"versionNonce": 1736708077,
+			"version": 4559,
+			"versionNonce": 1371301755,
 			"isDeleted": false,
 			"id": "9YvHg2NHBKOAISJB5BJ0_",
 			"fillStyle": "hachure",
@@ -3361,23 +3479,24 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -318.84489267505046,
-			"y": 253.19875906687622,
+			"x": -318.8449017838319,
+			"y": 253.19875790585493,
 			"strokeColor": "#364fc7",
 			"backgroundColor": "transparent",
-			"width": 1.3747555205850404,
-			"height": 132.1960616715034,
+			"width": 1.3747484654359141,
+			"height": 132.1960629476542,
 			"seed": 340522057,
 			"groupIds": [
 				"ut7_5zYlspFntwRb1D3gx",
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307920,
+			"updated": 1706153080915,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -3399,8 +3518,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 					0
 				],
 				[
-					-1.3747555205850404,
-					132.1960616715034
+					-1.3747484654359141,
+					132.1960629476542
 				]
 			]
 		},
@@ -3428,6 +3547,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [
 				{
@@ -3457,12 +3577,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1673431727805,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
-			"version": 1445,
-			"versionNonce": 833035021,
+			"version": 1447,
+			"versionNonce": 1115533275,
 			"isDeleted": false,
 			"id": "OEHr5UB7",
 			"fillStyle": "hachure",
@@ -3471,37 +3594,39 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -355.4457691971231,
-			"y": 395.780177584007,
+			"x": -354.4786317343828,
+			"y": 396.3382819325547,
 			"strokeColor": "#364fc7",
 			"backgroundColor": "transparent",
-			"width": 71,
-			"height": 56,
+			"width": 69.06572507451945,
+			"height": 54.88379130290457,
 			"seed": 45661385,
 			"groupIds": [
 				"ut7_5zYlspFntwRb1D3gx",
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1673532307920,
+			"updated": 1706153080915,
 			"link": null,
 			"locked": false,
 			"fontSize": 43.907033042323654,
 			"fontFamily": 1,
 			"text": "poll",
 			"rawText": "poll",
-			"baseline": 39,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "Fpp78e4jHhhnOuocsxt1d",
-			"originalText": "poll"
+			"originalText": "poll",
+			"lineHeight": 1.25,
+			"baseline": 38
 		},
 		{
 			"type": "arrow",
-			"version": 5032,
-			"versionNonce": 1368011117,
+			"version": 5036,
+			"versionNonce": 1808905499,
 			"isDeleted": false,
 			"id": "UjRN1QgT2UIyuhF5AY0gc",
 			"fillStyle": "hachure",
@@ -3510,21 +3635,22 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -257.44956653145834,
-			"y": 407.33295542563815,
+			"x": -257.4558897065725,
+			"y": 407.33108085602464,
 			"strokeColor": "#364fc7",
 			"backgroundColor": "transparent",
-			"width": 152.27841488692064,
-			"height": 47.49977168535628,
+			"width": 152.28473806203482,
+			"height": 47.49911723414323,
 			"seed": 710192519,
 			"groupIds": [
 				"ut7_5zYlspFntwRb1D3gx",
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1673532307921,
+			"updated": 1706153080915,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -3546,8 +3672,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 					0
 				],
 				[
-					152.27841488692064,
-					-47.49977168535628
+					152.28473806203482,
+					-47.49911723414323
 				]
 			]
 		},
@@ -3575,6 +3701,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [
 				{
@@ -3588,12 +3715,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1673532307921,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
-			"version": 1434,
-			"versionNonce": 91978701,
+			"version": 1436,
+			"versionNonce": 1431661147,
 			"isDeleted": false,
 			"id": "n9Uf9Efu",
 			"fillStyle": "hachure",
@@ -3602,32 +3732,34 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -66.37852223839923,
-			"y": 333.90126796386824,
+			"x": -65.40824635949298,
+			"y": 334.195594557612,
 			"strokeColor": "#5c940d",
 			"backgroundColor": "transparent",
-			"width": 184,
-			"height": 31,
+			"width": 182.0594482421875,
+			"height": 30.411346812512406,
 			"seed": 926662729,
 			"groupIds": [
 				"ut7_5zYlspFntwRb1D3gx",
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1673532307921,
+			"updated": 1706153080915,
 			"link": null,
 			"locked": false,
 			"fontSize": 24.329077450009926,
 			"fontFamily": 1,
 			"text": "READY Furture",
 			"rawText": "READY Furture",
-			"baseline": 21,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "MQz4Ce6A40exA_0agi9Bu",
-			"originalText": "READY Furture"
+			"originalText": "READY Furture",
+			"lineHeight": 1.25,
+			"baseline": 21
 		},
 		{
 			"type": "rectangle",
@@ -3653,6 +3785,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [
 				{
@@ -3674,12 +3807,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1673431727808,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
-			"version": 1523,
-			"versionNonce": 1155202637,
+			"version": 1525,
+			"versionNonce": 968921467,
 			"isDeleted": false,
 			"id": "ospdpSRd",
 			"fillStyle": "hachure",
@@ -3688,37 +3824,39 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -83.6750154154943,
-			"y": 481.5642764438064,
+			"x": -82.63001724654899,
+			"y": 481.8611539352392,
 			"strokeColor": "#5c940d",
 			"backgroundColor": "transparent",
-			"width": 219,
-			"height": 31,
+			"width": 216.91000366210938,
+			"height": 30.406245017134445,
 			"seed": 1414164041,
 			"groupIds": [
 				"ut7_5zYlspFntwRb1D3gx",
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1673532279939,
+			"updated": 1706153080916,
 			"link": null,
 			"locked": false,
 			"fontSize": 24.324996013707555,
 			"fontFamily": 1,
 			"text": "PENDING Furture",
 			"rawText": "PENDING Furture",
-			"baseline": 21,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "Vp6dHVC28JXkdGQ1JDLCY",
-			"originalText": "PENDING Furture"
+			"originalText": "PENDING Furture",
+			"lineHeight": 1.25,
+			"baseline": 21
 		},
 		{
 			"type": "arrow",
-			"version": 4735,
-			"versionNonce": 362052141,
+			"version": 4739,
+			"versionNonce": 450678683,
 			"isDeleted": false,
 			"id": "vLoaSIcL8L2laZ4MpbOMN",
 			"fillStyle": "hachure",
@@ -3727,21 +3865,22 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -275.8256960686722,
-			"y": 453.17564087126925,
+			"x": -275.8304242765926,
+			"y": 453.1770425966262,
 			"strokeColor": "#364fc7",
 			"backgroundColor": "transparent",
-			"width": 166.51662002566215,
-			"height": 41.07896358827645,
+			"width": 166.5213482335826,
+			"height": 41.07828054364376,
 			"seed": 1132706249,
 			"groupIds": [
 				"ut7_5zYlspFntwRb1D3gx",
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1673532307921,
+			"updated": 1706153080915,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -3763,15 +3902,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 					0
 				],
 				[
-					166.51662002566215,
-					41.07896358827645
+					166.5213482335826,
+					41.07828054364376
 				]
 			]
 		},
 		{
 			"type": "arrow",
-			"version": 4502,
-			"versionNonce": 180268173,
+			"version": 4504,
+			"versionNonce": 1807789755,
 			"isDeleted": false,
 			"id": "UIrKHjescWqyfhRQIoVAD",
 			"fillStyle": "hachure",
@@ -3792,9 +3931,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1673532307922,
+			"updated": 1706153080916,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -3827,8 +3967,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 		},
 		{
 			"type": "diamond",
-			"version": 1280,
-			"versionNonce": 1882529379,
+			"version": 1281,
+			"versionNonce": 1883679259,
 			"isDeleted": false,
 			"id": "NwemcOfH1_CVxxyBiCFdF",
 			"fillStyle": "hachure",
@@ -3837,7 +3977,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": 116.41647787597957,
+			"x": 116.41647787597958,
 			"y": 166.2052324063468,
 			"strokeColor": "#364fc7",
 			"backgroundColor": "transparent",
@@ -3849,6 +3989,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [
 				{
@@ -3864,14 +4005,17 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 					"type": "arrow"
 				}
 			],
-			"updated": 1673532307922,
+			"updated": 1706153080916,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
-			"version": 1325,
-			"versionNonce": 1567185411,
+			"version": 1327,
+			"versionNonce": 1865546043,
 			"isDeleted": false,
 			"id": "ZiuXxBYB",
 			"fillStyle": "hachure",
@@ -3880,37 +4024,39 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": 189.91647787597958,
-			"y": 184.2052324063468,
+			"x": 191.04254599121396,
+			"y": 184.89703921515215,
 			"strokeColor": "#364fc7",
 			"backgroundColor": "transparent",
-			"width": 81,
-			"height": 44,
+			"width": 78.74786376953125,
+			"height": 42.61638638238931,
 			"seed": 1665452679,
 			"groupIds": [
 				"ut7_5zYlspFntwRb1D3gx",
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1673532307922,
+			"updated": 1706153080916,
 			"link": null,
 			"locked": false,
 			"fontSize": 34.093109105911445,
 			"fontFamily": 1,
 			"text": "wake",
 			"rawText": "wake",
-			"baseline": 31,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "NwemcOfH1_CVxxyBiCFdF",
-			"originalText": "wake"
+			"originalText": "wake",
+			"lineHeight": 1.25,
+			"baseline": 30
 		},
 		{
 			"type": "arrow",
-			"version": 4493,
-			"versionNonce": 1006515363,
+			"version": 4495,
+			"versionNonce": 411392667,
 			"isDeleted": false,
 			"id": "sJPkXK-BePVq9JRs71Jk5",
 			"fillStyle": "hachure",
@@ -3931,9 +4077,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1673532307920,
+			"updated": 1706153080915,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -3968,7 +4115,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				],
 				[
 					-108.00243391303826,
-					-262.06815577918275
+					-262.0681557791828
 				]
 			]
 		},
@@ -3988,14 +4135,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": 75.41157399939812,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 134,
-			"height": 43,
+			"width": 131.4327850341797,
+			"height": 42.21340297591367,
 			"seed": 1490602343,
 			"groupIds": [
 				"ut7_5zYlspFntwRb1D3gx",
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279939,
@@ -4005,16 +4153,17 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "dequeue",
 			"rawText": "dequeue",
-			"baseline": 30,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "dequeue"
+			"originalText": "dequeue",
+			"lineHeight": 1.25,
+			"baseline": 28
 		},
 		{
 			"type": "text",
-			"version": 1092,
-			"versionNonce": 1927261357,
+			"version": 1093,
+			"versionNonce": 2054785371,
 			"isDeleted": false,
 			"id": "sLiNErmn",
 			"fillStyle": "hachure",
@@ -4027,28 +4176,30 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": 75.41157399939812,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 130,
-			"height": 43,
+			"width": 127.98907338333655,
+			"height": 42.21340297591366,
 			"seed": 1092434473,
 			"groupIds": [
 				"ut7_5zYlspFntwRb1D3gx",
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1673532279940,
+			"updated": 1706153082284,
 			"link": null,
 			"locked": false,
 			"fontSize": 33.77072238073093,
 			"fontFamily": 1,
 			"text": "enqueue",
 			"rawText": "enqueue",
-			"baseline": 30,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "enqueue"
+			"originalText": "enqueue",
+			"lineHeight": 1.25,
+			"baseline": 30
 		},
 		{
 			"type": "text",
@@ -4066,14 +4217,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": 84.03245907220503,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 186,
-			"height": 84,
+			"width": 185.203125,
+			"height": 84.00126527784744,
 			"seed": 598488073,
 			"groupIds": [
 				"ut7_5zYlspFntwRb1D3gx",
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279940,
@@ -4083,11 +4235,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "EXECUTOR\nTHREAD",
 			"rawText": "EXECUTOR\nTHREAD",
-			"baseline": 72,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "EXECUTOR\nTHREAD"
+			"originalText": "EXECUTOR\nTHREAD",
+			"lineHeight": 1.25,
+			"baseline": 72
 		},
 		{
 			"type": "rectangle",
@@ -4113,6 +4266,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"QRiHSxcu2JHBfZBkekMzW",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1655212816102,
@@ -4135,13 +4289,14 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -574.4262444313026,
 			"strokeColor": "#862e9c",
 			"backgroundColor": "#228be6",
-			"width": 762,
-			"height": 97,
+			"width": 759.5518798828125,
+			"height": 96.0014460318257,
 			"seed": 293439879,
 			"groupIds": [
 				"u5IEZW3ePOLkAu-wi9b8E",
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -4153,11 +4308,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "A Executer Example",
 			"rawText": "A Executer Example",
-			"baseline": 68,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "A Executer Example"
+			"originalText": "A Executer Example",
+			"lineHeight": 1.25,
+			"baseline": 67
 		},
 		{
 			"type": "rectangle",
@@ -4181,6 +4337,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"groupIds": [
 				"Hgpr6fmujiaHa6OptJypY"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -4212,6 +4369,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"y9-oe5CEk1DCoH4N1pBsk",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -4223,7 +4381,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655552507240,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
@@ -4241,13 +4402,14 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -334.89460102049577,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 24,
-			"height": 45,
+			"width": 22.06640625,
+			"height": 45.19973477664256,
 			"seed": 954804440,
 			"groupIds": [
 				"y9-oe5CEk1DCoH4N1pBsk",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -4260,15 +4422,19 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"updated": 1655552507240,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			},
 			"fontSize": 37.66644564720213,
 			"fontFamily": 3,
 			"text": "T",
 			"rawText": "T",
-			"baseline": 36,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": null,
-			"originalText": "T"
+			"originalText": "T",
+			"lineHeight": 1.2,
+			"baseline": 36
 		},
 		{
 			"type": "arrow",
@@ -4293,6 +4459,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"y9-oe5CEk1DCoH4N1pBsk",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1655552507715,
@@ -4346,6 +4513,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"y9-oe5CEk1DCoH4N1pBsk",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -4357,7 +4525,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655552507240,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
@@ -4375,14 +4546,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -339.041794442158,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 46,
-			"height": 45,
+			"width": 44.1328125,
+			"height": 45.19629061276159,
 			"seed": 1221227944,
 			"groupIds": [
 				"zQo9A5PE2Goq7WXwhye0y",
 				"y9-oe5CEk1DCoH4N1pBsk",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -4394,11 +4566,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 3,
 			"text": "&T",
 			"rawText": "&T",
-			"baseline": 36,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": null,
-			"originalText": "&T"
+			"originalText": "&T",
+			"lineHeight": 1.2,
+			"baseline": 36
 		},
 		{
 			"type": "rectangle",
@@ -4424,6 +4597,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"y9-oe5CEk1DCoH4N1pBsk",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -4448,14 +4622,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -240.0086714636069,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 149,
-			"height": 43,
+			"width": 147.12294006347656,
+			"height": 43.48670635984105,
 			"seed": 912283096,
 			"groupIds": [
 				"zQo9A5PE2Goq7WXwhye0y",
 				"y9-oe5CEk1DCoH4N1pBsk",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -4467,11 +4642,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 2,
 			"text": "Pin<&T>",
 			"rawText": "Pin<&T>",
-			"baseline": 34,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Pin<&T>"
+			"originalText": "Pin<&T>",
+			"lineHeight": 1.15,
+			"baseline": 34
 		},
 		{
 			"type": "text",
@@ -4489,12 +4665,13 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -489.0055545697294,
 			"strokeColor": "#d9480f",
 			"backgroundColor": "transparent",
-			"width": 562,
-			"height": 113,
+			"width": 561.0247802734375,
+			"height": 113.89712278427535,
 			"seed": 732771288,
 			"groupIds": [
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -4506,11 +4683,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 2,
 			"text": "The \"Pin\" type wraps reference types, \n\"pin the reference\" makes\nthe referred objected unmovable",
 			"rawText": "The \"Pin\" type wraps reference types, \n\"pin the reference\" makes\nthe referred objected unmovable",
-			"baseline": 106,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "The \"Pin\" type wraps reference types, \n\"pin the reference\" makes\nthe referred objected unmovable"
+			"originalText": "The \"Pin\" type wraps reference types, \n\"pin the reference\" makes\nthe referred objected unmovable",
+			"lineHeight": 1.15,
+			"baseline": 106
 		},
 		{
 			"type": "text",
@@ -4528,12 +4706,13 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -569.0010225170613,
 			"strokeColor": "#862e9c",
 			"backgroundColor": "transparent",
-			"width": 169,
-			"height": 97,
+			"width": 166.48880004882812,
+			"height": 88.61814105379321,
 			"seed": 539210408,
 			"groupIds": [
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -4545,11 +4724,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "👉Pin",
 			"rawText": "[[Rust Memory Management#Pin|Pin]]",
-			"baseline": 71,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "👉Pin"
+			"originalText": "👉Pin",
+			"lineHeight": 1.25,
+			"baseline": 61
 		},
 		{
 			"type": "rectangle",
@@ -4573,6 +4753,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"groupIds": [
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -4597,12 +4778,13 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -395.74801865781194,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 837,
-			"height": 644,
+			"width": 835.5647583007812,
+			"height": 649.5824885659592,
 			"seed": 1244868776,
 			"groupIds": [
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -4614,11 +4796,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 2,
 			"text": "1. If `T: Unpin` (which is the default), then `Pin<'a, T>` \n      is entirely equivalent to `&'a mut T`. \n    In other words: Unpin means it's OK for this type to be moved even when pinned,\n      so Pin will have no effect on such a type.\n\n2. Getting a `&mut T` to a pinned T requires unsafe if `T: !Unpin`.\n\n3. Most standard library types implement Unpin.\n    The same goes for most \"normal\" types you encounter in Rust. \n    A `Future` generated by `async/await` is an exception to this rule.\n\n4. You can add a `!Unpin` bound on a type on nightly with a feature flag,\n    or by adding `std::marker::PhantomPinned` to your type on stable.\n\n5. You can either pin data to the stack or to the heap.\n\n6. Pinning a `!Unpin` object to the stack requires `unsafe`.\n\n7. Pinning a `!Unpin` object to the heap does not require `unsafe`. \n    There is a shortcut for doing this using `Box::pin`.\n\n8. For pinned data where `T: !Unpin` you have to maintain the invariant \n      that its memory will not get invalidated or repurposed from the moment \n      it gets pinned until when drop is called.\n    This is an important part of the pin contract.",
 			"rawText": "1. If `T: Unpin` (which is the default), then `Pin<'a, T>` \n      is entirely equivalent to `&'a mut T`. \n    In other words: Unpin means it's OK for this type to be moved even when pinned,\n      so Pin will have no effect on such a type.\n\n2. Getting a `&mut T` to a pinned T requires unsafe if `T: !Unpin`.\n\n3. Most standard library types implement Unpin.\n    The same goes for most \"normal\" types you encounter in Rust. \n    A `Future` generated by `async/await` is an exception to this rule.\n\n4. You can add a `!Unpin` bound on a type on nightly with a feature flag,\n    or by adding `std::marker::PhantomPinned` to your type on stable.\n\n5. You can either pin data to the stack or to the heap.\n\n6. Pinning a `!Unpin` object to the stack requires `unsafe`.\n\n7. Pinning a `!Unpin` object to the heap does not require `unsafe`. \n    There is a shortcut for doing this using `Box::pin`.\n\n8. For pinned data where `T: !Unpin` you have to maintain the invariant \n      that its memory will not get invalidated or repurposed from the moment \n      it gets pinned until when drop is called.\n    This is an important part of the pin contract.",
-			"baseline": 639,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "1. If `T: Unpin` (which is the default), then `Pin<'a, T>` \n      is entirely equivalent to `&'a mut T`. \n    In other words: Unpin means it's OK for this type to be moved even when pinned,\n      so Pin will have no effect on such a type.\n\n2. Getting a `&mut T` to a pinned T requires unsafe if `T: !Unpin`.\n\n3. Most standard library types implement Unpin.\n    The same goes for most \"normal\" types you encounter in Rust. \n    A `Future` generated by `async/await` is an exception to this rule.\n\n4. You can add a `!Unpin` bound on a type on nightly with a feature flag,\n    or by adding `std::marker::PhantomPinned` to your type on stable.\n\n5. You can either pin data to the stack or to the heap.\n\n6. Pinning a `!Unpin` object to the stack requires `unsafe`.\n\n7. Pinning a `!Unpin` object to the heap does not require `unsafe`. \n    There is a shortcut for doing this using `Box::pin`.\n\n8. For pinned data where `T: !Unpin` you have to maintain the invariant \n      that its memory will not get invalidated or repurposed from the moment \n      it gets pinned until when drop is called.\n    This is an important part of the pin contract."
+			"originalText": "1. If `T: Unpin` (which is the default), then `Pin<'a, T>` \n      is entirely equivalent to `&'a mut T`. \n    In other words: Unpin means it's OK for this type to be moved even when pinned,\n      so Pin will have no effect on such a type.\n\n2. Getting a `&mut T` to a pinned T requires unsafe if `T: !Unpin`.\n\n3. Most standard library types implement Unpin.\n    The same goes for most \"normal\" types you encounter in Rust. \n    A `Future` generated by `async/await` is an exception to this rule.\n\n4. You can add a `!Unpin` bound on a type on nightly with a feature flag,\n    or by adding `std::marker::PhantomPinned` to your type on stable.\n\n5. You can either pin data to the stack or to the heap.\n\n6. Pinning a `!Unpin` object to the stack requires `unsafe`.\n\n7. Pinning a `!Unpin` object to the heap does not require `unsafe`. \n    There is a shortcut for doing this using `Box::pin`.\n\n8. For pinned data where `T: !Unpin` you have to maintain the invariant \n      that its memory will not get invalidated or repurposed from the moment \n      it gets pinned until when drop is called.\n    This is an important part of the pin contract.",
+			"lineHeight": 1.15,
+			"baseline": 643
 		},
 		{
 			"type": "text",
@@ -4636,12 +4819,13 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -520,
 			"strokeColor": "#1864ab",
 			"backgroundColor": "transparent",
-			"width": 120,
+			"width": 118.41195678710938,
 			"height": 35,
 			"seed": 761762216,
 			"groupIds": [
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279944,
@@ -4651,11 +4835,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "See also",
 			"rawText": "See also",
-			"baseline": 25,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "See also"
+			"originalText": "See also",
+			"lineHeight": 1.25,
+			"baseline": 24
 		},
 		{
 			"type": "text",
@@ -4673,14 +4858,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": 105.36390072734505,
 			"strokeColor": "#0b7285",
 			"backgroundColor": "transparent",
-			"width": 88,
-			"height": 41,
+			"width": 85.86843872070312,
+			"height": 40.41365892017602,
 			"seed": 490372008,
 			"groupIds": [
 				"xtmJB1zuWIbEDAtQgjsTc",
 				"N-8VJBNeF9lKD13uHmxUf",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1655552507240,
@@ -4690,11 +4876,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "!Unpin",
 			"rawText": "!Unpin",
-			"baseline": 28,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "!Unpin"
+			"originalText": "!Unpin",
+			"lineHeight": 1.25,
+			"baseline": 27
 		},
 		{
 			"type": "text",
@@ -4712,14 +4899,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": 153.47127433491713,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 187,
-			"height": 21,
+			"width": 184.67742919921875,
+			"height": 20.655870114756617,
 			"seed": 1662255576,
 			"groupIds": [
 				"xtmJB1zuWIbEDAtQgjsTc",
 				"N-8VJBNeF9lKD13uHmxUf",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279944,
@@ -4729,11 +4917,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 2,
 			"text": "1. Self-referential types",
 			"rawText": "1. Self-referential types",
-			"baseline": 16,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "1. Self-referential types"
+			"originalText": "1. Self-referential types",
+			"lineHeight": 1.15,
+			"baseline": 16
 		},
 		{
 			"type": "text",
@@ -4751,14 +4940,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": 189.39452670840706,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 184,
-			"height": 21,
+			"width": 181.6870574951172,
+			"height": 20.655870114756627,
 			"seed": 343934424,
 			"groupIds": [
 				"xtmJB1zuWIbEDAtQgjsTc",
 				"N-8VJBNeF9lKD13uHmxUf",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279945,
@@ -4768,11 +4958,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 2,
 			"text": "2. Moving is erroneous",
 			"rawText": "2. Moving is erroneous",
-			"baseline": 16,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "2. Moving is erroneous"
+			"originalText": "2. Moving is erroneous",
+			"lineHeight": 1.15,
+			"baseline": 16
 		},
 		{
 			"type": "text",
@@ -4790,14 +4981,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": 161.3736193817613,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 132,
-			"height": 54,
+			"width": 130.90560913085938,
+			"height": 53.88487856023468,
 			"seed": 584201640,
 			"groupIds": [
 				"xtmJB1zuWIbEDAtQgjsTc",
 				"N-8VJBNeF9lKD13uHmxUf",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279945,
@@ -4807,11 +4999,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "( the ! in a trait \n  means \"does not\n  implement\" )",
 			"rawText": "( the ! in a trait \n  means \"does not\n  implement\" )",
-			"baseline": 49,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "( the ! in a trait \n  means \"does not\n  implement\" )"
+			"originalText": "( the ! in a trait \n  means \"does not\n  implement\" )",
+			"lineHeight": 1.2500000000000002,
+			"baseline": 48
 		},
 		{
 			"type": "rectangle",
@@ -4837,6 +5030,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"N-8VJBNeF9lKD13uHmxUf",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1655552507240,
@@ -4859,14 +5053,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": 113.53463491730687,
 			"strokeColor": "#0b7285",
 			"backgroundColor": "transparent",
-			"width": 280,
-			"height": 17,
+			"width": 277.6640625,
+			"height": 17.243161139275095,
 			"seed": 1678007512,
 			"groupIds": [
 				"xtmJB1zuWIbEDAtQgjsTc",
 				"N-8VJBNeF9lKD13uHmxUf",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279945,
@@ -4876,11 +5071,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 3,
 			"text": "Pin<&T>, Pin<&mut T>, Pin<Box<T>>",
 			"rawText": "Pin<&T>, Pin<&mut T>, Pin<Box<T>>",
-			"baseline": 14,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Pin<&T>, Pin<&mut T>, Pin<Box<T>>"
+			"originalText": "Pin<&T>, Pin<&mut T>, Pin<Box<T>>",
+			"lineHeight": 1.2,
+			"baseline": 13
 		},
 		{
 			"type": "text",
@@ -4898,14 +5094,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": 223.73176663006802,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 244,
-			"height": 21,
+			"width": 241.60922241210938,
+			"height": 20.65587011475663,
 			"seed": 962116520,
 			"groupIds": [
 				"xtmJB1zuWIbEDAtQgjsTc",
 				"N-8VJBNeF9lKD13uHmxUf",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279946,
@@ -4915,11 +5112,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 2,
 			"text": "3. Cannot use regular pointers",
 			"rawText": "3. Cannot use regular pointers",
-			"baseline": 16,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "3. Cannot use regular pointers"
+			"originalText": "3. Cannot use regular pointers",
+			"lineHeight": 1.15,
+			"baseline": 16
 		},
 		{
 			"type": "rectangle",
@@ -4945,6 +5143,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"N-8VJBNeF9lKD13uHmxUf",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1655552507241,
@@ -4967,14 +5166,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -144.86864169921557,
 			"strokeColor": "#0b7285",
 			"backgroundColor": "transparent",
-			"width": 78,
-			"height": 41,
+			"width": 76.29876708984375,
+			"height": 40.41365892017599,
 			"seed": 796262104,
 			"groupIds": [
 				"GbE1cI_rBsxo6RiD1XMfD",
 				"N-8VJBNeF9lKD13uHmxUf",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279946,
@@ -4984,11 +5184,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "Unpin",
 			"rawText": "Unpin",
-			"baseline": 28,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Unpin"
+			"originalText": "Unpin",
+			"lineHeight": 1.25,
+			"baseline": 27
 		},
 		{
 			"type": "text",
@@ -5006,14 +5207,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -87.55609270248783,
 			"strokeColor": "#1864ab",
 			"backgroundColor": "transparent",
-			"width": 93,
-			"height": 21,
+			"width": 90.843505859375,
+			"height": 20.655870114756627,
 			"seed": 1958754008,
 			"groupIds": [
 				"GbE1cI_rBsxo6RiD1XMfD",
 				"N-8VJBNeF9lKD13uHmxUf",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279946,
@@ -5023,11 +5225,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 2,
 			"text": "1. auto-trait",
 			"rawText": "1. auto-trait",
-			"baseline": 16,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "1. auto-trait"
+			"originalText": "1. auto-trait",
+			"lineHeight": 1.15,
+			"baseline": 16
 		},
 		{
 			"type": "text",
@@ -5045,28 +5248,30 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -54.087570862354085,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 278,
-			"height": 21,
+			"width": 275.52099609375,
+			"height": 20.655870114756635,
 			"seed": 826707112,
 			"groupIds": [
 				"GbE1cI_rBsxo6RiD1XMfD",
 				"N-8VJBNeF9lKD13uHmxUf",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279946,
-			"link": "",
+			"link": null,
 			"locked": false,
 			"fontSize": 17.9616261867449,
 			"fontFamily": 2,
 			"text": "2. Safe to move around in memory",
 			"rawText": "2. Safe to move around in memory",
-			"baseline": 16,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "2. Safe to move around in memory"
+			"originalText": "2. Safe to move around in memory",
+			"lineHeight": 1.15,
+			"baseline": 16
 		},
 		{
 			"type": "text",
@@ -5084,14 +5289,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -133.70238411616947,
 			"strokeColor": "#0b7285",
 			"backgroundColor": "transparent",
-			"width": 153,
-			"height": 17,
+			"width": 151.453125,
+			"height": 17.243161139275095,
 			"seed": 881762520,
 			"groupIds": [
 				"GbE1cI_rBsxo6RiD1XMfD",
 				"N-8VJBNeF9lKD13uHmxUf",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279947,
@@ -5101,11 +5307,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 3,
 			"text": "&T, &mut T, Box<T>",
 			"rawText": "&T, &mut T, Box<T>",
-			"baseline": 14,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "&T, &mut T, Box<T>"
+			"originalText": "&T, &mut T, Box<T>",
+			"lineHeight": 1.2,
+			"baseline": 13
 		},
 		{
 			"type": "text",
@@ -5123,14 +5330,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -19.56543402565444,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 249,
-			"height": 42,
+			"width": 248.5985107421875,
+			"height": 41.31174022951325,
 			"seed": 1334543320,
 			"groupIds": [
 				"GbE1cI_rBsxo6RiD1XMfD",
 				"N-8VJBNeF9lKD13uHmxUf",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279947,
@@ -5140,11 +5348,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 2,
 			"text": "3. Appliable to regular pointers,\n    pinning has no effect",
 			"rawText": "3. Appliable to regular pointers,\n    pinning has no effect",
-			"baseline": 37,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "3. Appliable to regular pointers,\n    pinning has no effect"
+			"originalText": "3. Appliable to regular pointers,\n    pinning has no effect",
+			"lineHeight": 1.15,
+			"baseline": 37
 		},
 		{
 			"type": "text",
@@ -5162,14 +5371,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -91.68285617098206,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 117,
-			"height": 36,
+			"width": 114.43470764160156,
+			"height": 35.92325237348979,
 			"seed": 1751633832,
 			"groupIds": [
 				"GbE1cI_rBsxo6RiD1XMfD",
 				"N-8VJBNeF9lKD13uHmxUf",
 				"FoqcFm8QDEGcOepXDgml3"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279947,
@@ -5179,46 +5389,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "( almost all \n  normal types )",
 			"rawText": "( almost all \n  normal types )",
-			"baseline": 31,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "( almost all \n  normal types )"
-		},
-		{
-			"type": "text",
-			"version": 5,
-			"versionNonce": 738986766,
-			"isDeleted": false,
-			"id": "uaVCkMqB",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -1785.1465398035803,
-			"y": 2117.0939420725117,
-			"strokeColor": "#1864ab",
-			"backgroundColor": "transparent",
-			"width": 12,
-			"height": 25,
-			"seed": 1587664526,
-			"groupIds": [],
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1655553250970,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "",
-			"rawText": "",
-			"baseline": 17,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": ""
+			"originalText": "( almost all \n  normal types )",
+			"lineHeight": 1.25,
+			"baseline": 30
 		},
 		{
 			"type": "text",
@@ -5236,12 +5412,13 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1860,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 740,
-			"height": 532,
+			"width": 738.90234375,
+			"height": 534.2031867228764,
 			"seed": 1777714985,
 			"groupIds": [
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -5253,11 +5430,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 3,
 			"text": "trait Future {\n    type Output;\n    fn poll(\n            self: Pin<&mut Self>,\n            wake: &mut Context<'_>\n        ) -> Poll<Self::Output>;\n}\n\nenum Poll<T> {\n    Ready(T),\n    Pending,\n}",
 			"rawText": "trait Future {\n    type Output;\n    fn poll(\n            self: Pin<&mut Self>,\n            wake: &mut Context<'_>\n        ) -> Poll<Self::Output>;\n}\n\nenum Poll<T> {\n    Ready(T),\n    Pending,\n}",
-			"baseline": 524,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "trait Future {\n    type Output;\n    fn poll(\n            self: Pin<&mut Self>,\n            wake: &mut Context<'_>\n        ) -> Poll<Self::Output>;\n}\n\nenum Poll<T> {\n    Ready(T),\n    Pending,\n}"
+			"originalText": "trait Future {\n    type Output;\n    fn poll(\n            self: Pin<&mut Self>,\n            wake: &mut Context<'_>\n        ) -> Poll<Self::Output>;\n}\n\nenum Poll<T> {\n    Ready(T),\n    Pending,\n}",
+			"lineHeight": 1.2,
+			"baseline": 525
 		},
 		{
 			"type": "text",
@@ -5275,12 +5453,13 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1266.800188337053,
 			"strokeColor": "#e67700",
 			"backgroundColor": "transparent",
-			"width": 900,
-			"height": 183,
+			"width": 898.3822021484375,
+			"height": 184.4455776214599,
 			"seed": 1899926057,
 			"groupIds": [
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -5292,11 +5471,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 2,
 			"text": "- FUTURE are internally FSA which only advances eagerly \n    when the function POLL is called;\n\n- If the FUTURE is in PENDING state after POLL returns, \n    then the WAKE function is called once the FUTURE is ready.",
 			"rawText": "- FUTURE are internally FSA which only advances eagerly \n    when the function POLL is called;\n\n- If the FUTURE is in PENDING state after POLL returns, \n    then the WAKE function is called once the FUTURE is ready.",
-			"baseline": 176,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "- FUTURE are internally FSA which only advances eagerly \n    when the function POLL is called;\n\n- If the FUTURE is in PENDING state after POLL returns, \n    then the WAKE function is called once the FUTURE is ready."
+			"originalText": "- FUTURE are internally FSA which only advances eagerly \n    when the function POLL is called;\n\n- If the FUTURE is in PENDING state after POLL returns, \n    then the WAKE function is called once the FUTURE is ready.",
+			"lineHeight": 1.15,
+			"baseline": 177
 		},
 		{
 			"type": "text",
@@ -5314,12 +5494,13 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1977.0875058855318,
 			"strokeColor": "#862e9c",
 			"backgroundColor": "#228be6",
-			"width": 647,
-			"height": 93,
+			"width": 644.8345947265625,
+			"height": 91.64997645786832,
 			"seed": 1857320105,
 			"groupIds": [
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -5331,11 +5512,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "The Future Model",
 			"rawText": "The Future Model",
-			"baseline": 65,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "The Future Model"
+			"originalText": "The Future Model",
+			"lineHeight": 1.25,
+			"baseline": 64
 		},
 		{
 			"type": "rectangle",
@@ -5359,6 +5541,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"groupIds": [
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -5383,14 +5566,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1816.740284380542,
 			"strokeColor": "#000000",
 			"backgroundColor": "#868e96",
-			"width": 73,
-			"height": 27,
+			"width": 70.92610168457031,
+			"height": 27.270862897470238,
 			"seed": 1214864935,
 			"groupIds": [
 				"owlpLxxOBowfm3w0LFYBt",
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -5402,11 +5586,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "Future",
 			"rawText": "Future",
-			"baseline": 19,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Future"
+			"originalText": "Future",
+			"lineHeight": 1.25,
+			"baseline": 19
 		},
 		{
 			"type": "ellipse",
@@ -5435,6 +5620,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -5446,7 +5632,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655646181688,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
@@ -5464,8 +5653,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1503.5131981626266,
 			"strokeColor": "#000000",
 			"backgroundColor": "#fab005",
-			"width": 89,
-			"height": 32,
+			"width": 87.42181396484375,
+			"height": 31.851739084362013,
 			"seed": 651338537,
 			"groupIds": [
 				"auq-YUpyUP1rowkslybGn",
@@ -5475,6 +5664,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -5486,11 +5676,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "Pending",
 			"rawText": "Pending",
-			"baseline": 22,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Pending"
+			"originalText": "Pending",
+			"lineHeight": 1.25,
+			"baseline": 22
 		},
 		{
 			"type": "ellipse",
@@ -5519,6 +5710,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -5551,6 +5743,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -5566,7 +5759,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655646181688,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "arrow",
@@ -5591,6 +5787,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -5620,8 +5817,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 		},
 		{
 			"type": "arrow",
-			"version": 4342,
-			"versionNonce": 1420227907,
+			"version": 4344,
+			"versionNonce": 1550451643,
 			"isDeleted": false,
 			"id": "zIr_iCdvBYcNmpTZHgZAi",
 			"fillStyle": "hachure",
@@ -5631,21 +5828,22 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"opacity": 100,
 			"angle": 0,
 			"x": -2234.755118979273,
-			"y": -1615.3928146870865,
+			"y": -1615.4223737312993,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 88.82842884434922,
-			"height": 61.222343708883955,
+			"width": 88.83117807780081,
+			"height": 61.23665369024957,
 			"seed": 1668801959,
 			"groupIds": [
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307923,
+			"updated": 1706153080916,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -5667,15 +5865,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 					0
 				],
 				[
-					88.82842884434922,
-					61.222343708883955
+					88.83117807780081,
+					61.23665369024957
 				]
 			]
 		},
 		{
 			"type": "arrow",
-			"version": 4123,
-			"versionNonce": 1436098253,
+			"version": 4125,
+			"versionNonce": 973655611,
 			"isDeleted": false,
 			"id": "fptv2vZXuvgGmoz4jjWQY",
 			"fillStyle": "hachure",
@@ -5685,21 +5883,22 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"opacity": 100,
 			"angle": 0,
 			"x": -2433.4458498083313,
-			"y": -1447.2995606598874,
+			"y": -1447.3027902734607,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 83.82066934602426,
-			"height": 0.747288108807652,
+			"height": 0.7452791807129415,
 			"seed": 2118813543,
 			"groupIds": [
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307924,
+			"updated": 1706153080916,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -5722,14 +5921,14 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				],
 				[
 					83.82066934602426,
-					-0.747288108807652
+					-0.7452791807129415
 				]
 			]
 		},
 		{
 			"type": "arrow",
-			"version": 4195,
-			"versionNonce": 2013642029,
+			"version": 4197,
+			"versionNonce": 2133900155,
 			"isDeleted": false,
 			"id": "t_fZAblhy_LDp2EaHz6ih",
 			"fillStyle": "hachure",
@@ -5739,21 +5938,22 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"opacity": 100,
 			"angle": 0,
 			"x": -2245.2976388251973,
-			"y": -1454.442840488237,
+			"y": -1454.4466943189561,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 102.60626493507743,
-			"height": 2.970537219435755,
+			"width": 102.60626493507789,
+			"height": 2.972462026268886,
 			"seed": 1360067943,
 			"groupIds": [
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307924,
+			"updated": 1706153080916,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -5775,8 +5975,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 					0
 				],
 				[
-					102.60626493507743,
-					2.970537219435755
+					102.60626493507789,
+					2.972462026268886
 				]
 			]
 		},
@@ -5796,8 +5996,8 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1498.170609327864,
 			"strokeColor": "#000000",
 			"backgroundColor": "#40c057",
-			"width": 76,
-			"height": 32,
+			"width": 73.80667114257812,
+			"height": 31.493365031553026,
 			"seed": 2025899655,
 			"groupIds": [
 				"tdA-E6xPxFsIX2SSWA2Ce",
@@ -5806,6 +6006,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -5817,11 +6018,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "Ready",
 			"rawText": "Ready",
-			"baseline": 22,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Ready"
+			"originalText": "Ready",
+			"lineHeight": 1.25,
+			"baseline": 21
 		},
 		{
 			"type": "ellipse",
@@ -5849,6 +6051,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -5873,14 +6076,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1395.551854116381,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 78,
-			"height": 27,
+			"width": 76.0078125,
+			"height": 27.270862897470245,
 			"seed": 216870025,
 			"groupIds": [
 				"bu74ss74Q9Kf4yoDAAYuO",
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -5892,11 +6096,12 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "Output",
 			"rawText": "Output",
-			"baseline": 19,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Output"
+			"originalText": "Output",
+			"lineHeight": 1.25,
+			"baseline": 19
 		},
 		{
 			"type": "diamond",
@@ -5922,6 +6127,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -5954,6 +6160,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -5969,48 +6176,10 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1655646181688,
 			"link": null,
-			"locked": false
-		},
-		{
-			"type": "text",
-			"version": 724,
-			"versionNonce": 1347552291,
-			"isDeleted": false,
-			"id": "xEorYYNo",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -2035.17796816805,
-			"y": -1379.0826267739812,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"width": 13,
-			"height": 27,
-			"seed": 2124813991,
-			"groupIds": [
-				"bu74ss74Q9Kf4yoDAAYuO",
-				"h_RyIJXF21q1Cz90BHn4w",
-				"FKCX2oTeSaxAcgf9tA2iW"
-			],
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1673532279950,
-			"link": null,
 			"locked": false,
-			"fontSize": 21.81669031797619,
-			"fontFamily": 1,
-			"text": "",
-			"rawText": "",
-			"baseline": 19,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": ""
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "rectangle",
@@ -6035,6 +6204,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -6054,12 +6224,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1673431727810,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "arrow",
-			"version": 2248,
-			"versionNonce": 2077565347,
+			"version": 2250,
+			"versionNonce": 1447765627,
 			"isDeleted": false,
 			"id": "9yfty0NjBMO9ncf98jGw2",
 			"fillStyle": "hachure",
@@ -6068,22 +6241,23 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -2292.280300638443,
-			"y": -1750.5606828153618,
+			"x": -2292.28035004678,
+			"y": -1750.5606798274057,
 			"strokeColor": "#000000",
 			"backgroundColor": "#4c6ef5",
-			"width": 2.4601219312289686,
-			"height": 96.71321025730504,
+			"width": 2.4601594402629416,
+			"height": 96.71320726934891,
 			"seed": 1913198249,
 			"groupIds": [
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307923,
+			"updated": 1706153080916,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -6105,15 +6279,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 					0
 				],
 				[
-					2.4601219312289686,
-					96.71321025730504
+					2.4601594402629416,
+					96.71320726934891
 				]
 			]
 		},
 		{
 			"type": "text",
-			"version": 587,
-			"versionNonce": 1700803693,
+			"version": 589,
+			"versionNonce": 1608683771,
 			"isDeleted": false,
 			"id": "6d6V7V68",
 			"fillStyle": "hachure",
@@ -6122,33 +6296,35 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -2319.979921846706,
-			"y": -1639.7718027547116,
+			"x": -2318.787584810573,
+			"y": -1639.291142523822,
 			"strokeColor": "#000000",
 			"backgroundColor": "#228be6",
-			"width": 62,
-			"height": 33,
+			"width": 59.615325927734375,
+			"height": 32.03867953822058,
 			"seed": 1465567655,
 			"groupIds": [
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532307923,
+			"updated": 1706153080916,
 			"link": null,
 			"locked": false,
 			"fontSize": 25.630943630576464,
 			"fontFamily": 1,
 			"text": "poll()",
 			"rawText": "poll()",
-			"baseline": 23,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "JFcNMe2lkrb0VBEDXd1t_",
-			"originalText": "poll()"
+			"originalText": "poll()",
+			"lineHeight": 1.25,
+			"baseline": 22
 		},
 		{
 			"type": "rectangle",
@@ -6173,6 +6349,7 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 1
 			},
@@ -6192,12 +6369,15 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			],
 			"updated": 1673431727811,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
 			"type": "text",
-			"version": 550,
-			"versionNonce": 2086897603,
+			"version": 552,
+			"versionNonce": 1051613371,
 			"isDeleted": false,
 			"id": "3GSHwrCc",
 			"fillStyle": "hachure",
@@ -6206,33 +6386,35 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -2334.7412423478254,
-			"y": -1462.187373341018,
+			"x": -2333.988175331224,
+			"y": -1462.0017864779034,
 			"strokeColor": "#000000",
 			"backgroundColor": "#228be6",
-			"width": 79,
-			"height": 32,
+			"width": 77.49386596679688,
+			"height": 31.628826273770947,
 			"seed": 194432999,
 			"groupIds": [
 				"h_RyIJXF21q1Cz90BHn4w",
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1673532279950,
+			"updated": 1706153080916,
 			"link": null,
 			"locked": false,
 			"fontSize": 25.30306101901676,
 			"fontFamily": 1,
 			"text": "wake()",
 			"rawText": "wake()",
-			"baseline": 22,
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "t8hnHM-S6aVzRgoPtdvXS",
-			"originalText": "wake()"
+			"originalText": "wake()",
+			"lineHeight": 1.25,
+			"baseline": 21
 		},
 		{
 			"type": "text",
@@ -6250,12 +6432,13 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"y": -1940,
 			"strokeColor": "#1864ab",
 			"backgroundColor": "transparent",
-			"width": 119,
+			"width": 116.59196472167969,
 			"height": 35,
 			"seed": 1334288974,
 			"groupIds": [
 				"FKCX2oTeSaxAcgf9tA2iW"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1673532279951,
@@ -6265,46 +6448,178 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 			"fontFamily": 1,
 			"text": "see also",
 			"rawText": "see also",
-			"baseline": 25,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "see also"
+			"originalText": "see also",
+			"lineHeight": 1.25,
+			"baseline": 24
 		},
 		{
-			"id": "qFDmZbba",
 			"type": "text",
-			"x": -2480,
-			"y": -920,
-			"width": 1058,
-			"height": 50,
-			"angle": 0,
-			"strokeColor": "#1864ab",
-			"backgroundColor": "transparent",
+			"version": 57,
+			"versionNonce": 1389152557,
+			"isDeleted": false,
+			"id": "qFDmZbba",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
-			"groupIds": [],
-			"roundness": null,
+			"angle": 0,
+			"x": -2480,
+			"y": -920,
+			"strokeColor": "#1864ab",
+			"backgroundColor": "transparent",
+			"width": 1056.2755126953125,
+			"height": 45,
 			"seed": 35437507,
-			"version": 57,
-			"versionNonce": 1389152557,
-			"isDeleted": false,
-			"boundElements": null,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
 			"updated": 1673532356362,
 			"link": "http://aturon.github.io/tech/2018/04/24/async-borrowing/",
 			"locked": false,
-			"text": "🌐http://aturon.github.io/tech/2018/04/24/async-borrowing/",
-			"rawText": "http://aturon.github.io/tech/2018/04/24/async-borrowing/",
 			"fontSize": 36,
 			"fontFamily": 1,
+			"text": "🌐http://aturon.github.io/tech/2018/04/24/async-borrowing/",
+			"rawText": "http://aturon.github.io/tech/2018/04/24/async-borrowing/",
 			"textAlign": "left",
 			"verticalAlign": "top",
-			"baseline": 36,
 			"containerId": null,
-			"originalText": "🌐http://aturon.github.io/tech/2018/04/24/async-borrowing/"
+			"originalText": "🌐http://aturon.github.io/tech/2018/04/24/async-borrowing/",
+			"lineHeight": 1.25,
+			"baseline": 32
+		},
+		{
+			"type": "text",
+			"version": 35,
+			"versionNonce": 1902606171,
+			"isDeleted": true,
+			"id": "DYCTJ8js",
+			"fillStyle": "hachure",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 27.774588059861344,
+			"y": -1260.7004985040403,
+			"strokeColor": "#862e9c",
+			"backgroundColor": "transparent",
+			"width": 18,
+			"height": 45,
+			"seed": 1327834473,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [
+				{
+					"id": "Wqn7SK6_hlBPFmfO2z-cn",
+					"type": "arrow"
+				},
+				{
+					"id": "qU2ishlsf7_fGQG9tfDiy",
+					"type": "arrow"
+				}
+			],
+			"updated": 1706153080632,
+			"link": null,
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			},
+			"fontSize": 36,
+			"fontFamily": 1,
+			"text": "",
+			"rawText": "",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "",
+			"lineHeight": 1.25,
+			"baseline": 32
+		},
+		{
+			"type": "text",
+			"version": 6,
+			"versionNonce": 1416789973,
+			"isDeleted": true,
+			"id": "uaVCkMqB",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"angle": 0,
+			"x": -1785.1465398035803,
+			"y": 2117.0939420725117,
+			"strokeColor": "#1864ab",
+			"backgroundColor": "transparent",
+			"width": 10,
+			"height": 25,
+			"seed": 1587664526,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1706153080654,
+			"link": null,
+			"locked": false,
+			"fontSize": 20,
+			"fontFamily": 1,
+			"text": "",
+			"rawText": "",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "",
+			"lineHeight": 1.25,
+			"baseline": 16
+		},
+		{
+			"type": "text",
+			"version": 725,
+			"versionNonce": 1104532475,
+			"isDeleted": true,
+			"id": "xEorYYNo",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -2035.17796816805,
+			"y": -1379.0826267739812,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"width": 10.908345158988094,
+			"height": 27.270862897470238,
+			"seed": 2124813991,
+			"groupIds": [
+				"bu74ss74Q9Kf4yoDAAYuO",
+				"h_RyIJXF21q1Cz90BHn4w",
+				"FKCX2oTeSaxAcgf9tA2iW"
+			],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"boundElements": [],
+			"updated": 1706153080657,
+			"link": null,
+			"locked": false,
+			"fontSize": 21.81669031797619,
+			"fontFamily": 1,
+			"text": "",
+			"rawText": "",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "",
+			"lineHeight": 1.25,
+			"baseline": 19
 		}
 	],
 	"appState": {
@@ -6322,14 +6637,26 @@ http://aturon.github.io/tech/2018/04/24/async-borrowing/ ^qFDmZbba
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "triangle",
-		"scrollX": 2834.575806742351,
-		"scrollY": 916.629196917184,
+		"scrollX": 2915.6978363521303,
+		"scrollY": 2227.7398761375466,
 		"zoom": {
-			"value": 0.5792511470469359
+			"value": 0.7804676365852358
 		},
 		"currentItemRoundness": "round",
 		"gridSize": 20,
-		"colorPalette": {}
+		"gridColor": {
+			"Bold": "#C9C9C9FF",
+			"Regular": "#EDEDEDFF"
+		},
+		"colorPalette": {},
+		"currentStrokeOptions": null,
+		"previousGridSize": null,
+		"frameRendering": {
+			"enabled": true,
+			"clip": true,
+			"name": true,
+			"outline": true
+		}
 	},
 	"files": {}
 }

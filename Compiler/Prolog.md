@@ -3,25 +3,62 @@
 [swi-prolog doc](https://www.swi-prolog.org/pldoc/doc_for?object=manual)
 [build-in predicates](https://www.swi-prolog.org/pldoc/man?section=builtin)
 
-## Some Concepts
-- `ground` `term`:  `term` without unassociated `variables`.
-- `atom`
-- `term`
-- `complex term`
-- `variable`
-- `functor` and `arity`
-- [Stack Overflow: Fact, Rule, Procedure, Predicate](https://stackoverflow.com/questions/49898738/is-this-prolog-terminology-correct-fact-rule-procedure-predicate)
+## Syntax
 
-- A _directive_  (`:- <term>`) is an instruction to the compiler:
+### Term
+
+```haskell
+{- | Atom, Number and Variable are called simple terms.
+Atom and Number are called constants.
+Structure is the only Complex term -}
+data Term 
+  = SimpleTerm SimpleTerm
+  | ComplexTerm Structure
+
+data SimpleTerm
+  = Atom Atom
+  | Number Integer
+  | Variable String
+  
+newtype Atom = MkAtom String
+data Structure = MkStructure 
+  { functor :: Atom
+  , args :: [Term] 
+  }
+
+arity :: Term -> Int
+arity (SimpleTerm _)  = 0
+arity (ComplexTerm s) = length $ args s
+```
+
+### Clause
+
+[Stack Overflow: Fact, Rule, Procedure, Predicate](https://stackoverflow.com/questions/49898738/is-this-prolog-terminology-correct-fact-rule-procedure-predicate)
+
+```haskell
+import Prelude hiding (head)
+
+data Clause 
+  = Fact { head :: CallTerm } 
+  | Rule { head :: CallTerm, body :: [Goal]}
+  
+type CallTerm = Either Atom Structure
+type Goal = CallTerm
+```
+
+
+Some Concepts:
+- **ground term**:  _term_ without unassociated _variables_.
+- A **directive**  (`:- <term>`) is an instruction to the compiler:
     - set (predicate) properties (see [declare](https://www.swi-prolog.org/pldoc/man?section=declare)), 
     - set flags (see [set_prolog_flag/2](https://www.swi-prolog.org/pldoc/man?predicate=set_prolog_flag/2)) 
     - load files (see [consulting](https://www.swi-prolog.org/pldoc/man?section=consulting)). 
+- The term **evaluating a goal** is used to mean determining whether or not it is satisﬁed.     
 
 
+## Byrd Box Model
 
-## Debug Model (Byrd Box Model)
-
-See also[debugger ref](https://www.swi-prolog.org/pldoc/man?section=debugoverview), [[#Debug Predicates]]
+See also [debugger ref](https://www.swi-prolog.org/pldoc/man?section=debugoverview), [[#Debug Predicates]]
 ```
             *--------------------------------------*
      Call   |                                      |   Exit
@@ -65,10 +102,8 @@ To prove a predicate $f/N$.
     - `exception` if exception is thrown.
 
 
+- DETERMINISTIC PREDICATE (well-behaved: closing off the REDO port, i.e. "leaving no choicepoint")
 ```
-DETERMINISTIC PREDICATE
-(well-behaved: closing off the REDO port, i.e. "leaving no choicepoint")
-       
              +---------------------+
      -------⊳|Call------⊳-----⊳Succ|------⊳
    from      |                     |      to
@@ -78,9 +113,9 @@ DETERMINISTIC PREDICATE
          |   +---------------------+   |
          |                             |
          +---⊲----no choicepoint----⊲--+
-
-SEMI-DETERMINISTIC PREDICATE
-(well-behaved: closing off the REDO port, i.e. "leaving no choicepoint")
+```
+- SEMI-DETERMINISTIC PREDICATE (well-behaved: closing off the REDO port, i.e. "leaving no choicepoint")
+```
               
              +---------------------+
      -------⊳|Call---+--⊳-----⊳Succ|------⊳
@@ -91,10 +126,11 @@ SEMI-DETERMINISTIC PREDICATE
          |   +---------------------+   |
          |                             |
          +---⊲----no choicepoint----⊲--+
-
-NONDETERMINISTIC PREDICATE (succeeds maybe 0 times)
-MULTI PREDICATE (succeeds at least once)
-(well-behaved if it closes off the REDO port at the last solution, i.e. "leaves no choicepoint")
+```
+- others (well-behaved if it closes off the REDO port at the last solution, i.e. "leaves no choicepoint")
+  - NONDETERMINISTIC PREDICATE (succeeds maybe 0 times)
+  - MULTI PREDICATE (succeeds at least once)
+```
               
              +---------------------+
      -------⊳|Call---+--⊳--+--⊳Succ|------⊳
@@ -146,6 +182,24 @@ File and Path:
 
 ## Some Common Predicates
 
+### Basic Logic 
+
+| Predicate | Meaning        | Example |
+| --------- | -------------- | ------- |
+| `true/0`  |                |         |
+| `false/0` |                |         |
+| `(',')/2` | and/conjuction |         |
+| `(';')/2` | or/disjuction  |         |
+| `(=)/2`   | unification    |         |
+| `dif/2`   | Disequality               |         |
+
+### Arithmetic
+
+#todo
+
+| Predicate | Meaning | Example |
+| --------- | ------- | ------- |
+| `(#>)/2`  |         |         |
 ### Debug Predicates
 
 | Predicate                        | Meaning                               | Example                         |
@@ -316,9 +370,12 @@ Head --> Body
 - A _DCG head_ with functor `f` and arity `N` is referred as `f//N`, to distinguish from `f/N` which refers to a _Predicate_ 
 
 
-# Syntax
 
-- term
-  - atom
-  - variable
-  - compound term
+# References & TODOs
+
+[The Power of Prolog](https://www.metalevel.at/prolog)
+
+- resolution (resolution refutation) strategies
+  - SLDNF (SLD with negation as finite failure)
+  - SLG (tabling)
+  - iterative deepening 

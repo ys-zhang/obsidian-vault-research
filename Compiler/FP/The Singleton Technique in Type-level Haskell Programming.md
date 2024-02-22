@@ -8,7 +8,7 @@
 Suppose we have a promoted kind `k` with a collection of promoted types `a :: k`.
 
 ```
-'True ~ Sing 'True ~ STrue ~ True
+'True ~ (STrue :: Sing 'True) ~ True
 ```
 
 Suppose we want to write a function $f : X \to Y$ whose return type $Y$ is determined by the value of its argument $x: X$. In _Dependent Type Theory_ $f$ belongs to the [[Dependent Type Theory#Dependent Product (dependent function)|dependent product]] 

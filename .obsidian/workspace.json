@@ -4,81 +4,121 @@
     "type": "split",
     "children": [
       {
-        "id": "41fc5351a373dcb1",
+        "id": "1152f4746e165286",
         "type": "tabs",
         "children": [
           {
-            "id": "fd20df00bc5a3c78",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Projects/dreaming/Yase_Persistant_Model.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "7ccf53c346fd12b5",
+            "id": "15cd84c760542360",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Compiler/FP/Defuntionalisation.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "ab13ca6aca1f87a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Compiler/FP/Generic Programming in Haskell.md",
+                "file": "Compiler/FP/Thunk.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
-            },
-            "group": "dbfe384eefd91c57"
+            }
           },
           {
-            "id": "3c40a964930a3ce0",
+            "id": "526d3810ac1d574e",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Compiler/Prolog.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "6e3be9cf51c24106",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Code/Salsa.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "abdfec15ed9d2bdc",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Compiler/FP/Generic Programming in Haskell.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "d88313aa1ab32aca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Compiler/FP/Type Level Programming in Haskell.md",
+                "file": "Compiler/Evaluation Strategy.md",
                 "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5422694a1e2771a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Testing/QuickCheck.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "36fee8f82e64729d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Math/Logic/Deontic Logic.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9e6a279e59e9a43c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Math/Logic/Probabilistic Soft Logic & Hinge-loss Markov Random Field.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
-      },
-      {
-        "id": "33d43f281320094b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "2b2d5791582ad0ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Compiler/FP/Generic Programming in Haskell.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            },
-            "group": "dbfe384eefd91c57"
-          }
-        ]
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -107,7 +147,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "evaluation",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -124,12 +164,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 231.5
+    "width": 231.5,
+    "collapsed": true
   },
   "right": {
     "id": "90a6f9defb7a3379",
@@ -138,6 +178,7 @@
       {
         "id": "97591479d84044fe",
         "type": "tabs",
+        "dimension": 66.66666666666667,
         "children": [
           {
             "id": "871d0877ac246d72",
@@ -145,8 +186,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Compiler/FP/Generic Programming in Haskell.md",
-                "collapseAll": true,
+                "file": "Testing/QuickCheck.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -162,7 +203,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Compiler/FP/Generic Programming in Haskell.md",
+                "file": "Testing/QuickCheck.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +226,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Compiler/FP/Generic Programming in Haskell.md"
+                "file": "Testing/QuickCheck.md"
               }
             }
           },
@@ -195,8 +236,18 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
+            }
+          },
+          {
+            "id": "05dcb7003132f7c5",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
         ],
@@ -205,6 +256,7 @@
       {
         "id": "43908533fb4c38f7",
         "type": "tabs",
+        "dimension": 33.333333333333336,
         "children": [
           {
             "id": "0054b66bebb11a4d",
@@ -218,11 +270,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 218.5
+    "width": 218.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "open-vscode:VSCode": true,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -230,56 +282,60 @@
       "command-palette:Open command palette": true,
       "markdown-importer:Open format converter": true,
       "audio-recorder:Start/stop recording": true,
-      "oz-clear-unused-images:Clear Unused Images": true,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "open-vscode:VSCode": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d1f88128b20a4c77",
+  "active": "5422694a1e2771a2",
   "lastOpenFiles": [
-    "Compiler/FP/Defuntionalisation.md",
-    "Projects/dreaming/Yase_Persistant_Model.excalidraw.md",
-    "Compiler/FP/Type Level Programming in Haskell.md",
+    "Math/Logic/Probabilistic Soft Logic & Hinge-loss Markov Random Field.md",
+    "Math/Logic/Deontic Logic.md",
+    "Math/Logic/PCTL (Probabilistic Computation Tree Logic).md",
+    "Testing/QuickCheck.md",
     "Compiler/FP/Generic Programming in Haskell.md",
-    "Math/Type Theory/Dependent Type Theory.md",
-    "Compiler/FP/Literate Haskell.md",
-    "Compiler/FP/Thinking with Types.md",
-    "Compiler/Theory of Computation Model.md",
+    "Compiler/Evaluation Strategy.md",
     "Compiler/FP/Thunk.md",
-    "Compiler/Probilistic Programming.md",
-    "Compiler/FP/The Singleton Technique in Type-level Haskell Programming.md",
-    "Compiler/FP/Haskell",
+    "Code/Red-Green Tree.md",
+    "Compiler/Prolog.md",
+    "Code/Salsa.md",
+    "Compiler/FP/Contravariant Logging.md",
+    "Compiler/Rust/Box-Rc-Arc-Cell-RefCell.md",
+    "Compiler/Rust/Rust Memory Management.md",
+    "Compiler/Rust/Rust.md",
+    "Math/Category Theory/Category Theory.md",
+    "SystemDesign/design-pattern/Actor Model.md",
+    "SystemDesign/design-pattern/Reactive Programming.md",
+    "Algo/Data Structure/Trie.md",
     "Code/toml-parser.md",
-    "Projects/Japanese/Family.md",
-    "Algo/Data Structure/E-graph.md",
-    "Code/generics-sop.md",
-    "Compiler/FP/Strict or Lazy.md",
-    "Projects/Japanese/Greetings & Farewells.md",
-    "Projects/Japanese/Body.md",
-    "Projects/dreaming/li-zy-arch.excalidraw.md",
-    "Projects/dreaming/Specifications.md",
-    "Projects/dreaming/Project & Bootstrapping.md",
-    "Projects/dreaming/Project Proposal.md",
-    "Code/Servant - Type Level Api.md",
-    "Projects/dreaming/Untitled.md",
-    "Projects/Japanese/Bed ＆bath.md",
+    "Code/Shake.md",
+    "Code/unliftio.md",
+    "Compiler/FP/FRP (Functional Reactive Programming).md",
+    "Tools/dotnet/Akka.md",
+    "ProcMining/Concepts/petri net.md",
+    "Compiler/FP/Co.md",
+    "Compiler/FP/Untitled 1.md",
+    "attachments/Pasted image 20240131184714.png",
+    "attachments/Pasted image 20240131184644.png",
+    "attachments/Pasted image 20240131181431.png",
+    "attachments/Pasted image 20240128162541.png",
+    "attachments/Pasted image 20240128162527.png",
+    "attachments/Pasted image 20240128161129.png",
+    "attachments/Pasted image 20240128154345.png",
+    "attachments/Pasted image 20240108110608.png",
+    "SystemDesign/MacOS Dev",
+    "attachments/Pasted image 20231109102843.png",
+    "Compiler/FP/Haskell",
     "Projects/Japanese",
-    "Projects/dreaming/Contract Formalisation.md",
     "attachments/Session-Cookie Based Authentication.png",
-    "attachments/Pasted image 20231010165322.png",
     "Compiler/Program Synthesis",
     "Scratch.canvas",
     "StatLearning/Estimators and Tests/Graphical Representation of the “Holy Trinity”.pdf",
     "Compiler/Memory Management.pdf",
-    "attachments/Pasted image 20230825110735.png",
     "Math/Quantum Computing",
     "StatLearning/Models/NN/Transformer/Attention Is All You Need.pdf",
     "StatLearning/Models/A tutorial on support vector regression.pdf",
     "StatLearning/Models/NN/Transformer",
-    "Compiler/FP/Type Families in Haskell: The Definitive Guide.webarchive",
-    "attachments/Pasted image 20230516162241.png",
-    "attachments/Pasted image 20230511185646.png",
-    "attachments/Pasted image 20230423114456.png",
     "Projects/Haskell Summer 2023/Summer of Haskell Canvas (2023).canvas"
   ]
 }

@@ -1,4 +1,4 @@
-#code-reading 
+#code-reading #Haskell #web 
 
 # Api Specification
 
@@ -72,9 +72,7 @@ class HasServer api ctx where
         -> Context ctx 
         -- ^ arbitrary data for routing
         -> Delayed env (Server api)
-        -- ^ a `Delayed` is a repr of a handler with
-        --   scheduled delayed checks that can tigger 
-        --   errors
+        -- ^ your handler functions
         -> Router env
   hoistServerWithContext :: Proxy api  -> Proxy ctx 
                          -> (forall x. m x -> n x)
@@ -88,13 +86,7 @@ data Context ctx where
   infixr 5 :.
 ```
 
-
-### Implement Server 
-
-```haskell
-newtype Handler a = Handler { runHandler :: ExceptT ServerError IO a }
-
-```
+>  `route` is called exactly _once_, as part of the startup of your server. It takes in the context and the handler for your whole server, and returns a `Router`.
 
 ### Routing
 
@@ -102,11 +94,12 @@ A `Router` is just a tree of request handlers
 
 ```haskell
 runRouterEnv :: Router env -> env -> RoutingApplication
+type Router env = Router' env RoutingApplication
+
 type RoutingApplication 
   = Request 
   -> (RouteResult Response -> IO ResponseReceived) 
   -> IO ResponseReceived
-type Router env = Router' env RoutingApplication
 
 -- | a tree of request handlers 
 data Router' env a 
@@ -126,6 +119,13 @@ data Router' env a
   ...
 ```
 
+> You can think of `Router'` as a tree of path information, with `RoutingApplication`s at the leaves which receive the requests for each specific path and produce responses
+
+### Implement Server 
+
+```haskell
+newtype Handler a = Handler { runHandler :: ExceptT ServerError IO a }
+```
 
 ## Client
 
@@ -203,13 +203,17 @@ mkClientEnv :: Manager -> BaseUrl -> ClientEnv
 ```
 
 
-# Auth 
+# Servant Combinator 
 
-```haskell 
+Servant uses combinator to support middleware. It deals with problems of creating functions to modify all request handlers, such as tasks of "for all request handlers do something".
 
+The name _combinator_ comes from its usage in endpoint types, which is a list of combinators concatenated by the type level operator `:>`.
 
+Dislike WAI middleware, it provides more checking through type safety.
 
-```
+> You can sort of control when WAI middleware will modify requests and responses through string prefix matching on the request path. 
+>  
+> However, since you are using Servant, what you'd really prefer is to _specify the middleware inside your Servant API type_, marking which endpoints need the middleware applied and which ones don't. 
 
 
 # References
@@ -217,3 +221,4 @@ mkClientEnv :: Manager -> BaseUrl -> ClientEnv
 1. Mestanogullari, A., Hahn, S., Arni, J. K., & Löh, A. (2015). Type-Level Web APIs with Servant: An Exercise in Domain-Specific Generic Programming. _Proceedings of the 11th ACM SIGPLAN Workshop on Generic Programming_, 1–12. [https://doi.org/10.1145/2808098.2808099](https://doi.org/10.1145/2808098.2808099)
 2. [Servant Doc (stable)](https://docs.servant.dev/en/stable/index.html)
 3. [Servant Auth](https://github.com/haskell-servant/servant/tree/master/servant-auth#readme)
+4. (best for brushing up) [WRITING SERVANT COMBINATORS FOR FUN AND PROFIT](https://williamyaoh.com/posts/2023-02-28-writing-servant-combinators.html)

@@ -1,5 +1,6 @@
 #functional-programming  #reactive-programming  #Haskell 
 
+
 # Behaviour and Event
 
 1. _behaviour_ is a continuous time indexed value 
@@ -167,6 +168,4 @@ pSwitch :: Functor col
         -> SF a (col c) 
         
 ```
-
-
 

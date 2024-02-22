@@ -1,8 +1,11 @@
+#actor-model #concurrency 
+
+
 # Actors
 
 ![[Pasted image 20220211195225.png]]
 
-- Actors are always organized into a _tree_.
+- Actors are always organised into a _tree_.
 - The first of light is the `System` actor which serves the creator of _top level_ actors.
   ```f# 
   val IActorRef.ActorOf : unit -> IActorRef 

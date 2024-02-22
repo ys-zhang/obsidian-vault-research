@@ -1,11 +1,14 @@
 {
   "baseFontSize": 16,
-  "cssTheme": "Prism",
-  "theme": "moonstone",
+  "cssTheme": "Ultra Lobster",
+  "theme": "system",
   "translucency": true,
   "baseFontSizeAction": true,
   "textFontFamily": "Ayuthaya,Apple Chancery,Arial",
   "accentColor": "",
   "monospaceFontFamily": "JetBrainsMono Nerd Font",
-  "interfaceFontFamily": ""
+  "interfaceFontFamily": "",
+  "enabledCssSnippets": [
+    "my-callouts"
+  ]
 }

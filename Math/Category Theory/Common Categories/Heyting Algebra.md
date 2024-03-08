@@ -1,6 +1,6 @@
 #category-theory 
 
-A Heyting Algebra is a [[Math/Category Theory/Common Categories/Lattice#Bounded Lattice|Bounded Lattice]] which all [[Exponentials.excalidraw|Exponentials]] exists.
+A Heyting Algebra is a [[Lattice#Bounded Lattice|Bounded Lattice]] which all [[Exponentials.excalidraw|Exponentials]] exists.
 
 In Heyting Algebra, the exponential object $Y^X$ is denoted by $X \implies Y$  which reads as "implies". 
 

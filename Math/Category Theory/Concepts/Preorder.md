@@ -12,7 +12,7 @@ $$
 by the rule of composition we have the **transitivity rule** of $\le$ , i.e.
 
 $$
-X\le Y \land Y\le Z \vdash X \le Z
+X\le Y \land Y\le Z \implies X \le Z
 $$
 and the existence of $id_X$ for all objects $X$ we have the **reflexivity rule**:  
 $$

@@ -278,7 +278,6 @@ instance Cartesian (Lens a b) where
 
 
 ```haskell
-
 viewP :: LensP a b s t 
       -- ^    forall p . Cartesian p => p a b -> p s t
       -- ^ or forall f . Functor f   => (a -> f b) -> (s -> f t)       

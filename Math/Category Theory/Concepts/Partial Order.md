@@ -1,5 +1,14 @@
 #set-theory #formal-method #order-theory 
 
+
+>[!tldr]
+> A partial order is a [[Preorder]] with a rule that distinct objects cannot have arrows in both direction, i.e. the **antisymmetric rule**
+> $$
+> X \le Y \land Y\le X \implies X = Y
+> $$
+> the equality here means "is".
+
+
 A binary relation $\sqsubseteq$ on a set $S$ is called a _partial order_ if it is 
 - _reflexive_: $\forall x\in S, \; x \sqsubseteq x$;
 - _transitive_: $\forall x, y, z\in S,\; x\sqsubseteq y \land y \sqsubseteq z \implies x \sqsubseteq z$;
@@ -12,5 +21,6 @@ A pair of elements $x,y\in S$ are called _comparable_ if either $x\sqsubseteq y$
 # Discrete Partial Order
 
 A _discrete partial order_ is a poset in which no two distinct elements of $S$ are $\sqsubseteq$-comparable.
+
 
 

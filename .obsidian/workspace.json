@@ -8,19 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "15cd84c760542360",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Compiler/FP/Thunk.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "526d3810ac1d574e",
             "type": "leaf",
             "pinned": true,
@@ -68,18 +55,20 @@
           {
             "id": "d88313aa1ab32aca",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Compiler/Evaluation Strategy.md",
+                "file": "ReadingNotes/Implementing Functional Languages a Tutorial.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
-            "id": "5422694a1e2771a2",
+            "id": "2a1190f077a0d2e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -92,33 +81,59 @@
             }
           },
           {
-            "id": "36fee8f82e64729d",
+            "id": "f10ed0ae67c489c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/Logic/Deontic Logic.md",
-                "mode": "preview",
+                "file": "Compiler/Reduction Strategy.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           },
           {
-            "id": "9e6a279e59e9a43c",
+            "id": "4e707a54b8c7f38c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/Logic/Probabilistic Soft Logic & Hinge-loss Markov Random Field.md",
-                "mode": "preview",
+                "file": "Compiler/Evaluation Strategy.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aec95260ad2010b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SystemDesign/MacOS Dev/SwiftUI FAQ.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "50d5a8b9dc664f7b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Compiler/Program Analysis/Dataflow Analysis.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -147,7 +162,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "evaluation",
+                "query": "tag:#program-synthesis",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -186,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Testing/QuickCheck.md",
+                "file": "Compiler/Program Analysis/Dataflow Analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -203,7 +218,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Testing/QuickCheck.md",
+                "file": "Compiler/Program Analysis/Dataflow Analysis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,7 +241,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Testing/QuickCheck.md"
+                "file": "Compiler/Program Analysis/Dataflow Analysis.md"
               }
             }
           },
@@ -270,7 +285,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 218.5,
+    "width": 306.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -287,34 +302,36 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5422694a1e2771a2",
+  "active": "50d5a8b9dc664f7b",
   "lastOpenFiles": [
-    "Math/Logic/Probabilistic Soft Logic & Hinge-loss Markov Random Field.md",
-    "Math/Logic/Deontic Logic.md",
-    "Math/Logic/PCTL (Probabilistic Computation Tree Logic).md",
-    "Testing/QuickCheck.md",
+    "SystemDesign/MacOS Dev/SwiftUI FAQ.md",
+    "SystemDesign/MacOS Dev/SwiftUI Navigation.md",
     "Compiler/FP/Generic Programming in Haskell.md",
+    "SystemDesign/MacOS Dev/SwiftUI Focus.md",
+    "SystemDesign/MacOS Dev/SwiftUI Fonts.md",
+    "Compiler/Program Analysis/Dataflow Analysis.md",
+    "Compiler/Program Analysis/Collecting Semantics.md",
+    "Compiler/Program Analysis/Operational Semantics.md",
+    "Math/Category Theory/Concepts/Lattice.md",
+    "Math/Category Theory/Concepts/Preorder.md",
+    "Math/Category Theory/Concepts/Partial Order.md",
+    "Math/Category Theory/Common Categories/Partial Order.md",
+    "SystemDesign/MacOS Dev/SwiftUI Reactivity.md",
+    "Compiler/Program Analysis",
+    "Compiler/Program Synthesis/Inductive Synthesis.md",
+    "Compiler/Program Synthesis/Program Synthesis.md",
+    "SystemDesign/MacOS Dev/AppKit.md",
+    "Tools/UI/SwiftUI.md",
+    "Compiler/Reduction Strategy.md",
     "Compiler/Evaluation Strategy.md",
-    "Compiler/FP/Thunk.md",
-    "Code/Red-Green Tree.md",
-    "Compiler/Prolog.md",
-    "Code/Salsa.md",
-    "Compiler/FP/Contravariant Logging.md",
-    "Compiler/Rust/Box-Rc-Arc-Cell-RefCell.md",
-    "Compiler/Rust/Rust Memory Management.md",
-    "Compiler/Rust/Rust.md",
+    "ReadingNotes/Implementing Functional Languages a Tutorial.md",
+    "Testing/QuickCheck.md",
+    "Algo/General Theory of Representation and Abstraction.md",
+    "Projects/dreaming/Lizy - A Categorical Design Approach.md",
+    "Math/Category Theory/Lens and Other Optics.md",
+    "Algo/Edit Distances.md",
     "Math/Category Theory/Category Theory.md",
-    "SystemDesign/design-pattern/Actor Model.md",
-    "SystemDesign/design-pattern/Reactive Programming.md",
-    "Algo/Data Structure/Trie.md",
-    "Code/toml-parser.md",
-    "Code/Shake.md",
-    "Code/unliftio.md",
-    "Compiler/FP/FRP (Functional Reactive Programming).md",
-    "Tools/dotnet/Akka.md",
-    "ProcMining/Concepts/petri net.md",
-    "Compiler/FP/Co.md",
-    "Compiler/FP/Untitled 1.md",
+    "ReadingNotes",
     "attachments/Pasted image 20240131184714.png",
     "attachments/Pasted image 20240131184644.png",
     "attachments/Pasted image 20240131181431.png",
@@ -334,8 +351,6 @@
     "Compiler/Memory Management.pdf",
     "Math/Quantum Computing",
     "StatLearning/Models/NN/Transformer/Attention Is All You Need.pdf",
-    "StatLearning/Models/A tutorial on support vector regression.pdf",
-    "StatLearning/Models/NN/Transformer",
     "Projects/Haskell Summer 2023/Summer of Haskell Canvas (2023).canvas"
   ]
 }

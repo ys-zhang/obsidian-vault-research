@@ -41,6 +41,23 @@ oneOf :: [Gen a] -> Gen a
 
 fequency :: [(Int, Gen a)] -> Gen a
 ```
+
+## Common Generators
+
+1. List 
+```haskell
+subliftOf :: [a] -> Gen [a]
+shuffle :: [a] -> Gen [a]
+orderedList :: (Ord a, Arbitrary a) => Gen [a] 
+listOf :: Gen a -> Gen [a]
+```
+
+2. Number
+```haskell
+arbitrarySizedIntegral :: Integral a => Gen a
+
+```
+
 ## Unbounded Data types
 
 > [!note]
@@ -87,6 +104,31 @@ E_n &= \frac{1 \times 0}{1+n} + \frac{n(1 + E_n)}{1+n} \\
 \end{align}
 $$
 
+
+## Monad Transformer 
+
+Sometimes you need to generate monadic values, for instance testing some external system, such as web services. 
+
+It may cause pain when generating these actions needs external information when often means you cannot create a pure generator such, instance the creation of the generator must be wrapped in some IO monad, for instance `mkGen :: IO (Gen (IO a))`, its even more painful if you need to chain generators, especially you have a [[generative model]].
+
+To solve the problem we have the monad transformer `GenT`
+
+```haskell
+class MonadGen m where
+  liftGen :: Gen a -> m a
+  ...
+  
+newtype GenT m a = GenT { unGenT :: QCGen -> Int -> m a }
+  deriving (Functor, Applicative, Monad)
+
+instance MonadTrans GenT
+instance MonadIO m => MonadIO (GenT m)
+instance Monad m => MonadGen (GenT m)
+
+runGenT :: GenT m a -> Gen (m a)
+```
+
+thus the above problem can solved by smash `IO (Gen (IO a))` to `GenT IO a`.
 
 # Property
 
@@ -142,6 +184,7 @@ If we treat `Gen Bool` i.e. `Property` as truth value in our new logic system, t
 ```haskell
 -- | use custom generator when testing this property 
 forAll :: Testable prop => Gen a -> (a -> prop) -> Property
+
 -- | implies
 (==>) :: Testable prop => Bool -> prop -> Property
 
@@ -179,15 +222,27 @@ Most implementations of shrink should try at least three things:
 > 1. How to get the coverage of the samples have been tried?
 > 2. How to force to coverage to some specific rate?
 
-```haskell
 
+## Testing Statistics
+
+```haskell
+-- report distribution of `f(sample)`
+-- `f` must be discrete random variable
+collect :: (Show a, Testable prop)
+        => a              -- the `f(sample)`
+        -> prop           -- the test of the sample
+        -> Property       
+
+-- | report distribution of `f(sample)` 
+-- while `f` is boolean random variable
 classify :: Testable prop
          => Bool          -- if sample falls into the category
          -> String        -- label of the category
          -> prop          -- input  testable
          -> Property      -- output testable
 
-
+-- | report distribution, while a test can generate multiple 
+-- labels.
 tabulate :: Testable prop
          => String          -- caption of the table
          -> [String]        -- tags of the sample
@@ -263,3 +318,62 @@ thus we only need to implement a function of type `a -> Integer`
 ## Show and Shrinking Functions
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CH8UQJiv9Q4?si=A26RtlsuRkLO8C9f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+# Stateful Tests
+
+## Methodology
+
+in order to test the stateful system, we need a way to speak about its correctness, there are two methods:
+
+1. use operation semantics to describe actions and how state transits 
+2. use a model of the state and test against that model, we prove the correctness of the system by proving the correctness of the model
+
+### Operational Semantics
+
+>[!note]  
+> The property of a state machine in operational semantics can with stated as 
+> 1. (_precondition_) Given a property of the pre-state
+> 2. (_generator_) and a property of the action
+> 3. (_postcondition_) then the post-state must satisfies some property
+
+Need a way to parameterise state, then the function which generates actions base on some initial state can be modelled as a function from the parameter of the state to an action generator.
+
+>[!quote]
+The key idea for coping with the monadic nature of the implementation was to define a "queue program language", represented as a Haskell datatype, and quantify over contexts. 
+
+1. (parameterise action) model actions as some ADT. 
+2. give a semantics of this language of actions that is 
+```haskell
+semantics :: Action            -- the action 
+          -> Observation       -- the current collection of obvs
+          -> System            -- system before the action
+          -> (System, Obersivation) -- system and obvs aft action
+```
+
+### Model
+
+Given a system $(S, A)$ where $S$ is the collection of states and $A$ is the collection of actions, beside transit states they can have return values. 
+
+Also we have a model of the system which contains model of the states $S_M$ and model of the actions $A_M$. these actions can have type
+```haskell
+type Action = S -> (R, S)
+```
+where $R$ is some return(observable) value of the action.
+
+>[!note] idea
+> The idea is to test the model instead of the system
+
+
+To do so we need to test 2 things
+1. The model (or representation) is _correct_ if the _abstract arrow_ is a functor, for detail see [[General Theory of Representation and Abstraction]]: 
+2. The property holds on the model.
+
+## Test.QuickCheck.Monadic
+
+
+
+
+## quickcheck-state-machine
+
+> specify the correctness by means of a state machine based model using pre- and post-conditions.

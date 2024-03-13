@@ -173,9 +173,9 @@ The type-class `Testable` is just the same concept of predicate since the `prope
 From the perspective of truth value, `Gen Bool` itself is a truth value in [[Probabilistic Soft Logic & Hinge-loss Markov Random Field|Probabilistic Soft Logic]]. 
 
 >[!def] predicate
-> a predicate on type/set `A` is a function
+> a _predicate_ on type/set `A` is a function
 > $$ pred :: A \to TV $$
-> where $TV$ is the type/set of true value, which can be different in different types of logic.
+> where $TV$ is the type/set of _truth value_, which can be different in different types of logic.
 
 If we treat `Gen Bool` i.e. `Property` as truth value in our new logic system, then the `property` function makes any `Testable` a truth value using push forward. Thus its easy to see anything maps to a Testable is a predicate.
 
@@ -210,10 +210,34 @@ class Arbitrary a where
   arbitrary :: Gen a
   shrink :: a -> [a]
 ```
+
 Most implementations of shrink should try at least three things:
-1. Shrink a term to any of its immediate subterms. You can use `subterms` to do this.
-2. Recursively apply shrink to all immediate subterms. You can use `recursivelyShrink` to do this.
-3. Type-specific shrinkings such as replacing a constructor by a simpler constructor.
+1. Type-specific shrinking such as replacing a constructor by a simpler constructor.
+2. Shrink a term to any of its immediate sub-terms. You can use `subterms` to do this.
+3. _Recursively apply shrink to all immediate sub-terms._ You can use `recursivelyShrink` to do this.
+
+>[!note] 
+> In the first glance, it seems that the 3rd rule is not necessary; however it is critical to have the smallest counter-exampler.
+>
+> To see the reason, first notice how shrink function is used
+> ```haskell
+> runShrinker :: Arbitrary a => (a -> Bool) -> a -> a
+> runShrinker p a 
+>   | p a       =  error "not a counter-example"
+>   | otherwise = 
+>       case listToMaybe (filter (not . p) $ shrink a) of 
+>         Nothing -> a 
+>         Just a' -> runShrinker p a'
+> ```
+> to reach the minimum, you have to assure that there is at least one counter-example in the shrinking options, this may not be true if we only shrink sub-terms for 1 level.
+> 
+> For example, we if we shrink integer using the follow shrinker
+> ```haskell
+> shrink :: Integer -> [Integer]
+> shrink a = [a-1]
+> ```
+> we probably will never reach the minimum
+
 
 
 # Coverage

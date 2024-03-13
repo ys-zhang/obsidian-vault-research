@@ -6,6 +6,7 @@
       {
         "id": "1152f4746e165286",
         "type": "tabs",
+        "dimension": 45.9521094640821,
         "children": [
           {
             "id": "526d3810ac1d574e",
@@ -59,7 +60,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ReadingNotes/Implementing Functional Languages a Tutorial.md",
+                "file": "Compiler/Program Analysis/Dataflow Analysis.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "50d5a8b9dc664f7b",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Compiler/Program Analysis/Dataflow Analysis.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,27 +86,16 @@
           {
             "id": "2a1190f077a0d2e7",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Testing/QuickCheck.md",
+                "file": "Testing/Unit Test Frameworks.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "f10ed0ae67c489c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Compiler/Reduction Strategy.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
@@ -120,8 +125,30 @@
             }
           },
           {
-            "id": "50d5a8b9dc664f7b",
+            "id": "55de735490773282",
             "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ReadingNotes/Implementing Functional Languages a Tutorial.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      },
+      {
+        "id": "4ffe5a76fae5f2b9",
+        "type": "tabs",
+        "dimension": 54.0478905359179,
+        "children": [
+          {
+            "id": "e3dcd63220db6638",
+            "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -129,11 +156,51 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "830c3afac19128b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Testing/Hypothesis and Internal shrinking.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "04b74175c9ef84b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SystemDesign/MacOS Dev/SwiftUI Focus.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "033fccd4a93a73ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Testing/Hierarchical Delta Debugging.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -201,7 +268,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Compiler/Program Analysis/Dataflow Analysis.md",
+                "file": "Testing/Hierarchical Delta Debugging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -218,7 +285,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Compiler/Program Analysis/Dataflow Analysis.md",
+                "file": "Testing/Hierarchical Delta Debugging.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -241,7 +308,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Compiler/Program Analysis/Dataflow Analysis.md"
+                "file": "Testing/Hierarchical Delta Debugging.md"
               }
             }
           },
@@ -302,14 +369,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "50d5a8b9dc664f7b",
+  "active": "033fccd4a93a73ab",
   "lastOpenFiles": [
-    "SystemDesign/MacOS Dev/SwiftUI FAQ.md",
-    "SystemDesign/MacOS Dev/SwiftUI Navigation.md",
-    "Compiler/FP/Generic Programming in Haskell.md",
     "SystemDesign/MacOS Dev/SwiftUI Focus.md",
-    "SystemDesign/MacOS Dev/SwiftUI Fonts.md",
+    "Testing/Hypothesis and Internal shrinking.md",
+    "Testing/Hierarchical Delta Debugging.md",
+    "Testing/Unit Test Frameworks.md",
+    "Testing/falsify and Internal shrinking.md",
+    "Testing/Hedgehog and Integrated shrinking.md",
+    "Testing/QuickCheck.md",
+    "Compiler/Reduction Strategy.md",
+    "SystemDesign/MacOS Dev/SwiftUI FAQ.md",
     "Compiler/Program Analysis/Dataflow Analysis.md",
+    "ReadingNotes/Implementing Functional Languages a Tutorial.md",
+    "Compiler/FP/Generic Programming in Haskell.md",
+    "SystemDesign/MacOS Dev/SwiftUI Navigation.md",
+    "SystemDesign/MacOS Dev/SwiftUI Fonts.md",
     "Compiler/Program Analysis/Collecting Semantics.md",
     "Compiler/Program Analysis/Operational Semantics.md",
     "Math/Category Theory/Concepts/Lattice.md",
@@ -322,15 +397,7 @@
     "Compiler/Program Synthesis/Program Synthesis.md",
     "SystemDesign/MacOS Dev/AppKit.md",
     "Tools/UI/SwiftUI.md",
-    "Compiler/Reduction Strategy.md",
     "Compiler/Evaluation Strategy.md",
-    "ReadingNotes/Implementing Functional Languages a Tutorial.md",
-    "Testing/QuickCheck.md",
-    "Algo/General Theory of Representation and Abstraction.md",
-    "Projects/dreaming/Lizy - A Categorical Design Approach.md",
-    "Math/Category Theory/Lens and Other Optics.md",
-    "Algo/Edit Distances.md",
-    "Math/Category Theory/Category Theory.md",
     "ReadingNotes",
     "attachments/Pasted image 20240131184714.png",
     "attachments/Pasted image 20240131184644.png",

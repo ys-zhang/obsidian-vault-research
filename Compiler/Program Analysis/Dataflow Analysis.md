@@ -221,12 +221,10 @@ There is some other problems we needs to consider:
 
 Side-effect of mutating global variables can be handled by treating these global variable as both input and output of the function.
 
-## interprocedural control flow graph
-
-This is much like _function inlining_, we inline the function's local CFG to the whole program CFG.
-
 ## Context Sensitive Analysis
 
-> Context-sensitive analysis analyses a function either multiple times, or parametrically, so that _the analysis results returned to different call sites reflect the different analysis results passed in at those call sites_.
+> **Context-sensitive analysis** analyses a function either multiple times, or parametrically, so that _the analysis results returned to different call sites reflect the different analysis results passed in at those call sites_.
 
 
+>[!remark]
+>This is much like _function inlining_, we inline the function's local CFG to the whole program CFG. However, inlining do **not** support _recursive functions_

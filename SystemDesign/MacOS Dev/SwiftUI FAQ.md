@@ -233,3 +233,80 @@ protocol Layout {
     - [Part 1: PreferenceKey](https://swiftui-lab.com/communicating-with-the-view-tree-part-1/)
     - [Part 2: AnchorPreferences](https://swiftui-lab.com/communicating-with-the-view-tree-part-2/)
     - [Part 3: Nested Views](https://swiftui-lab.com/communicating-with-the-view-tree-part-3/)
+
+
+# Misc FAQ
+
+###### `TUINSRemoteViewController`
+
+>error message: `CLIENT ERROR: TUINSRemoteViewController does not override -viewServiceDidTerminateWithError: and thus cannot react to catastrophic errors beyond logging them`
+
+ref: https://forum.juce.com/t/catastrofic-error-for-all-custom-plugins-tuinsremoteviewcontroller/59399/2
+
+The message says that a certain Objective-C class named `TUINSRemoteViewController` does not override the method named `viewServiceDidTerminateWithError` and the warning just informs the developer that in case a catastrophic error _should_ occur this error cannot be handled gracefully beyond logging it. So in case that no catastrophic error appears all is fine anyway.
+
+This is related to the `NSViewController` which is related to using `NSViewRepresentable` to define _custom views_ 
+
+
+###### `onKeyPress` and `NavigationSplitView`
+
+https://discord.com/channels/354030873126895619/1216655629763088416/1216655629763088416
+
+unexpected behaviour when using `onKeyPress` modifier inside `NavigationSplitView`.
+
+```swift
+struct ContentView: View {
+    @State private var text : String = "Hello, World"
+    var body: some View {
+        NavigationSplitView { EmptyView() } detail: {
+            TextField("", text: $text)
+                .onKeyPress(phases: .all) {key in
+                    print("inner: \(key)")
+                    return .ignored
+                }
+        }
+        .onKeyPress(phases: .all) { key in
+            print("outer: \(key)")
+            return .ignored
+        }
+    }
+}
+```
+
+the expected behaviour should be printing _1 outer key down, 1 outer key up, 1 inner key down and 1 inner key up_; however, it prints _1 outer key down, 2 outer key ups and 1 inner keyup_:
+
+```
+outer: KeyPress(.down, "a")
+outer: KeyPress(.up, "a")
+outer: KeyPress(.up, "a")
+inner: KeyPress(.up, "a")
+```  
+
+However if we replace `NavigationSplitView` with `NavigationStack`
+```swift
+struct NavSplitScribble: View {
+    @State private var text : String = "Hello, World"
+    var body: some View {
+        NavigationStack {
+            TextField("", text: $text)
+                .onKeyPress(phases: .all) {key in
+                    print("inner: \(key)")
+                    return .ignored
+                }
+        }
+        .onKeyPress(phases: .all) { key in
+            print("outer: \(key)")
+            return .ignored
+        }
+    }
+}
+```
+
+gives 
+
+```
+outer: KeyPress(.down, "a")
+inner: KeyPress(.down, "a")
+outer: KeyPress(.up, "a")
+inner: KeyPress(.up, "a")
+```

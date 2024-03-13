@@ -76,6 +76,6 @@ tabOrder (FocusSection xs) =
 keep pressing the `TAB` key can take an ***inorder traversal*** of the focus tree.
 # References
 - [The SwiftUI Cookbook for Focus](https://developer.apple.com/wwdc23/10162)
-
+- [focus management from Majid](https://swiftwithmajid.com/2020/12/02/focus-management-in-swiftui/): good blog 
 
 

@@ -6,7 +6,6 @@
       {
         "id": "1152f4746e165286",
         "type": "tabs",
-        "dimension": 45.9521094640821,
         "children": [
           {
             "id": "526d3810ac1d574e",
@@ -54,21 +53,6 @@
             }
           },
           {
-            "id": "d88313aa1ab32aca",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Compiler/Program Analysis/Dataflow Analysis.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
             "id": "50d5a8b9dc664f7b",
             "type": "leaf",
             "pinned": true,
@@ -99,34 +83,9 @@
             }
           },
           {
-            "id": "4e707a54b8c7f38c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Compiler/Evaluation Strategy.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aec95260ad2010b4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SystemDesign/MacOS Dev/SwiftUI FAQ.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "55de735490773282",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -134,17 +93,10 @@
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
-          }
-        ],
-        "currentTab": 5
-      },
-      {
-        "id": "4ffe5a76fae5f2b9",
-        "type": "tabs",
-        "dimension": 54.0478905359179,
-        "children": [
+          },
           {
             "id": "e3dcd63220db6638",
             "type": "leaf",
@@ -161,12 +113,12 @@
             }
           },
           {
-            "id": "830c3afac19128b8",
+            "id": "194327efa62b7e45",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Testing/Hypothesis and Internal shrinking.md",
+                "file": "Testing/UI Testing in XCTest.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -174,25 +126,12 @@
             }
           },
           {
-            "id": "04b74175c9ef84b5",
+            "id": "1b9281d9049c2bca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SystemDesign/MacOS Dev/SwiftUI Focus.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "033fccd4a93a73ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Testing/Hierarchical Delta Debugging.md",
+                "file": "Compiler/FP/Haskell.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -200,7 +139,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -229,7 +168,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#program-synthesis",
+                "query": "patten",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -250,8 +189,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 231.5,
-    "collapsed": true
+    "width": 231.5
   },
   "right": {
     "id": "90a6f9defb7a3379",
@@ -268,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Testing/Hierarchical Delta Debugging.md",
+                "file": "Compiler/FP/Haskell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -285,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Testing/Hierarchical Delta Debugging.md",
+                "file": "Compiler/FP/Haskell.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -298,7 +236,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "alphabetical",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -308,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Testing/Hierarchical Delta Debugging.md"
+                "file": "Compiler/FP/Haskell.md"
               }
             }
           },
@@ -323,17 +261,9 @@
                 "searchQuery": ""
               }
             }
-          },
-          {
-            "id": "05dcb7003132f7c5",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "43908533fb4c38f7",
@@ -352,8 +282,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.5,
-    "collapsed": true
+    "width": 306.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -369,35 +298,36 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "033fccd4a93a73ab",
+  "active": "1b9281d9049c2bca",
   "lastOpenFiles": [
-    "SystemDesign/MacOS Dev/SwiftUI Focus.md",
-    "Testing/Hypothesis and Internal shrinking.md",
-    "Testing/Hierarchical Delta Debugging.md",
-    "Testing/Unit Test Frameworks.md",
-    "Testing/falsify and Internal shrinking.md",
-    "Testing/Hedgehog and Integrated shrinking.md",
-    "Testing/QuickCheck.md",
-    "Compiler/Reduction Strategy.md",
-    "SystemDesign/MacOS Dev/SwiftUI FAQ.md",
+    "Compiler/FP/Haskell.md",
     "Compiler/Program Analysis/Dataflow Analysis.md",
-    "ReadingNotes/Implementing Functional Languages a Tutorial.md",
+    "Testing/UI Testing in XCTest.md",
+    "Compiler/Prolog.md",
+    "Testing/Unit Test Frameworks.md",
     "Compiler/FP/Generic Programming in Haskell.md",
+    "Code/Salsa.md",
+    "Testing/falsify and Internal shrinking.md",
+    "Testing/property based testing practices.md",
+    "Math/Category Theory/Monad/Monad.md",
+    "Testing/Hypothesis and Internal shrinking.md",
+    "Algo/General Theory of Representation and Abstraction.md",
+    "ReadingNotes/Implementing Functional Languages a Tutorial.md",
+    "Testing/QuickCheck.md",
+    "Math/Category Theory/Monad/Representable functor.md",
+    "Testing/Metamorphic testing.md",
+    "SystemDesign/design-pattern/Reactive Programming.md",
+    "Testing/Hierarchical Delta Debugging.md",
+    "SystemDesign/MacOS Dev/SwiftUI Focus.md",
+    "attachments/Pasted image 20240315101641.png",
+    "SystemDesign/MacOS Dev/SwiftUI Reactivity.md",
+    "SystemDesign/MacOS Dev/SwiftUI FAQ.md",
+    "Compiler/Evaluation Strategy.md",
+    "Testing/Hedgehog and Integrated shrinking.md",
+    "Compiler/Reduction Strategy.md",
     "SystemDesign/MacOS Dev/SwiftUI Navigation.md",
     "SystemDesign/MacOS Dev/SwiftUI Fonts.md",
-    "Compiler/Program Analysis/Collecting Semantics.md",
-    "Compiler/Program Analysis/Operational Semantics.md",
-    "Math/Category Theory/Concepts/Lattice.md",
-    "Math/Category Theory/Concepts/Preorder.md",
-    "Math/Category Theory/Concepts/Partial Order.md",
-    "Math/Category Theory/Common Categories/Partial Order.md",
-    "SystemDesign/MacOS Dev/SwiftUI Reactivity.md",
     "Compiler/Program Analysis",
-    "Compiler/Program Synthesis/Inductive Synthesis.md",
-    "Compiler/Program Synthesis/Program Synthesis.md",
-    "SystemDesign/MacOS Dev/AppKit.md",
-    "Tools/UI/SwiftUI.md",
-    "Compiler/Evaluation Strategy.md",
     "ReadingNotes",
     "attachments/Pasted image 20240131184714.png",
     "attachments/Pasted image 20240131184644.png",
@@ -411,7 +341,6 @@
     "attachments/Pasted image 20231109102843.png",
     "Compiler/FP/Haskell",
     "Projects/Japanese",
-    "attachments/Session-Cookie Based Authentication.png",
     "Compiler/Program Synthesis",
     "Scratch.canvas",
     "StatLearning/Estimators and Tests/Graphical Representation of the “Holy Trinity”.pdf",

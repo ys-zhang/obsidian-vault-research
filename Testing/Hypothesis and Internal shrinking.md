@@ -46,5 +46,28 @@ However, _rejection sampling_ may abandon a large chunk of sequence if the gener
 
 # Hypothesis's internal shrinker
 
+[Source code for Shrinker in Hypothesis](https://github.com/HypothesisWorks/hypothesis/blob/master/hypothesis-python/src/hypothesis/internal/conjecture/shrinker.py)
+
+>[!rmk] syntactically correct 
+> if we treat a generator as _parsers_ of finite choice sequences, the choice sequence under shrinking must be _syntactically correct_ w.r.t. the parser. Obviously the shrinking result must also be _syntactically correct_. 
+
+we say a choice sequence is _atomic_ if removing any single bit triggers a parsing error.
+
+```haskell
+data StructuredChoiceSeq 
+  = Atomic [Byte]
+  | Composed [ChoiceSeq]
+
+type Gen a = StdGen -> (a, StructuredChoiceSeq, StdGen)
+```
 
 
+>[!warning] pitfall
+> There is one pitfall when writing generator for internal shrinking. Each bit or word of the choice sequence or sample tree corresponding to 
+> - some field of some type
+> - choice of data constructor
+> - control flow like `if then else`
+>
+> It is favourable if we can assure these correspondences **do not change** during shrinking. 
+>
+> It is not recommended to introduce random on `if`'s _condition expression and at least one of its branches_, as when the condition shrinks, some bits can be used to generate difference fields. A solution is generate both branches and use a if to choose. 

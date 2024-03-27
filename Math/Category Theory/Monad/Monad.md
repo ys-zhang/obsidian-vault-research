@@ -241,3 +241,25 @@ In Haskell, `IO` is a monad. It means that you are able to compose Kleisli arrow
 ## The Stream Comonad
 
 A stream is just like a list, except that it doesn’t have the empty constructor
+
+
+# Selective Applicative Functors
+
+> Mokhov, A., Lukyanov, G., Marlow, S., & Dimino, J. (2019). Selective applicative functors. _Proceedings of the ACM on Programming Languages_, _3_(ICFP), 90:1-90:29. [https://doi.org/10.1145/3341694](https://doi.org/10.1145/3341694)
+
+>[!tip] Idea
+>Find an intermediate abstraction between applicative functors and monads, which requires us to declare all possible effects statically, but allows us to select which effects to execute dynamically.
+
+```haskell
+class Applicative f => Selective f where
+  select :: f (Either a b) -> f (a -> b) -> f b
+```
+
+The _first_ computation is used to _select what happens next_:
+- ﻿﻿`Left a`: you _must execute_ the second computation to produce a `b`;
+- ﻿﻿`Right b`: you _may skip_ the second computation and return the `b`.
+
+>[!note] speculative execution
+> `Seletive` supports the so-called _speculative execution_, which allows _parallel executes the 1st and 2nd computation and cancel the 2nd if/when the 1st one evaluates to_ `Right b`.
+>
+> for instance the [`select` statement](https://go.dev/tour/concurrency/5) in Golang

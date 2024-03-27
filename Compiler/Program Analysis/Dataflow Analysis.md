@@ -6,7 +6,7 @@ Let $\sigma$ denotes the dataflow information which maps variables to some value
 $$
  \sigma : Var \to L 
 $$
-The elements of $L$ are referred as _abstract values_. You can think $L$ to be some label or true value in some logic. 
+The elements of $L$ are referred as _abstract values_. You can think $L$ to be some label or truth value in some logic. 
 
 >[!note]
 >the dataflow information $\sigma$ is an abstracted version of program state $E$, see [[Operational Semantics]]
@@ -23,6 +23,38 @@ The elements of $L$ are referred as _abstract values_. You can think $L$ to be s
 > f :: Instr -> (Var -> L) -> Var -> L
 > ```
 
+```haskell
+data Instr  -- instruction 
+data CFG a  -- control flow graph 
+
+-- | lookup program point
+pp       :: Partial => CFG a -> PPID -> PP a
+-- | lookup parents of a program point
+parents  :: Partial => CFG a -> PPID -> [PP a]
+-- | lookup children of a program point
+children :: Partial => CFG a -> PPID -> [PP a]
+
+type PPID = Word
+
+-- program point
+data PP a = PP 
+  { ppId  :: PPID 
+  -- ^ id in a CFG
+  , ppVal :: Map Var a  
+  -- ^ partial analysis result
+  }
+
+class Lattice a where
+  botL :: a               -- identity for meetL
+  topL :: a               -- identity for joinL
+  meetL :: a -> a -> a    -- assoc
+  joinL :: a -> a -> a    -- assoc
+
+class Lattice (L a) => FlowAnalysis a where
+  type L a :: *
+
+
+```
 
 # Branching 
 
@@ -37,9 +69,9 @@ $$
 use the join of $\sigma_{post}$ computed from each parent of the node as the result.
 
 >[!def] top & bottom
-> usually there is an element in $L$ represents that we are not certain about the abstract value of the variable which is dubbed _top_ and denoted by $\top$, the name _top_ is from [[Lattice]]
+> usually there is an element in $L$ represents that **we are not certain about the abstract value of the variable which is dubbed _top_ and denoted by $\top$**, the name _top_ is from [[Lattice]]
 >
-> we use $\bot$ to denote the dataflow information of a program point than has not been analysed. This is critical when there is a incoming branch that is originated from a node that we have not met yet, but its value is needed for analysing the current node. 
+> **we use $\bot$ to denote the dataflow information of a program point than has not been analysed.** This is critical when there is a incoming branch that is originated from a node that we have not met yet, but its value is needed for analysing the current node. 
 
 # Loop
 
@@ -55,7 +87,6 @@ flow (Loop xs) =
            else rec post 
  where 
   trans pre = foldr pre flow (reverse xs)
-  
 ```
 
 we first use a map to represent the dataflow information $\sigma$ (we can make a [[Trie#Generalised Trie|generalised trie]] from a function, and convert it back to a function in Haskell).
@@ -223,8 +254,15 @@ Side-effect of mutating global variables can be handled by treating these global
 
 ## Context Sensitive Analysis
 
-> **Context-sensitive analysis** analyses a function either multiple times, or parametrically, so that _the analysis results returned to different call sites reflect the different analysis results passed in at those call sites_.
+>[!def] context sensitive analysis
+> A **context-sensitive** analysis is an _interprocedural_ analysis that considers the _calling context_ when analysing the target of a _function call_.
+>
+> _context_ is an abstraction for a set of calls to that function.
+
+>[!note] 
+>**Context-sensitive analysis** analyses a function either multiple times, or parametrically, so that _the analysis results returned to different call sites reflect the different analysis results passed in at those call sites_.
+
+This is much like _function inlining_, we inline the function's local CFG to the whole program CFG. However, inlining do **not** support _recursive functions_
 
 
->[!remark]
->This is much like _function inlining_, we inline the function's local CFG to the whole program CFG. However, inlining do **not** support _recursive functions_
+

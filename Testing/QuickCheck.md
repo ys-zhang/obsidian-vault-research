@@ -341,6 +341,8 @@ thus we only need to implement a function of type `a -> Integer`
 
 ## Show and Shrinking Functions
 
+see also [[Representable functor]]
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CH8UQJiv9Q4?si=A26RtlsuRkLO8C9f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 

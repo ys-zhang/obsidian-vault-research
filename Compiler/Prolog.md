@@ -332,7 +332,7 @@ max(X, Y, X)     % this violates rule 2
 %         +--- goal term 
 
 % the prob of this impl
-% is that "cut makes the patten matching not exaustive"
+% is that "cut makes the pattern matching not exaustive"
 max(X,Y,X) :- X >= Y, !.  
 max(_,Y,Y).
 ```

@@ -113,21 +113,9 @@
             }
           },
           {
-            "id": "194327efa62b7e45",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Testing/UI Testing in XCTest.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1b9281d9049c2bca",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -135,11 +123,51 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "c7b954ab45f5c393",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Compiler/Program Analysis/Available Expressions Analysis.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3cc00dc96abe939a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Compiler/FP/Arrow.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e0e675e8b54742a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Compiler/FP/FRP (Functional Reactive Programming).md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -168,7 +196,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "patten",
+                "query": "arrow",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -189,7 +217,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 231.5
+    "width": 382.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "90a6f9defb7a3379",
@@ -206,7 +235,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Compiler/FP/Haskell.md",
+                "file": "Compiler/FP/FRP (Functional Reactive Programming).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +252,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Compiler/FP/Haskell.md",
+                "file": "Compiler/FP/FRP (Functional Reactive Programming).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,7 +275,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Compiler/FP/Haskell.md"
+                "file": "Compiler/FP/FRP (Functional Reactive Programming).md"
               }
             }
           },
@@ -263,7 +292,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "43908533fb4c38f7",
@@ -282,7 +311,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.5
+    "width": 306.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -298,35 +328,37 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1b9281d9049c2bca",
+  "active": "e0e675e8b54742a2",
   "lastOpenFiles": [
-    "Compiler/FP/Haskell.md",
-    "Compiler/Program Analysis/Dataflow Analysis.md",
-    "Testing/UI Testing in XCTest.md",
+    "Compiler/FP/Arrow.md",
     "Compiler/Prolog.md",
-    "Testing/Unit Test Frameworks.md",
-    "Compiler/FP/Generic Programming in Haskell.md",
-    "Code/Salsa.md",
-    "Testing/falsify and Internal shrinking.md",
-    "Testing/property based testing practices.md",
-    "Math/Category Theory/Monad/Monad.md",
-    "Testing/Hypothesis and Internal shrinking.md",
-    "Algo/General Theory of Representation and Abstraction.md",
+    "Compiler/Program Analysis/Available Expressions Analysis.md",
     "ReadingNotes/Implementing Functional Languages a Tutorial.md",
     "Testing/QuickCheck.md",
-    "Math/Category Theory/Monad/Representable functor.md",
-    "Testing/Metamorphic testing.md",
-    "SystemDesign/design-pattern/Reactive Programming.md",
-    "Testing/Hierarchical Delta Debugging.md",
-    "SystemDesign/MacOS Dev/SwiftUI Focus.md",
-    "attachments/Pasted image 20240315101641.png",
-    "SystemDesign/MacOS Dev/SwiftUI Reactivity.md",
+    "Testing/Untitled.md",
+    "Testing/falsify and Internal shrinking.md",
+    "Compiler/FP/Haskell.md",
+    "Code/Brick & Vty.md",
+    "Code/XMonad.md",
+    "Compiler/Concepts/irrefutable pattern.md",
+    "Compiler/FP/Generic Programming in Haskell.md",
+    "attachments/uniplate-api.png",
+    "Compiler/Concepts/Term Rewriting.webarchive",
+    "Algo/Data Structure/Graph.md",
+    "Compiler/FP/Contravariant Logging.md",
+    "Compiler/FP/Parsec.md",
+    "Projects/Haskell Summer 2023/haskell prettyprinter.md",
+    "Compiler/Program Analysis/Dataflow Analysis.md",
+    "Compiler/Rust/Rust.md",
     "SystemDesign/MacOS Dev/SwiftUI FAQ.md",
-    "Compiler/Evaluation Strategy.md",
-    "Testing/Hedgehog and Integrated shrinking.md",
-    "Compiler/Reduction Strategy.md",
-    "SystemDesign/MacOS Dev/SwiftUI Navigation.md",
-    "SystemDesign/MacOS Dev/SwiftUI Fonts.md",
+    "Tools/UI/SwiftUI.md",
+    "SystemDesign/MacOS Dev/SwiftUI Reactivity.md",
+    "Testing/UI Testing in XCTest.md",
+    "Testing/Unit Test Frameworks.md",
+    "Code/Salsa.md",
+    "Testing/property based testing practices.md",
+    "Math/Category Theory/Monad/Monad.md",
+    "attachments/Pasted image 20240315101641.png",
     "Compiler/Program Analysis",
     "ReadingNotes",
     "attachments/Pasted image 20240131184714.png",
@@ -338,7 +370,6 @@
     "attachments/Pasted image 20240128154345.png",
     "attachments/Pasted image 20240108110608.png",
     "SystemDesign/MacOS Dev",
-    "attachments/Pasted image 20231109102843.png",
     "Compiler/FP/Haskell",
     "Projects/Japanese",
     "Compiler/Program Synthesis",
@@ -346,7 +377,6 @@
     "StatLearning/Estimators and Tests/Graphical Representation of the “Holy Trinity”.pdf",
     "Compiler/Memory Management.pdf",
     "Math/Quantum Computing",
-    "StatLearning/Models/NN/Transformer/Attention Is All You Need.pdf",
     "Projects/Haskell Summer 2023/Summer of Haskell Canvas (2023).canvas"
   ]
 }

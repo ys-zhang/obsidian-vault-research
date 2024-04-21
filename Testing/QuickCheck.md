@@ -1,4 +1,4 @@
-#property-based-testing
+#property-based-testing #program-test 
 
 
 # Generate

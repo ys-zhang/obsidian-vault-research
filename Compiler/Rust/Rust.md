@@ -390,7 +390,7 @@ fn print_coordinates(&(x, y): &(i32, i32)) {
 ```
 
 
-Patterns come in two forms: _refutable_ and _irrefutable_.
+Patterns come in two forms: _refutable pattern_ and [[irrefutable pattern]].
 - Patterns that will match for any possible value passed are _irrefutable_.
 - Patterns that can fail to match for some possible value are _refutable_.
 

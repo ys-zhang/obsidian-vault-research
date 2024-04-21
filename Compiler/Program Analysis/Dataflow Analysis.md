@@ -23,6 +23,64 @@ The elements of $L$ are referred as _abstract values_. You can think $L$ to be s
 > f :: Instr -> (Var -> L) -> Var -> L
 > ```
 
+# Intraprocedural Analysis
+## Branching 
+
+In CFG when multiple edges "meets" at the same node, make the node have multiple parents, the dataflow information $\sigma_{pre}$ from different branches may not match with each other.
+
+To solve this conflict, we require $L$ to be a [[Lattice]], or more accurate a _join semi-lattice_.
+
+In other words, _join (least upper-bound)_ exists for each pair of elements in $L$.
+$$
+\forall x, y\in L.\; (x \sqcup y) := \inf\{e\in L: x\le e, y\le e\}
+$$
+use the join of $\sigma_{post}$ computed from each parent of the node as the result.
+
+>[!def] top & bottom
+> usually there is an element in $L$ represents that **we are not certain about the abstract value of the variable which is dubbed _top_ and denoted by $\top$**, the name _top_ is from [[Lattice]]
+>
+> **we use $\bot$ to denote the dataflow information of a program point than has not been analysed.** This is critical when there is a incoming branch that is originated from a node that we have not met yet, but its value is needed for analysing the current node. 
+
+## Loop
+
+use fix-point in dataflow for loops, basically, we run the dataflow analysis in the loop until post dataflow information reaches a fix-point, i.e., do not change any  reaches a fix-point, i.e., do not change any more.
+
+```haskell
+flow :: i -> Trie Var a -> Trie Var a
+flow (Loop xs) = 
+  fix $ \rec pre -> 
+    let post = trans pre
+    in  if post == pre 
+          then post
+           else rec post 
+ where 
+  trans pre = foldr pre flow (reverse xs)
+```
+
+we first use a map to represent the dataflow information $\sigma$ (we can make a [[Trie#Generalised Trie|generalised trie]] from a function, and convert it back to a function in Haskell).
+
+# Work list algorithm
+
+#algorithm 
+
+```
+worklist = []
+for Node n in cfg 
+    input[n] = output[n] = _|_ 
+    add n to worklist 
+input[0] = initialDataflowInformation 
+
+while worklist is not empty 
+    take a Node n off the worklist 
+    output[n] = flow(n, input[n]) 
+    for Node j in succs(n) 
+        newInput = input[j] `union` output[n] 
+        if newInput != input[j] 
+            input[j] = newInput 
+            add j to worklist
+```
+
+
 ```haskell
 data Instr  -- instruction 
 data CFG a  -- control flow graph 
@@ -55,41 +113,6 @@ class Lattice (L a) => FlowAnalysis a where
 
 
 ```
-
-# Branching 
-
-In CFG when multiple edges "meets" at the same node, make the node have multiple parents, the dataflow information $\sigma_{pre}$ from different branches may not match with each other.
-
-To solve this conflict, we require $L$ to be a [[Lattice]], or more accurate a _join semi-lattice_.
-
-In other words, _join (least upper-bound)_ exists for each pair of elements in $L$.
-$$
-\forall x, y\in L.\; (x \sqcup y) := \inf\{e\in L: x\le e, y\le e\}
-$$
-use the join of $\sigma_{post}$ computed from each parent of the node as the result.
-
->[!def] top & bottom
-> usually there is an element in $L$ represents that **we are not certain about the abstract value of the variable which is dubbed _top_ and denoted by $\top$**, the name _top_ is from [[Lattice]]
->
-> **we use $\bot$ to denote the dataflow information of a program point than has not been analysed.** This is critical when there is a incoming branch that is originated from a node that we have not met yet, but its value is needed for analysing the current node. 
-
-# Loop
-
-use fix-point in dataflow for loops, basically, we run the dataflow analysis in the loop until post dataflow information reaches a fix-point, i.e., do not change any  reaches a fix-point, i.e., do not change any more.
-
-```haskell
-flow :: i -> Trie Var a -> Trie Var a
-flow (Loop xs) = 
-  fix $ \rec pre -> 
-    let post = trans pre
-    in  if post == pre 
-          then post
-           else rec post 
- where 
-  trans pre = foldr pre flow (reverse xs)
-```
-
-we first use a map to represent the dataflow information $\sigma$ (we can make a [[Trie#Generalised Trie|generalised trie]] from a function, and convert it back to a function in Haskell).
 
 # Theory
 
@@ -179,50 +202,25 @@ $$
 > Given a lattice $(L, \sqsubseteq)$, a _least fixed point_ of function $f: L \to L$ is the _meet_ of all fixed point of $f$  
 > $$ \sqcap \{x: f(x) = x\}  $$
 
-# Work list algorithm
+## Example: dependence analysis
 
-#algorithm 
+Example from section 6.2.8 of book "THE IMPLEMENTATION OF FUNCTIONAL PROGRAMMING LANGUAGES" by SPJ
 
-```
-worklist = []
-for Node n in cfg 
-    input[n] = output[n] = _|_ 
-    add n to worklist 
-input[0] = initialDataflowInformation 
+In functional programming language, _dependency analysis_ is used to replace `letrec` expression to simple `let` expression whenever possible; and its is prerequisite of _type checking_. 
 
-while worklist is not empty 
-    take a Node n off the worklist 
-    output[n] = flow(n, input[n]) 
-    for Node j in succs(n) 
-        newInput = input[j] `union` output[n] 
-        if newInput != input[j] 
-            input[j] = newInput 
-            add j to worklist
-```
+The basic idea is to form a dependence graph and then compress all _strongly connected components_ and last sort the components with _topological sort_.
 
+>[!def] dependency graph
+>For each `letrec` construct a (directed) graph in which the nodes are the variables bound by the `letrec`. There is an arc from one variable, $f$, to another variable, $g$, if $g$ occurs free in the definition of $f$ (i.e. the definition of $f$ depends directly on $g$).
 
-```haskell
-class Eq a => Lattice a where
-  top :: a
-  join :: a -> a -> a
-  lessThan :: Partial => a -> a -> Bool
-  lessThanRel :: [(a, a)]
+>[!def] mutual recursive
+> Two variables $x$ and $y$ are _mutually recursive_ if there is a _path (direct or indirect)_ in the _dependency graph_ from $x$ to y and from $y$ to $x$.
 
+>[!def] strongly connected component
+> a subset in a directed graph is a _strongly connected component_ in which for any 2 elements $x$ and $y$ of the subset, there is
+> 1. a path from $x$ to $y$ and 
+> 2. a path from $y$ to $x$
 
--- | data flow analysis with 
--- instruction set i
--- variable's value type t
--- lattice a
-class Lattice a => DataFlow i a t where
-  -- | abstraction function
-  abstract :: t -> a
-  initAssumption :: a
-  initAssumption = top
-  flow :: i -> (Var t -> a) -> Var t -> a
-  flow i = untrie . flowTrie i . trie
-  flowTrie :: i -> Trie (Var t) a -> Trie (Var t) a
-  flowTrie i = trie . flow i . untrie
-```
 
 
 # Interprocedural Analysis

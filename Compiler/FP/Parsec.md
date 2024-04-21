@@ -70,6 +70,67 @@ string :: Eq i => [i] -> Parser i e [i]
 string = traverse char
 ```
 
+
+# indentation sensitive parsing
+
+https://github.com/mrkkrp/megaparsec-site/blob/master/tutorials/indentation-sensitive-parsing.md
+
+>[!note] logical model
+> 1. Top level items are not indented
+> 2. All indented tokens are directly or indirectly are “children” of some top-level definition.
+> 3. there are 2 types of tokens:
+>     1. indent tokens (spaces)
+>     2. indented tokens
+>     3. reference tokens (not spaces)
+> 4. indentation level, number of indent tokens on a line
+> ```
+>        ----- reference token
+>        |
+>        v
+>        xxxxxxxxxxx    
+>             aaaaaa
+>             bbbbbb
+>             ^
+>             |
+>             ------- indented tokens
+> ```
+
+
+```haskell
+noIndent :: MonadParsec e s m
+         => m ()      -- ^ indent token (white spaces) consumer
+         -> m a       -- ^ parse the data
+         -> m a
+
+indentBlock :: (MonadParsec e s m, Token s ~ Char)
+            => m ()    
+            -- ^ How to consume indentation (newline include)
+            -> m (IndentOpt m a b) 
+            -- ^ How to parse reference token
+            -- and give a result of how to 
+            -- parse indented tokens
+            -> m a
+
+data IndentOpt m a b
+  = IndentNone a
+  -- ^ parse no indented tokens, rust return the value
+  | IndentMany (Maybe Int) ([b] -> m a) (m b)
+  -- ^ zero or more indented tokens
+  -- parameters 
+  --   - (Maybe Int)  expected indentation level, 
+  --                  if nothing use level 
+  --                  of 1st indented token
+  --   - ([b] -> m a) combine parsing results of indented tokens
+  --   - (m b)        how to parse an indented token 
+  | IndentSome (Maybe Int) ([b] -> m a) (m b)
+  -- ^ one or more indented tokens
+```
+
+# Misc
+
+>[!def] offending line
+> The _offending line_ of some _code error_ is the line of source code that causes the error.
+
 # References
 
 https://serokell.io/blog/parser-combinators-in-haskell

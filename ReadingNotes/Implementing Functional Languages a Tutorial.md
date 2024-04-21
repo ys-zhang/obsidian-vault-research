@@ -99,8 +99,7 @@ type Program a = [ScDefn a]
 >
 > Usually the answer to question 1 is Yes; and, built-in primitive applications are reducible iff any of the arguments are reducible.
 >
-> The reason of the difference is that these built-in primitives shall be evaluated at runtime not the compiler.
-> The compiler even do not know how to evaluate them since we may targets a different platform.
+> The reason of the difference is that these built-in primitives shall be evaluated at runtime; sometimes the compiler even do not know how to evaluate them since we may targets a different platform.
 > It’s the same case for symbols in dynamic loaded modules and FFI.
 
 ## Unwinding the spine to ﬁnd the next redex
@@ -146,4 +145,3 @@ withSpine _ = id
 >- If the machine’s state matches one of the _state transition rules_, the rule _ﬁres_ and speciﬁes a new state for the machine;
 >- If no rules matches, execution _halts_;
 >- If more then one rule matches, then one is chosen _arbitrarily_ to fire; the machine is then _non-deterministic_.
-

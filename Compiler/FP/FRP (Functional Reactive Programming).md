@@ -169,3 +169,82 @@ pSwitch :: Functor col
         
 ```
 
+## Stream processor as an arrow
+
+This is another representation of [[Arrow#Full Code|Stream function]].
+
+>[!Note]
+> the implementation do not require that one output is produced per input — so `SP` arrows can represent _asynchronous processes_.
+
+```haskell
+import Data.Sequence (Seq (..))
+import Data.Sequence qualified as Seq
+
+data SP a b
+  = -- | comsumes nothing of `a-stream` but write a `b` to `b-stream`
+    SPut b (SP a b)
+  | -- | comsumes an `a` from `a-stream` and executes the result stream
+    -- processor over the rest of `a-stream`
+    SGet (a -> SP a b)
+
+-- | Note that the returned stream must be infinite
+runSP :: SP a b -> [a] -> [b]
+runSP (SGet f) (x:xs) = runSP (f x) xs 
+runSP (SGet _) [] = []
+runSP (SPut b sp) xs = b: runSP sp xs
+
+instance Category SP where
+  id =
+    let sp = SGet $ \x -> SPut x sp
+    in  sp
+  g . f = case (f, g) of
+    (SGet f', _) -> SGet $ \x -> let f'' = f' x in g <<< f''
+    (_, SPut z g') -> SPut z (g' <<< f)
+    (SPut x f', SGet g') -> (g' x) <<< f'
+
+instance Arrow SP where
+  arr f = SGet $ \x -> SPut (f x) (arr f)
+  first = go Seq.empty Seq.empty
+   where
+    go
+      :: Seq s -- delayed get of s
+      -> Seq y -- delayed put of y
+      -> SP x y
+      -> SP (x, s) (y, s)
+    go ss ys (SGet f) = case ys of
+      Seq.Empty -> SGet $ \(x, s) -> go (ss :|> s) ys (f x)
+      y :<| ys' -> SGet $ \(x, s) -> SPut (y, s) $ go ss ys' (f x)
+    go ss ys (SPut y p) = case ss of
+      Seq.Empty -> go ss (ys :|> y) p
+      (s :<| ss') -> SPut (y, s) (go ss' ys p)
+
+{- NOTE: implementing SP's `first`
+the key idea of `first` is to buffer the already geted 2nd elem of the tuples, and delay the put of 1st elem of the tuples 
+-}
+
+instance ArrowChoice SP where
+  left p@(SGet f) = SGet $ \case
+    Left x -> left $ f x
+    Right s -> SPut (Right s) $ left p
+  left (SPut b p) = SPut (Left b) (left p)
+
+instance ArrowLoop SP where
+  loop :: forall x y s. SP (x, s) (y, s) -> SP x y
+  loop = go Seq.empty
+   where
+    go :: Seq s -> SP (x, s) (y, s) -> SP x y
+    go ss p =
+      let ~(s :<| ss') = ss
+      in  case p of
+            SGet f -> SGet $ \x -> go ss' (f (x, s))
+            SPut (y, s') p' -> SPut y $ go (ss :|> s') p'
+{- NOTE: ArrowLoop
+this seems not perfect, see Exercise 2 from Chap 2.5 of "Programming with Arrows".
+
+but seems reasonable since `Control.Arrow.SP` from the package "stream-proc" uses the same approach
+-}
+
+delay :: a -> SP a a
+delay x = SPut x (arr id)
+```
+

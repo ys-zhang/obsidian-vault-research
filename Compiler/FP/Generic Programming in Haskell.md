@@ -452,11 +452,22 @@ class Data a where
   gfoldl = const id
 ```
 
-# uniplate
 
-`uniplate` is very similar to `syb` in the sense of avoiding boilerplate codes; however, its is not real generic over types but more in the sense of "generic" over constructor, all the combinators it provides has only 1 type parameter.
+# `uniplate`: focus on one single type
 
-## api 
+>[!quote] motivating observation
+> Most traversals have value-specific behaviour for **just one type**.
+> 
+> The central idea is to exploit a common property of many traversals: _they only require value-specific behaviour for a single uniform type_.
+
+## API 
+
+Two types of traversals:
+1. query(`a -> [a]`): A query is a function that takes a value, and extracts some information of a different type. 
+2. transformation(`a -> a`): A transformation takes a value, and returns a modified version of the original value.
+
+![[uniplate-api.png]]
+
 
 ### Query
 ```haskell
@@ -469,33 +480,183 @@ and returns a list of all structures of the
 same type found within it.-}
 universe :: Uniplate a => a -> [a]
 ```
+
+>[!NOTE] 
+>the `universe` function returns a list orresponding to _pre-order traversal_
+
+#### Synthesise with paramorphism
+
+the `para` synthesis information of type `r` in a _bottom-up order_ from value of type `a` 
+
+```haskell
+para :: Uniplate a 
+     => ( a        -- ^ current node
+          -> [r]   -- ^ children results
+          -> r     -- ^ result of current node
+        ) 
+     -> a 
+     -> r
+```
+
+>[!note] The original definition of **paramorphism**:
+>
+> ```haskell
+> para  ::  (a -> [a] -> b -> b)  -> b -> [a] -> b  
+> foldr :: (a ->        b -> b)  -> b -> [a] -> b  
+>   
+> para  c n (x : xs) = c x xs (para c n xs)  
+> foldr c n (x : xs) = c x (foldr c n xs)  
+> para  c n [] = n  
+> foldr c n [] = n
+> ```
 ### Transform
 ```haskell
 -- | bottom up transformation
-transform :: Uniplate => (a -> a) -> a -> a
+transform :: Uniplate a => (a -> a) -> a -> a
 
 -- | apply f to all immediate and only immediate children
--- in other words, no recursion 
-descend :: Uniplate => (a -> a) -> a -> a
+-- in other words, no recursion
+-- NOTE: this is exactly `gmapT` in syb
+descend :: Uniplate a => (a -> a) -> a -> a
 ```
 
 >[!Warning] Top-down transform
+> top-down transformations are error-prone.
+> the semantics of `top-down` transformation is to apply `f` to current value to get a new value and then apply f the _new value's_ children. 
+>
+> _The caveat here is that `f` never applies the the generated new value_ 
+
 
 ### Rewrite
-```haskell
-{-| 
-A rewrite-rule argument r takes an expression e of type α, and returns either Nothing to indicate that the rule is not applicable, or Just e′ indicating that e is rewritten by r to e′.
 
-The intuition for rewrite r is that it applies r exhaustively; a postcondition for rewrite is that there must be no places where r could be applied.
--}
-rewrite :: Uniplate a => (a -> Maybe a) -> a -> a
-rewrite f = transform g
+> [!quote]
+> The idea of _rewrite rule_ is that a rule is applied exhaustively until a normal form is achieved. 
+>
+> For details see [Term Rewriting](https://inst.eecs.berkeley.edu/~cs294-260/sp24/2024-01-22-term-rewriting)
+
+```haskell
+rewrite :: Uniplate a 
+        => (a -> Maybe a) 
+        -- ^ A rewrite rule:
+        -- return Nothing if we have reached the normal form 
+        -- and terminates the rewrite process 
+        -> a 
+        -> a
+rewrite r = transform g
  where 
-  g x = maybe x (rewrite f) (f x)
+  g x = maybe x (rewrite r) (r x)
+
+propRewrite r x = all (isNothing . r) (universe (rewrite r x )) 
+
+always :: (a -> Maybe a) -> a -> a
+always r x = fromMaybe x (r x)
 ```
 
->[!warning]
+>[!warning] Performance warning of `rewrite`
 >A disadvantage of rewrite is that it may check unchanged subexpressions repeatedly. Performance sensitive programmers might prefer to use an explicit transformation, and manage the rewriting themselves.
+
+#### Context
+
+```haskell
+contexts :: Uniplate a 
+         => a          -- ^ a: the input
+         -> [( a       -- ^ x: some dissidants of the input `a`
+            ,  a -> a  -- ^ f: `f y` is what we get from `a` if we  
+            )]         --       replace `x` with `y` in `a`
+
+propUniverse x = universe x === map fst (contexts x ) 
+propId x = all (=== x) [f a | (a, f) <- contexts x ]
+```
+
+>[!note]
+>the returned contexts, like `universe`, corresponds to _pre-order traversal_.
+
+the semantics of the `contexts` function is the same as _rewrite contexts_.
+
+Recall rewrite rule application, 
+> If we want to refer to a specific application of a rewrite, $l \to r$, applied to $t$, then we can use a the notions of a _substitution_ $\sigma$ and _context_ $c$. 
+> - A _substitution_ $\sigma$ is a mapping from variables in the rewrite to sub-terms of $t$. We say that a substitution  _unifies_ two terms $s$ and $t$ if $s\sigma = t\sigma$. 
+> - The _context_ allows us to refer to a specific location or sub-term of $t$. 
+>  
+> So applying rewrite $l \to r$ to $t$ means finding a substitution $sigma$ that unifies a sub-term of $t$ with $l$; in other words there is a a context $c$ such that $c[l\sigma] = t$, is rewritten to $c[r\sigma]$.
+
+Thus, `contexts` can be used for applying re
+### Action(monadic) Transformation
+
+```haskell
+transformM :: (Uniplate a, Monad m) => (a -> m a) -> a -> m a
+```
+
+
+## Implementation
+
+
+```haskell
+class Uniplate a where
+  uniplate :: a -> ([a], [a] -> a)
+
+propId x = let (children, context) = uniplate x
+           in  x === context children
+```
+
+the intention of the `uniplate` function is to 
+1. (_query_): get `children` of a value
+2. (_rewrite_): reassemble new values from new children
+thus:
+1. `(fst . uniplate) :: a -> [a]` shall return _all maximal proper substructures of the same type `a`_;
+2. `(snd . uniplate) :: [a] -> a` shall generate a new value with a _different set of children_.
+
+```haskell
+children = fst . uniplate
+universe x = x : concatMap universe (children x)
+
+transform f x = let (cs, gen) = uniplate x 
+                in  f (gen (transform f <$> cs))
+descend f x = let (cs, gen) = uniplate x
+              in  gen $ map f cs
+```
+
+
+## Multi-type Traversal
+
+this solves the problem of _intermediate layer types_, such as query `Expr` from a `Program`, while `Program` consists of `Stmt` which consists of `Expr`.
+
+```haskell
+-- | b is the container type
+--   a is the type of insterest
+type BiplateType b a = b -> ([a], [a] -> b)
+
+propId :: BiplateType b a -> (b -> Property)
+propId biplate = \x -> 
+  let (cs, gen) = biplate x
+  in  x === gen cs
+
+class Uniplate a => Biplate b a where
+  biplate :: BiplateType b a
+
+
+universeOn :: Uniplate a
+           => BiplateType b a
+           -> b 
+           -> [a]
+universeOn biplate x = cancatMap universe $ fst $ biplate x
+
+transformOn :: Uniplate a
+            => BiplateType b a
+            -> (a -> a)
+            -> b 
+            -> b
+transformOn biplate f x = 
+  context $ map (transform f) children
+ where
+  (children, context) = biplate x
+```
+
+Note that `universeOn` and `tranformOn` is not recursive, which also means they will not recursively peek into sub containers of the container type `b`.
+
+>[!warning] Caveat implementing `Biplate`
+> the `biplate` function must return _all maximal proper substructures of the same type `a`_, which means all `a` that is not contained in some `a`.
+
 
 # `generics-sop`
 

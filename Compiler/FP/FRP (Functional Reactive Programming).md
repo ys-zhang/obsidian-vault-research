@@ -169,6 +169,9 @@ pSwitch :: Functor col
         
 ```
 
+## Discrete Simulation
+
+
 ## Stream processor as an arrow
 
 This is another representation of [[Arrow#Full Code|Stream function]].

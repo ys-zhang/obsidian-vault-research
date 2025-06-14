@@ -3,27 +3,31 @@
 - [Vim FaQ](https://vimhelp.org/vim_faq.txt.html)
 - [Learn Neovim The Practical Way](https://alpha2phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f)
 
-# Basic
+# 1 Basic
 
 - `:help vim-modes`: help about vim modes 
 - `:view {file}` open in read-only mode
 
 
-# Neovim Commands
+# 2 Neovim Commands
 
-| full                         | short  | description                         |
+| command                      | short  | description                         |
 | ---------------------------- | ------ | ----------------------------------- |
 | `:{count}mes[sages] [clear]` | `:mes` | show/clear message history          |
 | `:se[t] {option}?`           | `:se`  | options, see `:help option-summary` |
 | `:view {file}`               |        | open file in read-only mode         |
-| `:b[uffer] {name}`           | `:b`   | switch btw buffers                  | 
+| `:b[uffer] {name}`           | `:b`   | switch btw buffers                  |
 
+# 3 Options
+| options    | short | description              |
+| ---------- | ----- | ------------------------ |
+| `readonly` | `ro`  | whether in readonly mode |
 
-# Tag 
+# 4 Tag 
 
 `:tselect {pattern}`, select tags in current buffer
 
-# Help
+# 5 Help
 
 - `<Ctrl-]>`  jump in to _tag_.
 - `<Ctrl-T>` jump back to previous position
@@ -36,7 +40,7 @@
 - `:helpgrep` 
 
 
-# Vim Model
+# 6 Vim Model
 
 ```
                                      +------+
@@ -52,7 +56,7 @@
 
 A **status line** is used to separate windows.
 
-# LSP Model
+# 7 LSP Model
 
 ```
                       +------+      +------+
@@ -71,3 +75,16 @@ Buffer and Clients are implemented in Neovim, but Server are standalone apps liv
 see 
 - `:h lsp`
 - `:h lspconfig`
+
+
+# 8 Setup FAQs
+
+1. use `init` field in `Lazy.nvim` plugin setup to setup plug options stored globally^[usually through `vim.g.*`], for instance, `haskell-tools.nvim` uses `vim.g.haskell_tools` for configuration.
+2. Haskell specifics
+  - [haskell-snippets](https://github.com/mrcjkb/haskell-snippets.nvim)
+  - disallow hls format provider by turn-off `lsp_format` when buffer has `ft="haskell"`^[in file `nvim/after/ftplugin/haskell.lua`]
+3. diagnostics 
+  -  `vim.diagnostic.open_float`
+  - `<cmd>Telescope diagnostics<cr>`
+5. LSP
+    - code action: `vim.lsp.buf.code_action(opts)` 

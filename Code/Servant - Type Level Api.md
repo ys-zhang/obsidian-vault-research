@@ -1,8 +1,8 @@
 #code-reading #Haskell #web 
 
-# Api Specification
+# 1 Api Specification
 
-## Endpoint
+## 1.1 Endpoint
 
 An _endpoint_ is a list of _segments_ concatenated by the type level operator `:>` which must be ended with a `Verb` segment.
 
@@ -17,14 +17,14 @@ Segments can be:
     - `type Get = Verb 'GET 200`, `Get '[JSON, PlainText] User`
 and [others](https://docs.servant.dev/en/stable/tutorial/ApiType.html#combinators)
 
-## Combine Endpoints
+## 1.2 Combine Endpoints
 
 use `:<|>` to combine multiple endpoints to an API
 ```haskell
 data a :<|> b
 ```
 
-## Nest Api
+## 1.3 Nest Api
 
 ```haskell
 -- nested api
@@ -38,11 +38,11 @@ type FlattenedApi =
 ```
 
 
-# Interpretations
+# 2 Interpretations
 
-## Server
+## 2.1 Server
 
-### Entrance Point
+### 2.1.1 Entrance Point
 
 ```haskell
 type Server api = ServerT api Handler
@@ -63,7 +63,7 @@ serveWithContext :: (HasServer api ctx, ServerContext ctx)
                  -> Application
 ```
 
-### Core Architecture
+### 2.1.2 Core Architecture
 
 ```haskell
 class HasServer api ctx where 
@@ -88,7 +88,7 @@ data Context ctx where
 
 >  `route` is called exactly _once_, as part of the startup of your server. It takes in the context and the handler for your whole server, and returns a `Router`.
 
-### Routing
+### 2.1.3 Routing
 
 A `Router` is just a tree of request handlers
 
@@ -121,13 +121,13 @@ data Router' env a
 
 > You can think of `Router'` as a tree of path information, with `RoutingApplication`s at the leaves which receive the requests for each specific path and produce responses
 
-### Implement Server 
+### 2.1.4 Implement Server 
 
 ```haskell
 newtype Handler a = Handler { runHandler :: ExceptT ServerError IO a }
 ```
 
-## Client
+## 2.2 Client
 
 ```haskell
 class RunClient m => HasClient m api where
@@ -203,7 +203,7 @@ mkClientEnv :: Manager -> BaseUrl -> ClientEnv
 ```
 
 
-# Servant Combinator 
+# 3 Servant Combinator 
 
 Servant uses combinator to support middleware. It deals with problems of creating functions to modify all request handlers, such as tasks of "for all request handlers do something".
 
@@ -216,7 +216,7 @@ Dislike WAI middleware, it provides more checking through type safety.
 > However, since you are using Servant, what you'd really prefer is to _specify the middleware inside your Servant API type_, marking which endpoints need the middleware applied and which ones don't. 
 
 
-# References
+# 4 References
 
 1. Mestanogullari, A., Hahn, S., Arni, J. K., & Löh, A. (2015). Type-Level Web APIs with Servant: An Exercise in Domain-Specific Generic Programming. _Proceedings of the 11th ACM SIGPLAN Workshop on Generic Programming_, 1–12. [https://doi.org/10.1145/2808098.2808099](https://doi.org/10.1145/2808098.2808099)
 2. [Servant Doc (stable)](https://docs.servant.dev/en/stable/index.html)

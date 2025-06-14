@@ -152,5 +152,9 @@
     "searchModalRange": "recent",
     "searchModalDvQuery": ""
   },
-  "excludedFiles": []
+  "excludedFiles": [
+    "Math/Type Theory/Simple Type Theory.md",
+    "Math/Type Theory/Recursive Types.md",
+    "Code/Clerk - DSL for Excel Workbook.md"
+  ]
 }

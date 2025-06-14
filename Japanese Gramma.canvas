@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"e093ffeff649ba6c","x":-561,"y":-92,"width":250,"height":60,"type":"text","text":""},
+		{"id":"1272f28b898b9b6d","type":"text","text":"# 体言\n- no conjugation form\n- can be used as subject","x":-614,"y":-760,"width":315,"height":120},
+		{"id":"42746c3755c73a0d","type":"text","text":"# 用言","x":-614,"y":-400,"width":315,"height":60},
+		{"id":"0cbd1d3e69b47661","type":"text","text":"adjective","x":-160,"y":-400,"width":160,"height":60},
+		{"id":"8ef1d8c0c217645b","type":"text","text":"形容动词","x":-160,"y":-280,"width":160,"height":60},
+		{"id":"4e73b86f430ad638","type":"text","text":"verb","x":-160,"y":-510,"width":160,"height":60},
+		{"id":"0edd955e38e782db","type":"text","text":"\n| **conjugation** |  〜な   |  〜い  |\n| :-------------- | :---: | :--: |\n| negation        | 〜じゃない | 〜くない |\n| linking         |  〜で   | 〜くで  |\n","x":120,"y":-424,"width":460,"height":108},
+		{"id":"48440b45740869e9","type":"text","text":"|     | ます  |\n| --- | --- |\n| 〜る  | 〜ます |","x":120,"y":-525,"width":365,"height":91}
+	],
+	"edges":[
+		{"id":"148a7b14c67bb476","fromNode":"42746c3755c73a0d","fromSide":"right","toNode":"0cbd1d3e69b47661","toSide":"left"},
+		{"id":"ae1c22d5f500e898","fromNode":"42746c3755c73a0d","fromSide":"right","toNode":"4e73b86f430ad638","toSide":"left"},
+		{"id":"8e26691358b499c4","fromNode":"42746c3755c73a0d","fromSide":"right","toNode":"8ef1d8c0c217645b","toSide":"left"},
+		{"id":"c0f1405d8089fafb","fromNode":"0cbd1d3e69b47661","fromSide":"right","toNode":"0edd955e38e782db","toSide":"left"},
+		{"id":"b660aee5c1939351","fromNode":"4e73b86f430ad638","fromSide":"right","toNode":"48440b45740869e9","toSide":"left"}
+	]
+}

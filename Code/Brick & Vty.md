@@ -12,6 +12,22 @@ type RenderM n a = ReaderT (Context n) (State (RenderState n)) a
 
 The rendering context's specification of available space will also govern how widgets get _cropped_, since all widgets are required to render to an image no larger than the rendering context specifies. If they do, they will be forcibly cropped.
 
+## FAQ
+
+### Cursor 
+
+```haskell
+data CursorLocation n = CursorLocation
+  { cursorLocation        :: Location
+  , cursorLocationName    :: Maybe n
+  , cursorLocationVisible :: Bool
+  }
+```
+
+There are 2 functions (`putCursor` and `showCursor`) that can push a `CursorLocation` to argument of `appChooseCursor :: AppState -> [CursorLocation] -> Maybe CursorLocation`.
+ - the `putCursor` function will push a `CursorLocation` with `cursorLocationVisible = False`
+ - the `showCursor`, on the other hand, will push one with `cursorLocationVisible = True`
+
 
 # Elm
 

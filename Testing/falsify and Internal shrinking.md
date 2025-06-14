@@ -112,7 +112,7 @@ Comparing with [[Hypothesis and Internal shrinking]], the main advantage is that
 
 ## selective shrinking
 
-In some cases we want to skip shrinking part of the sub-tree if it is unused in the result. recall [[Monad#Selective Applicative Functors|selective functors]], which supports _speculative execution_,
+In some cases we want to skip shrinking part of the sub-tree if it is unused in the result. recall [[Applicative Functor#Selective Applicative Functors]], which supports _speculative execution_,
 
 ```haskell
 class Applicative f => Selective f where

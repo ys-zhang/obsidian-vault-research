@@ -1,34 +1,43 @@
 {
   "items": [
     {
-      "type": "file",
-      "path": "StatLearning/Models/ANOVA (Analysis of Variance).md",
-      "ctime": 1683207532482
-    },
-    {
-      "type": "file",
-      "path": "Algo/Graph Algorithms/Dominator Tree.md",
-      "ctime": 1683207532482
-    },
-    {
-      "type": "file",
-      "path": "StatLearning/Sampling/Markov Chain Monte Carlo method (MCMC).md",
-      "ctime": 1683207532482
-    },
-    {
-      "type": "file",
-      "path": "StatLearning/Train/Understanding the difficulty of training deep feedforward neural networks.md",
-      "ctime": 1683207532482
-    },
-    {
-      "type": "file",
-      "path": "StatLearning/Estimators and Tests/Hypothesis Tests.md",
-      "ctime": 1683207532482
-    },
-    {
-      "type": "file",
-      "path": "StatLearning/Models/Time Series/Transfer Function Model.md",
-      "ctime": 1683207532482
+      "type": "group",
+      "ctime": 1719279342693,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1719279374735,
+          "path": "Compiler/Prolog.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1719279389697,
+          "path": "Code/Salsa.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1719279399700,
+          "path": "ReadingNotes/Implementing Functional Languages a Tutorial.md",
+          "title": "FP Impl"
+        },
+        {
+          "type": "file",
+          "ctime": 1719279419341,
+          "path": "Compiler/Program Analysis/Dataflow Analysis.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1719279460948,
+          "path": "Code/Formlet.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1719279492032,
+          "path": "Code/Servant - Type Level Api.md",
+          "title": "Servant"
+        }
+      ],
+      "title": "CS"
     }
   ]
 }

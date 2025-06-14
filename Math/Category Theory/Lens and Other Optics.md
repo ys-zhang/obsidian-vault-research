@@ -1,4 +1,4 @@
-#category-theory #Haskell 
+#category-theory #Haskell #Lens 
 
 # Library
 

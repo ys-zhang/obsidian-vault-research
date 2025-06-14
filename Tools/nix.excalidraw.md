@@ -1,0 +1,57 @@
+---
+
+excalidraw-plugin: parsed
+tags: [excalidraw]
+
+---
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
+
+
+# Excalidraw Data
+
+## Text Elements
+- Nix store: 
+    - path: /nix/store
+    - Derivations/packages are stored in the Nix store 
+        as /nix/store/«hash-name»
+
+[dependency]
+- Nix database: 
+    - path: /nix/var/nix/db
+    - keeping track of dependencies of derivations
+
+[revisioned links, folders]
+- Nix profile: 
+    - path: /home/nix/.nix-profile
+    - Profiles are used to compose components that are 
+        among multiple paths under a new unified path.
+    - Profiles are made up of multiple "generations": they are versioned. 
+        Whenever you change a profile, a new generation 
+        is created. ^SCkrSLSM
+
+%%
+## Drawing
+```compressed-json
+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=
+```
+%%

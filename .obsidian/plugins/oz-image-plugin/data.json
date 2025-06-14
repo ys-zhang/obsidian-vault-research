@@ -1,16 +1,17 @@
 {
-  "renderAll": true,
+  "cm6RenderAll": true,
   "renderImages": true,
   "renderPDF": false,
   "renderIframe": false,
-  "renderExcalidraw": true,
+  "renderExcalidraw": false,
+  "renderMsgFile": false,
   "renderRichLink": false,
   "renderTransclusion": false,
-  "renderAdmonition": false,
-  "renderMermaid": false,
-  "renderMathJax": false,
   "previewOnHoverInternalLink": false,
   "refreshImagesAfterChange": false,
   "WYSIWYG": false,
-  "cm6RenderAll": true
+  "renderAll": true,
+  "renderAdmonition": false,
+  "renderMermaid": false,
+  "renderMathJax": false
 }

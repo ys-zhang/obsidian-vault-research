@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"6501c3271e12c35c","type":"file","file":"Code/Formlet.md","x":-680,"y":-600,"width":400,"height":400},
+		{"id":"56459e927f0335aa","x":-680,"y":0,"width":400,"height":400,"type":"file","file":"Code/HTML template in Haskell.md"}
+	],
+	"edges":[
+		{"id":"b856c7ca3fee82a5","fromNode":"6501c3271e12c35c","fromSide":"bottom","toNode":"56459e927f0335aa","toSide":"top"}
+	]
+}

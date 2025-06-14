@@ -22,7 +22,7 @@ Let $\mathscr C$ be a category,
 ![[Morphism]]
 
 
-# Isomorphism
+# 1 Isomorphism
 
 For $X, Y \in \mathbf{Obj}(\mathscr C)$, $f\in \mathbf{Hom}_{\mathscr C}(X, Y)$ is an _isomorphism_ if $\exists g \in \mathbf{Hom}_{\mathscr C}(Y, X)$, if
 $$
@@ -32,13 +32,13 @@ f \circ g = id_Y
 \end{align}
 $$
 
-# Objects
+# 2 Objects
 
 the _initial object_ and the _terminal object_
 - For all objects in the category, _initial object_ have one unique arrow to it. _Initial object_ is unique. This object is $\emptyset$  or `Void` in [[The Hask Category]];
 - For all objects in the category, there is one unique arrow from it to the _terminal object_. _Terminal object_ is unique up to isomorphism. This object is `Unit` in [[The Hask Category]].
 
-# Opposite Category
+# 3 Opposite Category
 
 The _opposite category_ of $\mathscr C$ , denoted by $\mathscr{C}^{op}$, has the same objects as $\mathscr C$  , but reversed arrows, i.e., 
 $$ 
@@ -48,9 +48,9 @@ g^{op} \circ f^{op} &:= (f \circ g)^{op}
 \end{align}
 $$
 
-# Products of Category
+# 4 Products of Category
 
-## Cartesian product
+## 4.1 Cartesian product
 Cartesian product can be described by _projections_. A function $p$  is a projection, if and only if, 
 $$ p \circ p = p $$
 and $p_1, p_2$ forms a Cartesian project if $p_1$ and $p_2$ are projections and 
@@ -58,7 +58,7 @@ $$
  p_1 \circ p_2 = p_2 \circ p_1 = (\forall x \to e) 
 $$
 
-## Categorical product
+## 4.2 Categorical product
 The _product_ of 2 objects $P, Q$ in category $\mathscr C$ is an object $C$ with a pair of morphism $p: C \to P$ and $q: C \to Q$ ; and, $\forall (Z', p': Z' \to X, q': Z' \to Y)$ , $\exists! m: Z' \to Z$, such that 
 $p' = p \circ m$ and $q' = q \circ m$.
 ![[Product (category).excalidraw|center]]
@@ -66,7 +66,7 @@ $p' = p \circ m$ and $q' = q \circ m$.
 >[!NOTE]
 > It's like the _product_ $C$ is the _closest_ object to $P$ and $Q$ that can maps to both $P$, and $Q$. In other words, it neither too big nor too small.
 
-## Coproduct (categorical sum)
+## 4.3 Coproduct (categorical sum)
 
 ![[Coproduct (category).excalidraw|center]]
 
@@ -74,11 +74,11 @@ $p' = p \circ m$ and $q' = q \circ m$.
 > - Coproduct is product in the opposite category.
 > - Coproduct is $Set$ is disjoint union (tagged union) of two sets.
 
-## Product of category
+## 4.4 Product of category
 
 let $\mathscr C$ and $\mathscr D$  be two small category. the product category, with the object set be cartesian product of  the 2 object sets, and morphism set be the cartesian product of the 2 morphism sets.
 
-## ADT (algebraic data type)
+## 4.5 ADT (algebraic data type)
 
 1. **Product** and **Coproduct** is _commutative_ and _associative_ (up to isomorphism).
 2. **Product** with `Void` is a [[Monoid]].
@@ -89,7 +89,7 @@ let $\mathscr C$ and $\mathscr D$  be two small category. the product category, 
 - `Maybe a = Unit + a`
 - parameterised types are solution of equation, `l(a) = 1 + a * l(a)` result in `List a`. 
 
-# Functor
+# 5 Functor
 
 ![[Functor.excalidraw|600|center]]
 
@@ -112,7 +112,7 @@ A **Monoidal Category** is a category in which there exists a **endo-bifunctor**
 > 2. it may squash objects or arrows, i.e., it may not be injective or surjective.
 > 3. A **faithful functor** is _injective_ on _hom-sets_.
 > 4. A **full functor** is _surjective_ on _hom-sets_.
-> 5. `Functor`s in [[Haskell]] are parameterised types.
+> 5. `Functor`s in [[Haskell Tricks]] are parameterised types.
 
 >[!EXAMPLE]
 > - _Constant Functor_: a functor maps all objects to a constant object $c$, denoted by $\Delta_c$
@@ -123,7 +123,7 @@ see [Haskell package `Data.Functor`](https://hackage.haskell.org/package/base-4.
 
 
 
-## Contravariant functor
+## 5.1 Contravariant functor
 $$
  F^{op}: \mathscr C \to \mathscr D
 $$
@@ -146,15 +146,15 @@ class Contravariant f where
 ```
 
 
-## Bifunctor
+## 5.2 Bifunctor
 
-A **bifunctor** is a functor maps a category product to a category, in [[Haskell]] it is a type constructor with 2 type parameters. Both product and coproduct can be seen as bifunctor. The codomain of the bifunctor is more "coarse" than product of categories.
+A **bifunctor** is a functor maps a category product to a category, in [[Haskell Tricks]] it is a type constructor with 2 type parameters. Both product and coproduct can be seen as bifunctor. The codomain of the bifunctor is more "coarse" than product of categories.
 
 $$
 f: \mathscr{ C \times D \to E} 
 $$
 
-## Profunctor
+## 5.3 Profunctor
 
 A **Profunctor** is like a bifunctor; however, it is _contravariant_ in the first category while _covariant_ in the second category:
 
@@ -178,20 +178,20 @@ class Bifunctor b where
 ```
 
 
-# Natural Transformation
+# 6 Natural Transformation
 
 ![[Natural transformation.excalidraw|650|center]]
 
-[Natural transformation is free](https://bartoszmilewski.com/2014/09/22/parametricity-money-for-nothing-and-theorems-for-free/) in [[Haskell]] due to [[parametric polymorphism]], which is different from [[ad-hoc polymorphism]].
+[Natural transformation is free](https://bartoszmilewski.com/2014/09/22/parametricity-money-for-nothing-and-theorems-for-free/) in [[Haskell Tricks]] due to [[parametric polymorphism]], which is different from [[ad-hoc polymorphism]].
 
 > [!NOTE]
 > A natural transformation maps a morphism to a commute diagram
 
-## Composition
+## 6.1 Composition
 
 [natural transformation (nlab)](http://nlab-pages.s3.us-east-2.amazonaws.com/nlab/show/natural+transformation#composition)
 
-### Compose with functors
+### 6.1.1 Compose with functors
 A natural transformation can be thought as a function:
 $$
 \alpha: \forall c \in \mathscr C,\; c \to (F\;c \to G\;c) 
@@ -229,7 +229,7 @@ $$
 \end{align}
 $$
 
-### Horizontal Composition
+### 6.1.2 Horizontal Composition
 
 [horizontal composition (nlab)](http://nlab-pages.s3.us-east-2.amazonaws.com/nlab/show/horizontal+composition)
 
@@ -258,7 +258,7 @@ $$
 
 ![[Pasted image 20220217142922.png]]
 
-### Vertical Composition
+### 6.1.3 Vertical Composition
 
 $$
 \begin{align}
@@ -273,7 +273,7 @@ $$
 (\beta \circ \alpha)_a = \beta_a \circ \alpha_a
 $$
 
-## Dinatural Transformation
+## 6.2 Dinatural Transformation
 
 >[!TLDR]
 >Dinatural Transformation is a "natural transformation" defined only on the **diagonal** of [[#Profunctor]]s
@@ -295,7 +295,7 @@ which can be seen as a special case of natural transformation as
 
 ![[Pasted image 20220602231205.png]]
 
-## Cone
+## 6.3 Cone
 
 ![[Cone (category).excalidraw|650|center]]
 
@@ -322,9 +322,9 @@ A _Cone_ is a natural transformation that maps the _apex functor_ to the _diagra
 For a finite $\mathscr I$ it’s just a bunch of morphisms connecting $c$ to the _diagram_: the image of $\mathscr I$ under $D$.
 
 
-## Limit & Colimit
+## 6.4 Limit & Colimit
 
-### Through Universal construction
+### 6.4.1 Through Universal construction
 
 Follow the construction of cones, with the source category $\mathscr I$ and the destination category $\mathscr C$ fixed, we can define the _category of cones_.
 
@@ -348,12 +348,12 @@ The _terminal object_ of this cone category is the limit of the diagram, i.e., f
 
 
 
-### Construction through natural formalisation
+### 6.4.2 Construction through natural formalisation
 
-#### Problem
+#### 6.4.2.1 Problem
 The problem here is how to construct the unique factorisation arrow, i.e. for each cone apex $c$ pickup the arrow in $\mathbf{Hom}_{\mathscr C}(c, \mathbf{Lim}D)$ that satisfies the commute condition.
 
-#### Theorem
+#### 6.4.2.2 Theorem
 The limit exists iff exists a natural isomorphism
 $$
 \begin{align}
@@ -386,9 +386,9 @@ $$
 
 
 
-#### Proof
+#### 6.4.2.3 Proof
 
-##### The Natural Transformation 
+##### 6.4.2.3.1 The Natural Transformation 
 
 We define two factors from $\mathscr C$ to $\mathbf{Set}$ (the category of set):
 
@@ -423,7 +423,7 @@ $F, G$ are [[Presheaf]] (contravariant functors maps to $\mathbf{Set}$)
 2. $G$ is the [[Presheaf#Representable Presheaf |representable presheaf]] of $\mathbf{Lim}D$ maps $c$ to the hom-set.
 
 
-##### The proof
+##### 6.4.2.3.2 The proof
 
 Let 
 $$
@@ -438,18 +438,18 @@ Then, if $\alpha, \beta$ exists, it easy to verify that $\mathbf{Lim} D$ is the 
 
 
 
-# Function type (exponential object)
+# 7 Function type (exponential object)
 
 ![[Exponentials.excalidraw|680|center]]
 
 
-# Kleisli Category
+# 8 Kleisli Category
 
 ![[Kleisli category|680|center]]
 
 The _Kleisli Category_ have same objects as the original category, with arrows defined as "embellished" arrows in the original category and a new composition definition, which usually denoted by the _fish operator_ `>=>`.
 
-## Example
+## 8.1 Example
 
 ```haskell
 type M a = (a, String)
@@ -480,7 +480,7 @@ fn compose<X, Y, Z>(g: impl Fn(Y) -> (Z, String), f: impl Fn(X) -> (Y, String)) 
 ```
 
 
-# References
+# 9 References
 
 Books:
 - Topoi: The Categorical Analysis of Logic

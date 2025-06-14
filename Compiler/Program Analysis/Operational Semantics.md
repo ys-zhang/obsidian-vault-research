@@ -71,3 +71,9 @@ There are two broad classes of _operational semantics_:
 >
 > $$\forall a, \forall q, q \land (q \implies P(a))$$
 > then we can induct on both $a$ and $Q$, in other words, the inductive step becomes, "for all $a'<a$ and $q'<q$ such that $P(a')$ holds because of $q'$, we have $P(a)$ holds because of some $q''\le q$." 
+
+
+# References 
+
+1. Hutton, G. (2023). Programming language semantics: It’s easy as 1, 2, 3. _Journal of Functional Programming_, _33_, e9.
+2. Nielson, F., Nielson, H. R., & Hankin, C. (1999). _Principles of Program Analysis_. Springer. [https://doi.org/10.1007/978-3-662-03811-6](https://doi.org/10.1007/978-3-662-03811-6)

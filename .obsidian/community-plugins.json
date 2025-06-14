@@ -15,6 +15,14 @@
   "dataview",
   "mathlinks",
   "math-booster",
-  "obsidian-linter",
-  "cm-editor-syntax-highlight-obsidian"
+  "cm-editor-syntax-highlight-obsidian",
+  "obsidian-icon-folder",
+  "number-headings-obsidian",
+  "obsidian-excel-to-markdown-table",
+  "syncthing-integration",
+  "ink",
+  "media-extended",
+  "obsidian-style-settings",
+  "obsidian-mind-map",
+  "code-styler"
 ]

@@ -1,6 +1,6 @@
 >  A function that is used just to delay computation, and in particular one that takes `unit` as input, is called a _thunk_.
 
-# Implementation of Sequence
+# 1 Implementation of Sequence
 
 ```ocaml
 module SeqUseThunk = struct 
@@ -17,7 +17,7 @@ end
 ```
 
 
-# Lazy
+# 2 Lazy
 
 ```ocaml
 let rec fibs = 
@@ -78,7 +78,7 @@ end
 ```
 
 
-# Haskell 
+# 3 Haskell 
 
 >[!note] 
 >There is a slight difference between _laziness_ and _nonstrictness_. **Nonstrict semantics** refers to a given property of Haskell programs that you can rely on: nothing will be evaluated until it is needed. **Lazy evaluation** is how you implement nonstrictness using a device called **thunks**
@@ -100,5 +100,9 @@ Often, we only care about WHNF, so a function that evaluates its argument to at 
 
 Generally, in the implementation the thunk is really just a pointer to a piece of (usually static) code, plus another pointer to the data the code should work on. If the entity computed by the thunk is larger than the pointer to the code and the associated data, then a thunk wins out in memory usage.
 
+# $-notation 
 
 
+```ocaml
+type 'a susp = $ of 'a
+```

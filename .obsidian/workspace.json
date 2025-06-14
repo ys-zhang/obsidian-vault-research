@@ -4,170 +4,119 @@
     "type": "split",
     "children": [
       {
-        "id": "1152f4746e165286",
+        "id": "651f8a01d23015dd",
         "type": "tabs",
         "children": [
           {
-            "id": "526d3810ac1d574e",
+            "id": "08c761a3705597a2",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Compiler/Prolog.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "6e3be9cf51c24106",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Code/Salsa.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "abdfec15ed9d2bdc",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Compiler/FP/Generic Programming in Haskell.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "50d5a8b9dc664f7b",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Compiler/Program Analysis/Dataflow Analysis.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "2a1190f077a0d2e7",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Testing/Unit Test Frameworks.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "55de735490773282",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ReadingNotes/Implementing Functional Languages a Tutorial.md",
+                "file": "Compiler/Concepts/de Bruijn Index.md",
                 "mode": "preview",
+                "source": false,
                 "backlinks": true,
-                "source": false
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "pinned": true
+              "icon": "lucide-file",
+              "title": "de Bruijn Index"
             }
           },
           {
-            "id": "e3dcd63220db6638",
+            "id": "862d355bd5710263",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Compiler/Program Analysis/Dataflow Analysis.md",
-                "mode": "source",
+                "file": "Tools/Nix.md",
+                "mode": "preview",
+                "source": false,
                 "backlinks": true,
-                "source": false
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "pinned": true
+              "icon": "lucide-file",
+              "title": "Nix"
             }
           },
           {
-            "id": "1b9281d9049c2bca",
+            "id": "07d1ed3488de38d9",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Compiler/FP/Haskell.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "Tools/nix.excalidraw.md"
               },
-              "pinned": true
+              "icon": "excalidraw-icon",
+              "title": "nix.excalidraw"
             }
           },
           {
-            "id": "c7b954ab45f5c393",
+            "id": "11ec9c499bc5298f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Compiler/Program Analysis/Available Expressions Analysis.md",
-                "mode": "source",
+                "file": "Algo/Edit Distances.md",
+                "mode": "preview",
+                "source": false,
                 "backlinks": true,
-                "source": false
-              }
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Edit Distances"
             }
           },
           {
-            "id": "3cc00dc96abe939a",
+            "id": "f304a54a3fcce121",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Compiler/FP/Arrow.md",
+                "file": "ReadingNotes/Information Flow Enforcement in Monadic Libraries.md",
                 "mode": "source",
+                "source": false,
                 "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e0e675e8b54742a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Compiler/FP/FRP (Functional Reactive Programming).md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Information Flow Enforcement in Monadic Libraries"
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -186,8 +135,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -196,13 +148,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "arrow",
-                "matchingCase": true,
+                "query": "",
+                "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "byModifiedTime"
-              }
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -210,15 +164,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 382.5124969482422,
-    "collapsed": true
+    "width": 306.5
   },
   "right": {
     "id": "90a6f9defb7a3379",
@@ -227,7 +182,7 @@
       {
         "id": "97591479d84044fe",
         "type": "tabs",
-        "dimension": 66.66666666666667,
+        "dimension": 58.38103025347507,
         "children": [
           {
             "id": "871d0877ac246d72",
@@ -235,15 +190,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Compiler/FP/FRP (Functional Reactive Programming).md",
-                "collapseAll": false,
+                "file": "Tools/nix.excalidraw.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for nix.excalidraw"
             }
           },
           {
@@ -252,10 +209,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Compiler/FP/FRP (Functional Reactive Programming).md",
+                "file": "Math/Category Theory/Lens and Other Optics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Lens and Other Optics"
             }
           },
           {
@@ -265,8 +224,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "alphabetical",
-                "useHierarchy": false
-              }
+                "useHierarchy": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -275,8 +238,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Compiler/FP/FRP (Functional Reactive Programming).md"
-              }
+                "file": "Math/Category Theory/Lens and Other Optics.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Lens and Other Optics"
             }
           },
           {
@@ -288,95 +256,116 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "6984d1d7bf8fa115",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "43908533fb4c38f7",
         "type": "tabs",
-        "dimension": 33.333333333333336,
+        "dimension": 41.61896974652493,
         "children": [
           {
             "id": "0054b66bebb11a4d",
             "type": "leaf",
             "state": {
               "type": "dictionary-view",
-              "state": {}
+              "state": {},
+              "icon": "quote-glyph",
+              "title": "Dictionary"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 306.5,
+    "width": 274,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
+      "canvas:Create new canvas": true,
       "templates:Insert template": true,
       "command-palette:Open command palette": true,
       "markdown-importer:Open format converter": true,
       "audio-recorder:Start/stop recording": true,
-      "oz-clear-unused-images:Clear Unused Images": false,
+      "obsidian-git:Open Git source control": false,
       "open-vscode:VSCode": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "syncthing-integration:Open Syncthing conflict manager modal": false,
+      "media-extended:Open media": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "e0e675e8b54742a2",
+  "active": "07d1ed3488de38d9",
   "lastOpenFiles": [
-    "Compiler/FP/Arrow.md",
-    "Compiler/Prolog.md",
-    "Compiler/Program Analysis/Available Expressions Analysis.md",
+    "Algo/Edit Distances.md",
+    "Tools/nix.excalidraw.md",
+    "Tools/Nix.md",
+    "Compiler/Concepts/de Bruijn Index.md",
+    "Compiler/FP/Effect System.md",
+    "Compiler/FP/Recursion Scheme.md",
+    "ReadingNotes/Information Flow Enforcement in Monadic Libraries.md",
+    "Compiler/FP/Haskell/Haskell Tricks.md",
+    "Projects/dreaming/Syntax.md",
+    "Math/Category Theory/Lens and Other Optics.md",
     "ReadingNotes/Implementing Functional Languages a Tutorial.md",
-    "Testing/QuickCheck.md",
-    "Testing/Untitled.md",
-    "Testing/falsify and Internal shrinking.md",
-    "Compiler/FP/Haskell.md",
-    "Code/Brick & Vty.md",
-    "Code/XMonad.md",
-    "Compiler/Concepts/irrefutable pattern.md",
-    "Compiler/FP/Generic Programming in Haskell.md",
-    "attachments/uniplate-api.png",
-    "Compiler/Concepts/Term Rewriting.webarchive",
-    "Algo/Data Structure/Graph.md",
-    "Compiler/FP/Contravariant Logging.md",
-    "Compiler/FP/Parsec.md",
-    "Projects/Haskell Summer 2023/haskell prettyprinter.md",
-    "Compiler/Program Analysis/Dataflow Analysis.md",
-    "Compiler/Rust/Rust.md",
-    "SystemDesign/MacOS Dev/SwiftUI FAQ.md",
-    "Tools/UI/SwiftUI.md",
-    "SystemDesign/MacOS Dev/SwiftUI Reactivity.md",
-    "Testing/UI Testing in XCTest.md",
-    "Testing/Unit Test Frameworks.md",
-    "Code/Salsa.md",
-    "Testing/property based testing practices.md",
-    "Math/Category Theory/Monad/Monad.md",
-    "attachments/Pasted image 20240315101641.png",
-    "Compiler/Program Analysis",
-    "ReadingNotes",
-    "attachments/Pasted image 20240131184714.png",
-    "attachments/Pasted image 20240131184644.png",
-    "attachments/Pasted image 20240131181431.png",
-    "attachments/Pasted image 20240128162541.png",
-    "attachments/Pasted image 20240128162527.png",
-    "attachments/Pasted image 20240128161129.png",
-    "attachments/Pasted image 20240128154345.png",
-    "attachments/Pasted image 20240108110608.png",
-    "SystemDesign/MacOS Dev",
+    "Math/Category Theory/Monad/Applicative Functor.md",
+    "Math/Category Theory/Monad/F-algebra.md",
+    "Untitled.md",
+    "Compiler/Scripting/Javascript/js object, this, prototype chain & mixin.md",
+    "Code/Snippets/Idiomorph.md",
+    "Code/Snippets",
+    "SystemDesign/OS/cmd/sed.md",
+    "Testing/Tools/testing-library.md",
+    "Tools/UI/Web/anchor positioning.md",
+    "Tools/UI/CSS Layout.md",
+    "Tools/UI/Web/Lit.md",
+    "Tools/vm/docker/dockerfile.md",
+    "Tools/UI/Web/Alpine morph.md",
+    "Tools/UI/Web/Focus.md",
+    "Compiler/FP/Haskell/Generic Programming in Haskell.md",
+    "Hypermedia and HTMX.md",
+    "Tools/UI/CSS layout.canvas",
+    "Japanese Gramma.canvas",
+    "attachments/Pasted image 20250109162428.png",
+    "attachments/Pasted image 20250106103244.png",
+    "attachments/Pasted image 20250106102827.png",
+    "attachments/Pasted image 20250106101114.png",
+    "attachments/Pasted image 20241226103946.png",
+    "attachments/Pasted image 20241213144043.png",
+    "attachments/Pasted image 20241116133229.png",
+    "attachments/Pasted image 20241115195901.png",
+    "attachments/Pasted image 20241110000042.png",
+    "attachments/Pasted image 20241024162804.png",
     "Compiler/FP/Haskell",
-    "Projects/Japanese",
-    "Compiler/Program Synthesis",
-    "Scratch.canvas",
-    "StatLearning/Estimators and Tests/Graphical Representation of the “Holy Trinity”.pdf",
+    "Tools/Missing Semester",
+    "Ink/Drawing/2024.8.18 - 11.08am.drawing",
+    "Ink/Drawing",
+    "Ink",
+    "Math/Type Theory/Coq.canvas",
+    "Math/Type Theory/Type Theory Canvas.canvas",
+    "Compiler/Dynamic checking",
     "Compiler/Memory Management.pdf",
-    "Math/Quantum Computing",
+    "papers/distribute system/Green Threads in Rust.pdf",
+    "Code/24-days-of-hackage.canvas",
+    "Scratch.canvas",
+    "Compiler/Concepts/Term Rewriting.webarchive",
     "Projects/Haskell Summer 2023/Summer of Haskell Canvas (2023).canvas"
   ]
 }

@@ -1,12 +1,12 @@
 {
-  "baseFontSize": 16,
-  "cssTheme": "Border",
+  "baseFontSize": 15,
+  "cssTheme": "Encore",
   "theme": "system",
   "translucency": true,
   "baseFontSizeAction": true,
-  "textFontFamily": "Ayuthaya,Apple Chancery,Arial",
-  "accentColor": "",
-  "monospaceFontFamily": "JetBrainsMono Nerd Font",
+  "textFontFamily": "Comic Sans MS,Ayuthaya,Apple Chancery,Arial",
+  "accentColor": "#a28ae5",
+  "monospaceFontFamily": "Hasklug Nerd Font Mono,JetBrainsMono Nerd Font",
   "interfaceFontFamily": "",
   "enabledCssSnippets": [
     "my-callouts"

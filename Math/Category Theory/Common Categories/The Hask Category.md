@@ -1,4 +1,4 @@
-__Hask__ is the category of programming, at least in [[Haskell]].
+__Hask__ is the category of programming, at least in [[Haskell Tricks]].
 - _Objects_ in __Hask__ are _types_, including `Void` and `Unit`.
 - _Morphism_ in Hask are _pure functions_.
 

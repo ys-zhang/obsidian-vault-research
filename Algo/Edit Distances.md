@@ -1,4 +1,4 @@
-# Levenshtein distance
+# 1 Levenshtein distance
 
 Informally, the Levenshtein distance between two words is the minimum number of single-character edits (insertions, deletions or substitutions) required to change one word into the other.
 
@@ -13,15 +13,15 @@ lev (x:xs) (y:ys)
 normalisedLev xs ys = (realToFrac $ lev xs ys) / (lengthOf xs ys)
 ```
 
-# Damerau–Levenshtein distance
+# 2 Damerau–Levenshtein distance
 
  Informally, the Damerau–Levenshtein distance between two words is the minimum number of operations (consisting of insertions, deletions or substitutions of a single character, or transposition of two adjacent characters) required to change one word into the other.
 
-# Hamming Distance
+# 3 Hamming Distance
 
 The Hamming distance between two strings or vectors of equal length is the number of positions at which the corresponding symbols are different. In other words, it measures the minimum number of substitutions required to change one string into the other, or equivalently, the minimum number of errors that could have transformed one string into the other.
 
-# Jaro–Winkler distance
+# 4 Jaro–Winkler distance
 #statistics 
 
 The Jaro–Winkler distance uses a _prefix scale_ $p$ which gives more favourable ratings to strings that match from the beginning for a set prefix length $\ell$.
@@ -48,9 +48,13 @@ jaro s1 s2
   -- the right order divided by two.
   transCount = ...
 
-jaroWinkle s1 s2 = sim + l * p * (1- sim)
+jaroWinkle s1 s2 = sim + l*p*(1-sim)
  where 
   sim = jaro s1 s2
   l = -- length of common prefix at the start of the string up to a maximum of 4 characters
   p = 0.1
 ```
+
+# 5 References
+
+- [fuse.js](https://www.fusejs.io) is a javascript library for fuzzy-search

@@ -145,3 +145,35 @@ withSpine _ = id
 >- If the machine’s state matches one of the _state transition rules_, the rule _ﬁres_ and speciﬁes a new state for the machine;
 >- If no rules matches, execution _halts_;
 >- If more then one rule matches, then one is chosen _arbitrarily_ to fire; the machine is then _non-deterministic_.
+
+# G-Machine
+
+>[!def] supercombinator
+> a _supercombinator_ `$S` (the `$` is a dedicated name prefix for all supercombinators) with arity $n$ is a _lambda expression_  of the form 
+> $$
+> \lambda x_1 \;.\; x_2\; \dots \; x_n \; . \;E
+> $$
+> such that 
+> 1. `$S` has no free variables, thus we do not need a global context for global variable 
+> 2. any lambda expression in $E$ is a supercombinator, which means they do not have free variables and thus we do not need to keep a local context for local variables
+> 3. $E$ is **not** a lambda expression
+> 4. $n\ge 0$
+>
+> and,
+> - A _supercombinator redex_ consists of the _application_ of an _arity $n$ supercombinator_ to $n$ arguments. 
+> - A _supercombinator reduction_ replaces a _supercombinator redex_ by an _instance of its body_ with arguments substituted for free occurrences of the corresponding formal parameters.
+
+Since they have no free variables (clause (1)) we can compile a fixed code sequence for them. Furthermore, clause (2) ensures that any lambda abstractions in the body have no free variables, and hence do not need to be copied when instantiating the supercombinator body.
+
+
+>[!example] supercombinator
+> the follow are **not** supercombinators
+>$$
+> \begin{align}
+> \lambda x &. y   & \text{y occurs free}\\
+> \lambda f &. f \; (\lambda x . f\; x \; 2) & \text{inner lambda is not supercombinator}
+> \end{align}
+>$$
+
+>[!def] combinator
+> A _combinator_ is a lambda expression which contains no occurrences of a free variable

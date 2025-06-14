@@ -6,18 +6,19 @@ By control it means changing:
 3. register
 4. observe and intercept syscall/signals
 
-> `ptrace` can only attach to processes that the owner can send signal to .
+>[!warning] 
+>`ptrace` can only attach to processes that the owner can send signal to.
 
 > While  being  traced,  the tracee will stop each time a signal is delivered, even if the signal is being ignored. (An exception is SIGKILL, which has its usual effect.)  The tracer will be notified at its  next  call  to  `waitpid(2)`  (or  one of the related "wait" system calls); that call will return a status value containing information that indicates the cause of the stop in the tracee.  While the tracee is stopped,  the  tracer  can  use  various `ptrace`  requests to inspect and modify the tracee.  The tracer then causes the tracee to continue, optionally ignoring the delivered signal (or even delivering a different signal instead).
 
 # Trace options
 
-| Cat              | Opt                | Description                          |
+| Cat              | Opt                | Description                   |
 | ---------------- | ------------------ | ----------------------------- |
 | Entry trace mode | PTRACE_ME          | Force self into trace mode    |
 | Entry trace mode | PTRACE_ATTACH      | Force `pid` into trace mode   |
 | Tracing control  | PTRACE_SYSCALL     | Stop before and after syscall |
-| Tracing control  | PTRACE_SINGLESTEP  | Stop at every CPU instruction | 
+| Tracing control  | PTRACE_SINGLESTEP  | Stop at every CPU instruction |
 | Read proc state  | PTRACE_PEEKUSER    | peek memory/register          |
 | Read proc state  | PTRACE_GETSIGNINFO | signal cause tracee to stall  |
 | Read proc state  | PTRACE_GETREGS     | register                      |
